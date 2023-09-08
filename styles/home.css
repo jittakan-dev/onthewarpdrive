@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Ubuntu";
-  src: url("https://jittakan-dev.github.io/onthewarpdrive/styles/fonts/Ubuntu-Regular.ttf");
+  src: url("/fonts/UbuntuRegular.ttf");
 }
 @font-face {
   font-family: "UbuntuBold";
-  src: url("https://jittakan-dev.github.io/onthewarpdrive/styles/fonts/Ubuntu-Bold.ttf");
+  src: url("/fonts/UbuntuBold.ttf");
 }
 body,
 html {
