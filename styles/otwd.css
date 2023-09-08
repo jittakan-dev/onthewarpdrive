@@ -1,0 +1,621 @@
+/*--------------------START ABOUT MAIN CONTAINER----------------*/
+.about-main-container {
+  flex: 1;
+  overflow-x: hidden;
+  position: relative;
+  cursor: grab;
+  display: flex;
+  user-select: none;
+  margin-top: 0;
+  padding-top: 0;
+  position: absolute;
+  top: 0;
+  width: 90vw;
+  height: 90vh;
+  background-color: #e74c3c;
+  display: flex;
+  /* scroll-snap-type: x proximity; */
+}
+.about-main-container.grabbing {
+  cursor: grabbing;
+}
+.about-content {
+  width: 100%;
+  min-width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+/*--------------------END ABOUT MAIN CONTAINER----------------*/
+/*--------------------START about-panel ----------------*/
+.about-panel {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5%;
+  /* background-color: crimson; */
+}
+#aboutus-panel {
+  width: 95%;
+  padding: 0 0 5% 5%;
+}
+#contactus-panel {
+}
+.aboutus-title-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-family: "UbuntuBold";
+  width: 100%;
+  margin-bottom: 2%;
+}
+.right-arrow {
+  text-align: right;
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.aboutus-box {
+  display: flex;
+  align-items: start; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+.aboutus-tag {
+  font-size: 0.6rem;
+  width: auto;
+  transform: rotate(-90deg);
+  padding-top: 6%;
+}
+.aboutus-otwd {
+  text-align: right;
+  width: 100%;
+  font-size: 7rem;
+  letter-spacing: -4px;
+  line-height: 90%;
+}
+.aboutus-quote {
+  padding-right: 8%; /*----------------FOR Foundation for <br />startups indent--------------*/
+  text-align: right;
+  width: 100%;
+  font-size: 2.8rem;
+  color: wheat;
+}
+.aboutus-service-title {
+  font-size: 1.4rem;
+}
+.aboutus-service-group {
+  flex: 2;
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Center vertically */
+  justify-content: end; /* Center horizontally */
+  /* padding: 0 5% 0 5%; */
+  font-size: 1.1rem;
+  /* background-color: darkgreen; */
+}
+.aboutus-service-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+.aboutus-service-detail p:not(.aboutus-service-title) {
+  padding-right: 10%; /*----------------FOR indent paragraph line--------------*/
+  border-right: 2px solid black;
+}
+.aboutus-service-type {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  /* background-color: violet; */
+}
+.aboutus-service-type span {
+  margin-right: 2%;
+  padding: 0.2% 1% 0.2% 1%;
+  cursor: pointer;
+  color: wheat;
+  background-color: #e74c3c;
+  border: 2px solid wheat;
+}
+.aboutus-service-type span:hover {
+  color: #171717;
+  background-color: #e74c3c;
+  border: 2px solid #171717;
+}
+/*--------------------END about-panel ----------------*/
+/*--------------------START contact-panel ----------------*/
+/*----------------START contact-title-container -------------*/
+.contact-panel {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.contactus-channel-group {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactus-space-container {
+  width: 100%;
+  height: 100%;
+}
+.contactus-title-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  /* background-color: violet; */
+}
+.contactus-reachus-box {
+  font-family: "UbuntuBold";
+  display: flex;
+  justify-content: center;
+  align-items: start; /*-adjust arrow and contact-*/
+  margin-top: 10%;
+}
+.contactus-reachus {
+  text-align: right;
+  font-size: 3rem;
+  line-height: 90%;
+}
+.contactus-tag {
+  margin-top: 10%;
+  font-size: 0.6rem;
+  width: auto;
+  transform: rotate(-90deg);
+}
+.left-arrow {
+  width: auto;
+  font-size: 2rem;
+  cursor: pointer;
+  /* background-color: cornflowerblue; */
+}
+.contactus-type-box {
+  height: 100%;
+  margin: 10% 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  /* background-color: crimson; */
+}
+.contactus-quote {
+  border-top: 2px solid #171717;
+  border-bottom: 2px solid #171717;
+  padding: 5% 0 5% 0;
+  font-size: 1.1rem;
+  /* background-color: coral; */
+}
+.contactus-type-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  /* background-color: brown; */
+  padding-bottom: 10%;
+}
+.contactus-type-button {
+  font-size: 1.2rem;
+  padding: 4%;
+  margin: 2% 0% 2% 0;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: #171717;
+  border: 2px solid #171717;
+}
+.contactus-type-button:hover {
+  background-color: #e74c3c;
+  color: wheat;
+  border: 2px solid wheat;
+}
+.contactusTypeButtonActive {
+  background-color: #171717;
+  color: #e74c3c;
+  border: 2px solid #171717;
+  cursor: default;
+  pointer-events: none;
+}
+/*----------------END contact-title-container -------------*/
+/**----------START CONTACT FORM GROUP----------------**/
+.contactus-hub-group {
+  width: 50%;
+  height: 90vh;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+  position: relative;
+}
+.contactus-scroll {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  /* background-color: crimson; */
+}
+/*---------------------------START CONTACT HUB----------------*/
+.hub-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  /* position: relative; */
+}
+/*-----------------------START-sociallink------------*/
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 70%;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid wheat;
+  padding: 2% 0 2% 0;
+  /* background-color: darkslategrey; */
+}
+.contact-link-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  margin-bottom: 2%;
+}
+.contact-link div:last-child {
+  margin-bottom: 0;
+}
+.contact-link-text {
+  /* display: none; */
+  color: wheat;
+}
+.contact-link div a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* background-color: chartreuse; */
+}
+
+.contact-social-link {
+  width: auto;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: wheat;
+}
+.social-link {
+  margin-left: 10%;
+  font-size: 1.2rem;
+  color: wheat;
+}
+/*-----------------------END-sociallink------------*/
+/*-----------------------START-email------------*/
+.contact-email {
+  width: 70%;
+  font-size: 1.4rem;
+  color: wheat;
+  text-align: center;
+  cursor: pointer;
+  /* background-color: chocolate; */
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.otwd-email {
+  font-weight: bolder;
+}
+.gap {
+  margin: 0 2% 0 2%;
+  width: 100%;
+  border-bottom: 1px dashed wheat;
+}
+/*-----------------------END-email------------*/
+/*-----------------------START-map------------*/
+.contact-map {
+  width: 70%;
+  height: 40%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  /* background-color: chartreuse; */
+}
+.we-are-here {
+  color: wheat;
+  /* background-color: crimson; */
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+/*-----------------------END-map------------*/
+/*---------------------------END CONTACT HUB----------------*/
+/*---------------------------START CONTACT FORM----------------*/
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 90vh;
+  /* background-color: coral; */
+}
+.input-group {
+  width: 100%;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 1% 0 1% 0;
+  color: wheat;
+}
+.input-group label {
+  width: 100%;
+  margin: 1% 0 1% 0;
+  font-size: 1.2rem;
+}
+.input-group input {
+  width: 96%;
+  margin: 1% 0 1% 0;
+  padding: 2%;
+  border: none;
+  border-radius: 0;
+  background-color: wheat;
+  font-size: 1.2rem;
+}
+.input-group input:focus {
+  background-color: #e74c3c;
+  outline: none;
+  color: wheat;
+}
+.input-group textarea {
+  width: 96%;
+  margin: 1% 0 1% 0;
+  padding: 2%;
+  border: none;
+  border-radius: 0;
+  background-color: wheat;
+  font-size: 1.2rem;
+}
+.input-group textarea:focus {
+  background-color: #e74c3c;
+  outline: none;
+  color: wheat;
+}
+.submit-group {
+  width: 100%;
+  margin: 4% 0 1% 0;
+}
+.submit-group button {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 5% 0 5% 0;
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c;
+  color: #171717;
+  cursor: pointer;
+}
+.submit-group button:hover {
+  background-color: #171717;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+/*---------------------------END CONTACT FORM----------------*/
+/**----------END CONTACT FORM GROUP----------------**/
+/*--------------------END contact-panel ----------------*/
+.reveal-item {
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+/*-----------------END about SECTION--------------------*/
+/*-----------------START MEDIA RESPONSIVE--------------------*/
+@media (max-width: 768px) {
+  /*----------ABOUT---------*/
+  .about-content {
+    flex-direction: column;
+  }
+  .about-panel {
+    flex-direction: column;
+  }
+  #aboutus-panel {
+    width: 80%;
+    padding: 0 10% 0 10%;
+  }
+  .aboutus-title-group {
+    margin-bottom: 10%;
+  }
+  .aboutus-service-group {
+    flex: 1;
+    order: 2;
+    font-size: 1rem;
+  }
+  .aboutus-otwd {
+    font-size: 5rem;
+    letter-spacing: -4px;
+  }
+  .aboutus-quote {
+    /*---------Foundation for <br />startups------------*/
+    padding-right: 8%;
+    font-size: 1.8rem;
+  }
+  .aboutus-service-title {
+    /*--------------What we do defines who we are.---------------------*/
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .aboutus-service-detail p {
+    padding-right: 0;
+    border: none;
+  }
+  .aboutus-service-detail p:not(.aboutus-service-title) {
+    padding-right: 0;
+    border: none;
+  }
+  .aboutus-service-type span {
+    margin-right: 4%;
+    padding: 2%;
+  }
+  /*----------CONTACT---------*/
+  .contact-panel {
+    flex-direction: column;
+  }
+  .contactus-channel-group {
+    width: 100%;
+    height: 45%;
+  }
+  .contactus-hub-group {
+    width: 100%;
+    height: 55%;
+    background-color: #e74c3c;
+  }
+  /*-------------------------------HUB-------------*/
+  .hub-group {
+    width: 100%;
+    height: 50vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .we-are-here {
+    display: none;
+    margin-bottom: 0;
+  }
+  .contact-map {
+    width: 85%;
+    height: 30%;
+    border: 2px solid #171717;
+  }
+  .contact-email {
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 8% 0 8% 0;
+    justify-content: center;
+  }
+  .gap {
+    display: none;
+  }
+  .envelope-mail {
+    margin-right: 4%;
+  }
+  .contact-social-link {
+    font-size: 2.4rem;
+    padding: 0;
+  }
+  .contact-link {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 5% 0;
+    width: 85%;
+  }
+  .contact-link div {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .contact-link-text {
+    display: none;
+  }
+  .social-link {
+    margin: 0;
+    display: none;
+  }
+  /*-------------------------------HUB-------------*/
+  .form-group {
+    width: 85%;
+    height: 50vh;
+  }
+  .input-group input {
+    border: 2px solid wheat;
+    border-radius: 0;
+    background-color: #e74c3c;
+    font-size: 1rem;
+  }
+  .input-group input:focus {
+    background-color: #e74c3c;
+    outline: none;
+    color: wheat;
+    border: 2px solid #171717;
+  }
+  .input-group textarea {
+    font-size: 1rem;
+    border: 2px solid wheat;
+    border-radius: 0;
+    background-color: #e74c3c;
+  }
+  .input-group textarea:focus {
+    background-color: #e74c3c;
+    outline: none;
+    color: wheat;
+    border: 2px solid #171717;
+  }
+  .submit-group button {
+    font-size: 1.2rem;
+  }
+  .submit-group button {
+    background-color: #e74c3c;
+    border: 2px solid #171717;
+    color: #171717;
+    cursor: pointer;
+  }
+  .submit-group button:hover {
+    background-color: #171717;
+    color: #e74c3c;
+    border: 2px solid 171717;
+  }
+  .contactus-space-box {
+    display: none;
+    flex: 0;
+  }
+  .contactus-reachus {
+    font-size: 2.8rem;
+  }
+  .contactus-quote {
+    font-size: 1rem;
+  }
+  .contactus-type-button-group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contactus-type-button {
+    font-size: 1rem;
+    padding: 4%;
+    margin: 0 2% 0 2%;
+    /* color: wheat;
+    background-color: #e74c3c;
+    border: 2px solid wheat;
+    cursor: pointer; */
+  }
+}
+/*-----------------END MEDIA RESPONSIVE--------------------*/

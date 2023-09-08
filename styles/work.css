@@ -1,0 +1,114 @@
+/*-----------------START WORK SECTION--------------------*/
+.work-menu-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.work-menu-header {
+  margin-top: 10vh;
+  width: 90vw;
+  height: auto;
+}
+.work-menu-title {
+  font-size: 3.7rem;
+  font-family: "UbuntuBold";
+}
+.selectedBr {
+  display: none;
+}
+/*- START Work Menu Types - Application - Mobile Application - Data Anal5pxysis -*/
+.work-menu-types {
+  margin: 2% 0 2% 0;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  user-select: none;
+  /* font-family: "UbuntuBold"; */
+}
+.work-menu-types div {
+  margin-left: 2%;
+  cursor: pointer;
+  position: relative;
+  color: #666666;
+  /* font-family: "UbuntuBold"; */
+}
+.work-menu-types div:last-child {
+  margin-right: 1%;
+}
+.work-menu-types div::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 16%;
+  background-color: #f46353; /* Change this color to your desired underline color */
+  bottom: -40%;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.work-menu-types div.active {
+  color: #e74c3c; /* Set the text color for active items */
+}
+.work-menu-types div.active::before {
+  transform: scaleX(1);
+  transform-origin: var(--transform-origin);
+}
+.work-menu-types div.active:last-child::before {
+  --transform-origin: right;
+}
+
+.work-menu-types div.active:first-child::before {
+  --transform-origin: right;
+}
+/*- END Work Menu Types - Application - Mobile Application - Data Analysis -*/
+/*- Work Menu Main -*/
+.work-menu-main {
+  margin-top: 0;
+  width: 90vw;
+  height: 80%;
+  background-color: #e74c3c;
+}
+/*- Work Menu Main -*/
+/*- Work Menu Item -*/
+.work-menu-item {
+  height: 100%;
+}
+/*- Work Menu Item -*/
+/*-----------------START MEDIA RESPONSIVE--------------------*/
+@media (max-width: 768px) {
+  .work-menu-title {
+    font-size: 3rem;
+  }
+  .selectedBr {
+    display: flex;
+  }
+  .work-menu-types {
+    margin: 4% 0 2% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .work-menu-types div {
+    text-align: end;
+    width: 100%;
+    margin-bottom: 4%;
+    border-bottom: 1px solid #666666;
+  }
+  .work-menu-types div.active {
+    color: #e74c3c; /* Set the text color for active items */
+    border-bottom: 1px solid #e74c3c;
+    width: 100%;
+  }
+  .work-menu-types div::before {
+    bottom: -18%;
+    width: 16%;
+  }
+}
+/*-----------------END MEDIA RESPONSIVE--------------------*/
+/*-----------------END WORK SECTION--------------------*/

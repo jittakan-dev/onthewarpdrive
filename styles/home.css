@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "UbuntuBold";
+  src: url("/fonts/Ubuntu-Bold.ttf");
+}
+body,
+html {
+  font-family: "Ubuntu";
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/*-----------------START HOME SECTION--------------------*/
+.parallax-home-section {
+  width: 100vw;
+  height: auto;
+}
+.home_section_1 {
+  /* background: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkwOTJ8&ixlib=rb-4.0.3&q=85"); */
+  min-height: 100vh;
+}
+.home_section_2 {
+  /* background: url("https://images.unsplash.com/photo-1683526513573-1effdda48dcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkzMzB8&ixlib=rb-4.0.3&q=85"); */
+  min-height: 100vh;
+}
+.home_section_1,
+.home_section_2 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /*fixed: parallax - scroll: regular scrolling*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hv_span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+}
+/*-----------------END HOME SECTION--------------------*/
+/*-----------------START content SECTION--------------------*/
+.content-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#home {
+  background-color: #171717;
+}
+#work {
+  min-height: 100vh;
+  background-color: #ebebeb;
+}
+#about {
+  background-color: #bebebe;
+}
+/*-----------------END content SECTION--------------------*/
