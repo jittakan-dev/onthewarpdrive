@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/UbuntuRegular.ttf");
-}
-@font-face {
-  font-family: "UbuntuBold";
-  src: url("../fonts/UbuntuBold.ttf");
-}
 /*-----------------START WORK SECTION--------------------*/
 .work-menu-container {
   width: 100vw;
@@ -22,7 +14,8 @@
 }
 .work-menu-title {
   font-size: 3.7rem;
-  font-family: "UbuntuBold";
+  font-weight: 700;
+  /* font-family: "UbuntuBold"; */
 }
 .selectedBr {
   display: none;
@@ -36,14 +29,12 @@
   justify-content: end;
   align-items: center;
   user-select: none;
-  /* font-family: "UbuntuBold"; */
 }
 .work-menu-types div {
   margin-left: 2%;
   cursor: pointer;
   position: relative;
   color: #666666;
-  /* font-family: "UbuntuBold"; */
 }
 .work-menu-types div:last-child {
   margin-right: 1%;
