@@ -1,11 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
 @font-face {
   font-family: "Ubuntu";
-  src: url("/styles/fonts/UbuntuRegular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoKfw72nU6AFw.woff2)
+      format("woff2");
 }
+
 @font-face {
   font-family: "UbuntuBold";
-  src: url("/styles/fonts/UbuntuBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"),
+    url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoKfA72nU6AC4M.woff2)
+      format("woff2");
 }
+
 body,
 html {
   font-family: "Ubuntu";
