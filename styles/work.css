@@ -86,7 +86,7 @@
     font-size: 3rem;
   }
   .selectedBr {
-    display: flex;
+    display: contents;
   }
   .work-menu-types {
     margin: 4% 0 2% 0;
