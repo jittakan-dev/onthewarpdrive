@@ -133,7 +133,6 @@
   padding: 2%;
 }
 .hidden-menu nav a {
-  /* font-family: "UbuntuBold"; */
   font-size: 3rem;
   font-weight: 700;
   color: #fff;
@@ -143,8 +142,8 @@
 }
 .hidden-menu nav a:hover,
 .hidden-menu div a:hover {
-  background-color: #000000; /* Change this to the desired hover background color */
-  padding: 3%; /* Adjust the padding as needed */
+  background-color: #000000;
+  padding: 3%;
 }
 /* .hidden-menu nav a:hover span,
 .hidden-menu div a:hover span {
