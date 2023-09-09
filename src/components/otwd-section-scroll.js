@@ -66,7 +66,7 @@ scrollableDiv.addEventListener("mousemove", (e) => {
   if (!isSectionDragging) return;
   e.preventDefault();
   const x = e.pageX - scrollableDiv.offsetLeft;
-  const walk = (x - startX) * 2; // Adjust this multiplier for scroll speed
+  const walk = x - startX; // Adjust this multiplier for scroll speed
   scrollableDiv.scrollLeft = scrollLeft - walk;
 });
 
@@ -83,7 +83,7 @@ scrollableDiv.addEventListener("touchmove", (e) => {
   if (!isSectionDragging) return;
   e.preventDefault();
   const x = e.touches[0].pageX - scrollableDiv.offsetLeft;
-  const walk = (x - startX) * 2; // Adjust this multiplier for scroll speed
+  const walk = x - startX; // Adjust this multiplier for scroll speed
   scrollableDiv.scrollLeft = scrollLeft - walk;
 });
 
