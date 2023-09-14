@@ -30,9 +30,10 @@ OTWDScrollable.addEventListener("mouseleave", startMomentumScroll);
 OTWDScrollable.addEventListener("mouseup", startMomentumScroll);
 OTWDScrollable.addEventListener("mousemove", handleMouseMove);
 
-OTWDScrollable.addEventListener("touchstart", startDrag);
-OTWDScrollable.addEventListener("touchmove", handleTouchMove);
-document.addEventListener("touchend", startMomentumScroll);
+// Commented out touch event listeners
+// OTWDScrollable.addEventListener("touchstart", startDrag);
+// OTWDScrollable.addEventListener("touchmove", handleTouchMove);
+// document.addEventListener("touchend", startMomentumScroll);
 
 scrollToLeftButton.addEventListener("click", () => scrollTo(0));
 scrollToRightButton.addEventListener("click", () =>
@@ -68,12 +69,13 @@ function handleMouseMove(e) {
   OTWDScrollable.scrollLeft = scrollLeft - (x - startX);
 }
 
-function handleTouchMove(e) {
-  if (!isSectionDragging) return;
-  e.preventDefault();
-  const x = e.touches[0].pageX;
-  OTWDScrollable.scrollLeft = scrollLeft - (x - startX);
-}
+// Commented out touch event handling
+// function handleTouchMove(e) {
+//   if (!isSectionDragging) return;
+//   e.preventDefault();
+//   const x = e.touches[0].pageX;
+//   OTWDScrollable.scrollLeft = scrollLeft - (x - startX);
+// }
 
 function startMomentumScroll() {
   isSectionDragging = false;

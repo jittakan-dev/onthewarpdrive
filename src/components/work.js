@@ -13,8 +13,6 @@ const workListItems = document.querySelectorAll(".work-list-item");
 const firstWorkListItem = workListItems[0];
 const lastWorkListItem = workListItems[workListItems.length - 1];
 
-let touchStartY = null;
-
 workListScrollable.addEventListener("wheel", (event) => {
   const scrollTop = workListScrollable.scrollTop;
   const scrollHeight = workListScrollable.scrollHeight;
@@ -25,8 +23,10 @@ workListScrollable.addEventListener("wheel", (event) => {
     lastWorkListItem.offsetTop + lastWorkListItem.clientHeight;
 
   if (scrollTop === 0 && event.deltaY < 0) {
+    // Scrolled to the top of the first .work-list-item, remove preventDefault
     workListScrollable.removeEventListener("wheel", preventDefaultScroll);
   } else if (scrollTop + clientHeight >= scrollHeight - 1 && event.deltaY > 0) {
+    // Scrolled to the bottom of the last .work-list-item, remove preventDefault
     workListScrollable.removeEventListener("wheel", preventDefaultScroll);
   } else {
     event.preventDefault();
@@ -39,42 +39,6 @@ workListScrollable.addEventListener("wheel", (event) => {
 function preventDefaultScroll(event) {
   event.preventDefault();
 }
-
-// Detect touchstart for mobile/touchpad
-workListScrollable.addEventListener("touchstart", (event) => {
-  touchStartY = event.touches[0].clientY;
-});
-
-// Detect touchmove for mobile/touchpad
-workListScrollable.addEventListener("touchmove", (event) => {
-  if (touchStartY === null) {
-    return;
-  }
-
-  const touchMoveY = event.touches[0].clientY;
-  const deltaY = touchMoveY - touchStartY;
-
-  const scrollTop = workListScrollable.scrollTop;
-  const scrollHeight = workListScrollable.scrollHeight;
-  const clientHeight = workListScrollable.clientHeight;
-
-  const firstItemTop = firstWorkListItem.offsetTop;
-  const lastItemBottom =
-    lastWorkListItem.offsetTop + lastWorkListItem.clientHeight;
-
-  if (scrollTop === 0 && deltaY < 0) {
-    workListScrollable.removeEventListener("touchmove", preventDefaultScroll);
-  } else if (scrollTop + clientHeight >= scrollHeight - 1 && deltaY > 0) {
-    workListScrollable.removeEventListener("touchmove", preventDefaultScroll);
-  } else {
-    event.preventDefault();
-    workListScrollable.scrollBy({
-      top: deltaY < 0 ? -30 : 30,
-    });
-  }
-
-  touchStartY = null;
-});
 
 // Give focus to the parent container when scrolling is allowed
 workListScrollable.addEventListener("scroll", () => {
