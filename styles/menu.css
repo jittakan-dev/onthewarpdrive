@@ -9,7 +9,7 @@
   border-radius: 50%;
   width: 8.7vh;
   height: 8.7vh;
-  z-index: 50;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,19 +96,19 @@
 /* Menu */
 .hidden-menu {
   position: fixed;
-  top: 0;
-  left: -100%;
+  left: 0;
+  top: -110%;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  z-index: 20;
-  transition: left 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  background-color: #222222;
+  z-index: 90;
+  transition: top 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .hidden-menu.active {
-  left: 0;
+  top: 0;
 }
 .hidden-menu nav {
   background-color: #222222;

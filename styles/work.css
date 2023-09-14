@@ -36,6 +36,9 @@
   position: relative;
   color: #666666;
 }
+.work-menu-types div:hover {
+  color: #222;
+}
 .work-menu-types div:last-child {
   margin-right: 1%;
 }
@@ -43,16 +46,16 @@
   content: "";
   position: absolute;
   width: 40%;
-  height: 16%;
-  background-color: #f46353; /* Change this color to your desired underline color */
-  bottom: -40%;
+  height: 14%;
+  background-color: #e74c3c; /* Change this color to your desired underline color */
+  bottom: -35%;
   right: 0;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
 .work-menu-types div.active {
-  color: #e74c3c; /* Set the text color for active items */
+  color: #da4737; /* Set the text color for active items */
 }
 .work-menu-types div.active::before {
   transform: scaleX(1);
@@ -67,18 +70,53 @@
 }
 /*- END Work Menu Types - Application - Mobile Application - Data Analysis -*/
 /*- Work Menu Main -*/
-.work-menu-main {
+/* .work-list-container {
   margin-top: 0;
   width: 90vw;
   height: 80%;
   background-color: #e74c3c;
 }
-/*- Work Menu Main -*/
-/*- Work Menu Item -*/
-.work-menu-item {
+
+.work-list-group {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 0;
 }
-/*- Work Menu Item -*/
+.work-list-item {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: wheat;
+  font-size: 3rem;
+  border-right: 2px solid wheat;
+} */
+
+.work-list-container {
+  margin-top: 0;
+  width: 90vw;
+  height: 80%;
+  background-color: #e74c3c;
+  overflow: hidden;
+}
+.work-list-item {
+  flex: 0 0 50%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: wheat;
+  font-size: 3rem;
+}
+
+/*- Work List Item -*/
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {
@@ -98,11 +136,17 @@
     width: 100%;
     margin-bottom: 4%;
     border-bottom: 1px solid #666666;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
   .work-menu-types div.active {
     color: #e74c3c; /* Set the text color for active items */
     border-bottom: 1px solid #e74c3c;
     width: 100%;
+    user-select: none;
   }
   .work-menu-types div::before {
     bottom: -18%;
