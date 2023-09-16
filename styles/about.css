@@ -3,7 +3,6 @@
   flex: 1;
   overflow-x: hidden;
   position: relative;
-  cursor: grab;
   display: flex;
   user-select: none;
   margin-top: 0;
@@ -14,9 +13,6 @@
   height: 95vh;
   background-color: #e74c3c;
   display: flex;
-}
-.about-container.grabbing {
-  cursor: grabbing;
 }
 .about-content {
   width: 100%;

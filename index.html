@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/work.css" />
-    <link rel="stylesheet" href="styles/otwd.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/media.css" />
     <link rel="shortcut icon" href="#" />
   </head>
@@ -28,15 +28,17 @@
     <!-----------   START header menu   --------------->
     <header>
       <nav role="navigation">
-        <div class="menu-button">
+        <div class="bubble-button">
           <div
-            class="menu-button-click"
-            id="menu-button-click"
+            class="bubble-button-hamburger"
+            id="bubble-button-hamburger"
             aria-label="Toggle Menu"
           >
             <div class="hamburger-icon"></div>
           </div>
-          <div class="menu-drager"><div class="menu-drager-click"></div></div>
+          <div class="bubble-handle">
+            <div class="bubble-handle-button"></div>
+          </div>
         </div>
         <div class="hidden-menu" id="menu-section">
           <div>XXX</div>
@@ -74,23 +76,30 @@
               <div>Data Analysis</div>
             </div>
           </div>
-
           <div class="work-list-container">
-            <div class="work-list-item">
-              <div>01</div>
-              <div>ProjectA</div>
+            <div class="work-arrow work-left-arrow" id="WorkLeftArrow">
+              LEFT
             </div>
-            <div class="work-list-item">
-              <div>02</div>
-              <div>ProjectB</div>
+            <div class="work-arrow work-right-arrow" id="WorkRightArrow">
+              RIGHT
             </div>
-            <div class="work-list-item">
-              <div>03</div>
-              <div>ProjectC</div>
-            </div>
-            <div class="work-list-item">
-              <div>04</div>
-              <div>ProjectD</div>
+            <div class="work-list">
+              <div class="work-list-item">
+                <div>01</div>
+                <div>ProjectA</div>
+              </div>
+              <div class="work-list-item">
+                <div>02</div>
+                <div>ProjectB</div>
+              </div>
+              <div class="work-list-item">
+                <div>03</div>
+                <div>ProjectC</div>
+              </div>
+              <div class="work-list-item">
+                <div>04</div>
+                <div>ProjectD</div>
+              </div>
             </div>
           </div>
         </div>
@@ -222,12 +231,12 @@
     <!--------------------------   END main section   -------------------------->
 
     <!-- <script src="src/components/preloader.js"></script> -->
+    <script src="src/components/home.js"></script>
     <script src="src/components/menu.js"></script>
-    <script src="src/components/menu-drager.js"></script>
-    <script src="src/components/nav-links.js"></script>
+    <script src="src/components/menu-bubble.js"></script>
     <script src="src/components/reveal-items.js"></script>
     <script src="src/components/work.js"></script>
-    <script src="src/components/otwd.js"></script>
+    <script src="src/components/about.js"></script>
     <script></script>
   </body>
 </html>

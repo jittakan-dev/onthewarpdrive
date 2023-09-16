@@ -1,28 +1,22 @@
-// menu-drager.js
-
-const menuDrager = document.querySelector(".menu-drager");
-const menuDragerClick = menuDrager.querySelector(".menu-drager-click");
-const menuButton = document.querySelector(".menu-button");
-const menuButtonClick = document.querySelector(".menu-button-click");
-const sections = document.querySelectorAll("section");
+// menu-bubble.js
 
 let isDragging = false;
 
-menuDrager.addEventListener("mousedown", startDrag);
-menuDrager.addEventListener("touchstart", startDrag);
+menuBubble.addEventListener("mousedown", startDrag);
+menuBubble.addEventListener("touchstart", startDrag);
 
 function startDrag(e) {
-  e.preventDefault(); // Prevent default touch behavior
+  e.preventDefault();
 
   isDragging = true;
 
-  const menuDragerRect = menuDrager.getBoundingClientRect();
+  const menuBubbleRect = menuBubble.getBoundingClientRect();
   const menuButtonRect = menuButton.getBoundingClientRect();
 
-  const offsetX = menuDragerRect.width / 2;
-  const offsetY = menuDragerRect.height / 2;
+  const offsetX = menuBubbleRect.width / 2;
+  const offsetY = menuBubbleRect.height / 2;
 
-  menuDrager.classList.add("grabbing");
+  menuBubble.classList.add("grabbing");
 
   if (e.type === "mousedown") {
     document.addEventListener("mousemove", handleMouseMove);
@@ -35,15 +29,15 @@ function startDrag(e) {
   }
 
   function handleMouseMove(e) {
-    movemenuDrager(e.clientX, e.clientY);
+    movemenuBubble(e.clientX, e.clientY);
   }
 
   function handleTouchMove(e) {
     const touch = e.touches[0];
-    movemenuDrager(touch.clientX, touch.clientY);
+    movemenuBubble(touch.clientX, touch.clientY);
   }
 
-  function movemenuDrager(clientX, clientY) {
+  function movemenuBubble(clientX, clientY) {
     if (isDragging) {
       const newX = clientX - offsetX - menuButtonRect.width / 2;
       const newY = clientY - offsetY - menuButtonRect.height / 2;
@@ -51,7 +45,6 @@ function startDrag(e) {
       menuButton.style.left = `${newX}px`;
       menuButton.style.top = `${newY}px`;
 
-      // Check which section the menu button is currently in
       sections.forEach((section) => {
         const sectionRect = section.getBoundingClientRect();
         if (
@@ -80,7 +73,7 @@ function startDrag(e) {
     document.removeEventListener("mouseup", handleMouseUp);
     document.removeEventListener("touchmove", handleTouchMove);
     document.removeEventListener("touchend", handleTouchEnd);
-    menuDrager.classList.remove("grabbing");
+    menuBubble.classList.remove("grabbing");
   }
 }
 
@@ -97,23 +90,23 @@ window.addEventListener("scroll", () => {
   });
 });
 
-menuDrager.addEventListener("mouseup", () => {
+menuBubble.addEventListener("mouseup", () => {
   isDragging = false;
 });
 
-menuDrager.addEventListener("touchend", () => {
+menuBubble.addEventListener("touchend", () => {
   isDragging = false;
 });
 
-menuDrager.addEventListener("mouseover", () => {
+menuBubble.addEventListener("mouseover", () => {
   const activeSection = getActiveSection();
   if (activeSection) {
-    menuDrager.querySelector(".menu-drager-click").style.backgroundColor =
+    menuBubble.querySelector(".bubble-handle-button").style.backgroundColor =
       "#db460c";
   }
 });
 
-menuDrager.addEventListener("mouseout", () => {
+menuBubble.addEventListener("mouseout", () => {
   const activeSection = getActiveSection();
   if (activeSection) {
     updateColors(activeSection);
@@ -136,19 +129,19 @@ function getActiveSection() {
 
 function updateColors(sectionId) {
   if (sectionId === "home") {
-    menuDrager.style.backgroundColor = "#EBEBEB";
+    menuBubble.style.backgroundColor = "#EBEBEB";
     menuButtonClick.style.backgroundColor = "#EBEBEB";
     menuButton.style.backgroundColor = "#EBEBEB";
-    menuDragerClick.style.backgroundColor = "#171717";
+    menuBubbleClick.style.backgroundColor = "#171717";
   } else if (sectionId === "work") {
-    menuDrager.style.backgroundColor = "#171717";
+    menuBubble.style.backgroundColor = "#171717";
     menuButtonClick.style.backgroundColor = "#171717";
     menuButton.style.backgroundColor = "#171717";
-    menuDragerClick.style.backgroundColor = "#EBEBEB";
+    menuBubbleClick.style.backgroundColor = "#EBEBEB";
   } else if (sectionId === "about") {
-    menuDrager.style.backgroundColor = "#313232";
-    menuButtonClick.style.backgroundColor = "#313232";
-    menuButton.style.backgroundColor = "#313232";
-    menuDragerClick.style.backgroundColor = "#bebebe";
+    menuBubble.style.backgroundColor = "#039fa8";
+    menuButtonClick.style.backgroundColor = "#039fa8";
+    menuButton.style.backgroundColor = "#039fa8";
+    menuBubbleClick.style.backgroundColor = "#bebebe";
   }
 }

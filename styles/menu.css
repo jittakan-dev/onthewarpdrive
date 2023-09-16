@@ -1,6 +1,6 @@
-/* menu-drager, the Hamburger icon styles */
-.menu-button-click,
-.menu-button {
+/* bubble-handle, the Hamburger icon styles */
+.bubble-button-hamburger,
+.bubble-button {
   position: fixed;
   right: 1%; /* Adjusted to have a consistent position */
   top: 50%;
@@ -14,18 +14,23 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.menu-button {
+.bubble-button {
   right: 2%;
   top: 12%; /* 40%% Center vertically */
 }
-.menu-drager,
-.menu-drager-click {
+.bubble-handle,
+.bubble-handle-button {
   position: absolute;
   border-radius: 50%;
   z-index: 40;
 }
-.menu-drager {
+.bubble-handle {
   width: 5vh;
   height: 5vh;
   background-color: #ebebeb;
@@ -34,23 +39,23 @@
   transform: translate(0, 70%);
   cursor: grab;
 }
-.menu-drager.grabbing {
+.bubble-handle.grabbing {
   cursor: grabbing;
 }
-.menu-drager-click {
+.bubble-handle-button {
   width: 2.6vh;
   height: 2.6vh;
   background-color: #171717;
   transform: translate(50%, 50%);
 }
-.menu-drager-click:hover,
-.menu-drager-click:active {
+.bubble-handle-button:hover,
+.bubble-handle-button:active {
   background-color: #db460c;
 }
 /*Float menu button and hamburger-icon */
-.menu-button .hamburger-icon,
-.menu-button .hamburger-icon::before,
-.menu-button .hamburger-icon::after {
+.bubble-button .hamburger-icon,
+.bubble-button .hamburger-icon::before,
+.bubble-button .hamburger-icon::after {
   content: "";
   position: absolute;
   height: 2.4px;
@@ -58,18 +63,18 @@
   /* background-color: #EBEBEB; */
   transition: all 0.4s;
 }
-.menu-button .hamburger-icon {
+.bubble-button .hamburger-icon {
   width: 50%;
   position: relative;
 }
-.menu-button .hamburger-icon::before,
-.menu-button .hamburger-icon::after {
+.bubble-button .hamburger-icon::before,
+.bubble-button .hamburger-icon::after {
   width: 100%;
 }
-.menu-button .hamburger-icon::before {
+.bubble-button .hamburger-icon::before {
   top: -1.5vh; /* Adjusted for responsiveness */
 }
-.menu-button .hamburger-icon::after {
+.bubble-button .hamburger-icon::after {
   bottom: -1.5vh; /* Adjusted for responsiveness */
 }
 .menu-active .hamburger-icon {
@@ -84,9 +89,9 @@
   transform: rotate(-45deg);
 }
 /* Change color on hover */
-.menu-button:hover .hamburger-icon,
-.menu-button:hover .hamburger-icon::before,
-.menu-button:hover .hamburger-icon::after {
+.bubble-button:hover .hamburger-icon,
+.bubble-button:hover .hamburger-icon::before,
+.bubble-button:hover .hamburger-icon::after {
   background-color: #e74c3c;
 }
 /* Make the middle .hamburger-icon transparent on hover of .menu-active */
@@ -139,6 +144,11 @@
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   margin-top: 2%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .hidden-menu nav a:hover,
 .hidden-menu div a:hover {

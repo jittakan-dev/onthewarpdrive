@@ -1,53 +1,109 @@
-//----------------------------//
 const workTypes = document.querySelectorAll(".work-menu-types div");
+const workListContainer = document.querySelector(".work-list");
+const workListItem = document.querySelector(".work-list-item");
+const workLeftArrow = document.getElementById("WorkLeftArrow");
+const workRightArrow = document.getElementById("WorkRightArrow");
+
 workTypes.forEach((item) => {
   item.addEventListener("click", () => {
     workTypes.forEach((item) => item.classList.remove("active"));
     item.classList.add("active");
   });
 });
-//----------------------------//
-const workListScrollable = document.querySelector(".work-list-container");
-const workMenuContainer = document.querySelector(".work-menu-container");
-const workListItems = document.querySelectorAll(".work-list-item");
-const firstWorkListItem = workListItems[0];
-const lastWorkListItem = workListItems[workListItems.length - 1];
 
-workListScrollable.addEventListener("wheel", (event) => {
-  const scrollTop = workListScrollable.scrollTop;
-  const scrollHeight = workListScrollable.scrollHeight;
-  const clientHeight = workListScrollable.clientHeight;
+let isSectionDragging = false;
+let startX;
+let scrollLeft;
+let momentumScrollTimeout;
 
-  const firstItemTop = firstWorkListItem.offsetTop;
-  const lastItemBottom =
-    lastWorkListItem.offsetTop + lastWorkListItem.clientHeight;
+const snapToItem = () => {
+  const itemWidth = workListContainer.clientWidth / 2;
 
-  if (scrollTop === 0 && event.deltaY < 0) {
-    // Scrolled to the top of the first .work-list-item, remove preventDefault
-    workListScrollable.removeEventListener("wheel", preventDefaultScroll);
-  } else if (scrollTop + clientHeight >= scrollHeight - 1 && event.deltaY > 0) {
-    // Scrolled to the bottom of the last .work-list-item, remove preventDefault
-    workListScrollable.removeEventListener("wheel", preventDefaultScroll);
-  } else {
-    event.preventDefault();
-    workListScrollable.scrollBy({
-      top: event.deltaY < 0 ? -30 : 30,
-    });
+  const nearestItem =
+    Math.round(workListContainer.scrollLeft / itemWidth) * itemWidth;
+
+  workListContainer.scrollTo({
+    left: nearestItem,
+    behavior: "smooth",
+  });
+};
+
+workListContainer.addEventListener("mousedown", (e) => {
+  isSectionDragging = true;
+  startX = e.pageX - workListContainer.offsetLeft;
+  scrollLeft = workListContainer.scrollLeft;
+  workListContainer.classList.add("grabbing");
+});
+
+workListContainer.addEventListener("mouseleave", () => {
+  if (isSectionDragging) {
+    snapToItem();
+    workListContainer.classList.remove("grabbing");
+    isSectionDragging = false;
   }
 });
 
-function preventDefaultScroll(event) {
-  event.preventDefault();
-}
-
-// Give focus to the parent container when scrolling is allowed
-workListScrollable.addEventListener("scroll", () => {
-  const scrollTop = workListScrollable.scrollTop;
-  if (
-    scrollTop === 0 ||
-    scrollTop + workListScrollable.clientHeight >=
-      workListScrollable.scrollHeight
-  ) {
-    workMenuContainer.focus();
+workListContainer.addEventListener("mouseup", () => {
+  if (isSectionDragging) {
+    snapToItem();
+    workListContainer.classList.remove("grabbing");
+    isSectionDragging = false;
   }
+});
+
+workListContainer.addEventListener("mousemove", (e) => {
+  if (!isSectionDragging) return;
+  e.preventDefault();
+  const x = e.pageX - workListContainer.offsetLeft;
+  const walk = x - startX;
+  workListContainer.scrollLeft = scrollLeft - walk;
+});
+
+// workListContainer.addEventListener("touchstart", (e) => {
+//   isSectionDragging = true;
+//   startX = e.touches[0].pageX - workListContainer.offsetLeft;
+//   scrollLeft = workListContainer.scrollLeft;
+//   workListContainer.classList.add("grabbing");
+// });
+
+// workListContainer.addEventListener("touchmove", (e) => {
+//   if (!isSectionDragging) return;
+//   e.preventDefault();
+//   const x = e.touches[0].pageX - workListContainer.offsetLeft;
+//   const walk = x - startX;
+//   workListContainer.scrollLeft = scrollLeft - walk;
+// });
+
+// workListContainer.addEventListener("touchend", () => {
+//   if (isSectionDragging) {
+//     snapToItem();
+//     workListContainer.classList.remove("grabbing");
+//     isSectionDragging = false;
+//   }
+// });
+workLeftArrow.addEventListener("click", () => {
+  const itemWidth = workListItem.offsetWidth;
+  const currentScrollLeft = workListContainer.scrollLeft;
+
+  const newScrollLeft = Math.max(currentScrollLeft - itemWidth, 0);
+
+  workListContainer.scrollTo({
+    left: newScrollLeft,
+    behavior: "smooth",
+  });
+});
+
+workRightArrow.addEventListener("click", () => {
+  const itemWidth = workListItem.offsetWidth;
+  const currentScrollLeft = workListContainer.scrollLeft;
+
+  const newScrollLeft = Math.min(
+    currentScrollLeft + itemWidth,
+    workListContainer.scrollWidth - workListContainer.clientWidth
+  );
+
+  workListContainer.scrollTo({
+    left: newScrollLeft,
+    behavior: "smooth",
+  });
 });

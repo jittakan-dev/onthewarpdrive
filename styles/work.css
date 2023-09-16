@@ -8,21 +8,20 @@
   align-items: center;
 }
 .work-menu-header {
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 90vw;
   height: auto;
+  position: relative;
 }
 .work-menu-title {
   font-size: 3.7rem;
   font-weight: 700;
-  /* font-family: "UbuntuBold"; */
 }
 .selectedBr {
   display: none;
 }
-/*- START Work Menu Types - Application - Mobile Application - Data Anal5pxysis -*/
 .work-menu-types {
-  margin: 2% 0 2% 0;
+  margin: 1.5% 0 1.5% 0;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -68,59 +67,69 @@
 .work-menu-types div.active:first-child::before {
   --transform-origin: right;
 }
-/*- END Work Menu Types - Application - Mobile Application - Data Analysis -*/
-/*- Work Menu Main -*/
-/* .work-list-container {
-  margin-top: 0;
-  width: 90vw;
-  height: 80%;
-  background-color: #e74c3c;
-}
-
-.work-list-group {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  position: absolute;
-  top: 0;
-}
-.work-list-item {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  color: wheat;
-  font-size: 3rem;
-  border-right: 2px solid wheat;
-} */
 
 .work-list-container {
-  margin-top: 0;
   width: 90vw;
-  height: 80%;
+  height: 100%;
   background-color: #e74c3c;
   overflow: hidden;
-}
-.work-list-item {
-  flex: 0 0 50%;
-  height: 50%;
-  width: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  color: wheat;
-  font-size: 3rem;
+  align-items: center;
 }
 
-/*- Work List Item -*/
+.work-left-arrow,
+.work-right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.work-left-arrow {
+  left: 0;
+}
+
+.work-right-arrow {
+  right: 0;
+}
+
+.work-list {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.work-list-item {
+  flex: 0 0 50%;
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: wheat;
+  font-size: 3rem;
+  background-color: cornflowerblue;
+  scroll-snap-align: start;
+}
+
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    line-height: 90%;
   }
   .selectedBr {
     display: contents;
@@ -151,6 +160,9 @@
   .work-menu-types div::before {
     bottom: -18%;
     width: 16%;
+  }
+  .work-list-item {
+    min-width: 100%; /* Ensure each item takes at least 50% of the container width */
   }
 }
 /*-----------------END MEDIA RESPONSIVE--------------------*/
