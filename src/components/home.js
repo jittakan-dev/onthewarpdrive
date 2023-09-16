@@ -37,47 +37,43 @@ window.addEventListener(
   { passive: false }
 );
 
-window.addEventListener("touchstart", (e) => {
+// Add touch event handling
+window.addEventListener("touchstart", function (e) {
   touchStartY = e.touches[0].clientY;
 });
 
-window.addEventListener("touchmove", (e) => {
-  e.preventDefault();
-  if (touchStartY !== null) {
-    const touchEndY = e.touches[0].clientY;
-    const deltaY = touchEndY - touchStartY;
+window.addEventListener("touchmove", function (e) {
+  if (touchStartY === null) {
+    return;
+  }
 
-    const scrollDirection = deltaY > 0 ? 1 : -1;
+  const touchEndY = e.touches[0].clientY;
+  const deltaY = touchEndY - touchStartY;
+  touchStartY = touchEndY;
 
-    let nearestSectionIndex = -1;
-    let minDistance = Number.MAX_VALUE;
+  let nearestSectionIndex = -1;
+  let minDistance = Number.MAX_VALUE;
 
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-      const distance = Math.abs(rect.top);
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    const distance = Math.abs(rect.top);
 
-      if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
-        nearestSectionIndex = index;
-        minDistance = distance;
-      } else if (
-        scrollDirection === -1 &&
-        rect.top < 0 &&
-        distance < minDistance
-      ) {
-        nearestSectionIndex = index;
-        minDistance = distance;
-      }
-    });
-
-    if (nearestSectionIndex !== -1) {
-      sections[nearestSectionIndex].scrollIntoView({
-        behavior: "smooth",
-      });
+    if (deltaY > 0 && rect.top > 0 && distance < minDistance) {
+      nearestSectionIndex = index;
+      minDistance = distance;
+    } else if (deltaY < 0 && rect.top < 0 && distance < minDistance) {
+      nearestSectionIndex = index;
+      minDistance = distance;
     }
-    touchStartY = touchEndY;
+  });
+
+  if (nearestSectionIndex !== -1) {
+    sections[nearestSectionIndex].scrollIntoView({
+      behavior: "smooth",
+    });
   }
 });
 
-window.addEventListener("touchend", () => {
+window.addEventListener("touchend", function () {
   touchStartY = null;
 });
