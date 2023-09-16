@@ -1,13 +1,20 @@
-// preloader.js
-
 // window.addEventListener("load", function () {
-//   setTimeout(function () {
-//     // Hide the preloader when all page resources are loaded
-//     const header = document.querySelector("header");
-//     const main = document.querySelector("main");
-//     const preloader = document.querySelector("#preloader");
-//     header.style.display = "block";
-//     main.style.display = "block";
-//     preloader.style.display = "none";
-//   }, 2); // 2000 milliseconds (2 seconds)
+//   const preLoader = document.getElementById("pre-loader");
+//   const loaderText = document.getElementById("loader-text");
+//   const loaderBar = document.getElementById("loader-bar");
+
+//   // Simulate loading with a timer (you can replace this with actual loading logic)
+//   let percentage = 0;
+//   const interval = setInterval(function () {
+//     percentage += 1;
+//     loaderText.textContent = `Loading... ${percentage}%`;
+//     loaderBar.style.width = `${percentage}%`;
+
+//     if (percentage >= 100) {
+//       clearInterval(interval);
+//       setTimeout(function () {
+//         preLoader.style.display = "none";
+//       }, 500); // Hide pre-loader after a delay (adjust as needed)
+//     }
+//   }, 50); // Adjust the interval as needed
 // });

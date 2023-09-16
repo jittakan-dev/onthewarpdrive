@@ -92,6 +92,11 @@
   align-items: center;
   cursor: pointer;
   z-index: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .work-left-arrow {
