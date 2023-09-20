@@ -17,7 +17,7 @@ let scrollLeft;
 let momentumScrollTimeout;
 
 const snapToItem = () => {
-  const itemWidth = workListContainer.clientWidth / 2;
+  const itemWidth = workListContainer.clientWidth;
 
   const nearestItem =
     Math.round(workListContainer.scrollLeft / itemWidth) * itemWidth;
@@ -59,28 +59,28 @@ workListContainer.addEventListener("mousemove", (e) => {
   workListContainer.scrollLeft = scrollLeft - walk;
 });
 
-// workListContainer.addEventListener("touchstart", (e) => {
-//   isSectionDragging = true;
-//   startX = e.touches[0].pageX - workListContainer.offsetLeft;
-//   scrollLeft = workListContainer.scrollLeft;
-//   workListContainer.classList.add("grabbing");
-// });
+/*------------------*/
+workListContainer.addEventListener("scroll", () => {
+  const firstChild = workListItem.firstElementChild;
+  if (firstChild && workListContainer.scrollLeft <= firstChild.clientWidth) {
+    workLeftArrow.style.display = "none";
+  } else {
+    workLeftArrow.style.display = "block";
+  }
+  const lastChild = workListItem.lastElementChild;
+  if (
+    lastChild &&
+    workListContainer.scrollLeft >=
+      workListContainer.scrollWidth -
+        workListContainer.clientWidth -
+        lastChild.clientWidth
+  ) {
+    workRightArrow.style.display = "none";
+  } else {
+    workRightArrow.style.display = "block";
+  }
+});
 
-// workListContainer.addEventListener("touchmove", (e) => {
-//   if (!isSectionDragging) return;
-//   e.preventDefault();
-//   const x = e.touches[0].pageX - workListContainer.offsetLeft;
-//   const walk = x - startX;
-//   workListContainer.scrollLeft = scrollLeft - walk;
-// });
-
-// workListContainer.addEventListener("touchend", () => {
-//   if (isSectionDragging) {
-//     snapToItem();
-//     workListContainer.classList.remove("grabbing");
-//     isSectionDragging = false;
-//   }
-// });
 workLeftArrow.addEventListener("click", () => {
   const itemWidth = workListItem.offsetWidth;
   const currentScrollLeft = workListContainer.scrollLeft;
@@ -91,6 +91,7 @@ workLeftArrow.addEventListener("click", () => {
     left: newScrollLeft,
     behavior: "smooth",
   });
+  updateCurrentWork();
 });
 
 workRightArrow.addEventListener("click", () => {
@@ -106,4 +107,24 @@ workRightArrow.addEventListener("click", () => {
     left: newScrollLeft,
     behavior: "smooth",
   });
+  updateCurrentWork();
 });
+
+function updateCurrentWork() {
+  const itemWidth = workListContainer.clientWidth;
+  const currentScrollLeft = workListContainer.scrollLeft;
+  const currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1; // Add 1 to convert from 0-based index to 1-based index
+  const currentWorkSpan = document.querySelector(".current-work");
+  currentWorkSpan.textContent = currentWork;
+}
+
+workListContainer.addEventListener("scroll", updateCurrentWork);
+updateCurrentWork();
+
+const totalWorkSpan = document.querySelector(".total-work");
+function updateTotalWork() {
+  const workListItems = document.querySelectorAll(".work-list-item");
+  const totalWork = workListItems.length;
+  totalWorkSpan.textContent = totalWork;
+}
+updateTotalWork();

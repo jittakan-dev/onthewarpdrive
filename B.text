@@ -1,0 +1,198 @@
+        //HTML
+          <div class="work-list-container">
+            <div class="work-arrow work-left-arrow" id="WorkLeftArrow">
+              <i class="fa-solid fa-angles-left"></i>
+            </div>
+            <div class="work-arrow work-right-arrow" id="WorkRightArrow">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="work-list">
+              <div class="work-list-item">
+                <div>01</div>
+                <div>ProjectA</div>
+              </div>
+              <div class="work-list-item">
+                <div>02</div>
+                <div>ProjectB</div>
+              </div>
+              <div class="work-list-item">
+                <div>03</div>
+                <div>ProjectC</div>
+              </div>
+              <div class="work-list-item">
+                <div>04</div>
+                <div>ProjectD</div>
+              </div>
+            </div>
+          </div>
+//css
+.work-list-container {
+  width: 90vw;
+  height: 100%;
+  background-color: #e74c3c;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.work-left-arrow,
+.work-right-arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  color: #e74c3c;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.work-left-arrow {
+  left: 0;
+}
+
+.work-right-arrow {
+  right: 0;
+}
+
+.work-list {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.work-list-item {
+  flex: 0 0 50%;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: wheat;
+  font-size: 3rem;
+  background-color: cornflowerblue;
+  scroll-snap-align: start;
+}
+//js
+const workTypes = document.querySelectorAll(".work-menu-types div");
+const workListContainer = document.querySelector(".work-list");
+const workListItem = document.querySelector(".work-list-item");
+const workLeftArrow = document.getElementById("WorkLeftArrow");
+const workRightArrow = document.getElementById("WorkRightArrow");
+
+workTypes.forEach((item) => {
+  item.addEventListener("click", () => {
+    workTypes.forEach((item) => item.classList.remove("active"));
+    item.classList.add("active");
+  });
+});
+
+let isSectionDragging = false;
+let startX;
+let scrollLeft;
+let momentumScrollTimeout;
+
+const snapToItem = () => {
+  const itemWidth = workListContainer.clientWidth / 2;
+
+  const nearestItem =
+    Math.round(workListContainer.scrollLeft / itemWidth) * itemWidth;
+
+  workListContainer.scrollTo({
+    left: nearestItem,
+    behavior: "smooth",
+  });
+};
+
+workListContainer.addEventListener("mousedown", (e) => {
+  isSectionDragging = true;
+  startX = e.pageX - workListContainer.offsetLeft;
+  scrollLeft = workListContainer.scrollLeft;
+  workListContainer.classList.add("grabbing");
+});
+
+workListContainer.addEventListener("mouseleave", () => {
+  if (isSectionDragging) {
+    snapToItem();
+    workListContainer.classList.remove("grabbing");
+    isSectionDragging = false;
+  }
+});
+
+workListContainer.addEventListener("mouseup", () => {
+  if (isSectionDragging) {
+    snapToItem();
+    workListContainer.classList.remove("grabbing");
+    isSectionDragging = false;
+  }
+});
+
+workListContainer.addEventListener("mousemove", (e) => {
+  if (!isSectionDragging) return;
+  e.preventDefault();
+  const x = e.pageX - workListContainer.offsetLeft;
+  const walk = x - startX;
+  workListContainer.scrollLeft = scrollLeft - walk;
+});
+
+workLeftArrow.addEventListener("click", () => {
+  const itemWidth = workListItem.offsetWidth;
+  const currentScrollLeft = workListContainer.scrollLeft;
+
+  const newScrollLeft = Math.max(currentScrollLeft - itemWidth, 0);
+
+  workListContainer.scrollTo({
+    left: newScrollLeft,
+    behavior: "smooth",
+  });
+});
+
+workRightArrow.addEventListener("click", () => {
+  const itemWidth = workListItem.offsetWidth;
+  const currentScrollLeft = workListContainer.scrollLeft;
+
+  const newScrollLeft = Math.min(
+    currentScrollLeft + itemWidth,
+    workListContainer.scrollWidth - workListContainer.clientWidth
+  );
+
+  workListContainer.scrollTo({
+    left: newScrollLeft,
+    behavior: "smooth",
+  });
+});
+
+
+// workListContainer.addEventListener("touchstart", (e) => {
+//   isSectionDragging = true;
+//   startX = e.touches[0].pageX - workListContainer.offsetLeft;
+//   scrollLeft = workListContainer.scrollLeft;
+//   workListContainer.classList.add("grabbing");
+// });
+
+// workListContainer.addEventListener("touchmove", (e) => {
+//   if (!isSectionDragging) return;
+//   e.preventDefault();
+//   const x = e.touches[0].pageX - workListContainer.offsetLeft;
+//   const walk = x - startX;
+//   workListContainer.scrollLeft = scrollLeft - walk;
+// });
+
+// workListContainer.addEventListener("touchend", () => {
+//   if (isSectionDragging) {
+//     snapToItem();
+//     workListContainer.classList.remove("grabbing");
+//     isSectionDragging = false;
+//   }
+// });

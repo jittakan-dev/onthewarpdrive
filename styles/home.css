@@ -7,11 +7,8 @@ html {
   height: auto;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 main {
-  scroll-snap-type: y mandatory;
 }
 /*-----------------START HOME SECTION--------------------*/
 .home_section_1 {
@@ -50,7 +47,6 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  scroll-snap-align: start;
 }
 #home {
   height: auto;
