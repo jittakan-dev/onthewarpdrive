@@ -1,6 +1,7 @@
-// menu-bubble.js
-
 let isDragging = false;
+let menuBubbleRect;
+let menuButtonRect;
+let viewportRect;
 
 menuBubble.addEventListener("mousedown", startDrag);
 menuBubble.addEventListener("touchstart", startDrag);
@@ -10,8 +11,14 @@ function startDrag(e) {
 
   isDragging = true;
 
-  const menuBubbleRect = menuBubble.getBoundingClientRect();
-  const menuButtonRect = menuButton.getBoundingClientRect();
+  menuBubbleRect = menuBubble.getBoundingClientRect();
+  menuButtonRect = menuButton.getBoundingClientRect();
+  viewportRect = {
+    top: 0,
+    left: 0,
+    right: window.innerWidth,
+    bottom: window.innerHeight,
+  };
 
   const offsetX = menuBubbleRect.width / 2;
   const offsetY = menuBubbleRect.height / 2;
@@ -29,22 +36,33 @@ function startDrag(e) {
   }
 
   function handleMouseMove(e) {
-    movemenuBubble(e.clientX, e.clientY);
+    moveMenuBubble(e.clientX, e.clientY);
   }
 
   function handleTouchMove(e) {
     const touch = e.touches[0];
-    movemenuBubble(touch.clientX, touch.clientY);
+    moveMenuBubble(touch.clientX, touch.clientY);
   }
 
-  function movemenuBubble(clientX, clientY) {
+  function moveMenuBubble(clientX, clientY) {
     if (isDragging) {
-      const newX = clientX - offsetX - menuButtonRect.width / 2;
-      const newY = clientY - offsetY - menuButtonRect.height / 2;
+      let newX = clientX - offsetX - menuButtonRect.width / 2;
+      let newY = clientY - offsetY - menuButtonRect.height / 2;
+
+      // Ensure the menuBubble stays within the viewport
+      newX = Math.max(
+        viewportRect.left,
+        Math.min(viewportRect.right - menuBubbleRect.width * 1.77, newX)
+      );
+      newY = Math.max(
+        viewportRect.top,
+        Math.min(viewportRect.bottom - menuBubbleRect.height * 1.5, newY)
+      );
 
       menuButton.style.left = `${newX}px`;
       menuButton.style.top = `${newY}px`;
 
+      // Check if the menuBubble is within a section and update colors if needed
       sections.forEach((section) => {
         const sectionRect = section.getBoundingClientRect();
         if (

@@ -71,7 +71,7 @@
 .work-list-container {
   width: 90vw;
   height: 100%;
-  background-color: #e74c3c;
+  background-color: #039fa8;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -85,7 +85,7 @@
   transform: translateY(0);
   width: auto;
   height: auto;
-  color: #da4737;
+  color: wheat;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
@@ -101,36 +101,49 @@
 .no-of-work span:nth-child(2) {
   font-weight: lighter;
 }
-.work-left-arrow,
-.work-right-arrow {
-  padding: 0.5%;
+.work-arrow-group {
   position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
+  bottom: 20%;
+  right: 0;
+  transform: translateY(0);
   width: auto;
   height: auto;
-  color: #da4737;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #ebebeb;
+  /* background-color: rgb(235, 235, 235, 0.7); */
+  padding: 0 1.2% 0 1%;
+  border-top-left-radius: 12%;
+  border-bottom-left-radius: 12%;
+  margin-right: -1%;
+}
+.work-left-arrow,
+.work-right-arrow {
+  width: auto;
+  height: auto;
+  color: #e74c3c;
   font-size: 3rem;
   cursor: pointer;
-  z-index: 1;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  transition: all 3s ease-in;
 }
-
 .work-left-arrow {
-  left: 0;
-  display: none;
+  color: #dca8a2;
+  cursor: default;
 }
 
-.work-right-arrow {
-  right: 0;
+.moreWork {
+  color: #da4737;
+  cursor: pointer;
 }
-.work-left-arrow:hover,
-.work-right-arrow:hover {
-  color: #171717;
+.noMoreWork {
+  color: #dca8a2;
+  cursor: default;
 }
 
 .work-list {
@@ -152,7 +165,7 @@
   align-items: flex-end;
   color: wheat;
   font-size: 3rem;
-  background-color: cornflowerblue;
+  /* background-color: #039fa8; */
   scroll-snap-align: start;
 }
 
@@ -170,6 +183,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: end;
+    font-size: 1.2rem;
   }
   .work-menu-types div {
     text-align: end;
@@ -196,9 +210,14 @@
     font-size: 2rem;
     border: none;
   }
+  .work-arrow-group {
+    /* top: 80%; */
+    padding: 0 1.2% 0 4%;
+    bottom: 30%;
+  }
   .work-left-arrow,
   .work-right-arrow {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 /*-----------------END MEDIA RESPONSIVE--------------------*/

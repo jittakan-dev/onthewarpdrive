@@ -63,10 +63,13 @@ workListContainer.addEventListener("mousemove", (e) => {
 workListContainer.addEventListener("scroll", () => {
   const firstChild = workListItem.firstElementChild;
   if (firstChild && workListContainer.scrollLeft <= firstChild.clientWidth) {
-    workLeftArrow.style.display = "none";
+    workLeftArrow.classList.remove("moreWork");
+    workLeftArrow.classList.add("noMoreWork");
   } else {
-    workLeftArrow.style.display = "block";
+    workLeftArrow.classList.remove("noMoreWork");
+    workLeftArrow.classList.add("moreWork");
   }
+
   const lastChild = workListItem.lastElementChild;
   if (
     lastChild &&
@@ -75,9 +78,11 @@ workListContainer.addEventListener("scroll", () => {
         workListContainer.clientWidth -
         lastChild.clientWidth
   ) {
-    workRightArrow.style.display = "none";
+    workRightArrow.classList.remove("moreWork");
+    workRightArrow.classList.add("noMoreWork");
   } else {
-    workRightArrow.style.display = "block";
+    workRightArrow.classList.remove("noMoreWork");
+    workRightArrow.classList.add("moreWork");
   }
 });
 
@@ -115,7 +120,13 @@ function updateCurrentWork() {
   const currentScrollLeft = workListContainer.scrollLeft;
   const currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1; // Add 1 to convert from 0-based index to 1-based index
   const currentWorkSpan = document.querySelector(".current-work");
-  currentWorkSpan.textContent = currentWork;
+  const workListItems = document.querySelectorAll(".work-list-item");
+  const totalWork = workListItems.length;
+  if (currentWork > totalWork) {
+    currentWork = totalWork;
+  } else {
+    currentWorkSpan.textContent = currentWork;
+  }
 }
 
 workListContainer.addEventListener("scroll", updateCurrentWork);

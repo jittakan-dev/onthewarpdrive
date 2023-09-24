@@ -85,11 +85,13 @@
               <span>/</span>
               <span class="total-work"></span>
             </div>
-            <div class="work-arrow work-left-arrow" id="WorkLeftArrow">
-              <i class="fa-solid fa-left-long"></i>
-            </div>
-            <div class="work-arrow work-right-arrow" id="WorkRightArrow">
-              <i class="fa-solid fa-right-long"></i>
+            <div class="work-arrow-group">
+              <div class="work-left-arrow">
+                <i class="fa-solid fa-left-long" id="WorkLeftArrow"></i>
+              </div>
+              <div class="work-right-arrow">
+                <i class="fa-solid fa-right-long" id="WorkRightArrow"></i>
+              </div>
             </div>
             <div class="work-list">
               <div class="work-list-item">
@@ -119,9 +121,43 @@
         <div class="about-container">
           <!-----------------------------------------------START ABOUT PANEL ------------------------------>
           <div class="about-content">
-            <!-- <div class="about-panel-layer">FOR ANIMATE</div> -->
+            <!-- <div class="about-intro">FOR ANIMATE</div> -->
             <div class="about-panel" id="about-panel">
-              <div class="about-to-right" id="AboutToRight">Right</div>
+              <div class="about-weare-group">
+                <div class="about-weare-box">
+                  <span class="about-weare-headline">
+                    What we do defines who we are.
+                  </span>
+                  <p>
+                    As a collective of technologists, OTWD collaboratively
+                    constructs digital service infrastructure for future
+                    startups and small to medium-sized companies, both in
+                    Bangkok and the online realm.<br /><br />
+                    We excel in crafting concise, creative, and distinctive
+                    system designs for web, mobile, and data analytics
+                    solutions. For more details, please refer to the PDF link.
+                  </p>
+                </div>
+                <div class="about-service-box">
+                  <span>Web</span>
+                  <span>Mobile</span>
+                  <span>Analytics</span>
+                </div>
+              </div>
+
+              <div class="about-title-group">
+                <i
+                  class="fa-solid fa-arrow-right right-arrow"
+                  id="AboutToRight"
+                ></i>
+                <div class="about-title-box">
+                  <div class="about-title-tag"><p>ABOUT</p></div>
+                  <div class="about-title-otwd">OTWD</div>
+                </div>
+                <div class="about-quote-box">Foundation for <br />startups</div>
+              </div>
+
+              <!-- <div class="about-to-right" id="AboutToRight">Right</div> -->
             </div>
           </div>
           <!-----------------------------------------------END ABOUT PANEL ------------------------------>
@@ -129,11 +165,24 @@
           <div class="about-content">
             <div class="contact-panel" id="contact-panel">
               <div class="contact-channel-container">
-                <div class="contact-space-group">
-                  <div class="about-to-left" id="AboutToLeft">Left</div>
-                </div>
-                <div class="contact-title-group">
+                <div class="contact-intro"></div>
+                <div class="contact-us-group">
+                  <div class="contact-reachus-box">
+                    <i
+                      class="fa-solid fa-arrow-left left-arrow"
+                      id="AboutToLeft"
+                    ></i>
+                    <div class="contact-reachus">
+                      REACH <br />
+                      US
+                    </div>
+                    <div class="contact-tag"><p>CONTACT</p></div>
+                  </div>
                   <div class="contact-type-box">
+                    <div class="contact-quote">
+                      For business inquiries, alliances and coffee meet up,
+                      Please contact us
+                    </div>
                     <div class="contact-type-button-group">
                       <div
                         class="contactTypeButtonActive contact-type-button"

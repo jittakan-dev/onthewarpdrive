@@ -34,15 +34,121 @@
   /* background-color: crimson; */
 }
 #about-panel {
-  width: 95%;
-  padding: 0 0 5% 5%;
+  width: 90%;
+  padding: 0 5% 5% 5%;
 }
 #contact-panel {
 }
-
+.about-to-right,
+.about-to-left {
+  cursor: pointer;
+}
 /*--------------------END about-panel ----------------*/
-/*--------------------START contact-panel ----------------*/
-/*----------------START contact-title-group -------------*/
+/*--------------------START about-intro ----------------*/
+.about-intro {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+}
+/*--------------------END about-intro ----------------*/
+/*--------------------------------------START about-service ---------------------------------*/
+/*-------------- START about WEARE n SERVICE ----------------*/
+.about-weare-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  font-size: 1.1rem;
+  /* background-color: darkgreen; */
+}
+.about-weare-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about-weare-box p:not(.about-weare-headline) {
+  padding-right: 5%;
+  border-right: 2px solid black;
+}
+.about-weare-headline {
+  font-size: 1.4rem;
+}
+.about-service-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+}
+.about-service-box span {
+  margin-right: 2%;
+  padding: 0.2% 1% 0.2% 1%;
+  cursor: pointer;
+  color: wheat;
+  background-color: #e74c3c;
+  border: 2px solid wheat;
+}
+.about-service-box span:hover {
+  color: #171717;
+  background-color: #e74c3c;
+  border: 2px solid #171717;
+}
+/*-------------- END about WEARE n SERVICE ----------------*/
+/*-------------- START about TITLE ----------------*/
+.about-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  font-family: "UbuntuBold";
+  width: 100%;
+  /* background-color: lightgreen; */
+}
+.right-arrow {
+  text-align: right;
+  width: auto;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #039fa8;
+  color: #171717;
+  padding: 1% 2% 1% 2%;
+  border-radius: 20%;
+  margin: 1% 0 1% 0;
+}
+.about-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: chartreuse; */
+}
+.about-title-tag {
+  font-size: 0.6rem;
+  width: auto;
+  transform: rotate(-90deg);
+  padding-top: 6%;
+  /* background-color: crimson; */
+}
+.about-title-otwd {
+  text-align: right;
+  width: 100%;
+  font-size: 7rem;
+  letter-spacing: -4px;
+  line-height: 90%;
+  font-weight: bolder;
+  font-family: "Ubuntu";
+  /* background-color: darkblue; */
+}
+.about-quote-box {
+  text-align: right;
+  width: 100%;
+  font-size: 2.8rem;
+  color: wheat;
+  line-height: 110%;
+  /* background-color: coral; */
+}
+/*-------------- END about TITLE ----------------*/
+/*--------------------------------------END about-service ---------------------------------*/
+/*--------------------------------------START contact-panel -------------------------------*/
+/*----------------START contact-channel-container -------------*/
 .contact-panel {
   width: 100%;
   height: 100%;
@@ -57,7 +163,64 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e74c3c;
+  /* background-color: darkviolet; */
+}
+.contact-intro {
+  width: 50%;
+  height: 100%;
+}
+.contact-us-group {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.contact-reachus-box {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: start; /*-adjust arrow and contact-*/
+  width: 100%;
+}
+.left-arrow {
+  text-align: right;
+  width: auto;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #039fa8;
+  color: #171717;
+  padding: 1% 2% 1% 2%;
+  border-radius: 20%;
+  margin: 2% 5% 0 0;
+}
+.contact-reachus {
+  font-weight: 900;
+  text-align: right;
+  font-size: 3rem;
+  line-height: 100%;
+}
+.contact-tag {
+  margin-top: 6%;
+  font-size: 0.6rem;
+  width: auto;
+  transform: rotate(-90deg);
+}
+.contact-type-box {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5%;
+}
+.contact-quote {
+  border-top: 2px solid #171717;
+  border-bottom: 2px solid #171717;
+  padding: 5% 0 5% 0;
+  font-size: 1.1rem;
 }
 .contact-type-button-group {
   width: 100%;
@@ -65,7 +228,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  padding-bottom: 10%;
 }
 .contact-type-button {
   font-size: 1.2rem;
@@ -88,8 +250,8 @@
   cursor: default;
   pointer-events: none;
 }
-/*----------------END contact-title-group -------------*/
-/**----------START CONTACT FORM GROUP----------------**/
+/*----------------END contact-channel-container -------------*/
+/**----------START contact-address-container----------------**/
 .contact-address-container {
   width: 50%;
   height: 100%;
@@ -214,7 +376,6 @@
   color: wheat;
 }
 /*-----------------------END-sociallink------------*/
-
 /*---------------------------END CONTACT HUB----------------*/
 /*---------------------------START CONTACT FORM----------------*/
 .form-group {
@@ -279,8 +440,8 @@
   color: #e74c3c;
 }
 /*---------------------------END CONTACT FORM----------------*/
-/**----------END CONTACT FORM GROUP----------------**/
-/*--------------------END contact-panel ----------------*/
+/**----------END contact-address-container----------------**/
+/*--------------------------------------END contact-panel -------------------------------*/
 .reveal-item {
   width: 80%;
   padding: 20px;
@@ -297,11 +458,71 @@
     flex-direction: column;
   }
   .about-panel {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: end;
   }
+  /*-------------- START about TITLE ----------------*/
+  .about-title-group {
+    /* background-color: lightgreen; */
+  }
+  .right-arrow {
+    margin-top: 5%;
+    order: 3;
+    font-size: 1.6rem;
+  }
+  .about-title-box {
+    /* background-color: chartreuse; */
+  }
+  .about-title-tag {
+    font-size: 0.6rem;
+  }
+  .about-title-otwd {
+    font-size: 5rem;
+  }
+  .about-quote-box {
+    font-size: 2rem;
+  }
+  /*-------------- END about TITLE ----------------*/
+  /*-------------- START about WEARE n SERVICE ----------------*/
+  .about-weare-group {
+    font-size: 1rem;
+    text-align: start;
+    text-justify: inter-word;
+    margin: 5% 0 10% 0;
+  }
+
+  .about-weare-box p:not(.about-weare-headline) {
+    padding: 0;
+    border: none;
+  }
+  .about-weare-headline {
+    font-size: 1.2rem;
+  }
+  .about-service-box {
+    align-items: center;
+    justify-content: start;
+    margin-top: 2%;
+  }
+  .about-service-box span {
+    font-size: 1.1rem;
+    padding: 2%;
+    margin: 1% 2% 1% 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .about-service-box span:last-child {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  /*-------------- END about WEARE n SERVICE ----------------*/
   /*----------CONTACT---------*/
   .contact-panel {
     flex-direction: column;
+  }
+  .contact-intro {
+    display: none;
   }
   .contact-channel-container {
     width: 100%;
@@ -311,6 +532,83 @@
     top: 0;
     overflow: hidden;
   }
+  /*----------------ccwcwcwcwcw----------------------*/
+
+  .contact-us-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background-color: #171717;
+    border-bottom: 2px dotted #e74c3c;
+  }
+  .contact-reachus-box {
+    margin-top: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: start; /*-adjust arrow and contact-*/
+    width: 100%;
+    color: #e74c3c;
+  }
+  .left-arrow {
+    font-size: 1.6rem;
+  }
+  .contact-reachus {
+    font-weight: 900;
+    text-align: right;
+    font-size: 2.5rem;
+    line-height: 100%;
+  }
+  .contact-type-box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5%;
+    color: #e74c3c;
+  }
+  .contact-quote {
+    border-top: 1px solid #e74c3c;
+    border-bottom: 1px solid #e74c3c;
+    font-size: 1rem;
+    /* display: none; */
+  }
+  .contact-type-button-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+  .contact-type-button {
+    font-size: 1.1rem;
+    padding: 2%;
+    margin: 1% 0% 1% 0;
+    background-color: #171717;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+  }
+  #otwdHubButton {
+    margin-right: 1%;
+  }
+  #writeUsButton {
+    margin-left: 1%;
+  }
+  .contact-type-button:hover {
+    background-color: #171717;
+    color: wheat;
+    border: 2px solid wheat;
+  }
+  .contactTypeButtonActive {
+    background-color: #e74c3c;
+    color: #171717;
+    border: 2px solid #e74c3c;
+  }
+  /*----------------ccwcwcwcwcw----------------------*/
   .contact-address-container {
     width: 100%;
     height: 100%;
@@ -322,7 +620,6 @@
     height: 45vh;
     display: block;
     top: 0;
-    background-color: red;
   }
   /*-------------------------------HUB-------------*/
   .hub-group {
@@ -354,15 +651,13 @@
   .envelope-mail {
     margin-right: 4%;
   }
-  .contact-social-link {
-    font-size: 2.4rem;
-    padding: 0;
-  }
   .contact-link {
     display: flex;
     flex-direction: row;
     padding: 5% 0 5% 0;
     width: 100%;
+    border-top: 1px dotted wheat;
+    border-bottom: 1px dotted wheat;
   }
   .contact-link div {
     margin-bottom: 0;
@@ -370,6 +665,12 @@
   }
   .contact-link-text {
     display: none;
+  }
+
+  .contact-social-link {
+    font-size: 2.4rem;
+    padding: 0;
+    color: wheat;
   }
   .social-link {
     margin: 0;
