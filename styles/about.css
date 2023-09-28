@@ -125,6 +125,7 @@
   width: auto;
   transform: rotate(-90deg);
   padding-top: 6%;
+  font-family: "Ubuntu";
   /* background-color: crimson; */
 }
 .about-title-otwd {
@@ -207,6 +208,7 @@
   font-size: 0.6rem;
   width: auto;
   transform: rotate(-90deg);
+  font-family: "Ubuntu";
 }
 .contact-type-box {
   width: 90%;

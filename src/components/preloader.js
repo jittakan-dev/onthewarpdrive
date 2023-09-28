@@ -7,21 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const navHeader = document.getElementById("nav-header");
   const mainBody = document.getElementById("main-body");
 
-  // Use the Performance API to track page load progress
-  const totalResources = performance.getEntriesByType("resource").length;
-  let loadedResources = 0;
+  let percent = 0;
 
   function updateLoader() {
-    loadedResources++;
-
-    // Calculate the percentage
-    const percent = Math.min((loadedResources / totalResources) * 100, 100);
-
     mainLoader.style.width = percent + "%";
-    percentLoader.textContent = percent.toFixed(0) + "%";
+    percentLoader.textContent = percent + "%";
 
     if (percent < 100) {
-      window.requestAnimationFrame(updateLoader);
+      percent++;
+      window.webkitRequestAnimationFrame(updateLoader);
     } else {
       setTimeout(function () {
         percentLoader.style.transform = "translateY(150%)";
@@ -52,8 +46,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Start the loader when the page is loaded
-  window.addEventListener("load", function () {
-    updateLoader();
-  });
+  setTimeout(updateLoader, 0);
 });
