@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="styles/preload.css" /> -->
+    <link rel="stylesheet" href="styles/preload.css" />
     <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/work.css" />
@@ -21,12 +21,16 @@
   </head>
   <body>
     <!-----------   START preload   --------------->
-    <!-- <div id="pre-loader">
-      <div id="loader-container">
-        <div id="loader-text">Loading...</div>
-        <div id="loader-bar"></div>
+    <div class="pre-loader">
+      <div class="main-group">
+        <div class="main-loader">
+          <div class="percent-loader">0</div>
+          <div class="line-loader" id="line-loader">
+            <span>-</span><span>-</span>
+          </div>
+        </div>
       </div>
-    </div> -->
+    </div>
     <!-----------   END preload   --------------->
     <!-----------   START header menu   --------------->
     <header>
@@ -287,7 +291,7 @@
     <!-----------   end otwd section   --------------->
     <!--------------------------   END main section   -------------------------->
 
-    <!-- <script src="src/components/preloader.js"></script> -->
+    <script src="src/components/preloader.js"></script>
     <script src="src/components/home.js"></script>
     <script src="src/components/menu.js"></script>
     <script src="src/components/menu-bubble.js"></script>

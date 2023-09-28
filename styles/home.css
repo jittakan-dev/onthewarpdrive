@@ -8,8 +8,7 @@ html {
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-main {
-}
+
 /*-----------------START HOME SECTION--------------------*/
 .home_section_1 {
   /* background: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkwOTJ8&ixlib=rb-4.0.3&q=85"); */
@@ -42,11 +41,15 @@ main {
 .content-section {
   width: 100vw;
   height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 #home {
   height: auto;
