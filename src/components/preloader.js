@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainLoader = document.querySelector(".main-loader");
   const lineLoader = document.querySelector(".line-loader");
   const percentLoader = document.querySelector(".percent-loader");
+  const navHeader = document.getElementById("nav-header");
+  const mainBody = document.getElementById("main-body");
+
   // const sections = document.querySelectorAll(".content-section");
   let percent = 0;
 
@@ -35,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         preLoader.style.transition = "opacity 0.5s";
         preLoader.style.opacity = 0;
+        navHeader.style.display = "block";
+        mainBody.style.display = "block";
         setTimeout(function () {
           preLoader.style.display = "none";
         }, 1000);

@@ -89,9 +89,7 @@ html {
     -webkit-align-items: flex-start;
   }
 }
-
-.element-to-animate {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+#nav-header,
+#main-body {
+  display: none;
 }
