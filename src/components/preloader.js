@@ -7,16 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const navHeader = document.getElementById("nav-header");
   const mainBody = document.getElementById("main-body");
 
-  // const sections = document.querySelectorAll(".content-section");
-  let percent = 0;
+  // Use the Performance API to track page load progress
+  const totalResources = performance.getEntriesByType("resource").length;
+  let loadedResources = 0;
 
   function updateLoader() {
+    loadedResources++;
+
+    // Calculate the percentage
+    const percent = Math.min((loadedResources / totalResources) * 100, 100);
+
     mainLoader.style.width = percent + "%";
-    percentLoader.textContent = percent + "%";
+    percentLoader.textContent = percent.toFixed(0) + "%";
 
     if (percent < 100) {
-      percent++;
-      window.webkitRequestAnimationFrame(updateLoader);
+      window.requestAnimationFrame(updateLoader);
     } else {
       setTimeout(function () {
         percentLoader.style.transform = "translateY(150%)";
@@ -47,5 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  setTimeout(updateLoader, 0);
+  // Start the loader when the page is loaded
+  window.addEventListener("load", function () {
+    updateLoader();
+  });
 });
