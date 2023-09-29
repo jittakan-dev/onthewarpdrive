@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("readystatechange", (event) => {
   const preLoader = document.querySelector(".pre-loader");
   const mainGroup = document.querySelector(".main-group");
   const mainLoader = document.querySelector(".main-loader");
@@ -16,7 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (percent < 100) {
       percent++;
       window.webkitRequestAnimationFrame(updateLoader);
-    } else {
+      if (percent <= 30 || event.target.readyState === "loading") {
+        percentLoader.style.color = "#06686d";
+      } else if (
+        (percent > 30 && percent <= 60) ||
+        event.target.readyState === "loading"
+      ) {
+        percentLoader.style.color = "#d5321f";
+      } else if (event.target.readyState === "interactive") {
+        percentLoader.style.color = "#d5321f";
+      }
+    } else if (percent === 100 && event.target.readyState !== "complete") {
+      percentLoader.style.color = "black";
+      percentLoader.textContent = "xxx";
+    } else if (percent === 100 && event.target.readyState === "complete") {
+      percentLoader.style.color = "black";
       setTimeout(function () {
         percentLoader.style.transform = "translateY(150%)";
         setTimeout(function () {

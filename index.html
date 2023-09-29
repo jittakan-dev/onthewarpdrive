@@ -323,7 +323,17 @@
     <script src="src/components/reveal-items.js"></script>
     <script src="src/components/work.js"></script>
     <script src="src/components/about.js"></script>
-    <script></script>
+    <script>
+      document.addEventListener("readystatechange", (event) => {
+        if (event.target.readyState === "loading") {
+          console.log("loading");
+        } else if (event.target.readyState === "interactive") {
+          console.log("interactive");
+        } else if (event.target.readyState === "complete") {
+          console.log("complete");
+        }
+      });
+    </script>
   </body>
 </html>
 <!--<div class="reveal-item">Item 1</div>-->
