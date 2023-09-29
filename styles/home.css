@@ -1,14 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
-body,
-html {
-  font-family: "Ubuntu";
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 /*-----------------START HOME SECTION--------------------*/
 .home_section_1 {
   /* background: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkwOTJ8&ixlib=rb-4.0.3&q=85"); */

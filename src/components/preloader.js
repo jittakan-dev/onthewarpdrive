@@ -8,7 +8,7 @@ document.addEventListener("readystatechange", (event) => {
   const mainBody = document.getElementById("main-body");
 
   let percent = 0;
-
+  mainLoader.height = mainLoader.getClientRects.height;
   function updateLoader() {
     mainLoader.style.width = percent + "%";
     percentLoader.textContent = percent + "%";
@@ -16,22 +16,34 @@ document.addEventListener("readystatechange", (event) => {
     if (percent < 100) {
       percent++;
       window.webkitRequestAnimationFrame(updateLoader);
+      var colors = ["#3f0902", "#01484b", "#093601"];
+      var colorIndex = 0;
+      setInterval(function () {
+        percentLoader.style.color = colors[colorIndex];
+        colorIndex = (colorIndex + 1) % colors.length;
+      }, 0.5);
       if (percent <= 30 || event.target.readyState === "loading") {
-        percentLoader.style.color = "#06686d";
       } else if (
         (percent > 30 && percent <= 60) ||
         event.target.readyState === "loading"
       ) {
-        percentLoader.style.color = "#d5321f";
       } else if (event.target.readyState === "interactive") {
-        percentLoader.style.color = "#d5321f";
       }
     } else if (percent === 100 && event.target.readyState !== "complete") {
-      percentLoader.style.color = "black";
-      percentLoader.textContent = "xxx";
+      let isBlinking = false;
+      function blinkText() {
+        if (isBlinking) {
+          percentLoader.textContent = "ooo";
+        } else {
+          percentLoader.textContent = "xxx";
+        }
+
+        isBlinking = !isBlinking;
+      }
+      setInterval(blinkText, 400);
     } else if (percent === 100 && event.target.readyState === "complete") {
-      percentLoader.style.color = "black";
       setTimeout(function () {
+        percentLoader.style.color = "black";
         percentLoader.style.transform = "translateY(150%)";
         setTimeout(function () {
           percentLoader.style.opacity = 0;
