@@ -146,20 +146,26 @@ function getActiveSection() {
 }
 
 function updateColors(sectionId) {
+  navLinks.forEach((link) => {
+    link.classList.remove("navLinkActive");
+  });
   if (sectionId === "home") {
     menuBubble.style.backgroundColor = "#EBEBEB";
     menuButtonClick.style.backgroundColor = "#EBEBEB";
     menuButton.style.backgroundColor = "#EBEBEB";
     menuBubbleClick.style.backgroundColor = "#171717";
+    navLinks[0].classList.add("navLinkActive"); // Add active class to HOME link
   } else if (sectionId === "work") {
     menuBubble.style.backgroundColor = "#171717";
     menuButtonClick.style.backgroundColor = "#171717";
     menuButton.style.backgroundColor = "#171717";
     menuBubbleClick.style.backgroundColor = "#EBEBEB";
+    navLinks[1].classList.add("navLinkActive");
   } else if (sectionId === "about") {
     menuBubble.style.backgroundColor = "#039fa8";
     menuButtonClick.style.backgroundColor = "#039fa8";
     menuButton.style.backgroundColor = "#039fa8";
     menuBubbleClick.style.backgroundColor = "#bebebe";
+    navLinks[2].classList.add("navLinkActive");
   }
 }

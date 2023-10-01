@@ -10,9 +10,9 @@
   position: absolute;
   top: 0;
   width: 90vw;
-  height: 95vh;
-  background-color: #e74c3c;
+  height: 94vh;
   display: flex;
+  border-bottom: 1vh solid #171717;
 }
 .about-content {
   width: 100%;
@@ -31,6 +31,7 @@
   justify-content: center;
   align-items: end;
   padding-bottom: 5%;
+  background-color: #e74c3c;
   /* background-color: crimson; */
 }
 #about-panel {
@@ -112,7 +113,7 @@
   color: #171717;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
-  margin: 1% 0 1% 0;
+  margin: 1% 0 2% 0;
 }
 .about-title-box {
   display: flex;
@@ -122,6 +123,7 @@
 }
 .about-title-tag {
   font-size: 0.6rem;
+  font-weight: bolder;
   width: auto;
   transform: rotate(-90deg);
   padding-top: 6%;
@@ -139,11 +141,12 @@
   /* background-color: darkblue; */
 }
 .about-quote-box {
+  margin-top: 4%;
   text-align: right;
   width: 100%;
   font-size: 2.8rem;
   color: wheat;
-  line-height: 110%;
+  line-height: 100%;
   font-family: "Ubuntu";
   /* background-color: coral; */
 }
@@ -158,6 +161,7 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-color: #e74c3c;
 }
 .contact-channel-container {
   width: 50%;
@@ -209,6 +213,7 @@
   width: auto;
   transform: rotate(-90deg);
   font-family: "Ubuntu";
+  font-weight: bolder;
 }
 .contact-type-box {
   width: 90%;
@@ -467,6 +472,7 @@
   }
   /*-------------- START about TITLE ----------------*/
   .about-title-group {
+    margin-bottom: 0;
     /* background-color: lightgreen; */
   }
   .right-arrow {

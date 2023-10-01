@@ -8,10 +8,13 @@
   align-items: center;
 }
 .work-menu-header {
-  margin-top: 5vh;
   width: 90vw;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 2% 0 1% 0;
 }
 .work-menu-title {
   font-size: 3.7rem;
@@ -21,53 +24,36 @@
   display: none;
 }
 .work-menu-types {
-  margin: 1.5% 0 1.5% 0;
-  font-size: 1.2rem;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .work-menu-types div {
-  margin-left: 2%;
+  margin-right: 7%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  position: relative;
-  color: #666666;
-}
-.work-menu-types div:hover {
-  color: #222;
 }
 .work-menu-types div:last-child {
-  margin-right: 1%;
+  margin-right: 0;
 }
-.work-menu-types div::before {
-  content: "";
-  position: absolute;
-  width: 40%;
-  height: 14%;
-  background-color: #e74c3c; /* Change this color to your desired underline color */
-  bottom: -35%;
-  right: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
+.work-menu-types span {
+  margin-right: 7%;
 }
-.work-menu-types div.active {
-  color: #da4737; /* Set the text color for active items */
+.workTypeActive {
+  color: #da4737;
 }
-.work-menu-types div.active::before {
-  transform: scaleX(1);
-  transform-origin: var(--transform-origin);
-}
-.work-menu-types div.active:last-child::before {
-  --transform-origin: right;
-}
-
-.work-menu-types div.active:first-child::before {
-  --transform-origin: right;
-}
-
 .work-list-container {
   width: 90vw;
   height: 100%;
@@ -172,39 +158,39 @@
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 90%;
   }
   .selectedBr {
     display: contents;
   }
-  .work-menu-types {
-    margin: 4% 0 2% 0;
+  .work-menu-header {
+    margin: 5% 0 2.5% 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    align-items: start;
+    /* background-color: #da4737; */
+  }
+  .work-menu-title {
+    width: 100%;
+    /* background-color: chartreuse; */
+  }
+  .work-menu-types {
+    margin-top: 4%;
+    padding-top: 4%;
+    width: 100%;
+    align-self: end;
+    justify-content: end;
     align-items: end;
     font-size: 1.2rem;
+    border-top: 1px dashed #171717;
+    /* background-color: brown; */
   }
   .work-menu-types div {
-    text-align: end;
-    width: 100%;
-    margin-bottom: 4%;
-    border-bottom: 1px solid #666666;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-text-select: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
+    margin-right: 2.5%;
   }
-  .work-menu-types div.active {
-    color: #e74c3c; /* Set the text color for active items */
-    border-bottom: 1px solid #e74c3c;
-    width: 100%;
-    user-select: none;
-  }
-  .work-menu-types div::before {
-    bottom: -18%;
-    width: 16%;
+  .work-menu-types span {
+    margin-right: 2.5%;
   }
   .no-of-work {
     font-size: 2rem;

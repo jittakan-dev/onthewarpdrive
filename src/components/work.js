@@ -6,8 +6,8 @@ const workRightArrow = document.getElementById("WorkRightArrow");
 
 workTypes.forEach((item) => {
   item.addEventListener("click", () => {
-    workTypes.forEach((item) => item.classList.remove("active"));
-    item.classList.add("active");
+    workTypes.forEach((item) => item.classList.remove("workTypeActive"));
+    item.classList.add("workTypeActive");
   });
 });
 
@@ -118,15 +118,20 @@ workRightArrow.addEventListener("click", () => {
 function updateCurrentWork() {
   const itemWidth = workListContainer.clientWidth;
   const currentScrollLeft = workListContainer.scrollLeft;
-  const currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1; // Add 1 to convert from 0-based index to 1-based index
+  let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1; // Add 1 to convert from 0-based index to 1-based index
   const currentWorkSpan = document.querySelector(".current-work");
   const workListItems = document.querySelectorAll(".work-list-item");
   const totalWork = workListItems.length;
+
+  if (isNaN(currentWork) || currentWork <= 0) {
+    currentWork = 1; // Set a default value if currentWork is NaN or less than or equal to 0
+  }
+
   if (currentWork > totalWork) {
     currentWork = totalWork;
-  } else {
-    currentWorkSpan.textContent = currentWork;
   }
+
+  currentWorkSpan.textContent = currentWork;
 }
 
 workListContainer.addEventListener("scroll", updateCurrentWork);
