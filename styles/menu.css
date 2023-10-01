@@ -137,12 +137,14 @@
   height: 100vh;
   width: 46%;
   padding: 2%;
+  /* background-color: #db460c; */
 }
 .otwdLogo {
   padding: 5%;
   position: relative;
   width: 80%;
   height: auto;
+  /* background-color: rebeccapurple; */
 }
 /* .otwdLogoGIF {
   position: relative;
