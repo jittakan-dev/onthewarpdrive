@@ -32,12 +32,12 @@ html {
 .pre-layer-1 {
   width: 100vw;
   height: 50vh;
-  background-color: #016065;
+  background-color: #ed4634;
 }
 .pre-layer-2 {
   width: 100vw;
   height: 50vh;
-  background-color: #c31401;
+  background-color: #016065;
 }
 .fade-out {
   top: -120%;
