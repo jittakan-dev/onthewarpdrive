@@ -94,7 +94,6 @@
   background-color: transparent;
 }
 /* Menu */
-
 .hidden-menu {
   position: fixed;
   left: 0;
@@ -129,13 +128,11 @@
   align-items: center;
   height: 100vh;
   width: 50%;
-  /* padding: 2%; */
-  /* background-color: cadetblue; */
 }
 .otwdLogo {
   padding: 5%;
   position: relative;
-  width: 25%;
+  width: 20%;
   height: auto;
   /* background-color: red; */
 }
@@ -167,9 +164,9 @@
     font-size: 2.6rem;
   }
   .otwdLogo {
-    padding: 5%;
+    padding: 10%;
     position: relative;
-    width: 90%;
+    width: 80%;
     height: auto;
   }
 }

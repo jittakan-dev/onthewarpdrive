@@ -124,7 +124,7 @@ function updateCurrentWork() {
   const totalWork = workListItems.length;
 
   if (isNaN(currentWork) || currentWork <= 0) {
-    currentWork = 1; // Set a default value if currentWork is NaN or less than or equal to 0
+    currentWork = 1;
   }
 
   if (currentWork > totalWork) {

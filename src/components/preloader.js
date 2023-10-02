@@ -10,19 +10,19 @@ const fadeElements = document.querySelectorAll(".fade-element");
 // const otwdSvgDocument = otwdSvg.contentDocument;
 // const fadeElements = otwdSvgDocument.querySelectorAll(".fade-element");
 /*FOR FILE .SVG*/
+let stopAnimation = false;
 
-function applyRandomAnimation(stop = false) {
+function neonAnimate(elements, animationClass, stop = false) {
   if (stop) {
     stopAnimation = true;
     return;
   }
-
-  fadeElements.forEach((element) => {
+  elements.forEach((element) => {
     const randomDelay = Math.random() * 3 + 1;
     setTimeout(() => {
       if (stopAnimation) return;
-      element.classList.toggle("neon");
-      applyRandomAnimation();
+      element.classList.toggle(animationClass);
+      neonAnimate(elements, animationClass);
     }, randomDelay * 500);
   });
 }
@@ -35,28 +35,25 @@ function animateCircles() {
   });
 }
 
-let stopAnimation = false;
-
 function onDocumentReadyStateChange() {
   switch (document.readyState) {
     case "loading":
     case "interactive":
     case "complete":
-      applyRandomAnimation();
+      neonAnimate(fadeElements, "neon", false);
       if (document.readyState === "complete") animateCircles();
       break;
   }
 }
-
 document.addEventListener("readystatechange", onDocumentReadyStateChange);
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    applyRandomAnimation();
+    neonAnimate(fadeElements, "neon", false);
     setTimeout(() => {
       animateCircles();
       setTimeout(() => {
-        applyRandomAnimation(true);
+        neonAnimate(fadeElements, "neon", true);
         navHeader.style.display = mainBody.style.display = "block";
         setTimeout(() => {
           preLoader.classList.add("fade-out");

@@ -54,7 +54,6 @@ html {
   height: 100%;
   overflow: hidden;
   opacity: 1;
-  /* background-color: chocolate; */
 }
 .otwd-circle {
   position: absolute;
@@ -81,7 +80,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 8%;
   height: auto;
   filter: sepia(100%);
   z-index: 10;
