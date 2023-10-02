@@ -32,7 +32,6 @@
   align-items: end;
   padding-bottom: 5%;
   background-color: #e74c3c;
-  /* background-color: crimson; */
 }
 #about-panel {
   width: 90%;
@@ -60,7 +59,6 @@
   align-items: start;
   justify-content: end;
   font-size: 1.1rem;
-  /* background-color: darkgreen; */
 }
 .about-weare-box {
   width: 100%;
@@ -102,7 +100,6 @@
   justify-content: center;
   font-family: "UbuntuBold";
   width: 100%;
-  /* background-color: lightgreen; */
 }
 .right-arrow {
   text-align: right;
@@ -119,7 +116,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: chartreuse; */
 }
 .about-title-tag {
   font-size: 0.6rem;
@@ -128,7 +124,6 @@
   transform: rotate(-90deg);
   padding-top: 6%;
   font-family: "Ubuntu";
-  /* background-color: crimson; */
 }
 .about-title-otwd {
   text-align: right;
@@ -138,7 +133,6 @@
   line-height: 90%;
   font-weight: bolder;
   font-family: "Ubuntu";
-  /* background-color: darkblue; */
 }
 .about-quote-box {
   margin-top: 4%;
@@ -148,7 +142,6 @@
   color: wheat;
   line-height: 100%;
   font-family: "Ubuntu";
-  /* background-color: coral; */
 }
 /*-------------- END about TITLE ----------------*/
 /*--------------------------------------END about-service ---------------------------------*/
@@ -169,7 +162,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: darkviolet; */
 }
 .contact-intro {
   width: 50%;
@@ -187,7 +179,7 @@
   margin-top: 20%;
   display: flex;
   justify-content: center;
-  align-items: start; /*-adjust arrow and contact-*/
+  align-items: start;
   width: 100%;
 }
 .left-arrow {
@@ -473,15 +465,11 @@
   /*-------------- START about TITLE ----------------*/
   .about-title-group {
     margin-bottom: 0;
-    /* background-color: lightgreen; */
   }
   .right-arrow {
     margin-top: 5%;
     order: 3;
     font-size: 1.6rem;
-  }
-  .about-title-box {
-    /* background-color: chartreuse; */
   }
   .about-title-tag {
     font-size: 0.6rem;
@@ -542,7 +530,6 @@
     overflow: hidden;
   }
   /*----------------ccwcwcwcwcw----------------------*/
-
   .contact-us-group {
     width: 100%;
     height: 100%;
@@ -557,7 +544,7 @@
     margin-top: 10%;
     display: flex;
     justify-content: end;
-    align-items: start; /*-adjust arrow and contact-*/
+    align-items: start;
     width: 100%;
     color: #e74c3c;
   }
@@ -584,7 +571,6 @@
     border-top: 1px solid #e74c3c;
     border-bottom: 1px solid #e74c3c;
     font-size: 1rem;
-    /* display: none; */
   }
   .contact-type-button-group {
     width: 100%;
@@ -637,7 +623,6 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    /* background-color: violet; */
   }
   .we-are-here {
     display: none;
@@ -690,7 +675,6 @@
   .form-group {
     width: 85%;
     height: 50vh;
-    /* background-color: greenyellow; */
   }
   .input-group {
     font-size: 1rem;

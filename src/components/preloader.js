@@ -2,8 +2,14 @@ const preLoader = document.querySelector(".pre-loader");
 const navHeader = document.getElementById("nav-header");
 const mainBody = document.getElementById("main-body");
 const otwdLoader = document.querySelector(".otwd-loader");
-const fadeElements = document.querySelectorAll(".fade-element");
 const otwdCircles = document.querySelectorAll(".otwd-circle");
+const fadeElements = document.querySelectorAll(".fade-element");
+
+/*FOR FILE .SVG*/
+// const otwdSvg = document.getElementById("otwd-svg-id");
+// const otwdSvgDocument = otwdSvg.contentDocument;
+// const fadeElements = otwdSvgDocument.querySelectorAll(".fade-element");
+/*FOR FILE .SVG*/
 
 function applyRandomAnimation(stop = false) {
   if (stop) {

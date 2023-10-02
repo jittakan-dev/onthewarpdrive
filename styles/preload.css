@@ -78,7 +78,10 @@ html {
 .OTWDColorLogo {
   top: -15%;
   position: relative;
-  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
   height: auto;
   filter: sepia(100%);
   z-index: 10;
@@ -105,85 +108,3 @@ html {
     width: 25%;
   }
 }
-/* 
-@keyframes moveO {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(50%, 0);
-  }
-  50% {
-    transform: translate(50%, 50%);
-  }
-  75% {
-    transform: translate(0%, 50%);
-  }
-  100% {
-    transform: translate(0%, 0%);
-  }
-}
-
-#animatedO {
-  animation: moveO 3s linear infinite;
-}
-@keyframes moveT {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(0, 50%);
-  }
-  50% {
-    transform: translate(-50%, 50%);
-  }
-  75% {
-    transform: translate(-50%, 0);
-  }
-  100% {
-    transform: translate(0%, 0%);
-  }
-}
-#animatedT {
-  animation: moveT 3s linear infinite;
-}
-@keyframes moveD {
-  0% {
-    transform: translate(50%, 50%);
-  }
-  25% {
-    transform: translate(0, 50%);
-  }
-  50% {
-    transform: translate(0, 0);
-  }
-  75% {
-    transform: translate(50%, 0);
-  }
-  100% {
-    transform: translate(50%, 50%);
-  }
-}
-#animatedD {
-  animation: moveD 3s linear infinite;
-}
-@keyframes moveW {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(0, -50%);
-  }
-  50% {
-    transform: translate(50%, -50%);
-  }
-  75% {
-    transform: translate(50%, 0);
-  }
-  100% {
-    transform: translate(0%, 0%);
-  }
-}
-#animatedW {
-  animation: moveW 3s linear infinite;
-} */
