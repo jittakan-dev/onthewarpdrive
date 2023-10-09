@@ -1,54 +1,134 @@
-/*-----------------START HOME SECTION--------------------*/
-.home_section_1 {
-  /* background: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkwOTJ8&ixlib=rb-4.0.3&q=85"); */
-  min-height: 100vh;
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide overflow to enable custom scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.home_section_2 {
-  /* background: url("https://images.unsplash.com/photo-1683526513573-1effdda48dcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODUyNTkzMzB8&ixlib=rb-4.0.3&q=85"); */
-  min-height: 100vh;
+.home-whale-container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
 }
-.home_section_1,
-.home_section_2 {
+.stacked-div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initial position outside the container */
+  transition: left 0.3s ease-in-out; /* Transition for sliding effect */
+  margin: 0;
+  padding: 0;
+}
+.base-stacked-div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #171717;
+}
+/* Style for div1 */
+.div1 {
+  z-index: 1;
+  background-color: blue;
+}
+
+/* Styles for other divs with different z-index */
+.div2 {
+  z-index: 2;
+  background-color: green;
+}
+
+.div3 {
+  z-index: 3;
+  background-color: gold;
+}
+
+.div4 {
+  z-index: 4;
+  background-color: crimson;
+}
+
+.div5 {
+  z-index: 5;
+  background-color: cyan;
+}
+
+.whale-scrollbar {
+  position: absolute;
+  bottom: 10%;
+  margin: 0;
+  height: 20px; /* Adjust the height as needed */
+  width: 60%; /* Set the width to 60% */
+  background: rgb(58, 53, 43);
+  z-index: 98;
+}
+.whale-scrollbar-handle {
+  position: absolute;
+  left: 0;
+  width: 20%; /* Adjust the width as needed */
+  height: 100%;
+  background: #025f64;
+  z-index: 99;
+  cursor: pointer;
+}
+#div1 {
+  background: url("../images/1.jpg");
   position: relative;
   opacity: 1;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /*fixed: parallax - scroll: regular scrolling*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-attachment: fixed;
+  z-index: 1;
 }
-.hv_span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: white;
+#div2 {
+  background: url("../images/2.jpg");
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+#div3 {
+  background: url("../images/3.jpg");
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 3;
+}
+#div4 {
+  background: url("../images/4.jpg");
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 4;
+}
+#div5 {
+  background: url("../images/5.jpg");
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 5;
+}
+#div6 {
+  background: url("../images/6.jpg");
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 6;
 }
 /*-----------------END HOME SECTION--------------------*/
-/*-----------------START content SECTION--------------------*/
-.content-section {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100vw;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-#home {
-  height: auto;
-  background-color: #171717;
-}
-#work {
-  min-height: 100vh;
-  background-color: #ebebeb;
-}
-#about {
-  background-color: #bebebe;
-}
-/*-----------------END content SECTION--------------------*/

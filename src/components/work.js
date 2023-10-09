@@ -118,7 +118,7 @@ workRightArrow.addEventListener("click", () => {
 function updateCurrentWork() {
   const itemWidth = workListContainer.clientWidth;
   const currentScrollLeft = workListContainer.scrollLeft;
-  let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1; // Add 1 to convert from 0-based index to 1-based index
+  let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1;
   const currentWorkSpan = document.querySelector(".current-work");
   const workListItems = document.querySelectorAll(".work-list-item");
   const totalWork = workListItems.length;

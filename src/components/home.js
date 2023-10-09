@@ -1,57 +1,52 @@
-const sections = document.querySelectorAll(".content-section");
+// JavaScript code for pushing and popping divs
+const stack = document.querySelectorAll(".stacked-div");
+const scrollContainer = document.querySelector(".whale-scrollbar");
+const scrollbarHandle = document.querySelector(".whale-scrollbar-handle");
 
-let scrolling = false;
+function updateScrollbar() {
+  const numPushedDivs = document.querySelectorAll(".stacked-div.pushed").length;
+  const totalDivs = stack.length + numPushedDivs;
+  const scrollPercentage = (numPushedDivs / totalDivs) * 100;
+  scrollbarHandle.style.left = scrollPercentage + "%";
+}
 
-window.addEventListener(
-  "wheel",
-  function (e) {
-    if (scrolling) return;
-    const scrollDirection = e.deltaY > 0 ? 1 : -1;
-    let nearestSectionIndex = -1;
-    let minDistance = Number.MAX_VALUE;
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-      const distance = Math.abs(rect.top);
+scrollbarHandle.addEventListener("mousedown", (e) => {
+  e.preventDefault();
 
-      if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
-        nearestSectionIndex = index;
-        minDistance = distance;
-      } else if (
-        scrollDirection === -1 &&
-        rect.top < 0 &&
-        distance < minDistance
-      ) {
-        nearestSectionIndex = index;
-        minDistance = distance;
+  const startX = e.clientX;
+  const handleLeft = scrollbarHandle.offsetLeft;
+
+  document.addEventListener("mousemove", onMouseMove);
+  document.addEventListener("mouseup", onMouseUp);
+
+  function onMouseMove(e) {
+    const dx = e.clientX - startX;
+    const newLeft = Math.min(
+      Math.max(handleLeft + dx, 0),
+      scrollContainer.clientWidth - scrollbarHandle.clientWidth
+    );
+    scrollbarHandle.style.left = newLeft + "px";
+
+    // Update the stack based on the scrollbar position
+    const scrollPercentage =
+      (newLeft / (scrollContainer.clientWidth - scrollbarHandle.clientWidth)) *
+      100;
+    const numDivsToShow = Math.ceil(
+      (scrollPercentage / 100) * (stack.length + 1)
+    ); // Plus one for the initially pushed div (div1)
+    stack.forEach((div, index) => {
+      if (index < numDivsToShow - 1) {
+        div.style.left = "0";
+        div.classList.add("pushed");
+      } else {
+        div.style.left = "-100%";
+        div.classList.remove("pushed");
       }
     });
+  }
 
-    if (nearestSectionIndex !== -1) {
-      const targetSection = sections[nearestSectionIndex];
-      const targetOffset =
-        targetSection.getBoundingClientRect().top + window.scrollY;
-
-      const duration = 300;
-      const start = window.scrollY;
-      const startTime = performance.now();
-
-      scrolling = true;
-
-      function scroll() {
-        const now = performance.now();
-        const elapsed = now - startTime;
-        const progress = Math.min(1, elapsed / duration);
-
-        window.scrollTo(0, start + progress * (targetOffset - start));
-
-        if (progress < 1) {
-          requestAnimationFrame(scroll);
-        } else {
-          scrolling = false;
-        }
-      }
-      requestAnimationFrame(scroll);
-    }
-  },
-  { passive: true }
-);
+  function onMouseUp() {
+    document.removeEventListener("mousemove", onMouseMove);
+    document.removeEventListener("mouseup", onMouseUp);
+  }
+});

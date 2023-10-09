@@ -1,20 +1,10 @@
-body,
-html {
-  font-family: "Ubuntu";
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  overflow-x: hidden;
-  background-color: #ebebeb;
-}
 #nav-header,
 #main-body {
   display: none;
 }
 .pre-loader {
   position: fixed;
-  top: 0;
+  top: -10vh;
   left: 0;
   width: 100vw;
   height: 200vh;
@@ -23,7 +13,7 @@ html {
   justify-content: flex-end;
   align-items: flex-start;
   z-index: 9999;
-  background-color: wheat;
+  background-color: rgba(249, 241, 227, 1);
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -32,17 +22,15 @@ html {
 .pre-layer-1 {
   width: 100vw;
   height: 50vh;
-  background-color: #ed4634;
 }
 .pre-layer-2 {
   width: 100vw;
   height: 50vh;
-  background-color: #016065;
 }
 .fade-out {
   top: -120%;
   height: 120vh;
-  transition: all 1.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .otwd-loader {
   display: flex;
@@ -66,23 +54,23 @@ html {
   border: 1px solid rgb(58, 58, 58);
 }
 #otwd-circle-1 {
-  background-color: #029198;
+  background-color: rgba(2, 145, 152, 0.7);
 }
 #otwd-circle-2 {
-  background-color: #ed4634;
+  background-color: rgb(237, 70, 52, 0.8);
 }
 #otwd-circle-3 {
   background-color: black;
 }
 .OTWDColorLogo {
-  top: -15%;
+  top: -8%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8%;
+  width: 7%;
   height: auto;
-  filter: sepia(100%);
+  filter: grayscale(100%);
   z-index: 10;
   opacity: 1;
 }

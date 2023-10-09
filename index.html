@@ -20,7 +20,7 @@
     </noscript>
     <link
       rel="preload"
-      href="/images/OTWDSVG.svg"
+      href="/images/otwdLogo.svg"
       as="image"
       type="image/svg+xml"
     />
@@ -39,6 +39,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/work.css" />
     <link rel="stylesheet" href="styles/about.css" />
@@ -53,11 +54,6 @@
         <div class="otwd-circle" id="otwd-circle-2"></div>
         <div class="otwd-circle" id="otwd-circle-3"></div>
         <div class="OTWDColorLogo">
-          <!-- <object
-            id="otwd-svg-id"
-            data="/images/OTWDSVG.svg"
-            type="image/svg+xml"
-          ></object> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -180,10 +176,9 @@
           </svg>
         </div>
       </div>
-      <div class="pre-layer-1"></div>
-      <div class="pre-layer-2"></div>
+      <!-- <div class="pre-layer-1"></div>
+      <div class="pre-layer-2"></div> -->
     </div>
-
     <!-----------   END preload   --------------->
     <!-----------   START header menu   --------------->
     <header id="nav-header">
@@ -223,12 +218,19 @@
     <!-----------   start home section   --------------->
     <main id="main-body">
       <section class="content-section" id="home">
-        <div class="home_section_1">
-          <span class="hv_span">OTWD</span>
+        <div class="home-container">
+          <div class="home-whale-container">
+            <div class="base-stacked-div div0">Div 0</div>
+            <div class="stacked-div div1">Div 1</div>
+            <div class="stacked-div div2">Div 2</div>
+            <div class="stacked-div div3">Div 3</div>
+            <div class="stacked-div div4">Div 4</div>
+            <div class="stacked-div div5">Div 5</div>
+          </div>
+          <div class="whale-scrollbar">
+            <span class="whale-scrollbar-handle"></span>
+          </div>
         </div>
-        <!-- <div class="home_section_2">
-          <span class="hv_span">!!!</span>
-        </div> -->
       </section>
       <!-----------   end home section   --------------->
       <!-----------   start work section   --------------->
@@ -461,10 +463,11 @@
     </script>
     <!-- <script src="src/components/preloader.js"></script> -->
     <!-- <script src="src/components/global-components.js"></script> -->
-    <script src="src/components/home.js"></script>
+    <script src="src/components/main.js"></script>
     <script src="src/components/menu.js"></script>
     <script src="src/components/menu-bubble.js"></script>
     <script src="src/components/reveal-items.js"></script>
+    <script src="src/components/home.js"></script>
     <script src="src/components/work.js"></script>
     <script src="src/components/about.js"></script>
     <script></script>

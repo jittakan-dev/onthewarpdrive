@@ -1,15 +1,11 @@
 const preLoader = document.querySelector(".pre-loader");
-const navHeader = document.getElementById("nav-header");
-const mainBody = document.getElementById("main-body");
 const otwdLoader = document.querySelector(".otwd-loader");
+const OTWDColorLogo = document.querySelector(".OTWDColorLogo");
 const otwdCircles = document.querySelectorAll(".otwd-circle");
 const fadeElements = document.querySelectorAll(".fade-element");
+const navHeader = document.getElementById("nav-header");
+const mainBody = document.getElementById("main-body");
 
-/*FOR FILE .SVG*/
-// const otwdSvg = document.getElementById("otwd-svg-id");
-// const otwdSvgDocument = otwdSvg.contentDocument;
-// const fadeElements = otwdSvgDocument.querySelectorAll(".fade-element");
-/*FOR FILE .SVG*/
 let stopAnimation = false;
 
 function neonAnimate(elements, animationClass, stop = false) {
@@ -18,7 +14,7 @@ function neonAnimate(elements, animationClass, stop = false) {
     return;
   }
   elements.forEach((element) => {
-    const randomDelay = Math.random() * 3 + 1;
+    const randomDelay = Math.random() * 2 + 1;
     setTimeout(() => {
       if (stopAnimation) return;
       element.classList.toggle(animationClass);
@@ -34,7 +30,16 @@ function animateCircles() {
     }, index * 200);
   });
 }
-
+function animateCirclesEnd() {
+  otwdCircles.forEach((circle, index) => {
+    setTimeout(() => {
+      preLoader.style.backgroundColor = "rgba(249, 241, 227, 0)";
+      circle.style.top = "-50%";
+      circle.style.left = "10%";
+      circle.style.width = circle.style.height = "0%";
+    }, index * 400);
+  });
+}
 function onDocumentReadyStateChange() {
   switch (document.readyState) {
     case "loading":
@@ -50,11 +55,13 @@ document.addEventListener("readystatechange", onDocumentReadyStateChange);
 window.addEventListener("load", () => {
   setTimeout(() => {
     neonAnimate(fadeElements, "neon", false);
+
     setTimeout(() => {
       animateCircles();
       setTimeout(() => {
         neonAnimate(fadeElements, "neon", true);
         navHeader.style.display = mainBody.style.display = "block";
+        animateCirclesEnd();
         setTimeout(() => {
           preLoader.classList.add("fade-out");
           preLoader.addEventListener(
@@ -64,10 +71,10 @@ window.addEventListener("load", () => {
             },
             { once: true }
           );
-        }, 1000);
-      }, 1500);
-    }, 2000);
-  }, 2400);
+        }, 900);
+      }, 1400);
+    }, 1900);
+  }, 2300);
 });
 
 console.log("Document is in the preload state.");
