@@ -7,41 +7,89 @@
   top: -10vh;
   left: 0;
   width: 100vw;
-  height: 200vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: end;
+  align-items: center;
   z-index: 9999;
-  background-color: rgba(249, 241, 227, 1);
+  background-color: rgb(214, 196, 190);
   overflow: hidden;
   margin: 0;
   padding: 0;
   opacity: 1;
 }
-.pre-layer-1 {
-  width: 100vw;
-  height: 50vh;
-}
-.pre-layer-2 {
-  width: 100vw;
-  height: 50vh;
-}
-.fade-out {
-  top: -120%;
-  height: 120vh;
-  transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
 .otwd-loader {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
   opacity: 1;
+  z-index: 10000;
+}
+
+.OTWDColorLogo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: auto;
+  filter: grayscale(100%);
+  z-index: 10001;
+}
+.progressbar {
+  top: 2%;
+  position: relative;
+  width: 7%;
+  border: 2px solid rgba(99, 99, 99, 0.3);
+  height: 1.8%;
+  text-align: center;
+  transition: height 0.8s linear;
+  overflow: hidden;
+  margin-bottom: 8%;
+}
+.progress {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 0;
+  height: 100%;
+  background-color: rgba(99, 99, 99, 0.3);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  color: rgb(99, 99, 99, 0.9);
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    opacity: 0.4;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff,
+      0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+
+#animatedO {
+  animation: neon 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards infinite;
+}
+#animatedT {
+  animation: neon 0.2s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
+}
+#animatedW {
+  animation: neon 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards infinite;
+}
+#animatedD {
+  animation: neon 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards infinite;
 }
 .otwd-circle {
   position: absolute;
@@ -54,42 +102,38 @@
   border: 1px solid rgb(58, 58, 58);
 }
 #otwd-circle-1 {
-  background-color: rgba(2, 145, 152, 0.7);
+  background-color: #4c868a;
 }
 #otwd-circle-2 {
-  background-color: rgb(237, 70, 52, 0.8);
+  background-color: #704541;
 }
 #otwd-circle-3 {
   background-color: black;
 }
-.OTWDColorLogo {
-  top: -8%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 7%;
-  height: auto;
-  filter: grayscale(100%);
-  z-index: 10;
-  opacity: 1;
-}
-@keyframes neon {
-  0%,
-  100% {
-    opacity: 0.8;
-    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff,
-      0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
-  }
-  50% {
-    opacity: 1;
-    text-shadow: none;
-  }
-}
-.neon {
-  animation: neon 1s ease-in-out forwards infinite;
-}
 
+.pre-layer-1 {
+  top: 5vh;
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgba(112, 69, 65, 0.3);
+  transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-bottom: 1px solid #9ed3d6;
+}
+.pre-layer-2 {
+  top: 0;
+  position: relative;
+  width: 200vw;
+  height: 30vh;
+  background-color: rgba(76, 134, 138, 0.4);
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: 1px solid #c3e5e8;
+}
+.fade-out {
+  top: -120%;
+  height: 120vh;
+  transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 @media (max-width: 768px) {
   .OTWDColorLogo {
     width: 25%;

@@ -1,69 +1,90 @@
 const preLoader = document.querySelector(".pre-loader");
 const otwdLoader = document.querySelector(".otwd-loader");
-const OTWDColorLogo = document.querySelector(".OTWDColorLogo");
 const otwdCircles = document.querySelectorAll(".otwd-circle");
-const fadeElements = document.querySelectorAll(".fade-element");
+const OTWDColorLogo = document.querySelector(".OTWDColorLogo");
+const progressBar = document.querySelector(".progressbar .progress");
+const subPre = document.querySelectorAll(".sub-pre");
 const navHeader = document.getElementById("nav-header");
 const mainBody = document.getElementById("main-body");
 
-let stopAnimation = false;
+let intervalIds = [];
+let circleIntervals = [];
+let subPreIntervals = [];
 
-function neonAnimate(elements, animationClass, stop = false) {
-  if (stop) {
-    stopAnimation = true;
-    return;
-  }
-  elements.forEach((element) => {
-    const randomDelay = Math.random() * 2 + 1;
-    setTimeout(() => {
-      if (stopAnimation) return;
-      element.classList.toggle(animationClass);
-      neonAnimate(elements, animationClass);
-    }, randomDelay * 500);
-  });
+var navigationStart = performance.timing.navigationStart;
+var loadEventEnd = performance.timing.loadEventEnd;
+
+var EstimatedTime = -(loadEventEnd - navigationStart);
+var timeInSeconds = parseInt((EstimatedTime / 1000) % 60) * 100;
+
+function animateValue(element, start, end, duration) {
+  var range = end - start;
+  var current = start;
+  var increment = range > 0 ? 1 : -1;
+  var stepTime = Math.abs(Math.floor(duration / range));
+
+  var timer = setInterval(function () {
+    current += increment;
+    element.textContent = current + "%";
+    document.querySelector(".progress").style.width = current + "%";
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
 }
+
+animateValue(progressBar, 0, 100, timeInSeconds);
 
 function animateCircles() {
   otwdCircles.forEach((circle, index) => {
-    setTimeout(() => {
+    const intervalId = setInterval(() => {
       circle.style.width = circle.style.height = "200%";
     }, index * 200);
+    circleIntervals.push(intervalId);
   });
 }
+
 function animateCirclesEnd() {
-  otwdCircles.forEach((circle, index) => {
-    setTimeout(() => {
-      preLoader.style.backgroundColor = "rgba(249, 241, 227, 0)";
-      circle.style.top = "-50%";
-      circle.style.left = "10%";
-      circle.style.width = circle.style.height = "0%";
-    }, index * 400);
+  subPre.forEach((subPre, index) => {
+    const intervalId = setInterval(() => {
+      subPre.style.top = "-20%";
+      subPre.style.height = "100vh";
+    }, index * 600);
+    subPreIntervals.push(intervalId);
   });
 }
-function onDocumentReadyStateChange() {
-  switch (document.readyState) {
-    case "loading":
-    case "interactive":
-    case "complete":
-      neonAnimate(fadeElements, "neon", false);
-      if (document.readyState === "complete") animateCircles();
-      break;
-  }
+
+function clearAllIntervals() {
+  circleIntervals.forEach((intervalId) => {
+    clearInterval(intervalId);
+  });
+  subPreIntervals.forEach((intervalId) => {
+    clearInterval(intervalId);
+  });
 }
-document.addEventListener("readystatechange", onDocumentReadyStateChange);
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    neonAnimate(fadeElements, "neon", false);
+const firstIntervalId = setInterval(() => {
+  clearInterval(firstIntervalId);
+  animateCircles();
+  progressBar.style.color = "rgba(99, 99, 99, 0)";
+  const secondIntervalId = setInterval(() => {
+    clearInterval(secondIntervalId);
+    document.querySelector(".progressbar").style.height = 0;
+    document.querySelector(".progressbar").style.border = "none";
+    progressBar.style.height = 0;
 
-    setTimeout(() => {
-      animateCircles();
-      setTimeout(() => {
-        neonAnimate(fadeElements, "neon", true);
-        navHeader.style.display = mainBody.style.display = "block";
-        animateCirclesEnd();
-        setTimeout(() => {
-          preLoader.classList.add("fade-out");
+    const thirdIntervalId = setInterval(() => {
+      clearInterval(thirdIntervalId);
+      preLoader.style.backgroundColor = "black";
+      navHeader.style.display = mainBody.style.display = "block";
+      const fourthIntervalId = setInterval(() => {
+        clearInterval(fourthIntervalId);
+        preLoader.classList.add("fade-out");
+
+        const fifthIntervalId = setInterval(() => {
+          clearInterval(fifthIntervalId);
+          animateCirclesEnd();
+          clearAllIntervals();
           preLoader.addEventListener(
             "transitionend",
             () => {
@@ -72,9 +93,18 @@ window.addEventListener("load", () => {
             { once: true }
           );
         }, 900);
-      }, 1400);
-    }, 1900);
-  }, 2300);
-});
+      }, 1200);
+    }, 1400);
+  }, 1000);
+}, timeInSeconds + 500);
 
-console.log("Document is in the preload state.");
+// function onDocumentReadyStateChange() {
+//   switch (document.readyState) {
+//     case "loading":
+//     case "interactive":
+//     case "complete":
+//       if (document.readyState === "complete") animateCircles();
+//       break;
+//   }
+// }
+// document.addEventListener("readystatechange", onDocumentReadyStateChange);

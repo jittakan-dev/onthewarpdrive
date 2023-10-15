@@ -25,38 +25,53 @@
   transition: left 0.3s ease-in-out; /* Transition for sliding effect */
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu";
+  font-size: 6rem;
+  color: rgba(245, 222, 179, 0.5);
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .base-stacked-div {
   width: 100%;
   height: 100%;
   position: relative;
   background-color: #171717;
+  font-family: "Ubuntu";
+  font-size: 6rem;
+  color: rgba(245, 222, 179, 0.5);
 }
 /* Style for div1 */
+.div0 {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
 .div1 {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 1;
-  background-color: blue;
 }
 
 /* Styles for other divs with different z-index */
 .div2 {
   z-index: 2;
-  background-color: green;
 }
 
 .div3 {
   z-index: 3;
-  background-color: gold;
 }
 
 .div4 {
   z-index: 4;
-  background-color: crimson;
 }
 
 .div5 {
   z-index: 5;
-  background-color: cyan;
 }
 
 .whale-scrollbar {
@@ -78,7 +93,7 @@
   cursor: pointer;
 }
 #div1 {
-  background: url("../images/1.jpg");
+  background: url("../images/Whale.png");
   position: relative;
   opacity: 1;
   background-position: center;

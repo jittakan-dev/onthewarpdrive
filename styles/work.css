@@ -17,7 +17,7 @@
   margin: 2% 0 1% 0;
 }
 .work-menu-title {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0;
 }
@@ -58,7 +58,7 @@
 .work-list-container {
   width: 90vw;
   height: 100%;
-  background-color: #039fa8;
+  background-color: #4c868a;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -154,7 +154,7 @@
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 90%;
   }
   .selectedBr {
