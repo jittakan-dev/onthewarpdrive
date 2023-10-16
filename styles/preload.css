@@ -50,7 +50,7 @@
   border: 2px solid rgba(99, 99, 99, 0.3);
   height: 10%;
   text-align: center;
-  transition: height 0.8s ease;
+  transition: height 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
   margin-bottom: 50%;
 }
@@ -62,7 +62,10 @@
   width: 0;
   height: 100%;
   background-color: rgba(99, 99, 99, 0.3);
-  transition: all 0.5s ease;
+  /* transition: width 0.4s; */
+  /* transition: height 0.6s; */
+  /* transition: color 0.5s; */
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
   color: rgb(99, 99, 99, 0.9);
 }
@@ -103,10 +106,10 @@
   border: 1px solid rgb(58, 58, 58);
 }
 #otwd-circle-1 {
-  background-color: #4c868a;
+  background-color: #3ab2a4;
 }
 #otwd-circle-2 {
-  background-color: #704541;
+  background-color: #ef6c73;
 }
 #otwd-circle-3 {
   background-color: black;
@@ -117,7 +120,7 @@
   position: relative;
   width: 100vw;
   height: 20vh;
-  background-color: rgba(112, 69, 65, 0.3);
+  background-color: #3ab2a4;
   transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-bottom: 1px solid #9ed3d6;
 }
@@ -126,7 +129,7 @@
   position: relative;
   width: 200vw;
   height: 30vh;
-  background-color: rgba(76, 134, 138, 0.4);
+  background-color: #ef6c73;
   transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-bottom: 1px solid #c3e5e8;
 }
@@ -135,9 +138,19 @@
   height: 140vh;
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .OTWDColorLogo {
-    width: 32%;
+    width: 30%;
+  }
+  .progressbar {
+    top: 6%;
+    width: 28%;
+    height: 6%;
+  }
+}
+@media (min-width: 400px) and (max-width: 576px) {
+  .OTWDColorLogo {
+    width: 35%;
   }
   .progressbar {
     top: 10%;
@@ -145,3 +158,28 @@
     height: 10%;
   }
 }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .OTWDColorLogo {
+    width: 35%;
+  }
+  .progressbar {
+    top: 10%;
+    width: 32%;
+    height: 10%;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 992px) {
+  .OTWDColorLogo {
+  }
+  .progressbar {
+  }
+}
+
+@media (min-width: 992px) {
+  .OTWDColorLogo {
+  }
+  .progressbar {
+  }
+} */

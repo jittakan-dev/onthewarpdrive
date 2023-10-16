@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: end;
   padding-bottom: 5%;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
 }
 #about-panel {
   width: 90%;
@@ -83,12 +83,12 @@
   padding: 0.2% 1% 0.2% 1%;
   cursor: pointer;
   color: wheat;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   border: 2px solid wheat;
 }
 .about-service-box span:hover {
   color: #171717;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   border: 2px solid #171717;
 }
 /*-------------- END about WEARE n SERVICE ----------------*/
@@ -106,7 +106,7 @@
   width: auto;
   font-size: 2rem;
   cursor: pointer;
-  background-color: #039fa8;
+  background-color: #cff309;
   color: #171717;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
@@ -163,7 +163,7 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
 }
 .contact-channel-container {
   width: 50%;
@@ -196,7 +196,7 @@
   width: auto;
   font-size: 2rem;
   cursor: pointer;
-  background-color: #039fa8;
+  background-color: #cff309;
   color: #171717;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
@@ -243,18 +243,18 @@
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   color: #171717;
   border: 2px solid #171717;
 }
 .contact-type-button:hover {
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   color: wheat;
   border: 2px solid wheat;
 }
 .contactTypeButtonActive {
   background-color: #171717;
-  color: #e74c3c;
+  color: #ef6c73;
   border: 2px solid #171717;
   cursor: default;
   pointer-events: none;
@@ -415,7 +415,7 @@
   background-color: wheat;
 }
 .input-group input:focus {
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   outline: none;
   color: wheat;
 }
@@ -427,7 +427,7 @@
   background-color: wheat;
 }
 .input-group textarea:focus {
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   outline: none;
   color: wheat;
 }
@@ -439,14 +439,14 @@
   width: 100%;
   font-size: 1.4rem;
   padding: 5% 0 5% 0;
-  background-color: #e74c3c;
+  background-color: #ef6c73;
   border: none;
   color: #171717;
   cursor: pointer;
 }
 .submit-group button:hover {
   background-color: #171717;
-  color: #e74c3c;
+  color: #ef6c73;
 }
 /*---------------------------END CONTACT FORM----------------*/
 /**----------END contact-address-container----------------**/
@@ -552,7 +552,7 @@
     justify-content: center;
     align-items: end;
     background-color: #171717;
-    border-bottom: 2px dotted #e74c3c;
+    border-bottom: 2px dotted #ef6c73;
   }
   .contact-reachus-box {
     margin-top: 10%;
@@ -560,7 +560,7 @@
     justify-content: end;
     align-items: start;
     width: 100%;
-    color: #e74c3c;
+    color: #ef6c73;
   }
   .left-arrow {
     font-size: 1.6rem;
@@ -579,11 +579,11 @@
     justify-content: space-between;
     align-items: start;
     padding: 5%;
-    color: #e74c3c;
+    color: #ef6c73;
   }
   .contact-quote {
-    border-top: 1px solid #e74c3c;
-    border-bottom: 1px solid #e74c3c;
+    border-top: 1px solid #ef6c73;
+    border-bottom: 1px solid #ef6c73;
     font-size: 1rem;
   }
   .contact-type-button-group {
@@ -598,8 +598,8 @@
     padding: 2%;
     margin: 1% 0% 1% 0;
     background-color: #171717;
-    color: #e74c3c;
-    border: 2px solid #e74c3c;
+    color: #ef6c73;
+    border: 2px solid #ef6c73;
   }
   #otwdHubButton {
     margin-right: 1%;
@@ -613,16 +613,16 @@
     border: 2px solid wheat;
   }
   .contactTypeButtonActive {
-    background-color: #e74c3c;
+    background-color: #ef6c73;
     color: #171717;
-    border: 2px solid #e74c3c;
+    border: 2px solid #ef6c73;
   }
   /*----------------ccwcwcwcwcw----------------------*/
   .contact-address-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* background-color: #e74c3c; */
+    /* background-color: #ef6c73; */
   }
   .fourtyPercentSpace {
     width: 100%;

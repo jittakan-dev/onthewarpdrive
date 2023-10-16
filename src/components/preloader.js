@@ -66,13 +66,12 @@ function clearAllIntervals() {
 const firstIntervalId = setInterval(() => {
   clearInterval(firstIntervalId);
   animateCircles();
-  progressBar.style.color = "rgba(99, 99, 99, 0)";
   const secondIntervalId = setInterval(() => {
     clearInterval(secondIntervalId);
+    progressBar.style.color = "rgba(99, 99, 99, 0)";
     document.querySelector(".progressbar").style.height = 0;
     document.querySelector(".progressbar").style.border = "none";
-    progressBar.style.height = 0;
-
+    // progressBar.style.height = 0;
     const thirdIntervalId = setInterval(() => {
       clearInterval(thirdIntervalId);
       preLoader.style.backgroundColor = "black";
@@ -80,7 +79,6 @@ const firstIntervalId = setInterval(() => {
       const fourthIntervalId = setInterval(() => {
         clearInterval(fourthIntervalId);
         preLoader.classList.add("fade-out");
-
         const fifthIntervalId = setInterval(() => {
           clearInterval(fifthIntervalId);
           animateCirclesEnd();
