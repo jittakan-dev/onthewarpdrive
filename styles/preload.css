@@ -31,8 +31,6 @@
   opacity: 1;
   z-index: 10000;
   transition: height 0.5s linear;
-
-  /* background-color: chartreuse; */
 }
 
 .OTWDColorLogo {
@@ -138,7 +136,12 @@
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media (max-width: 768px) {
-  /* .OTWDColorLogo {
-    width: 25%;
-  } */
+  .OTWDColorLogo {
+    width: 32%;
+  }
+  .progressbar {
+    top: 10%;
+    width: 32%;
+    height: 10%;
+  }
 }
