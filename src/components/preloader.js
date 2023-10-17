@@ -43,14 +43,21 @@ function animateCircles() {
     circleIntervals.push(intervalId);
   });
 }
-
+function getRandomPercentage() {
+  return Math.floor(Math.random() * 31) + 10 + "%"; // Random value between 10% and 50%
+}
+function getRandomDelay() {
+  return Math.random() * 50; // Random delay between 0ms and 1000ms (1 second)
+}
 function animateCirclesEnd() {
   subPre.forEach((subPre, index) => {
-    const intervalId = setInterval(() => {
-      subPre.style.top = "-20%";
+    const topValue = getRandomPercentage();
+    const delay = getRandomDelay();
+
+    setTimeout(() => {
+      subPre.style.top = topValue;
       subPre.style.height = "100vh";
-    }, index * 600);
-    subPreIntervals.push(intervalId);
+    }, index * 50 + delay); // Combine the interval delay and the random delay
   });
 }
 
