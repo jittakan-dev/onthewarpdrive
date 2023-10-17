@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OnTheWarpDrive Co.</title>
+    <title>(UI Test Phrase) OnTheWarpDrive Co.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,6 +54,9 @@
       <div class="otwd-circle" id="otwd-circle-3"></div>
       <div class="otwd-loader">
         <div class="OTWDColorLogo">
+          <!-- Thing to do with svg :
+          seperate svg code to svg file + How to specific container dimension to svg file (because now the SVG is responsive and it need container to reference it's size) + add style to svg by id
+ -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -175,8 +178,6 @@
             </g>
           </svg>
         </div>
-
-        <!-- <div class="percentage" id="precent"></div> -->
         <div class="progressbar">
           <div class="progress"></div>
         </div>
@@ -194,15 +195,6 @@
         <div class="pre-layer-2-4"></div>
       </div>
     </div>
-    <!-- <div class="pre-loader">
-      <div class="otwd-loader">
-        <div class="otwd-circle" id="otwd-circle-1"></div>
-        <div class="otwd-circle" id="otwd-circle-2"></div>
-        <div class="otwd-circle" id="otwd-circle-3"></div>
-      </div>
-      -- <div class="pre-layer-1"></div>
-      <div class="pre-layer-2"></div> --
-    </div> -->
     <!-----------   END preload   --------------->
     <!-----------   START header menu   --------------->
     <header id="nav-header">
@@ -244,13 +236,14 @@
       <section class="content-section" id="home">
         <div class="home-container">
           <div class="home-whale-container">
-            <div class="base-stacked-div whale-0"><div></div></div>
-            <div class="stacked-div whale-1"><div>Houston</div></div>
-            <div class="stacked-div whale-2"><div>,</div></div>
-            <div class="stacked-div whale-3"><div>this</div></div>
-            <div class="stacked-div whale-4"><div>is</div></div>
-            <div class="stacked-div whale-5"><div>a</div></div>
-            <div class="stacked-div whale-6"><div>test</div></div>
+            <div class="base-stacked-div whale-0">
+              <img src="./images/SMLY-min.png" class="smly" />
+            </div>
+            <div class="stacked-div whale-1"><div>This</div></div>
+            <div class="stacked-div whale-2"><div>is</div></div>
+            <div class="stacked-div whale-3"><div>the</div></div>
+            <div class="stacked-div whale-4"><div>SMLY</div></div>
+            <div class="stacked-div whale-5"><div>TEST</div></div>
           </div>
           <div class="whale-scrollbar">
             <span class="whale-scrollbar-handle"></span>
@@ -266,45 +259,50 @@
               Selected <span class="selectedBr"> <br /></span>Work.
             </div>
             <div class="work-menu-types">
-              <div class="workTypeActive">App</div>
+              <div class="workTypeActive" onclick="changeTab(1)">App</div>
               <span>/</span>
-              <div>Mobile</div>
+              <div onclick="changeTab(2)">Mobile</div>
               <span>/</span>
-              <div>Analytic</div>
+              <div onclick="changeTab(3)">Analytic</div>
             </div>
           </div>
           <div class="work-list-container">
-            <div class="no-of-work">
-              <span class="current-work">1</span>
-              <span>/</span>
-              <span class="total-work"></span>
-            </div>
-            <div class="work-arrow-group">
-              <div class="work-left-arrow">
-                <i class="fa-solid fa-left-long" id="WorkLeftArrow"></i>
+            <!-- //tab content 1 -->
+            <div class="app-list">
+              <div class="no-of-work">
+                <span class="current-work">1</span>
+                <span>/</span>
+                <span class="total-work"></span>
               </div>
-              <div class="work-right-arrow">
-                <i class="fa-solid fa-right-long" id="WorkRightArrow"></i>
+              <div class="work-arrow-group">
+                <div class="work-left-arrow">
+                  <i class="fa-solid fa-left-long" id="AppLeftArrow"></i>
+                </div>
+                <div class="work-right-arrow">
+                  <i class="fa-solid fa-right-long" id="AppRightArrow"></i>
+                </div>
               </div>
-            </div>
-            <div class="work-list">
-              <div class="work-list-item">
+              <div class="app-list-item">
                 <div>01</div>
                 <div>ProjectA</div>
               </div>
-              <div class="work-list-item">
+              <div class="app-list-item">
                 <div>02</div>
                 <div>ProjectB</div>
               </div>
-              <div class="work-list-item">
+              <div class="app-list-item">
                 <div>03</div>
                 <div>ProjectC</div>
               </div>
-              <div class="work-list-item">
+              <div class="app-list-item">
                 <div>04</div>
                 <div>ProjectD</div>
               </div>
             </div>
+            <!-- //tab content 2 -->
+            <div class="mobile-list">mobile</div>
+            <!-- //tab content 3 -->
+            <div class="analytic-list">analytic</div>
           </div>
         </div>
         <!-- <section class="work-items-container">KKKKKKK</section> -->
@@ -491,7 +489,6 @@
       preloadScript.src = "src/components/preloader.js";
       document.body.appendChild(preloadScript);
     </script>
-    <!-- <script src="src/components/preloader.js"></script> -->
     <!-- <script src="src/components/global-components.js"></script> -->
     <script src="src/components/main.js"></script>
     <script src="src/components/menu.js"></script>

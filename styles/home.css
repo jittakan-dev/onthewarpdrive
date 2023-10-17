@@ -2,7 +2,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* Hide overflow to enable custom scrolling */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,9 +42,18 @@
   font-family: "Ubuntu";
   font-size: 6rem;
   color: rgba(245, 222, 179, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .whale-0 {
   z-index: 0;
+}
+.smly {
+  width: 15%;
+  height: auto;
+  filter: blur(10px);
 }
 .whale-1 {
   z-index: 1;
@@ -71,35 +80,34 @@
 }
 .whale-1 div {
   position: absolute;
-  top: 0;
+  top: 12%;
   left: 5%;
 }
 .whale-2 div {
   position: absolute;
-  top: 12%;
+  top: 24%;
   left: 5%;
 }
 .whale-3 div {
   position: absolute;
-  top: 24%;
+  top: 36%;
   left: 5%;
 }
 .whale-4 div {
   position: absolute;
-  top: 36%;
+  top: 48%;
   left: 5%;
 }
 .whale-5 div {
   position: absolute;
-  top: 48%;
+  top: 60%;
   left: 5%;
 }
 .whale-6 div {
   position: absolute;
-  top: 60%;
+  top: 72%;
   left: 5%;
 }
-
 .whale-scrollbar {
   position: absolute;
   bottom: 10%;

@@ -98,7 +98,6 @@
   flex-direction: column;
   z-index: 1;
   background-color: #ebebeb;
-  /* background-color: rgb(235, 235, 235, 0.7); */
   padding: 0 1.2% 0 1%;
   border-top-left-radius: 12%;
   border-bottom-left-radius: 12%;
@@ -130,7 +129,7 @@
   color: #dca8a2;
   cursor: default;
 }
-.work-list {
+.app-list {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
@@ -138,7 +137,7 @@
   width: 100%;
   height: 100%;
 }
-.work-list-item {
+.app-list-item {
   flex: 0 0 50%;
   min-width: 100%;
   height: 100%;
@@ -148,9 +147,18 @@
   align-items: flex-end;
   color: wheat;
   font-size: 3rem;
-  /* background-color: #039fa8; */
   scroll-snap-align: start;
 }
+.work-list-container > div {
+  display: none;
+}
+.work-list-container > div:first-child {
+  display: flex;
+}
+/* #Mobile,
+#Analytic {
+  display: none;
+} */
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {

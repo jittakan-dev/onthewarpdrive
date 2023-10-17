@@ -1,7 +1,6 @@
 const preLoader = document.querySelector(".pre-loader");
 const otwdLoader = document.querySelector(".otwd-loader");
 const otwdCircles = document.querySelectorAll(".otwd-circle");
-const OTWDColorLogo = document.querySelector(".OTWDColorLogo");
 const progressBar = document.querySelector(".progressbar .progress");
 const subPre = document.querySelectorAll(".sub-pre");
 const navHeader = document.getElementById("nav-header");

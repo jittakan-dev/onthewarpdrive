@@ -1,15 +1,8 @@
 const workTypes = document.querySelectorAll(".work-menu-types div");
-const workListContainer = document.querySelector(".work-list");
-const workListItem = document.querySelector(".work-list-item");
-const workLeftArrow = document.getElementById("WorkLeftArrow");
-const workRightArrow = document.getElementById("WorkRightArrow");
-
-workTypes.forEach((item) => {
-  item.addEventListener("click", () => {
-    workTypes.forEach((item) => item.classList.remove("workTypeActive"));
-    item.classList.add("workTypeActive");
-  });
-});
+const appList = document.querySelector(".work-list-container .app-list");
+const workListItem = document.querySelector(".app-list-item");
+const AppLeftArrow = document.getElementById("AppLeftArrow");
+const AppRightArrow = document.getElementById("AppRightArrow");
 
 let isSectionDragging = false;
 let startX;
@@ -17,98 +10,93 @@ let scrollLeft;
 let momentumScrollTimeout;
 
 const snapToItem = () => {
-  const itemWidth = workListContainer.clientWidth;
-
-  const nearestItem =
-    Math.round(workListContainer.scrollLeft / itemWidth) * itemWidth;
-
-  workListContainer.scrollTo({
+  const itemWidth = appList.clientWidth;
+  const nearestItem = Math.round(appList.scrollLeft / itemWidth) * itemWidth;
+  appList.scrollTo({
     left: nearestItem,
     behavior: "smooth",
   });
 };
 
-workListContainer.addEventListener("mousedown", (e) => {
+appList.addEventListener("mousedown", (e) => {
   isSectionDragging = true;
-  startX = e.pageX - workListContainer.offsetLeft;
-  scrollLeft = workListContainer.scrollLeft;
-  workListContainer.classList.add("grabbing");
+  startX = e.pageX - appList.offsetLeft;
+  scrollLeft = appList.scrollLeft;
+  appList.classList.add("grabbing");
 });
 
-workListContainer.addEventListener("mouseleave", () => {
+appList.addEventListener("mouseleave", () => {
   if (isSectionDragging) {
     snapToItem();
-    workListContainer.classList.remove("grabbing");
+    appList.classList.remove("grabbing");
     isSectionDragging = false;
   }
 });
 
-workListContainer.addEventListener("mouseup", () => {
+appList.addEventListener("mouseup", () => {
   if (isSectionDragging) {
     snapToItem();
-    workListContainer.classList.remove("grabbing");
+    appList.classList.remove("grabbing");
     isSectionDragging = false;
   }
 });
 
-workListContainer.addEventListener("mousemove", (e) => {
+appList.addEventListener("mousemove", (e) => {
   if (!isSectionDragging) return;
   e.preventDefault();
-  const x = e.pageX - workListContainer.offsetLeft;
+  const x = e.pageX - appList.offsetLeft;
   const walk = x - startX;
-  workListContainer.scrollLeft = scrollLeft - walk;
+  appList.scrollLeft = scrollLeft - walk;
 });
 
 /*------------------*/
-workListContainer.addEventListener("scroll", () => {
+appList.addEventListener("scroll", () => {
   const firstChild = workListItem.firstElementChild;
-  if (firstChild && workListContainer.scrollLeft <= firstChild.clientWidth) {
-    workLeftArrow.classList.remove("moreWork");
-    workLeftArrow.classList.add("noMoreWork");
+  if (firstChild && appList.scrollLeft <= firstChild.clientWidth) {
+    AppLeftArrow.classList.remove("moreWork");
+    AppLeftArrow.classList.add("noMoreWork");
   } else {
-    workLeftArrow.classList.remove("noMoreWork");
-    workLeftArrow.classList.add("moreWork");
+    AppLeftArrow.classList.remove("noMoreWork");
+    AppLeftArrow.classList.add("moreWork");
   }
 
   const lastChild = workListItem.lastElementChild;
   if (
     lastChild &&
-    workListContainer.scrollLeft >=
-      workListContainer.scrollWidth -
-        workListContainer.clientWidth -
-        lastChild.clientWidth
+    appList.scrollLeft >=
+      appList.scrollWidth - appList.clientWidth - lastChild.clientWidth
   ) {
-    workRightArrow.classList.remove("moreWork");
-    workRightArrow.classList.add("noMoreWork");
+    AppRightArrow.classList.remove("moreWork");
+    AppRightArrow.classList.add("noMoreWork");
   } else {
-    workRightArrow.classList.remove("noMoreWork");
-    workRightArrow.classList.add("moreWork");
+    AppRightArrow.classList.remove("noMoreWork");
+    AppRightArrow.classList.add("moreWork");
   }
 });
 
-workLeftArrow.addEventListener("click", () => {
+AppLeftArrow.addEventListener("click", () => {
   const itemWidth = workListItem.offsetWidth;
-  const currentScrollLeft = workListContainer.scrollLeft;
+  const currentScrollLeft = appList.scrollLeft;
 
   const newScrollLeft = Math.max(currentScrollLeft - itemWidth, 0);
 
-  workListContainer.scrollTo({
+  appList.scrollTo({
     left: newScrollLeft,
     behavior: "smooth",
   });
   updateCurrentWork();
 });
 
-workRightArrow.addEventListener("click", () => {
+AppRightArrow.addEventListener("click", () => {
   const itemWidth = workListItem.offsetWidth;
-  const currentScrollLeft = workListContainer.scrollLeft;
+  const currentScrollLeft = appList.scrollLeft;
 
   const newScrollLeft = Math.min(
     currentScrollLeft + itemWidth,
-    workListContainer.scrollWidth - workListContainer.clientWidth
+    appList.scrollWidth - appList.clientWidth
   );
 
-  workListContainer.scrollTo({
+  appList.scrollTo({
     left: newScrollLeft,
     behavior: "smooth",
   });
@@ -116,11 +104,11 @@ workRightArrow.addEventListener("click", () => {
 });
 
 function updateCurrentWork() {
-  const itemWidth = workListContainer.clientWidth;
-  const currentScrollLeft = workListContainer.scrollLeft;
+  const itemWidth = appList.clientWidth;
+  const currentScrollLeft = appList.scrollLeft;
   let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1;
   const currentWorkSpan = document.querySelector(".current-work");
-  const workListItems = document.querySelectorAll(".work-list-item");
+  const workListItems = document.querySelectorAll(".app-list-item");
   const totalWork = workListItems.length;
 
   if (isNaN(currentWork) || currentWork <= 0) {
@@ -134,13 +122,28 @@ function updateCurrentWork() {
   currentWorkSpan.textContent = currentWork;
 }
 
-workListContainer.addEventListener("scroll", updateCurrentWork);
+appList.addEventListener("scroll", updateCurrentWork);
 updateCurrentWork();
 
 const totalWorkSpan = document.querySelector(".total-work");
 function updateTotalWork() {
-  const workListItems = document.querySelectorAll(".work-list-item");
+  const workListItems = document.querySelectorAll(".app-list-item");
   const totalWork = workListItems.length;
   totalWorkSpan.textContent = totalWork;
 }
 updateTotalWork();
+
+function changeTab(tabIndex) {
+  const tabs = document.querySelectorAll(".work-menu-types div");
+  const tabContents = document.querySelectorAll(".work-list-container > div");
+
+  tabs.forEach((tab, index) => {
+    if (index + 1 === tabIndex) {
+      tab.classList.add("workTypeActive");
+      tabContents[index].style.display = "flex";
+    } else {
+      tab.classList.remove("workTypeActive");
+      tabContents[index].style.display = "none";
+    }
+  });
+}
