@@ -46,9 +46,15 @@
 /*--------------------END about-panel ----------------*/
 /*--------------------START about-intro ----------------*/
 .about-intro {
-  width: 100%;
-  height: 100%;
-  background-color: aquamarine;
+  width: 92%;
+  height: 92%;
+  padding: 4%;
+  background-color: mediumseagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
 }
 /*--------------------END about-intro ----------------*/
 /*--------------------------------------START about-service ---------------------------------*/
@@ -173,8 +179,14 @@
   align-items: center;
 }
 .contact-intro {
-  width: 50%;
-  height: 100%;
+  width: 42%;
+  height: 92%;
+  padding: 4%;
+  background-color: #3cb371;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 .contact-us-group {
   width: 50%;
@@ -463,6 +475,9 @@
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   /*----------ABOUT---------*/
+  .about-intro {
+    font-size: 3.5rem;
+  }
   .about-content {
     flex-direction: column;
   }
@@ -471,6 +486,7 @@
     align-items: center;
     justify-content: end;
   }
+
   /*-------------- START about TITLE ----------------*/
   .about-title-group {
     margin-bottom: 0;

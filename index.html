@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>(UI Test Phrase) OnTheWarpDrive Co.</title>
+    <title>(UI Test Phase) OnTheWarpDrive Co.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +28,7 @@
       rel="preload"
       as="style"
       onload="this.rel = 'stylesheet'"
-      href="styles/preload.css"
+      href="css/preload.css"
     />
     <link rel="preload" href="src/components/preloader.js" as="script" />
     <link
@@ -38,12 +38,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles/menu.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/work.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="shortcut icon" href="#" />
   </head>
   <body>
@@ -244,6 +244,7 @@
             <div class="stacked-div whale-3"><div>the</div></div>
             <div class="stacked-div whale-4"><div>SMLY</div></div>
             <div class="stacked-div whale-5"><div>TEST</div></div>
+            <div class="stacked-div whale-6"><div>/OnTheWarpDrive</div></div>
           </div>
           <div class="whale-scrollbar">
             <span class="whale-scrollbar-handle"></span>
@@ -269,10 +270,10 @@
           <div class="work-list-container">
             <!-- //tab content 1 -->
             <div class="app-list">
-              <div class="no-of-work">
-                <span class="current-work">1</span>
+              <div class="no-of-app">
+                <span class="current-app">1</span>
                 <span>/</span>
-                <span class="total-work"></span>
+                <span class="total-app"></span>
               </div>
               <div class="work-arrow-group">
                 <div class="work-left-arrow">
@@ -283,26 +284,54 @@
                 </div>
               </div>
               <div class="app-list-item">
-                <div>01</div>
+                <div>APP.01</div>
                 <div>ProjectA</div>
               </div>
               <div class="app-list-item">
-                <div>02</div>
+                <div>APP.02</div>
                 <div>ProjectB</div>
               </div>
               <div class="app-list-item">
-                <div>03</div>
+                <div>APP.03</div>
                 <div>ProjectC</div>
               </div>
               <div class="app-list-item">
-                <div>04</div>
+                <div>APP.04</div>
                 <div>ProjectD</div>
               </div>
             </div>
             <!-- //tab content 2 -->
-            <div class="mobile-list">mobile</div>
+            <div class="mobile-list">
+              <div class="no-of-mobile">
+                <span class="current-mobile">0</span>
+                <span>/</span>
+                <span class="total-mobile">0</span>
+              </div>
+              <div class="work-arrow-group">
+                <div class="work-left-arrow">
+                  <i class="fa-solid fa-left-long" id="MobileLeftArrow"></i>
+                </div>
+                <div class="work-right-arrow">
+                  <i class="fa-solid fa-right-long" id="MobileRightArrow"></i>
+                </div>
+              </div>
+            </div>
             <!-- //tab content 3 -->
-            <div class="analytic-list">analytic</div>
+            <div class="analytic-list">
+              <div class="no-of-analytic">
+                <span class="current-analytic">0</span>
+                <span>/</span>
+                <span class="total-analytic">0</span>
+              </div>
+              <div class="work-arrow-group">
+                <div class="work-left-arrow">
+                  <i class="fa-solid fa-left-long" id="AnalyticLeftArrow"></i>
+                </div>
+                <div class="work-right-arrow">
+                  <i class="fa-solid fa-right-long" id="AnalyticRightArrow"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- <section class="work-items-container">KKKKKKK</section> -->
@@ -313,7 +342,7 @@
         <div class="about-container">
           <!-----------------------------------------------START ABOUT PANEL ------------------------------>
           <div class="about-content">
-            <!-- <div class="about-intro">FOR ANIMATE</div> -->
+            <div class="about-intro">Interactable animated graphic</div>
             <div class="about-panel" id="about-panel">
               <div class="about-weare-group">
                 <div class="about-weare-box">
@@ -362,7 +391,7 @@
           <div class="about-content">
             <div class="contact-panel" id="contact-panel">
               <div class="contact-channel-container">
-                <div class="contact-intro"></div>
+                <div class="contact-intro">Interactable animated graphic</div>
                 <div class="contact-us-group">
                   <div class="contact-reachus-box">
                     <i

@@ -49,64 +49,62 @@
 }
 .whale-0 {
   z-index: 0;
-}
-.smly {
-  width: 15%;
-  height: auto;
-  filter: blur(10px);
-}
-.whale-1 {
-  z-index: 1;
-}
-.whale-2 {
-  z-index: 2;
-}
-.whale-3 {
-  z-index: 3;
-}
-.whale-4 {
-  z-index: 4;
-}
-.whale-5 {
-  z-index: 5;
-}
-.whale-0 div {
-  position: absolute;
-  top: 0;
-  left: 5%;
   /* background-position: center;
   background-size: cover;
   background-attachment: fixed; */
 }
-.whale-1 div {
+.smly {
+  width: 15%;
+  height: auto;
+  filter: blur(5px) sepia(100%) invert(30%);
+}
+.whale-1 {
+  z-index: 7;
+}
+.whale-2 {
+  z-index: 7;
+}
+.whale-3 {
+  z-index: 7;
+}
+.whale-4 {
+  z-index: 10;
+}
+.whale-5 {
+  z-index: 10;
+}
+.whale-6 {
+  z-index: 6;
+}
+.whale-0 div {
   position: absolute;
-  top: 12%;
-  left: 5%;
+  top: 0;
+}
+.stacked-div div {
+  position: absolute;
+  left: 20%;
+}
+/*-------------------1st Row-----------*/
+
+.whale-1 div {
+  top: 11%;
 }
 .whale-2 div {
-  position: absolute;
-  top: 24%;
-  left: 5%;
+  top: 22%;
 }
 .whale-3 div {
-  position: absolute;
-  top: 36%;
-  left: 5%;
+  top: 33%;
 }
 .whale-4 div {
-  position: absolute;
-  top: 48%;
-  left: 5%;
+  top: 44%;
+  font-weight: bolder;
 }
 .whale-5 div {
-  position: absolute;
-  top: 60%;
-  left: 5%;
+  top: 55%;
 }
 .whale-6 div {
-  position: absolute;
-  top: 72%;
-  left: 5%;
+  font-size: 2rem;
+  top: 68%;
 }
 .whale-scrollbar {
   position: absolute;
@@ -130,26 +128,35 @@
 /*-----------------END HOME SECTION--------------------*/
 @media (max-width: 400px) {
   .stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .base-stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
+  }
+  .smly {
+    width: 50%;
   }
 }
 @media (min-width: 400px) and (max-width: 576px) {
   .stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .base-stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
+  }
+  .smly {
+    width: 50%;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   .stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .base-stacked-div {
-    font-size: 5rem;
+    font-size: 6rem;
+  }
+  .smly {
+    width: 50%;
   }
 }

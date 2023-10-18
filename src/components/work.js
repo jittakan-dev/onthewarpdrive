@@ -107,7 +107,7 @@ function updateCurrentWork() {
   const itemWidth = appList.clientWidth;
   const currentScrollLeft = appList.scrollLeft;
   let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1;
-  const currentWorkSpan = document.querySelector(".current-work");
+  const currentWorkSpan = document.querySelector(".current-app");
   const workListItems = document.querySelectorAll(".app-list-item");
   const totalWork = workListItems.length;
 
@@ -125,7 +125,7 @@ function updateCurrentWork() {
 appList.addEventListener("scroll", updateCurrentWork);
 updateCurrentWork();
 
-const totalWorkSpan = document.querySelector(".total-work");
+const totalWorkSpan = document.querySelector(".total-app");
 function updateTotalWork() {
   const workListItems = document.querySelectorAll(".app-list-item");
   const totalWork = workListItems.length;
