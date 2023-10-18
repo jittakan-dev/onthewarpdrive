@@ -477,6 +477,7 @@
   /*----------ABOUT---------*/
   .about-intro {
     font-size: 3.5rem;
+    display: none;
   }
   .about-content {
     flex-direction: column;
