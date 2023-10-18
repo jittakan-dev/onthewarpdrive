@@ -134,6 +134,7 @@
   position: relative;
   width: 16%;
   height: auto;
+  /* filter: blur(1px); */
   /* background-color: red; */
 }
 
