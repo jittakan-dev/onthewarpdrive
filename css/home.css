@@ -132,10 +132,10 @@
 /*-----------------END HOME SECTION--------------------*/
 @media (max-width: 400px) {
   .stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .base-stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .smly {
     width: 50%;
@@ -146,10 +146,10 @@
 }
 @media (min-width: 400px) and (max-width: 576px) {
   .stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .base-stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .smly {
     width: 50%;
@@ -161,10 +161,10 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
   .stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .base-stacked-div {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .smly {
     width: 50%;

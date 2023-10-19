@@ -31,7 +31,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: #826cef;
+  background-color: mediumseagreen;
 }
 #about-panel {
   /* width: 90%;
@@ -48,12 +48,12 @@
 .about-intro {
   width: 92%;
   height: auto;
-  padding: 4%;
+  padding: 0 4% 4% 4%;
   background-color: mediumseagreen;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: 5rem;
 }
 .about-otwd-group {
