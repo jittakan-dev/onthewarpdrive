@@ -22,13 +22,11 @@ appList.addEventListener("mousedown", (e) => {
   isSectionDragging = true;
   startX = e.pageX - appList.offsetLeft;
   scrollLeft = appList.scrollLeft;
-  appList.classList.add("grabbing");
 });
 
 appList.addEventListener("mouseleave", () => {
   if (isSectionDragging) {
     snapToItem();
-    appList.classList.remove("grabbing");
     isSectionDragging = false;
   }
 });
@@ -36,7 +34,6 @@ appList.addEventListener("mouseleave", () => {
 appList.addEventListener("mouseup", () => {
   if (isSectionDragging) {
     snapToItem();
-    appList.classList.remove("grabbing");
     isSectionDragging = false;
   }
 });

@@ -37,7 +37,6 @@
 .base-stacked-div {
   width: 100%;
   height: 100%;
-  position: relative;
   background-color: #171717;
   font-family: "Ubuntu";
   font-size: 6rem;
@@ -59,13 +58,9 @@
   filter: blur(5px) sepia(100%) invert(30%);
 }
 .otwdLogoBlur {
-  padding: 5%;
-  position: relative;
   width: 18%;
   height: auto;
   filter: blur(5px) sepia(100%) invert(30%);
-  /* filter: blur(1px); */
-  /* background-color: red; */
 }
 .whale-1 {
   z-index: 7;
