@@ -46,7 +46,7 @@
   align-items: center;
 }
 #whaleLogo {
-  width: 12.5%;
+  width: 10%;
   height: auto;
   filter: blur(3px) sepia(100%);
 }
