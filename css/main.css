@@ -5,7 +5,8 @@ html {
   padding: 0;
   height: auto;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-color: #171717;
 }
 .content-section {
