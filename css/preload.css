@@ -32,21 +32,19 @@
   z-index: 10000;
   transition: height 0.5s linear;
 }
-
 .OTWDLOGOFLASH {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 45%;
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
 }
 .progressbar {
-  top: 5%;
   position: relative;
-  width: 40%;
+  width: 35%;
   border: 2px solid rgba(99, 99, 99, 0.3);
   height: 10%;
   text-align: center;
