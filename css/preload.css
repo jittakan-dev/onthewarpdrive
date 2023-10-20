@@ -33,7 +33,7 @@
   transition: height 0.5s linear;
 }
 
-.OTWDColorLogo {
+.OTWDLOGOFLASH {
   position: relative;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media (max-width: 400px) {
-  .OTWDColorLogo {
+  .OTWDLOGOFLASH {
     width: 30%;
   }
   .progressbar {
@@ -159,7 +159,7 @@
   }
 }
 @media (min-width: 400px) and (max-width: 576px) {
-  .OTWDColorLogo {
+  .OTWDLOGOFLASH {
     width: 35%;
   }
   .progressbar {
@@ -170,7 +170,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .OTWDColorLogo {
+  .OTWDLOGOFLASH {
     width: 35%;
   }
   .progressbar {
@@ -181,14 +181,14 @@
 }
 
 /* @media (min-width: 768px) and (max-width: 992px) {
-  .OTWDColorLogo {
+  .OTWDLOGOFLASH {
   }
   .progressbar {
   }
 }
 
 @media (min-width: 992px) {
-  .OTWDColorLogo {
+  .OTWDLOGOFLASH {
   }
   .progressbar {
   }
