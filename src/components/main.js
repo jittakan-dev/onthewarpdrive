@@ -1,3 +1,4 @@
+// Prevent mouse wheel and touch events from scrolling the window
 window.addEventListener(
   "wheel",
   function (e) {
@@ -5,6 +6,22 @@ window.addEventListener(
   },
   { passive: false }
 );
+
+window.addEventListener("touchstart", function (e) {
+  // Store the initial touch position
+  this.touchStartY = e.touches[0].clientY;
+});
+
+window.addEventListener("touchmove", function (e) {
+  // Calculate the vertical distance moved during the touch move
+  const deltaY = e.touches[0].clientY - this.touchStartY;
+
+  // If the vertical distance is more than a threshold, prevent the default scrolling
+  if (Math.abs(deltaY) > 10) {
+    e.preventDefault();
+  }
+});
+
 // const sections = document.querySelectorAll(".content-section");
 
 // let scrolling = false;
