@@ -130,12 +130,8 @@
   width: 50%;
 }
 .otwdLogo {
-  padding: 5%;
-  position: relative;
-  width: 16%;
+  width: 100%;
   height: auto;
-  /* filter: blur(1px); */
-  /* background-color: red; */
 }
 
 .right-hidden-menu a {
