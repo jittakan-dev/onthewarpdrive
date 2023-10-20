@@ -43,6 +43,7 @@
   z-index: 10001;
 }
 .progressbar {
+  top: 2.5%;
   position: relative;
   width: 35%;
   border: 2px solid rgba(99, 99, 99, 0.3);
