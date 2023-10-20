@@ -48,6 +48,7 @@
 #whaleLogo {
   width: 12.5%;
   height: auto;
+  filter: blur(3px) sepia(100%);
 }
 .whale-0 {
   z-index: 0;
