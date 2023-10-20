@@ -32,7 +32,7 @@
   z-index: 10000;
   transition: height 0.5s linear;
 }
-#OTWDLOGOFLASH {
+#FLASHLOGO {
   position: relative;
   display: flex;
   justify-content: center;
@@ -64,7 +64,6 @@
   overflow: hidden;
   color: rgb(99, 99, 99, 0.9);
 }
-
 .otwd-circle {
   position: absolute;
   width: 0;
@@ -84,7 +83,6 @@
 #otwd-circle-3 {
   background-color: black;
 }
-
 .pre-layer-1 {
   top: 5vh;
   position: relative;
@@ -147,7 +145,7 @@
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media (max-width: 400px) {
-  .OTWDLOGOFLASH {
+  #FLASHLOGO {
     width: 30%;
   }
   .progressbar {
@@ -157,7 +155,7 @@
   }
 }
 @media (min-width: 400px) and (max-width: 576px) {
-  .OTWDLOGOFLASH {
+  #FLASHLOGO {
     width: 35%;
   }
   .progressbar {
@@ -168,7 +166,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .OTWDLOGOFLASH {
+  #FLASHLOGO {
     width: 35%;
   }
   .progressbar {
