@@ -146,7 +146,10 @@ function getActiveSection() {
 }
 
 function updateColors(sectionId) {
-  navLinks.forEach((link) => {
+  hiddenMenuLinks.forEach((link) => {
+    link.classList.remove("bubbleLinkActive");
+  });
+  dotGroupLinks.forEach((link) => {
     link.classList.remove("navLinkActive");
   });
   if (sectionId === "home") {
@@ -154,18 +157,52 @@ function updateColors(sectionId) {
     menuButtonClick.style.backgroundColor = "#EBEBEB";
     menuButton.style.backgroundColor = "#EBEBEB";
     menuBubbleClick.style.backgroundColor = "#171717";
-    navLinks[0].classList.add("navLinkActive"); // Add active class to HOME link
+    hiddenMenuLinks[0].classList.add("bubbleLinkActive"); // Add active class to HOME link
+    dotGroupLinks[0].classList.add("navLinkActive"); // Add active class to HOME link
   } else if (sectionId === "work") {
     menuBubble.style.backgroundColor = "#171717";
     menuButtonClick.style.backgroundColor = "#171717";
     menuButton.style.backgroundColor = "#171717";
     menuBubbleClick.style.backgroundColor = "#EBEBEB";
-    navLinks[1].classList.add("navLinkActive");
+    hiddenMenuLinks[1].classList.add("bubbleLinkActive");
+    dotGroupLinks[1].classList.add("navLinkActive"); // Add active class to HOME link
   } else if (sectionId === "about") {
     menuBubble.style.backgroundColor = "#039fa8";
     menuButtonClick.style.backgroundColor = "#039fa8";
     menuButton.style.backgroundColor = "#039fa8";
     menuBubbleClick.style.backgroundColor = "#bebebe";
-    navLinks[2].classList.add("navLinkActive");
+    hiddenMenuLinks[2].classList.add("bubbleLinkActive");
+    dotGroupLinks[2].classList.add("navLinkActive"); // Add active class to HOME link
   }
 }
+// dotGroupLinks.forEach((link) => {
+//   link.style.backgroundColor = "#039fa8";
+// });
+// if (sectionId === "home") {
+//   menuBubble.style.backgroundColor = "#EBEBEB";
+//   menuButtonClick.style.backgroundColor = "#EBEBEB";
+//   menuButton.style.backgroundColor = "#EBEBEB";
+//   menuBubbleClick.style.backgroundColor = "#171717";
+//   hiddenMenuLinks[0].classList.add("bubbleLinkActive"); // Add active class to HOME link
+//   dotGroupLinks[0].style.backgroundColor = "#039fa8";
+//   dotGroupLinks[1].style.backgroundColor = "#2e8b57";
+//   dotGroupLinks[2].style.backgroundColor = "#2e8b57";
+// } else if (sectionId === "work") {
+//   menuBubble.style.backgroundColor = "#171717";
+//   menuButtonClick.style.backgroundColor = "#171717";
+//   menuButton.style.backgroundColor = "#171717";
+//   menuBubbleClick.style.backgroundColor = "#EBEBEB";
+//   hiddenMenuLinks[1].classList.add("bubbleLinkActive");
+//   dotGroupLinks[1].style.backgroundColor = "#039fa8";
+//   dotGroupLinks[2].style.backgroundColor = "#2e8b57";
+//   dotGroupLinks[0].style.backgroundColor = "#2e8b57";
+// } else if (sectionId === "about") {
+//   menuBubble.style.backgroundColor = "#039fa8";
+//   menuButtonClick.style.backgroundColor = "#039fa8";
+//   menuButton.style.backgroundColor = "#039fa8";
+//   menuBubbleClick.style.backgroundColor = "#bebebe";
+//   hiddenMenuLinks[2].classList.add("bubbleLinkActive");
+//   dotGroupLinks[2].style.backgroundColor = "#039fa8";
+//   dotGroupLinks[1].style.backgroundColor = "#2e8b57";
+//   dotGroupLinks[0].style.backgroundColor = "#2e8b57";
+// }

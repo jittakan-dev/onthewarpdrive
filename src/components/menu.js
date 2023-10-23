@@ -1,5 +1,7 @@
 const menuSection = document.getElementById("menu-section");
-const navLinks = menuSection.querySelectorAll("nav a");
+const hiddenMenuLinks = menuSection.querySelectorAll(".right-hidden-menu a");
+const navSection = document.getElementById("nav-section");
+const dotGroupLinks = navSection.querySelectorAll(".nav-dot-group a");
 const menuBubble = document.querySelector(".bubble-handle");
 const menuBubbleClick = menuBubble.querySelector(".bubble-handle-button");
 const menuButton = document.querySelector(".bubble-button");
@@ -10,12 +12,30 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.toggle("menu-active");
     menuSection.classList.toggle("active");
   });
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
+  hiddenMenuLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
       document.documentElement.style.scrollBehavior = "smooth";
       document.body.style.scrollBehavior = "smooth";
       menuSection.classList.remove("active");
       menuButtonClick.classList.remove("menu-active");
+      event.preventDefault();
+      const targetId = link.getAttribute("href");
+      scrollToSection(targetId);
+      setTimeout(() => {
+        document.documentElement.style.scrollBehavior = "";
+        document.body.style.scrollBehavior = "";
+      }, 1000);
+    });
+  });
+  dotGroupLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      document.documentElement.style.scrollBehavior = "smooth";
+      document.body.style.scrollBehavior = "smooth";
+      menuSection.classList.remove("active");
+      menuButtonClick.classList.remove("menu-active");
+      event.preventDefault();
+      const targetId = link.getAttribute("href");
+      scrollToSection(targetId);
       setTimeout(() => {
         document.documentElement.style.scrollBehavior = "";
         document.body.style.scrollBehavior = "";
@@ -30,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const difference = targetOffset;
       const minDuration = 400;
       const maxDuration = 700;
-      const exponent = 0.7;
+      const exponent = 0.5;
       const distance = Math.abs(difference);
       const duration = Math.min(
         maxDuration,
@@ -52,11 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
       requestAnimationFrame(scrollStep);
     }
   };
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      scrollToSection(targetId);
-    });
-  });
 });

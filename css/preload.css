@@ -85,7 +85,7 @@
   background-color: black;
 }
 .pre-layer-1 {
-  top: 5vh;
+  top: 1vh;
   position: relative;
   width: 100vw;
   height: 20vh;
@@ -97,19 +97,19 @@
   width: 100%;
 }
 .pre-layer-1-1 {
-  background-color: rgb(35, 144, 148);
+  background-color: #cd85a8;
   height: 15%;
 }
 .pre-layer-1-2 {
-  background-color: rgb(72, 20, 114);
+  background-color: #7091f5;
   height: 25%;
 }
 .pre-layer-1-3 {
-  background-color: rgb(138, 42, 42);
+  background-color: #3ab2a4;
   height: 40%;
 }
 .pre-layer-1-4 {
-  background-color: rgb(165, 76, 38);
+  background-color: #74e068;
   height: 30%;
 }
 .pre-layer-2 {
@@ -117,7 +117,7 @@
   position: relative;
   width: 200vw;
   height: 30vh;
-  background-color: #ef6c73;
+  /* background-color: #ef6c73; */
   transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-bottom: 1px solid #c3e5e8;
 }
@@ -125,19 +125,19 @@
   width: 100%;
 }
 .pre-layer-2-1 {
-  background-color: rgb(143, 38, 174);
+  background-color: #cd85a8;
   height: 30%;
 }
 .pre-layer-2-2 {
-  background-color: rgb(41, 46, 154);
+  background-color: #3ab2a4;
   height: 40%;
 }
 .pre-layer-2-3 {
-  background-color: rgb(158, 36, 36);
+  background-color: #7091f5;
   height: 25%;
 }
 .pre-layer-2-4 {
-  background-color: rgb(66, 146, 34);
+  background-color: #d3d368;
   height: 15%;
 }
 .fade-out {
