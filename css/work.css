@@ -36,6 +36,7 @@
   -webkit-text-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  color: #6c757d;
 }
 .work-menu-types div {
   margin-right: 7%;
@@ -51,14 +52,15 @@
 }
 .work-menu-types span {
   margin-right: 7%;
+  color: #adb5bd;
 }
 .workTypeActive {
-  color: #da4737;
+  color: #212529;
 }
 .work-list-container {
   width: 90vw;
   height: 100%;
-  background-color: #49c5b6;
+  background-color: #adb5bd;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -79,7 +81,7 @@
   transform: translateY(0);
   width: auto;
   height: auto;
-  color: wheat;
+  color: #f8f9fa;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
@@ -117,7 +119,7 @@
 .work-right-arrow {
   width: auto;
   height: auto;
-  color: #e74c3c;
+  color: #212529;
   font-size: 3rem;
   cursor: pointer;
   user-select: none;
@@ -128,15 +130,15 @@
   transition: all 3s ease-in;
 }
 .work-left-arrow {
-  color: #dca8a2;
+  color: #adb5bd;
   cursor: default;
 }
 .moreWork {
-  color: #da4737;
+  color: #212529;
   cursor: pointer;
 }
 .noMoreWork {
-  color: #dca8a2;
+  color: #adb5bd;
   cursor: default;
 }
 .app-list,
@@ -160,10 +162,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  color: wheat;
   scroll-snap-align: start;
 }
-
 .work-block {
   padding: 2%;
   width: 50%;
@@ -173,12 +173,9 @@
   justify-content: center;
   align-items: start;
 }
-
 .work-block-no {
-  color: #1e524c;
   font-size: 5rem;
 }
-
 .work-block-title {
   width: 100%;
 }
@@ -193,7 +190,6 @@
   width: 100%;
 }
 .work-block-subtitle p {
-  color: #1e524c;
   font-size: 2rem;
   word-break: break-word;
   white-space: normal;
@@ -249,7 +245,7 @@
   .work-arrow-group {
     /* top: 80%; */
     padding: 0 1.2% 0 4%;
-    bottom: 30%;
+    bottom: 20%;
   }
   .work-left-arrow,
   .work-right-arrow {

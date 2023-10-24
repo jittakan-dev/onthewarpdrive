@@ -56,7 +56,7 @@ function animateCirclesEnd() {
     setTimeout(() => {
       subPre.style.top = topValue;
       subPre.style.height = "100vh";
-    }, index * 50 + delay); // Combine the interval delay and the random delay
+    }, index * 5 + delay); // Combine the interval delay and the random delay
   });
 }
 

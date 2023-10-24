@@ -45,11 +45,6 @@
   justify-content: center;
   align-items: center;
 }
-#whaleLogo {
-  width: 10%;
-  height: auto;
-  filter: blur(3px) sepia(100%);
-}
 .whale-0 {
   z-index: 0;
   /* background-position: center;
@@ -57,54 +52,24 @@
   background-attachment: fixed; */
 }
 .whale-1 {
-  z-index: 7;
+  z-index: 1;
 }
 .whale-2 {
-  z-index: 7;
+  z-index: 2;
 }
 .whale-3 {
-  z-index: 7;
+  z-index: 3;
 }
 .whale-4 {
-  z-index: 10;
+  z-index: 4;
 }
 .whale-5 {
-  z-index: 10;
+  z-index: 5;
 }
 .whale-6 {
   z-index: 6;
 }
-.whale-0 div {
-  position: absolute;
-  top: 0;
-}
-.stacked-div div {
-  position: absolute;
-  left: 12%;
-}
 /*-------------------1st Row-----------*/
-
-.whale-1 div {
-  top: 11%;
-}
-.whale-2 div {
-  top: 22%;
-}
-.whale-3 div {
-  top: 33%;
-}
-.whale-4 div {
-  top: 44%;
-  font-weight: bolder;
-}
-.whale-5 div {
-  font-size: 4rem;
-  top: 55%;
-}
-.whale-6 div {
-  font-size: 2rem;
-  top: 68%;
-}
 .whale-scrollbar {
   position: absolute;
   bottom: 10%;
@@ -123,7 +88,6 @@
   z-index: 99;
   cursor: pointer;
 }
-
 /*-----------------END HOME SECTION--------------------*/
 @media (max-width: 400px) {
   .stacked-div {
@@ -137,9 +101,6 @@
   }
   .smly {
     width: 50%;
-  }
-  #LogoBlur {
-    width: 40%;
   }
 }
 @media (min-width: 400px) and (max-width: 576px) {
@@ -155,9 +116,6 @@
   .smly {
     width: 50%;
   }
-  #LogoBlur {
-    width: 40%;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -172,8 +130,5 @@
   }
   .smly {
     width: 50%;
-  }
-  #LogoBlur {
-    width: 40%;
   }
 }

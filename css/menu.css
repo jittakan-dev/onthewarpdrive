@@ -57,7 +57,7 @@
   content: "";
   position: absolute;
   height: 2.4px;
-  background-color: #666;
+  background-color: #495057;
   transition: all 0.4s;
 }
 .bubble-button .hamburger-icon {
@@ -103,7 +103,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222222;
+  background-color: #000;
   z-index: 999;
   transition: top 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
@@ -136,7 +136,7 @@
 .right-hidden-menu a {
   font-size: 3rem;
   font-weight: 700;
-  color: #fff;
+  color: white;
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   margin-top: 2%;
@@ -147,13 +147,16 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.right-hidden-menu a:hover,
+.right-hidden-menu a:hover, /*----------------------------------*/
 .left-hidden-menu a:hover {
-  background-color: #e74c3c;
+  color: #171717;
+  background-color: white;
   padding: 3%;
 }
 .bubbleLinkActive {
-  background-color: #039fa8;
+  /* background-color: #dee2e6; */
+  background-color: #6c757d;
+  color: #171717;
 }
 @media (max-width: 768px) {
   .right-hidden-menu a {
@@ -168,10 +171,11 @@
 }
 /*-----------------------3 DOTS SET------------------------------------*/
 
-.nav-dot-group {
+.nav-dot-group,
+.nav-dot-group-dop {
   position: fixed;
   right: 2%;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   width: auto;
   height: auto;
@@ -180,14 +184,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
-.nav-dot-group a {
-  right: 1%;
+.nav-dot-group-dop {
+  z-index: 39;
+}
+.nav-dot-group a,
+.nav-dot-group-dop div {
+  text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   border-radius: 50%;
-  width: 8.7vh;
-  height: 8.7vh;
-  font-weight: bold;
+  width: 7.2vh;
+  height: 7.2vh;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -199,89 +209,44 @@
   -webkit-text-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  border: 2px solid #6f6f6f;
+}
+.nav-dot-group-dop div {
+  background-color: #212529;
+}
+.nav-dot-group a {
+  color: white;
+  text-decoration: none;
+}
+.nav-dot-group a:hover {
   color: #171717;
+  background-color: white;
 }
 .navLinkActive {
-  background-color: #ffb6d9;
+  background-color: #6c757d;
 }
-.nav-dot-group a:nth-child(1) {
-  top: 100%;
+.nav-dot-group a:nth-child(1),
+.nav-dot-group-dop div:nth-child(1) {
+  margin: 2vh 0 1vh 0;
+}
+.nav-dot-group a:nth-child(2),
+.nav-dot-group-dop div:nth-child(2) {
   margin: 1vh 0 1vh 0;
 }
-.nav-dot-group a:nth-child(2) {
-  top: 200%;
-  margin: 1vh 0 1vh 0;
-}
-.nav-dot-group a:nth-child(3) {
-  top: 300%;
-  margin: 1vh 0 1vh 0;
+.nav-dot-group a:nth-child(3),
+.nav-dot-group-dop div:nth-child(3) {
+  margin: 1vh 0 2vh 0;
 }
 
-.nav-dot-group a:hover {
-  background-color: #7091f5;
-  color: wheat;
-}
-.doppelgaenger-1 {
-  top: 0;
-  margin: 1vh 0 1vh 0;
-  position: absolute;
-  right: 2%;
-  border-radius: 50%;
-  width: 8.7vh;
-  height: 8.7vh;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-text-select: none;
-  -webkit-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #96c291;
-}
-.doppelgaenger-2 {
-  top: 36%;
-  margin: 1vh 0 1vh 0;
-  position: absolute;
-  right: 2%;
-  border-radius: 50%;
-  width: 8.7vh;
-  height: 8.7vh;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-text-select: none;
-  -webkit-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #96c291;
-}
-.doppelgaenger-3 {
-  top: 68%;
-  margin: 1vh 0 1vh 0;
-  position: absolute;
-  right: 2%;
-  border-radius: 50%;
-  width: 8.7vh;
-  height: 8.7vh;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-text-select: none;
-  -webkit-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #96c291;
+@media (max-width: 768px) {
+  .nav-dot-group,
+  .nav-dot-group-dop {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+  .nav-dot-group-dop div,
+  .nav-dot-group a {
+    width: 6.8vh;
+    height: 6.8vh;
+  }
 }
