@@ -42,9 +42,11 @@
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
-  padding: 2.5% 0 2.5% 0;
+  padding: 4% 0 4% 0;
   margin: 0;
-  border: 2px solid #ced4da;
+  border: 2px solid;
+  border-color: #ced4da;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .progressbar {
   top: 10%;
@@ -127,7 +129,7 @@
 }
 @media (max-width: 768px) {
   #flashLOGO {
-    padding: 2% 0 2% 0;
+    /* padding: 5% 0 5% 0; */
     width: 25%;
   }
   .progressbar {

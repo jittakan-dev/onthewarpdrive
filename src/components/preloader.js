@@ -1,6 +1,7 @@
 const preLoader = document.querySelector(".pre-loader");
 const otwdLoader = document.querySelector(".otwd-loader");
 const otwdCircles = document.querySelectorAll(".otwd-circle");
+const flashLOGO = document.getElementById("flashLOGO");
 const progressBar = document.querySelector(".progressbar .progress");
 const subPre = document.querySelectorAll(".sub-pre");
 const navHeader = document.getElementById("nav-header");
@@ -80,6 +81,7 @@ const firstIntervalId = setInterval(() => {
     // progressBar.style.height = 0;
     const thirdIntervalId = setInterval(() => {
       clearInterval(thirdIntervalId);
+      flashLOGO.style.borderColor = "#212529";
       preLoader.style.backgroundColor = "black";
       navHeader.style.display = mainBody.style.display = "block";
       const fourthIntervalId = setInterval(() => {
