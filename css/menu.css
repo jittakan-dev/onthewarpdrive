@@ -325,20 +325,20 @@
   }
   .nav-dot-group-dop div,
   .nav-dot-group a {
-    width: 6.8vh;
-    height: 6.8vh;
+    width: 5.8vh;
+    height: 5.8vh;
   }
   .bubble-button-hamburger,
   .bubble-button {
-    width: 7.6vh;
-    height: 7.6vh;
+    width: 6.4vh;
+    height: 6.4vh;
   }
   .bubble-handle {
-    width: 4.4vh;
-    height: 4.4vh;
+    width: 4vh;
+    height: 4vh;
   }
   .bubble-handle-button {
-    width: 2.2vh;
-    height: 2.2vh;
+    width: 2vh;
+    height: 2vh;
   }
 }
