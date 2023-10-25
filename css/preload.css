@@ -2,7 +2,6 @@
 #main-body {
   display: none;
 }
-
 .pre-loader {
   position: fixed;
   top: -10vh;
@@ -19,13 +18,11 @@
   margin: 0;
   padding: 0;
   opacity: 1;
-  transition: all 0.5s linear;
 }
-
 .otwd-loader {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   position: relative;
   width: auto;
@@ -33,14 +30,14 @@
   overflow: hidden;
   opacity: 1;
   z-index: 10000;
-  transition: all 0.5s linear;
+  transition: height 0.5s linear;
   padding: 0;
 }
 
 #flashLOGO {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   width: 30%;
   height: auto;
@@ -75,9 +72,8 @@
   background-color: rgba(99, 99, 99, 0.3);
   transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
-  color: rgba(99, 99, 99, 0.9);
+  color: rgb(99, 99, 99, 0.9);
 }
-
 .otwd-circle {
   position: absolute;
   width: 0;
@@ -86,21 +82,17 @@
   top: -50%;
   left: -50%;
   transition: all 3s ease-in-out;
-  border: 1px solid #3a3a3a;
+  border: 1px solid rgb(58, 58, 58);
 }
-
 #otwd-circle-1 {
   background-color: #ced4da;
 }
-
 #otwd-circle-2 {
   background-color: #495057;
 }
-
 #otwd-circle-3 {
-  background-color: #000000;
+  background-color: black;
 }
-
 .pre-layer-1 {
   top: 1vh;
   position: relative;
@@ -110,40 +102,34 @@
   transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-bottom: 1px solid #ffffff;
 }
-
 .pre-layer-1 div {
   width: 100%;
 }
-
 .pre-layer-1-1 {
   background-color: #343a40;
   height: 40%;
   border-bottom: 1px solid #ffffff;
 }
-
 .pre-layer-1-2 {
-  background-color: #6c757d;
+  background-color: #6c757d; /*495057*/
   height: 30%;
   border-bottom: 1px solid #ffffff;
 }
-
 .pre-layer-1-3 {
   background-color: #ced4da;
   height: 20%;
   border-bottom: 1px solid #ffffff;
 }
-
 .pre-layer-1-4 {
-  background-color: #e9ecef;
+  background-color: #e9ecef; /*adb5bd*/
   height: 10%;
   border-bottom: 1px solid #ffffff;
 }
-
 .fade-out {
   top: -120%;
+  height: 140vh;
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
-
 @media (max-width: 768px) {
   #flashLOGO {
     width: 25%;
