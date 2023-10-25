@@ -42,15 +42,16 @@
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
-  padding: 5% 0 5% 0;
+  padding: 0;
+  margin: 0;
   border: 2px solid #ced4da;
 }
 .progressbar {
-  top: -10%;
+  top: 10%;
   position: relative;
-  width: 30%;
+  width: 35%;
   border: 2px solid rgba(99, 99, 99, 0.3);
-  height: 10%;
+  height: 8%;
   text-align: center;
   transition: height 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
@@ -129,8 +130,7 @@
     width: 30%;
   }
   .progressbar {
-    top: -10%;
-    width: 25%;
+    width: 30%;
     height: 6%;
   }
 }
