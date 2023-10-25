@@ -78,7 +78,7 @@ const firstIntervalId = setInterval(() => {
     progressBar.style.color = "rgba(99, 99, 99, 0)";
     document.querySelector(".progressbar").style.height = 0;
     document.querySelector(".progressbar").style.border = "none";
-    // progressBar.style.height = 0;
+    progressBar.style.height = 0;
     const thirdIntervalId = setInterval(() => {
       clearInterval(thirdIntervalId);
       flashLOGO.style.borderColor = "#212529";

@@ -63,11 +63,11 @@
 }
 @-moz-document url-prefix() {
   #flashLOGO {
-    width: 100%;
+    width: 30%;
     height: auto;
   }
   .progressbar {
-    width: 100%;
+    width: 30%;
     height: 8%;
   }
 }
