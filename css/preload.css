@@ -61,6 +61,16 @@
   overflow: hidden;
   margin-bottom: 50%;
 }
+@-moz-document url-prefix() {
+  #flashLOGO {
+    width: 50%;
+    height: auto;
+  }
+  .progressbar {
+    width: 50%;
+    height: auto;
+  }
+}
 .progress {
   font-size: 1rem;
   display: flex;
