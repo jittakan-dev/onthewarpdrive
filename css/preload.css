@@ -44,7 +44,7 @@
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
-  padding: 30% 1% 30% 5%;
+  padding: 30% 0.5% 30% 0.5%;
   margin: 0;
   border: 2px solid;
   border-color: #ced4da;

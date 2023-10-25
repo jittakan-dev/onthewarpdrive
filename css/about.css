@@ -502,9 +502,7 @@
 @media (max-width: 768px) {
   /*----------ABOUT---------*/
   .about-intro {
-    font-size: 3rem;
-    /* font-size: 2rem; */
-    /* display: none; */
+    font-size: 2.8rem;
   }
   .about-content {
     flex-direction: column;
