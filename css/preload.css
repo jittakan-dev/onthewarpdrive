@@ -38,11 +38,11 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 32%;
+  width: 30%;
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
-  padding: 7% 0 7% 0;
+  padding: 7% 1% 7% 1%;
   margin: 0;
   border: 2px solid;
   border-color: #ced4da;
@@ -51,7 +51,7 @@
 .progressbar {
   top: 10%;
   position: relative;
-  width: 32%;
+  width: 30%;
   border: 2px solid rgba(99, 99, 99, 0.3);
   height: 8%;
   text-align: center;
