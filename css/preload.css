@@ -126,7 +126,6 @@
 }
 @media (max-width: 768px) {
   #flashLOGO {
-    padding: 0;
     width: 30%;
   }
   .progressbar {
