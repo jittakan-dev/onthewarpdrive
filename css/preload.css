@@ -22,7 +22,7 @@
 .otwd-loader {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   width: auto;
@@ -33,10 +33,11 @@
   transition: height 0.5s linear;
   padding: 0;
 }
+
 #flashLOGO {
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   width: 30%;
   height: auto;
@@ -48,6 +49,7 @@
   border-color: #ced4da;
   transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .progressbar {
   top: 10%;
   position: relative;
