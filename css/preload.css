@@ -25,13 +25,13 @@
   justify-content: end;
   align-items: center;
   position: relative;
-  width: 8%;
+  width: 7%;
   height: auto;
   overflow: hidden;
   opacity: 1;
   z-index: 10000;
   transition: all 0.5s linear;
-  padding: 2%;
+  padding: 5% 2% 5% 2%;
   /* background-color: #343a40; */
 }
 
@@ -132,12 +132,8 @@
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media (max-width: 768px) {
-  #flashLOGO {
-    width: 25%;
-  }
-  .progressbar {
-    width: 25%;
-    height: 6%;
+  .otwd-loader {
+    width: 20%;
   }
 }
 /* @media (max-width: 400px) {
