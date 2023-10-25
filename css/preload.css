@@ -40,7 +40,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 100%;
+  width: 99%;
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
