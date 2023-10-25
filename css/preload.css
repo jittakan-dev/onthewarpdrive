@@ -25,13 +25,14 @@
   justify-content: end;
   align-items: center;
   position: relative;
-  width: auto;
+  width: 8%;
   height: auto;
   overflow: hidden;
   opacity: 1;
   z-index: 10000;
-  transition: height 0.5s linear;
-  padding: 0;
+  transition: all 0.5s linear;
+  padding: 2%;
+  /* background-color: #343a40; */
 }
 
 #flashLOGO {
@@ -39,7 +40,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 30%;
+  width: 100%;
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
@@ -53,7 +54,7 @@
 .progressbar {
   top: 10%;
   position: relative;
-  width: 30%;
+  width: 100%;
   border: 2px solid rgba(99, 99, 99, 0.3);
   height: 8%;
   text-align: center;
