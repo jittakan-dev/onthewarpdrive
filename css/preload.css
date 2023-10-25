@@ -42,7 +42,7 @@
   height: auto;
   filter: grayscale(100%);
   z-index: 10001;
-  padding: 0;
+  padding: 2.5% 0 2.5% 0;
   margin: 0;
   border: 2px solid #ced4da;
 }
@@ -127,10 +127,11 @@
 }
 @media (max-width: 768px) {
   #flashLOGO {
-    width: 30%;
+    padding: 2% 0 2% 0;
+    width: 25%;
   }
   .progressbar {
-    width: 30%;
+    width: 25%;
     height: 6%;
   }
 }

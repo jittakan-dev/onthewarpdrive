@@ -55,7 +55,7 @@
   align-items: center;
   justify-content: start;
   font-size: 5rem;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #343a40;
 }
 .about-otwd-group {
   width: 90%;
