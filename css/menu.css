@@ -1,7 +1,7 @@
 .bubble-button-hamburger,
 .bubble-button {
   position: fixed;
-  right: 1%;
+  right: 0.5%;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ebebeb;
@@ -20,7 +20,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 .bubble-button {
-  right: 2%;
+  right: 0.5%;
   top: 20%;
 }
 .bubble-handle,
@@ -174,7 +174,7 @@
 .nav-dot-group,
 .nav-dot-group-dop {
   position: fixed;
-  right: 2%;
+  right: 0.5%;
   top: 50%;
   transform: translateY(-50%);
   width: auto;
