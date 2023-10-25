@@ -236,7 +236,7 @@
 .nav-dot-group-dop div:nth-child(3) {
   margin: 1vh 0 2vh 0;
 }
-/*------------------------------VERTICAL BASE ----------------------*/
+/*------------------------------PORTRAIT BASE ----------------------*/
 @media (max-width: 390px) {
   .nav-dot-group,
   .nav-dot-group-dop {
@@ -422,4 +422,6 @@
     height: 1.8vh;
   }
 }
-/*------------------------------VERTICAL BASE ----------------------*/
+@media (min-width: 1366px) {
+}
+/*------------------------------PORTRAIT BASE ----------------------*/
