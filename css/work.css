@@ -215,11 +215,9 @@
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    /* background-color: #da4737; */
   }
   .work-menu-title {
     width: 100%;
-    /* background-color: chartreuse; */
   }
   .work-menu-types {
     margin-top: 2%;
@@ -230,7 +228,6 @@
     align-items: end;
     font-size: 1.2rem;
     border-top: 1px dashed #171717;
-    /* background-color: brown; */
   }
   .work-menu-types div {
     margin-right: 2.5%;

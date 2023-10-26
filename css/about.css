@@ -515,7 +515,9 @@
   }
   /*-------------- START about TITLE ----------------*/
   .about-title-group {
-    margin-bottom: 0;
+    margin: 10% 0 10% 0;
+    flex-direction: row-reverse;
+    align-items: start;
   }
   .right-arrow {
     margin-top: 5%;
