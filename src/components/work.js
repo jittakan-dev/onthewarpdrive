@@ -1,10 +1,11 @@
 const workTypes = document.querySelectorAll(".work-menu-types div");
 const appList = document.querySelector(".work-list-container .app-list");
 const appListItem = document.querySelector(".app-list-item");
+const appListItems = document.querySelectorAll(".app-list-item");
 const AppLeftArrow = document.getElementById("AppLeftArrow");
 const AppRightArrow = document.getElementById("AppRightArrow");
 const totalWorkSpan = document.querySelector(".total-app");
-
+const currentWorkSpan = document.querySelector(".current-app");
 /*----------------------------------CHANGE TAB------------------------------------*/
 function changeTab(tabIndex) {
   const tabs = document.querySelectorAll(".work-menu-types div");
@@ -110,9 +111,7 @@ function updateCurrentWork() {
   const itemWidth = appList.clientWidth;
   const currentScrollLeft = appList.scrollLeft;
   let currentWork = Math.ceil(currentScrollLeft / itemWidth) + 1;
-  const currentWorkSpan = document.querySelector(".current-app");
-  const workListItems = document.querySelectorAll(".app-list-item");
-  const totalWork = workListItems.length;
+  const totalWork = appListItems.length;
   if (isNaN(currentWork) || currentWork <= 0) {
     currentWork = 1;
   }
@@ -123,8 +122,7 @@ function updateCurrentWork() {
   return currentWork;
 }
 function updateTotalWork() {
-  const workListItems = document.querySelectorAll(".app-list-item");
-  const totalWork = workListItems.length;
+  const totalWork = appListItems.length;
   totalWorkSpan.textContent = totalWork;
   return totalWork;
 }

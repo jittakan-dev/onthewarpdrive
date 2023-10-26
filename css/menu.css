@@ -101,11 +101,32 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000;
   z-index: 999;
   transition: top 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.menu-group {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.term-group {
+  width: 90%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #6c757d;
+  margin: 2% 5% 2% 5%;
+}
+.term-group span {
+  color: white;
+  margin: 0 1% 0 1%;
 }
 .hidden-menu.active {
   top: 0;
