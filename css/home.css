@@ -90,6 +90,11 @@
 }
 /*-----------------END HOME SECTION--------------------*/
 @media (max-width: 400px) {
+  .home-whale-container {
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(90deg);
+  }
   .stacked-div {
     font-size: 3rem;
   }
@@ -104,6 +109,11 @@
   }
 }
 @media (min-width: 400px) and (max-width: 576px) {
+  .home-whale-container {
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(90deg);
+  }
   .stacked-div {
     font-size: 3rem;
   }
@@ -119,6 +129,11 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .home-whale-container {
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(90deg);
+  }
   .stacked-div {
     font-size: 3rem;
   }

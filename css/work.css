@@ -198,6 +198,7 @@
   padding: 0;
   margin: 0;
 }
+
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media (max-width: 768px) {
   .work-menu-title {
