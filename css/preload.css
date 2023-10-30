@@ -4,10 +4,10 @@
 }
 .pre-loader {
   position: fixed;
-  top: -10vh;
+  top: -20vh;
   left: 0;
   width: 100vw;
-  height: 130vh;
+  height: 160vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -98,7 +98,7 @@
   top: 1vh;
   position: relative;
   width: 100vw;
-  height: 20vh;
+  height: 40vh;
   background-color: #3ab2a4;
   transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-bottom: 1px solid #ffffff;
