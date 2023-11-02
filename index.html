@@ -39,6 +39,7 @@
       href="css/preload.css"
     />
     <link rel="preload" href="src/components/preloader.js" as="script" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -55,7 +56,8 @@
     <link rel="shortcut icon" href="#" />
   </head>
   <body>
-    <!-----------   START preload   --------------->
+    <!-- --------   START preload   ------------ -->
+
     <div class="pre-loader">
       <div class="otwd-circle" id="otwd-circle-1"></div>
       <div class="otwd-circle" id="otwd-circle-2"></div>
@@ -79,8 +81,9 @@
         <div class="pre-layer-1-4"></div>
       </div>
     </div>
-    <!-----------   END preload   --------------->
-    <!-----------   START header menu   --------------->
+
+    <!-- --------   END preload   ------------ -->
+    <!-- --------   START header menu   ------------ -->
     <header id="nav-header">
       <nav role="navigation">
         <div class="bubble-button">
@@ -131,28 +134,53 @@
         </nav>
       </nav>
     </header>
-    <!-----------   END header menu   --------------->
+    <!----------   END header menu   -------------->
     <!--------------------------   START main section   -------------------------->
-    <!-----------   start home section   --------------->
+    <!----------   start home section   -------------->
     <main id="main-body">
       <section class="content-section" id="home">
         <div class="home-container">
-          <div class="home-whale-container">
-            <div class="base-stacked-div whale-0">OTWD</div>
-            <div class="stacked-div whale-1"><div></div></div>
-            <div class="stacked-div whale-2"><div></div></div>
-            <div class="stacked-div whale-3"><div></div></div>
-            <div class="stacked-div whale-4"><div></div></div>
-            <div class="stacked-div whale-5"><div></div></div>
-            <div class="stacked-div whale-6"><div></div></div>
-          </div>
-          <div class="whale-scrollbar">
-            <span class="whale-scrollbar-handle"></span>
+          <div class="globe-otwd-group">
+            <div class="globe-otwd">
+              <img
+                src="./images/globe/globe-otwd.png"
+                class="globe-otwd-img"
+                alt="globe-otwd"
+              />
+            </div>
+            <div class="cloud-otwd">
+              <img
+                src="./images/globe/cloud-otwd.png"
+                class="cloud-otwd-img"
+                alt="cloud-otwd"
+              />
+            </div>
+            <div class="ballon-otwd">
+              <img
+                src="./images/globe/ballon-otwd.png"
+                class="ballon-otwd-img"
+                alt="ballon-otwd"
+              />
+            </div>
+            <div class="star-otwd">
+              <img
+                src="./images/globe/star-otwd.png"
+                class="star-otwd-img"
+                alt="star-otwd"
+              />
+            </div>
+            <div class="bird-otwd">
+              <img
+                src="./images/globe/bird-otwd.png"
+                class="bird-otwd-img"
+                alt="bird-otwd"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <!-----------   end home section   --------------->
-      <!-----------   start work section   --------------->
+      <!----------   end home section   -------------->
+      <!----------   start work section   -------------->
       <section class="content-section" id="work">
         <div class="work-menu-container">
           <div class="work-menu-header">
@@ -281,11 +309,11 @@
         </div>
         <!-- <section class="work-items-container">KKKKKKK</section> -->
       </section>
-      <!-----------   end work section   --------------->
-      <!-----------   start otwd section   --------------->
+      <!----------   end work section   -------------->
+      <!----------   start otwd section   -------------->
       <section class="content-section" id="about">
         <div class="about-container">
-          <!-----------------------------------------------START ABOUT PANEL ------------------------------>
+          <!---------------------------------------------- START ABOUT PANEL ------------------------------>
           <div class="about-content">
             <div class="about-panel" id="about-panel">
               <div class="about-intro">Interactable animated graphic</div>
@@ -335,8 +363,8 @@
               <!-- <div class="about-to-right" id="AboutToRight">Right</div> -->
             </div>
           </div>
-          <!-----------------------------------------------END ABOUT PANEL ------------------------------>
-          <!-----------------------------------------------START CONTACT PANEL ------------------------------>
+          <!---------------------------------------------- END ABOUT PANEL ------------------------------>
+          <!---------------------------------------------- START CONTACT PANEL ------------------------------>
           <div class="about-content">
             <div class="contact-panel" id="contact-panel">
               <div class="contact-channel-container">
@@ -455,18 +483,19 @@
               </div>
             </div>
           </div>
-          <!-----------------------------------------------END CONTACT PANEL ------------------------------>
+          <!---------------------------------------------- END CONTACT PANEL ------------------------------>
         </div>
       </section>
     </main>
-    <!-----------   end otwd section   --------------->
-    <!--------------------------   END main section   -------------------------->
+    <!---------- end otwd section --------------->
+    <!-------------------------- END main section -------------------------->
 
     <script>
       var preloadScript = document.createElement("script");
       preloadScript.src = "src/components/preloader.js";
       document.body.appendChild(preloadScript);
     </script>
+
     <!-- <script src="src/components/global-components.js"></script> -->
     <script src="src/components/main.js"></script>
     <script src="src/components/menu.js"></script>
