@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   background-color: #171717;
+  background: url("../images/globe/globe-wall.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   /* background: linear-gradient(
     45deg,
     #d99235,
@@ -99,6 +104,6 @@
 
 @media (max-width: 768px) {
   .globe-otwd-group {
-    width: 110%;
+    width: 120%;
   }
 }
