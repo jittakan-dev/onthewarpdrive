@@ -12,7 +12,9 @@
   width: 90vw;
   height: 94vh;
   display: flex;
-  border-bottom: 1vh solid #171717;
+  /* border-bottom: 1vh solid #171717; */
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .about-content {
   width: 100%;
@@ -97,11 +99,15 @@
 }
 .about-service-box span {
   margin-right: 2%;
-  padding: 0.2% 1% 0.2% 1%;
+  padding: 0.2% 1.5% 0.2% 1.5%;
   cursor: pointer;
   color: #dee2e6;
   background-color: #495057;
   border: 2px solid #dee2e6;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
 }
 .about-service-box span:hover {
   color: black;

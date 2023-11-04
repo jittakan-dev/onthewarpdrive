@@ -5,105 +5,135 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #171717;
+  /* background: url("../images/globe/globe-wall.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.home-content-base {
+  position: absolute;
+  top: 0;
+  width: 90vw;
+  height: 95vh;
+  margin-bottom: 5vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  /* background-color: wheat; */
+  z-index: 8;
+}
+.home-content-group {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.home-content-text-group {
+  width: 100%;
+  height: 24%;
+  text-align: left;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-bottom: 1%;
+}
+.home-content-title {
+  font-family: "ubuntu";
+  font-weight: bold;
+  font-size: 2.9rem;
+}
+.home-content-back {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #171717;
-  background: url("../images/globe/globe-wall.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background: linear-gradient(
-    45deg,
-    #d99235,
-    #93501c,
-    #7d2610,
-    #56073c,
-    #380757,
-    #260757,
-    #120a46,
-    #082239
-  );
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  z-index: 7;
 }
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.globe-otwd-group {
-  position: relative;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 55%;
-  /*Before active*/
-  /* Desktop
-  width: 55%;*/
-  /* Mobile
-  width: 110%;*/
-  /*After active*/
-  /* Desktop
-  width: 100%;
-  top: 75%;
-  transform: rotate(-120deg); */
-  /* Mobile
-  width: 200%;
-  top: 55%;
-  transform: rotate(-120deg); */
-}
-.globe-otwd,
-.ballon-otwd,
-.cloud-otwd,
-.star-otwd,
-.bird-otwd {
-  width: 100%;
-  height: 100%;
+.home-container-translayer {
+  justify-self: end;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 35vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #ebebeb;
+  z-index: 6;
 }
-.globe-otwd {
+.home-container-translayer div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 52.5%;
+  background-color: #343a40;
+  /* border-bottom: 1px solid #a9a8a8; */
+  z-index: 5;
+}
+.home-container-translayer div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 72.5%;
+  background-color: #495057;
   z-index: 4;
 }
-.ballon-otwd {
+.home-container-translayer div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85%;
+  background-color: #6c757d;
   z-index: 3;
 }
-.cloud-otwd {
+.home-container-translayer div:nth-child(4) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 95%;
+  background-color: #adb5bd;
   z-index: 2;
 }
-.star-otwd,
-.bird-otwd {
+.home-container-translayer div:nth-child(5) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ced4da;
   z-index: 1;
 }
 
-.globe-otwd-img,
-.ballon-otwd-img,
-.cloud-otwd-img,
-.star-otwd-img,
-.bird-otwd-img {
-  /* border: 1px solid black; */
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 768px) {
-  .globe-otwd-group {
-    width: 120%;
+  .home-content-title {
+    font-family: "ubuntu";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2%;
   }
 }

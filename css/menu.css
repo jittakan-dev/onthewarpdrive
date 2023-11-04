@@ -21,7 +21,7 @@
 }
 .bubble-button {
   right: 0.5%;
-  top: 20%;
+  top: 15%;
 }
 .bubble-handle,
 .bubble-handle-button {
@@ -217,8 +217,8 @@
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   border-radius: 50%;
-  width: 7.2vh;
-  height: 7.2vh;
+  width: 4.2vh;
+  height: 4.2vh;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -265,11 +265,11 @@
     font-weight: lighter;
     letter-spacing: 1px;
   }
-  .nav-dot-group-dop div,
+  /* .nav-dot-group-dop div,
   .nav-dot-group a {
-    width: 6.8vh;
-    height: 6.8vh;
-  }
+    width: 4.2vh;
+    height: 4.2vh;
+  } */
   .bubble-button-hamburger,
   .bubble-button {
     width: 7.6vh;
@@ -283,6 +283,9 @@
     width: 2.2vh;
     height: 2.2vh;
   }
+  .term-group {
+    margin: 2% 5% 20% 5%;
+  }
 }
 @media (min-width: 391px) and (max-width: 413px) {
   .nav-dot-group,
@@ -290,11 +293,6 @@
     font-size: 0.7rem;
     font-weight: lighter;
     letter-spacing: 1px;
-  }
-  .nav-dot-group-dop div,
-  .nav-dot-group a {
-    width: 6.2vh;
-    height: 6.2vh;
   }
   .bubble-button-hamburger,
   .bubble-button {
@@ -309,6 +307,9 @@
     width: 2vh;
     height: 2vh;
   }
+  .term-group {
+    margin: 2% 5% 20% 5%;
+  }
 }
 @media (min-width: 414px) and (max-width: 767px) {
   .nav-dot-group,
@@ -316,11 +317,6 @@
     font-size: 0.7rem;
     font-weight: lighter;
     letter-spacing: 1px;
-  }
-  .nav-dot-group-dop div,
-  .nav-dot-group a {
-    width: 6.8vh;
-    height: 6.8vh;
   }
   .bubble-button-hamburger,
   .bubble-button {
@@ -334,6 +330,9 @@
   .bubble-handle-button {
     width: 2.2vh;
     height: 2.2vh;
+  }
+  .term-group {
+    margin: 2% 5% 20% 5%;
   }
 }
 
@@ -344,11 +343,6 @@
     font-weight: lighter;
     letter-spacing: 1px;
   }
-  .nav-dot-group-dop div,
-  .nav-dot-group a {
-    width: 5vh;
-    height: 5vh;
-  }
   .bubble-button-hamburger,
   .bubble-button {
     width: 5.8vh;
@@ -376,6 +370,9 @@
     width: 1.8vh;
     height: 1.8vh;
   }
+  .term-group {
+    margin: 2% 5% 20% 5%;
+  }
 }
 @media (min-width: 913px) and (max-width: 1023px) {
   .nav-dot-group,
@@ -383,11 +380,6 @@
     font-size: 0.7rem;
     font-weight: lighter;
     letter-spacing: 1px;
-  }
-  .nav-dot-group-dop div,
-  .nav-dot-group a {
-    width: 6.8vh;
-    height: 6.8vh;
   }
   .bubble-button-hamburger,
   .bubble-button {
@@ -402,6 +394,9 @@
     width: 2.2vh;
     height: 2.2vh;
   }
+  .term-group {
+    margin: 2% 5% 20% 5%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1366px) {
   .nav-dot-group,
@@ -409,11 +404,6 @@
     font-size: 0.7rem;
     font-weight: lighter;
     letter-spacing: 1px;
-  }
-  .nav-dot-group-dop div,
-  .nav-dot-group a {
-    width: 5vh;
-    height: 5vh;
   }
   .bubble-button-hamburger,
   .bubble-button {
@@ -441,6 +431,9 @@
   .bubble-handle-button {
     width: 1.8vh;
     height: 1.8vh;
+  }
+  .term-group {
+    margin: 2% 5% 20% 5%;
   }
 }
 @media (min-width: 1366px) {
