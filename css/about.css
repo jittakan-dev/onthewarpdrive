@@ -12,7 +12,6 @@
   width: 90vw;
   height: 94vh;
   display: flex;
-  /* border-bottom: 1vh solid #171717; */
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -130,13 +129,13 @@
   font-size: 2rem;
   cursor: pointer;
   background-color: #dee2e6;
-  color: #171717;
+  color: #0a0a0a;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
   margin: 1% 0 2% 0;
 }
 .right-arrow:hover {
-  background-color: #171717;
+  background-color: #0a0a0a;
   color: #dee2e6;
 }
 .about-title-box {
@@ -168,7 +167,7 @@
   font-size: 1.2rem;
   font-weight: bolder;
   font-family: "Ubuntu";
-  color: #171717;
+  color: #0a0a0a;
 }
 .about-quote-box {
   margin-top: 1%;
@@ -234,13 +233,13 @@
   font-size: 2rem;
   cursor: pointer;
   background-color: #e9ecef;
-  color: #171717;
+  color: #0a0a0a;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
   margin: 2% 5% 0 0;
 }
 .left-arrow:hover {
-  background-color: #171717;
+  background-color: #0a0a0a;
   color: #e9ecef;
 }
 .contact-reachus {
@@ -267,8 +266,8 @@
   padding: 5%;
 }
 .contact-quote {
-  border-top: 2px solid #171717;
-  border-bottom: 2px solid #171717;
+  border-top: 2px solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
   padding: 5% 0 5% 0;
   font-size: 1.1rem;
 }
@@ -285,16 +284,16 @@
   margin: 2% 0% 2% 0;
   cursor: pointer;
   background-color: #e9ecef;
-  color: #171717;
-  border: 2px solid #171717;
+  color: #0a0a0a;
+  border: 2px solid #0a0a0a;
 }
 .contact-type-button:hover {
-  background-color: #171717;
+  background-color: #0a0a0a;
   color: #e9ecef;
-  border: 2px solid #171717;
+  border: 2px solid #0a0a0a;
 }
 .contactTypeButtonActive {
-  background-color: #171717;
+  background-color: #0a0a0a;
   color: #e9ecef;
   border: 2px solid #e9ecef;
   cursor: default;
@@ -305,7 +304,7 @@
 .contact-address-container {
   width: 50%;
   height: 100%;
-  background-color: #171717;
+  background-color: #0a0a0a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -455,7 +454,7 @@
 }
 .input-group input:focus {
   background-color: #dee2e6;
-  color: #171717;
+  color: #0a0a0a;
   outline: none;
 }
 .input-group textarea {
@@ -469,7 +468,7 @@
 }
 .input-group textarea:focus {
   background-color: #dee2e6;
-  color: #171717;
+  color: #0a0a0a;
   outline: none;
 }
 .submit-group {
@@ -488,7 +487,7 @@
 }
 .submit-group button:hover {
   background-color: #adb5bd;
-  color: #171717;
+  color: #0a0a0a;
   border: 2px solid #adb5bd;
   font-weight: bold;
 }
@@ -601,7 +600,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    background-color: #171717;
+    background-color: #0a0a0a;
     border-bottom: 2px dotted #dee2e6;
   }
   .contact-reachus-box {
@@ -647,7 +646,7 @@
     font-size: 1.1rem;
     padding: 2%;
     margin: 1% 0% 1% 0;
-    background-color: #171717;
+    background-color: #0a0a0a;
     color: #dee2e6;
     border: 2px solid #dee2e6;
   }
@@ -658,13 +657,13 @@
     margin-left: 1%;
   }
   .contact-type-button:hover {
-    background-color: #171717;
+    background-color: #0a0a0a;
     color: #dee2e6;
     border: 2px solid wheat;
   }
   .contactTypeButtonActive {
     background-color: #dee2e6;
-    color: #171717;
+    color: #0a0a0a;
     border: 2px solid #dee2e6;
   }
   /*----------------ccwcwcwcwcw----------------------*/
@@ -695,7 +694,7 @@
   .contact-map {
     width: 100%;
     height: 50%;
-    border: 2px solid #171717;
+    border: 2px solid #0a0a0a;
   }
   .contact-email {
     font-size: 1.2rem;

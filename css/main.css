@@ -22,35 +22,25 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #171717;
 }
 #home {
   height: auto;
-  background-color: #212529;
+  min-height: 100vh;
 }
 #work {
-  min-height: 100vh;
-  background-color: #ebebeb;
-  min-height: 100vh;
-}
-
-#about {
-  background-color: #bebebe;
-  /*
-  background: linear-gradient(-45deg, #171717, #495057, #adb5bd, #dee2e6);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite; */
   height: 100vh;
   min-height: 100vh;
 }
-/* @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 50%;
-  } 
-}*/
+#about {
+  height: 100vh;
+  min-height: 100vh;
+}
+.windowSize {
+  position: fixed;
+  top: 0;
+  z-index: 1010;
+  color: red;
+  font-size: large;
+}
 /*-----------------END content SECTION--------------------*/

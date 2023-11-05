@@ -84,6 +84,10 @@
   left: -50%;
   transition: all 3s ease-in-out;
   border: 1px solid rgb(58, 58, 58);
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 #otwd-circle-1 {
   background-color: #ced4da;
