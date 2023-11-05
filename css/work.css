@@ -219,7 +219,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 4% 0 4% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -227,7 +227,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .work-menu-types div {
     margin-right: 2.3%;
