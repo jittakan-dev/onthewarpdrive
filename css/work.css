@@ -100,6 +100,7 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   display: flex;
+  color: #212529;
 }
 .no-of-app span:nth-child(2),
 .no-of-mobile span:nth-child(2),
@@ -233,7 +234,7 @@
     margin-right: 2.3%;
   }
   .no-of-app {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border: none;
   }
   .work-arrow-group {
@@ -251,10 +252,10 @@
     font-size: 2.2rem;
   }
   .work-block-title P {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .work-block-subtitle P {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -268,7 +269,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 4% 0 4% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -276,12 +277,11 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
   }
-
   .no-of-app {
     font-size: 1.3rem;
     border: none;
@@ -317,7 +317,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 4% 0 4% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -325,7 +325,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
   .work-menu-types div {
     margin-right: 2.8%;
@@ -373,7 +373,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
@@ -413,7 +413,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 4% 0 4% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -421,7 +421,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .work-menu-types div {
     margin-right: 2.8%;
@@ -471,7 +471,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
@@ -519,7 +519,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
@@ -573,7 +573,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
@@ -614,7 +614,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 4% 0 4% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -622,7 +622,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .work-menu-types div {
     margin-right: 2.8%;
@@ -662,7 +662,7 @@
     display: contents;
   }
   .work-menu-header {
-    margin: 2% 0 2% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -670,7 +670,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .work-menu-types div {
     margin-right: 2.8%;
@@ -707,7 +707,7 @@
     line-height: 90%;
   }
   .work-menu-header {
-    margin: 2% 0 2% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -715,7 +715,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .work-menu-types div {
     margin-right: 3%;
@@ -752,7 +752,7 @@
     line-height: 90%;
   }
   .work-menu-header {
-    margin: 2% 0 2% 0;
+    margin: 6% 0 6% 0;
   }
   .work-menu-title {
     width: auto;
@@ -760,7 +760,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .work-menu-types div {
     margin-right: 3%;
@@ -805,7 +805,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .work-menu-types div {
     margin-right: 3%;
