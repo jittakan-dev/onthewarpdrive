@@ -50,7 +50,6 @@
   width: 92%;
   height: auto;
   padding: 0 4% 4% 4%;
-  /* background-color: #6c757d; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,13 +128,13 @@
   font-size: 2rem;
   cursor: pointer;
   background-color: #dee2e6;
-  color: #0a0a0a;
+  color: #171717;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
   margin: 1% 0 2% 0;
 }
 .right-arrow:hover {
-  background-color: #0a0a0a;
+  background-color: #171717;
   color: #dee2e6;
 }
 .about-title-box {
@@ -160,15 +159,7 @@
   font-weight: bolder;
   font-family: "Ubuntu";
 }
-.on-the-warp-drive {
-  margin-top: 1%;
-  text-align: right;
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  font-family: "Ubuntu";
-  color: #0a0a0a;
-}
+
 .about-quote-box {
   margin-top: 1%;
   text-align: right;
@@ -233,13 +224,13 @@
   font-size: 2rem;
   cursor: pointer;
   background-color: #e9ecef;
-  color: #0a0a0a;
+  color: #171717;
   padding: 1% 2% 1% 2%;
   border-radius: 20%;
   margin: 2% 5% 0 0;
 }
 .left-arrow:hover {
-  background-color: #0a0a0a;
+  background-color: #171717;
   color: #e9ecef;
 }
 .contact-reachus {
@@ -266,8 +257,8 @@
   padding: 5%;
 }
 .contact-quote {
-  border-top: 2px solid #0a0a0a;
-  border-bottom: 2px solid #0a0a0a;
+  border-top: 2px solid #171717;
+  border-bottom: 2px solid #171717;
   padding: 5% 0 5% 0;
   font-size: 1.1rem;
 }
@@ -283,18 +274,22 @@
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
-  background-color: #e9ecef;
-  color: #0a0a0a;
-  border: 2px solid #0a0a0a;
+  background-color: #adb5bd;
+  color: #171717;
+  border: 2px solid #171717;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
 }
 .contact-type-button:hover {
-  background-color: #0a0a0a;
-  color: #e9ecef;
-  border: 2px solid #0a0a0a;
+  background-color: #171717;
+  color: #adb5bd;
+  border: 2px solid #171717;
 }
 .contactTypeButtonActive {
-  background-color: #0a0a0a;
-  color: #e9ecef;
+  background-color: #171717;
+  color: #adb5bd;
   border: 2px solid #e9ecef;
   cursor: default;
   pointer-events: none;
@@ -328,7 +323,7 @@
   visibility: hidden;
   height: 0;
   width: 0;
-  background-color: red;
+  /* background-color: red; */
 }
 /*---------------------------START CONTACT HUB----------------*/
 .hub-group {
@@ -373,7 +368,7 @@
   align-items: center;
 }
 .otwd-email {
-  font-weight: bolder;
+  font-weight: bold;
 }
 .gap {
   margin: 0 2% 0 2%;
@@ -454,7 +449,7 @@
 }
 .input-group input:focus {
   background-color: #dee2e6;
-  color: #0a0a0a;
+  color: #171717;
   outline: none;
 }
 .input-group textarea {
@@ -468,7 +463,7 @@
 }
 .input-group textarea:focus {
   background-color: #dee2e6;
-  color: #0a0a0a;
+  color: #171717;
   outline: none;
 }
 .submit-group {
@@ -478,7 +473,7 @@
 .submit-group button {
   width: 100%;
   font-size: 1.4rem;
-  padding: 5% 0 5% 0;
+  padding: 2% 0 2% 0;
   background-color: black;
   border: none;
   color: #adb5bd;
@@ -487,7 +482,7 @@
 }
 .submit-group button:hover {
   background-color: #adb5bd;
-  color: #0a0a0a;
+  color: #171717;
   border: 2px solid #adb5bd;
   font-weight: bold;
 }
@@ -507,7 +502,7 @@
 @media (max-width: 768px) {
   /*----------ABOUT---------*/
   .about-intro {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .about-content {
     flex-direction: column;
@@ -515,49 +510,46 @@
   .about-otwd-group {
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: end;
+    justify-content: space-around;
     padding: 0 5% 5% 5%;
   }
   /*-------------- START about TITLE ----------------*/
   .about-title-group {
-    margin: 10% 0 10% 0;
+    margin: 5% 0 5% 0;
+    padding-bottom: 5%;
     flex-direction: row-reverse;
     align-items: start;
+    border-bottom: 1px solid #6c757d;
   }
   .right-arrow {
     margin-top: 5%;
     order: 3;
     font-size: 1.6rem;
   }
-  .about-title-tag {
+  .about-title-tag,
+  .contact-tag {
     font-size: 0.6rem;
   }
   .about-title-otwd {
-    font-size: 5rem;
-  }
-  .on-the-warp-drive {
-    margin-top: 1;
-    margin-bottom: 1%;
-    font-size: 1rem;
+    font-size: 4.2rem;
   }
   .about-quote-box {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   /*-------------- END about TITLE ----------------*/
   /*-------------- START about WEARE n SERVICE ----------------*/
   .about-weare-group {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: start;
     text-justify: inter-word;
-    margin: 5% 0 10% 0;
+    margin: 5% 0 0 0;
   }
-
   .about-weare-box p:not(.about-weare-headline) {
     padding: 0;
     border: none;
   }
   .about-weare-headline {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .about-service-box {
     align-items: center;
@@ -565,14 +557,14 @@
     margin-top: 2%;
   }
   .about-service-box span {
-    font-size: 1.1rem;
-    padding: 2%;
+    font-size: 0.8rem;
+    padding: 1%;
     margin: 1% 2% 1% 0;
     flex-grow: 1;
     text-align: center;
   }
   .about-service-box span:last-child {
-    margin-right: 0;
+    margin: 1% 0 1% 0;
     padding-right: 0;
   }
 
@@ -601,7 +593,7 @@
     justify-content: center;
     align-items: end;
     background-color: #0a0a0a;
-    border-bottom: 2px dotted #dee2e6;
+    border-bottom: 2px dotted #343a40;
   }
   .contact-reachus-box {
     margin-top: 10%;
@@ -615,9 +607,8 @@
     font-size: 1.6rem;
   }
   .contact-reachus {
-    font-weight: 900;
     text-align: right;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 100%;
   }
   .contact-type-box {
@@ -631,9 +622,9 @@
     color: #dee2e6;
   }
   .contact-quote {
-    border-top: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6;
-    font-size: 1rem;
+    border-top: 1px solid #343a40;
+    border-bottom: 1px solid #343a40;
+    font-size: 0.8rem;
   }
   .contact-type-button-group {
     width: 100%;
@@ -643,12 +634,16 @@
     align-items: end;
   }
   .contact-type-button {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding: 2%;
     margin: 1% 0% 1% 0;
-    background-color: #0a0a0a;
+    background-color: #171717;
     color: #dee2e6;
     border: 2px solid #dee2e6;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
   }
   #otwdHubButton {
     margin-right: 1%;
@@ -657,13 +652,13 @@
     margin-left: 1%;
   }
   .contact-type-button:hover {
-    background-color: #0a0a0a;
+    background-color: #171717;
     color: #dee2e6;
     border: 2px solid wheat;
   }
   .contactTypeButtonActive {
     background-color: #dee2e6;
-    color: #0a0a0a;
+    color: #171717;
     border: 2px solid #dee2e6;
   }
   /*----------------ccwcwcwcwcw----------------------*/
@@ -694,10 +689,10 @@
   .contact-map {
     width: 100%;
     height: 50%;
-    border: 2px solid #0a0a0a;
+    border: 2px solid #171717;
   }
   .contact-email {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 100%;
     margin: 8% 0 8% 0;
     justify-content: center;
@@ -713,12 +708,19 @@
     flex-direction: row;
     padding: 5% 0 5% 0;
     width: 100%;
-    border-top: 1px dotted #dee2e6;
-    border-bottom: 1px dotted #dee2e6;
+    border-bottom: 1px dotted #343a40;
+    border-top: none;
+    /* border: 1px dotted #343a40; */
+    /* border: none; */
   }
   .contact-link div {
     margin-bottom: 0;
     justify-content: center;
+  }
+  .contact-link span {
+    /* font-size: 2rem;
+    line-height: 100%; */
+    color: #343a40;
   }
   .contact-link-text {
     display: none;
@@ -740,8 +742,74 @@
     height: 50dvh;
   }
   .input-group {
+    font-size: 0.95rem;
+  }
+  .input-group label {
+    width: 100%;
+  }
+  .input-group input {
+    font-size: 1.1rem;
+  }
+  .input-group textarea {
     font-size: 1rem;
+  }
+  .submit-group button {
+    font-size: 1.1rem;
+    padding: 2% 0 2% 0;
   }
   /*------------------------------END-FORM-------------*/
 }
 /*-----------------END MEDIA RESPONSIVE--------------------*/
+@media screen and (min-width: 260px) and (max-width: 321px) and (max-height: 321px) {
+  /*--*/
+}
+@media screen and (min-width: 260px) and (max-width: 321px) and (min-height: 322px) {
+  /*IPhone SE OLD, Galaxy fold close PORTRAIT*/
+}
+@media screen and (min-width: 322px) and (max-width: 479px) and (max-height: 668px) {
+  /*IPhone SE NEW PORTRAIT*/
+}
+@media screen and (min-width: 322px) and (max-width: 479px) and (min-height: 669px) {
+  /*IPhone XR,IPhone 12 PRO,Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxxy A51/71 PORTRAIT*/
+}
+@media screen and (min-width: 480px) and (max-width: 639px) and (max-height: 321px) {
+  /*IPhone SE OLD LANDSCAPE*/
+}
+@media screen and (min-width: 480px) and (max-width: 639px) and (min-height: 322px) and (max-height: 721px) {
+  /*Surface DUO  Portrait*/
+}
+@media screen and (min-width: 480px) and (max-width: 639px) and (min-height: 722px) {
+  /*--No Devices--*/
+}
+@media screen and (min-width: 640px) and (max-width: 766px) and (max-height: 415px) {
+  /* Landscape  Mobile SMALL*/
+  /*IPhone SE NEW Landscape*/
+}
+@media screen and (min-width: 640px) and (max-width: 766px) and (min-height: 415px) {
+  /*Surface DUO Close Landscape*/
+}
+@media screen and (min-width: 640px) and (max-width: 766px) and (min-height: 416px) and (max-height: 1110px) {
+  /*Galaxy fold open PORTRAIT*/
+  /* Portait  Mobile */
+}
+@media screen and (min-width: 640px) and (max-width: 766px) and (min-height: 1110px) {
+  /*Surface DUO Open Landscape*/
+}
+@media screen and (min-width: 767px) and (max-width: 1022px) and (max-height: 767px) {
+  /*IPhoneXR,IPhone 12 PRO,Pixel 5,Galaxy S+, Galaxy S20 ultra, Galaxxy A51/71  LANDSCAPE*/
+}
+@media screen and (min-width: 767px) and (max-width: 1022px) and (min-height: 768px) and (max-height: 1370px) {
+  /*IPAD Air,Surface PRO 7, IPad  Portrait*/
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) and (max-height: 766px) {
+  /*Surface DUO OPEN Portrait*/
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) and (min-height: 767px) and (max-height: 1364px) {
+  /*IPAD Air, IPAD  Landscape / IPAD PRO Portrait*/
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) and (min-height: 1365px) {
+  /*IPAD Pro Portrait*/
+}
+@media screen and (min-width: 1280px) and (max-width: 1535px) and (max-height: 1022px) {
+  /*Surface PRO 7  Landscape*/
+}
