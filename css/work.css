@@ -1,14 +1,14 @@
 /*-----------------START WORK SECTION--------------------*/
 .work-menu-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
 }
 .work-menu-header {
-  width: 90vw;
+  width: 90dvw;
   height: auto;
   position: relative;
   display: flex;
@@ -63,7 +63,7 @@
   border: 2px solid #212529;
 }
 .work-list-container {
-  width: 90vw;
+  width: 90dvw;
   height: 100%;
   background-color: #adb5bd;
   overflow: hidden;
