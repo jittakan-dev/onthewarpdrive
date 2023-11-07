@@ -8,30 +8,52 @@ const writeUsButton = document.getElementById("writeUsButton");
 const hubGroup = document.getElementById("hubGroup");
 const formGroup = document.getElementById("formGroup");
 
-document.addEventListener("DOMContentLoaded", function () {
-  otwdHubButton.addEventListener("click", function () {
-    const hubGroupRect = hubGroup.getBoundingClientRect();
-    const contactScroll = document.querySelector(".form-hub-slide-group");
-    const contactScrollRect = contactScroll.getBoundingClientRect();
+otwdHubButton.addEventListener("click", function () {
+  otwdHubButton.classList.add("contactTypeButtonActive");
+  writeUsButton.classList.remove("contactTypeButtonActive");
+  const hubGroupRect = hubGroup.getBoundingClientRect();
+  const contactScroll = document.querySelector(".form-hub-slide-group");
+  const contactScrollRect = contactScroll.getBoundingClientRect();
 
-    const yOffset = hubGroupRect.top - contactScrollRect.top;
-    contactScroll.style.scrollBehavior = "smooth";
-    contactScroll.style.transform = `translateY(-${yOffset}px)`;
-    otwdHubButton.classList.add("contactTypeButtonActive");
-    writeUsButton.classList.remove("contactTypeButtonActive");
-  });
+  const yOffset = hubGroupRect.top - contactScrollRect.top;
+  contactScroll.style.scrollBehavior = "smooth";
+  contactScroll.style.transform = `translateY(-${yOffset}px)`;
+});
 
-  writeUsButton.addEventListener("click", function () {
-    const formGroupRect = formGroup.getBoundingClientRect();
-    const contactScroll = document.querySelector(".form-hub-slide-group");
-    const contactScrollRect = contactScroll.getBoundingClientRect();
+writeUsButton.addEventListener("click", function () {
+  writeUsButton.classList.add("contactTypeButtonActive");
+  otwdHubButton.classList.remove("contactTypeButtonActive");
+  const formGroupRect = formGroup.getBoundingClientRect();
+  const contactScroll = document.querySelector(".form-hub-slide-group");
+  const contactScrollRect = contactScroll.getBoundingClientRect();
 
-    const yOffset = formGroupRect.top - contactScrollRect.top;
-    contactScroll.style.scrollBehavior = "smooth";
-    contactScroll.style.transform = `translateY(-${yOffset}px)`;
-    writeUsButton.classList.add("contactTypeButtonActive");
-    otwdHubButton.classList.remove("contactTypeButtonActive");
-  });
+  const yOffset = formGroupRect.top - contactScrollRect.top;
+  contactScroll.style.scrollBehavior = "smooth";
+  contactScroll.style.transform = `translateY(-${yOffset}px)`;
+});
+// Add touchstart event listeners
+otwdHubButton.addEventListener("touchstart", function () {
+  otwdHubButton.classList.add("contactTypeButtonActive");
+  writeUsButton.classList.remove("contactTypeButtonActive");
+  const hubGroupRect = hubGroup.getBoundingClientRect();
+  const contactScroll = document.querySelector(".form-hub-slide-group");
+  const contactScrollRect = contactScroll.getBoundingClientRect();
+
+  const yOffset = hubGroupRect.top - contactScrollRect.top;
+  contactScroll.style.scrollBehavior = "smooth";
+  contactScroll.style.transform = `translateY(-${yOffset}px)`;
+});
+
+writeUsButton.addEventListener("touchstart", function () {
+  writeUsButton.classList.add("contactTypeButtonActive");
+  otwdHubButton.classList.remove("contactTypeButtonActive");
+  const formGroupRect = formGroup.getBoundingClientRect();
+  const contactScroll = document.querySelector(".form-hub-slide-group");
+  const contactScrollRect = contactScroll.getBoundingClientRect();
+
+  const yOffset = formGroupRect.top - contactScrollRect.top;
+  contactScroll.style.scrollBehavior = "smooth";
+  contactScroll.style.transform = `translateY(-${yOffset}px)`;
 });
 
 aboutToLeft.addEventListener("click", () => {
@@ -43,7 +65,7 @@ aboutToLeft.addEventListener("click", () => {
 
 aboutToRight.addEventListener("click", () => {
   aboutContainer.scrollTo({
-    left: aboutContent.offsetWidth,
+    left: aboutContent.offsetWidth + 2, //browser gap error
     behavior: "smooth",
   });
 });
