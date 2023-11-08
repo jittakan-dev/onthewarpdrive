@@ -242,15 +242,15 @@
   background-color: #092c3d;
 }
 .nav-dot-group a {
-  color: #6c757d;
+  color: #171717;
   text-decoration: none;
 }
 .nav-dot-group a:hover {
-  color: #dee2e6;
+  color: #171717;
   background-color: #457b9d;
 }
 .navLinkActive {
-  background-color: #6501b7;
+  background-color: #6c757d;
 }
 .nav-dot-group a:nth-child(1),
 .nav-dot-group-dop div:nth-child(1) {

@@ -160,16 +160,16 @@ function updateColors(sectionId) {
     hiddenMenuLinks[0].classList.add("bubbleLinkActive");
     dotGroupLinks[0].classList.add("navLinkActive");
   } else if (sectionId === "work") {
-    menuBubble.style.backgroundColor = "#03A85F";
-    menuButtonClick.style.backgroundColor = "#03A85F";
-    menuButton.style.backgroundColor = "#03A85F";
+    menuBubble.style.backgroundColor = "#02757b"; //01874b
+    menuButtonClick.style.backgroundColor = "#02757b";
+    menuButton.style.backgroundColor = "#02757b";
     menuBubbleClick.style.backgroundColor = "#bebebe";
     hiddenMenuLinks[1].classList.add("bubbleLinkActive");
     dotGroupLinks[1].classList.add("navLinkActive");
   } else if (sectionId === "about") {
-    menuBubble.style.backgroundColor = "#039fa8";
-    menuButtonClick.style.backgroundColor = "#039fa8";
-    menuButton.style.backgroundColor = "#039fa8";
+    menuBubble.style.backgroundColor = "#02757b";
+    menuButtonClick.style.backgroundColor = "#02757b";
+    menuButton.style.backgroundColor = "#02757b";
     menuBubbleClick.style.backgroundColor = "#bebebe";
     hiddenMenuLinks[2].classList.add("bubbleLinkActive");
     dotGroupLinks[2].classList.add("navLinkActive");
