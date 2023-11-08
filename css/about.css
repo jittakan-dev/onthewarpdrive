@@ -153,7 +153,7 @@
 }
 
 .about-quote-box {
-  margin-top: 1%;
+  margin-top: 2%;
   text-align: right;
   width: 100%;
   font-size: 2.8rem;
@@ -537,8 +537,6 @@
     padding: 0;
   }
   .about-quote-box {
-    margin-top: 2%;
-    text-align: right;
     font-size: 1.5rem;
   }
   .about-service-box {
@@ -804,8 +802,6 @@
     padding: 0;
   }
   .about-quote-box {
-    margin-top: 2%;
-    text-align: right;
     font-size: 1.8rem;
   }
   .about-service-box {
@@ -1071,8 +1067,6 @@
     padding: 0;
   }
   .about-quote-box {
-    margin-top: 2%;
-    text-align: left;
     font-size: 2.2rem;
   }
   .about-service-box {
