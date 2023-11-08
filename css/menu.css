@@ -22,6 +22,7 @@
 .bubble-button {
   right: 0.5%;
   top: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bubble-handle,
 .bubble-handle-button {
@@ -37,6 +38,7 @@
   bottom: 0;
   transform: translate(0, 70%);
   cursor: grab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bubble-handle.grabbing {
   cursor: grabbing;
