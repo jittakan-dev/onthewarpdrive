@@ -511,7 +511,7 @@
     font-size: 0.8rem;
   }
   .about-weare-headline {
-    padding-left: 5%;
+    padding-left: 0;
     font-size: 0.9rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
@@ -519,7 +519,7 @@
     text-justify: inter-character;
     border-right: 1px dotted #6c757d;
     border-bottom: 1px dotted #6c757d;
-    padding: 0 5% 5% 5%;
+    padding: 0 0 10% 0;
     margin: 5% 0 10% 0;
   }
   .about-title-group {
