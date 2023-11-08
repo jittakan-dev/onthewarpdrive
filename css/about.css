@@ -211,7 +211,6 @@
   align-items: start;
   width: 80%;
   height: auto;
-  /* background-color: red; */
 }
 .left-arrow {
   text-align: right;
@@ -515,15 +514,15 @@
     font-size: 0.95rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
-    text-align: justify;
-    text-justify: auto;
+    text-align: left;
+    text-justify: inter-word;
     border: none;
     margin: 5% 0 5% 0;
   }
   .about-title-group {
     display: flex;
     flex-direction: row-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     margin: 10% 0 5% 0;
   }
@@ -532,14 +531,14 @@
     flex-direction: column;
   }
   .about-title-otwd {
-    text-align: left;
+    text-align: right;
     font-size: 4.2rem;
     margin: 0;
     padding: 0;
   }
   .about-quote-box {
     margin-top: 2%;
-    text-align: left;
+    text-align: right;
     font-size: 1.5rem;
   }
   .about-service-box {
@@ -610,6 +609,7 @@
     margin: 0 5% 0 0;
   }
   .right-arrow {
+    order: 1;
     font-size: 1.5rem;
     padding: 1% 2% 1% 2%;
     margin: 0 5% 0 0;
@@ -674,7 +674,7 @@
   }
   .fourtyPercentSpace {
     width: 100%;
-    height: 42vh;
+    height: 40vh;
     display: block;
     top: 0;
   }
@@ -781,15 +781,15 @@
     font-size: 1rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
-    text-align: justify;
-    text-justify: auto;
+    text-align: left;
+    text-justify: inter-word;
     border: none;
     margin: 5% 0 5% 0;
   }
   .about-title-group {
     display: flex;
     flex-direction: row-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     margin: 10% 0 5% 0;
   }
@@ -876,6 +876,7 @@
     margin: 0 5% 0 0;
   }
   .right-arrow {
+    order: 1;
     font-size: 1.6rem;
     padding: 1% 2% 1% 2%;
     margin: 0 5% 0 0;
@@ -940,7 +941,7 @@
   }
   .fourtyPercentSpace {
     width: 100%;
-    height: 42vh;
+    height: 40vh;
     display: block;
     top: 0;
   }
@@ -1047,15 +1048,15 @@
     font-size: 1.2rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
-    text-align: justify;
-    text-justify: auto;
+    text-align: left;
+    text-justify: inter-word;
     border: none;
     margin: 5% 0 5% 0;
   }
   .about-title-group {
     display: flex;
     flex-direction: row-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     margin: 10% 0 5% 0;
   }
@@ -1142,6 +1143,7 @@
     margin: 0 5% 0 0;
   }
   .right-arrow {
+    order: 1;
     font-size: 1.7rem;
     padding: 1% 2% 1% 2%;
     margin: 0 5% 0 0;
@@ -1206,7 +1208,7 @@
   }
   .fourtyPercentSpace {
     width: 100%;
-    height: 42vh;
+    height: 40vh;
     display: block;
     top: 0;
   }
