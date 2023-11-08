@@ -239,7 +239,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 .nav-dot-group-dop div {
-  background-color: #3c0300;
+  background-color: #092c3d;
 }
 .nav-dot-group a {
   color: #6c757d;
@@ -339,8 +339,8 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 4.8dvh;
-    height: 4.8dvh;
+    width: 4dvh;
+    height: 4dvh;
   }
 }
 
