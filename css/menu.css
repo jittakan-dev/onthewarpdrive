@@ -239,18 +239,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 .nav-dot-group-dop div {
-  background-color: #121212;
+  background-color: #3c0300;
 }
 .nav-dot-group a {
-  color: white;
+  color: #6c757d;
   text-decoration: none;
 }
 .nav-dot-group a:hover {
-  color: #0e0d0d;
-  background-color: white;
+  color: #dee2e6;
+  background-color: #457b9d;
 }
 .navLinkActive {
-  background-color: #6c757d;
+  background-color: #6501b7;
 }
 .nav-dot-group a:nth-child(1),
 .nav-dot-group-dop div:nth-child(1) {
@@ -339,8 +339,8 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 5.6dvh;
-    height: 5.6dvh;
+    width: 4.8dvh;
+    height: 4.8dvh;
   }
 }
 
