@@ -519,8 +519,8 @@
     text-justify: inter-character;
     border-right: 1px dotted #dee2e6;
     border-bottom: 1px dotted #dee2e6;
-    padding: 0 5% 10% 0;
-    margin: 5% 0 10% 0;
+    padding: 0 5% 5% 0;
+    margin: 5% 0 3% 0;
   }
   .about-title-group {
     display: flex;
