@@ -355,7 +355,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #dee2e6;
+  color: #adb5bd;
 }
 .otwd-email {
   font-weight: bold;
@@ -427,6 +427,7 @@
 }
 .input-group label {
   width: 100%;
+  color: #adb5bd;
 }
 .input-group input {
   width: 96%;
@@ -515,7 +516,7 @@
     font-size: 0.9rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
-    text-align: justify;
+    text-align: left;
     text-justify: inter-character;
     border-right: 1px dotted #dee2e6;
     border-bottom: 1px dotted #dee2e6;
