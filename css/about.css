@@ -494,8 +494,8 @@
 }
 /*-----------------END about SECTION--------------------*/
 /*-----------------START MEDIA RESPONSIVE--------------------*/
-@media screen and (min-width: 260px) and (max-width: 321px) and (min-height: 322px) {
-  /*IPhone SE OLD*/
+/* Portrait */
+@media screen and (min-width: 260px) and (max-width: 479px) {
   .about-intro {
     font-size: 1.4rem;
   }
@@ -657,11 +657,9 @@
   }
   #otwdHubButton {
     margin-right: 0;
-    /* border-top-left-radius: 8px; */
   }
   #writeUsButton {
     margin-left: 0;
-    /* border-top-right-radius: 8px; */
   }
   .contactTypeButtonActive {
     background-color: #0a0a0a;
@@ -690,7 +688,6 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    /* border: 8px solid yellow; */
   }
   .we-are-here {
     display: none;
@@ -765,11 +762,145 @@
     font-size: 1rem;
     padding: 2% 0 2% 0;
   }
+
+  /* IPhone SE OLD */
+  @media (max-height: 321px) {
+    /* ... */
+  }
+
+  /* IPhone SE NEW PORTRAIT */
+  @media (min-height: 322px) and (max-height: 668px) {
+    /* ... */
+    .about-intro {
+      font-size: 1.6rem;
+    }
+    .about-otwd-group {
+      width: 88%;
+      padding: 6%;
+    }
+    .about-weare-group {
+      font-size: 0.85rem;
+    }
+    .about-weare-headline {
+      font-size: 0.95rem;
+    }
+    .about-weare-box p:not(.about-weare-headline) {
+      padding: 0 5% 5% 0;
+      margin: 5% 0 5% 0;
+    }
+    .about-title-group {
+      margin: 0 0 10% 0;
+    }
+    .about-title-otwd {
+      font-size: 3.7rem;
+      margin: 0 0 5% 0;
+      padding: 0;
+    }
+    .about-quote-box {
+      font-size: 1.4rem;
+    }
+    .about-service-box {
+      margin-top: 2%;
+    }
+    .about-service-box span {
+      font-size: 0.75rem;
+      padding: 1%;
+      margin: 1% 3% 1% 0;
+      flex-grow: 1;
+    }
+    .about-service-box span:last-child {
+      margin: 1% 0 1% 0;
+    }
+  }
+
+  /* IPhone XR, IPhone 12 PRO, Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxy A51/71 PORTRAIT */
+  @media (min-height: 669px) {
+    /* ... */
+  }
 }
-@media screen and (min-width: 322px) and (max-width: 479px) and (max-height: 668px) {
-  /*IPhone SE NEW PORTRAIT*/
+
+/* Landscape */
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  /* IPhone SE OLD LANDSCAPE */
+  @media (max-height: 321px) {
+    /* ... */
+  }
+
+  /* Surface DUO Portrait */
+  @media (min-height: 322px) and (max-height: 721px) {
+    /* ... */
+  }
+
+  /* ...Device arai... */
+  @media (min-height: 722px) {
+    /* ... */
+  }
 }
-@media screen and (min-width: 322px) and (max-width: 479px) and (min-height: 669px) {
-  /*IPhone XR,IPhone 12 PRO,Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxxy A51/71 PORTRAIT*/
+
+@media screen and (min-width: 640px) and (max-width: 766px) {
+  /* Landscape Mobile SMALL */
+  /* IPhone SE NEW Landscape */
+  @media (max-height: 415px) {
+    /* ... */
+  }
+
+  /* Surface DUO Close Landscape */
+  @media (min-height: 415px) {
+    /* ... */
+  }
+
+  /* Galaxy Fold open PORTRAIT */
+  /* Portait Mobile */
+  @media (min-height: 416px) and (max-height: 1110px) {
+    /* ... */
+  }
+
+  /* Surface DUO Open Landscape */
+  @media (min-height: 1110px) {
+    /* ... */
+  }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1022px) {
+  /* IPhoneXR, IPhone 12 PRO, Pixel 5, Galaxy S+, Galaxy S20 ultra, Galaxy A51/71 LANDSCAPE */
+  @media (max-height: 420px) {
+    /* ... */
+  }
+
+  /* WINDOW GAP */
+  @media (min-height: 421px) and (max-height: 767px) {
+    /* ... */
+  }
+
+  /* IPAD Air, Surface PRO 7, IPad Portrait */
+  @media (min-height: 768px) and (max-height: 1370px) {
+    /* ... */
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+  /* Window GAP */
+  @media (max-height: 766px) {
+    /* Window GAP */
+  }
+
+  @media (min-height: 767px) and (max-height: 1364px) {
+    /* IPAD Air, IPAD PRO, IPAD PRO Landscrape */
+  }
+
+  @media (min-height: 1365px) {
+    /* IPAD Pro Portrait */
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  @media (max-height: 1022px) {
+    /* Surface PRO 7 Landscape */
+  }
+
+  @media (min-height: 1023px) {
+    /* Your specific styles for this case */
+  }
+}
+
 /*-----------------END MEDIA RESPONSIVE--------------------*/
