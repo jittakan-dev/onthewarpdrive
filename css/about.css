@@ -794,41 +794,41 @@
     }
     /*---------------------------FONT-------------------------*/
     .about-service-box span {
-      font-size: 0.65rem;
+      font-size: 0.75rem;
     }
     .about-weare-group,
     .contact-quote,
     .contact-type-button {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     .about-weare-headline,
     .contact-email {
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     .about-quote-box {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     .left-arrow,
     .right-arrow,
     .about-intro {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
     .contact-reachus {
-      font-size: 1.75rem;
+      font-size: 1.9rem;
     }
     .contact-social-link {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .about-title-otwd {
-      font-size: 3.125rem;
+      font-size: 3.25rem;
     }
     /*---------------------------FONT-------------------------*/
   }
