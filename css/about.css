@@ -799,19 +799,19 @@
     .about-weare-group,
     .contact-quote,
     .contact-type-button {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
     .about-weare-headline,
     .contact-email {
-      font-size: 0.95rem;
+      font-size: 1.05rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
     .about-quote-box {
       font-size: 1.4rem;
@@ -828,7 +828,7 @@
       font-size: 2.5rem;
     }
     .about-title-otwd {
-      font-size: 3.25rem;
+      font-size: 3.4rem;
     }
     /*---------------------------FONT-------------------------*/
   }
