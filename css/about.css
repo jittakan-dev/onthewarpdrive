@@ -509,12 +509,12 @@
     padding: 6%;
   }
   .about-weare-group {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .about-weare-headline {
-    color: red;
+    color: green;
     padding-left: 0;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   .about-weare-box p:not(.about-weare-headline) {
     text-align: left;
@@ -537,14 +537,14 @@
   }
   .about-title-otwd {
     text-align: right;
-    font-size: 3.25rem;
+    font-size: 3.125rem;
     margin: 0 0 5% 0;
     padding: 0;
   }
   .about-quote-box {
     padding-left: 2.8%;
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   .about-service-box {
     align-items: center;
@@ -636,7 +636,7 @@
   .contact-quote {
     padding: 5%;
     border: none;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .contact-type-button-group {
     width: 100%;
