@@ -786,45 +786,6 @@
     .contact-map {
       height: 55%;
     }
-    /*---------------------------FONT-------------------------*/
-    .about-service-box span {
-      font-size: 0.65rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 0.8rem;
-    }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 0.85rem;
-    }
-    .input-group,
-    .input-group textarea {
-      font-size: 0.9rem;
-    }
-    .input-group input,
-    .submit-group button {
-      font-size: 1rem;
-    }
-    .about-quote-box {
-      font-size: 1.2rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro {
-      font-size: 1.5rem;
-    }
-    .contact-reachus {
-      font-size: 1.75rem;
-    }
-    .contact-social-link {
-      font-size: 2rem;
-    }
-    .about-title-otwd {
-      font-size: 3.125rem;
-    }
-    /*---------------------------FONT-------------------------*/
   }
   /* IPhone XR, IPhone 12 PRO, Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxy A51/71 PORTRAIT */
   @media (min-height: 669px) {
@@ -836,9 +797,7 @@
       font-size: 0.65rem;
     }
     .about-weare-group,
-    .contact-quote {
-      font-size: 0.75rem;
-    }
+    .contact-quote,
     .contact-type-button {
       font-size: 0.8rem;
     }
