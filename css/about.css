@@ -280,6 +280,11 @@
   border-bottom-right-radius: 32px;
   border-top-right-radius: 32px;
   border-top-left-radius: 32px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .contact-type-button:hover {
   background-color: #171717;
@@ -366,6 +371,11 @@
   justify-content: space-between;
   align-items: center;
   color: #adb5bd;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .otwd-email {
   font-weight: bold;
@@ -484,6 +494,11 @@
   color: #adb5bd;
   cursor: pointer;
   border: 2px solid #343a40;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .submit-group button:hover {
   background-color: #adb5bd;
