@@ -784,6 +784,7 @@
       font-size: 0.95rem;
     }
     .about-weare-headline {
+      color: red;
       font-size: 0.1rem;
     }
     .about-weare-box p:not(.about-weare-headline) {
@@ -862,6 +863,91 @@
   /* IPhone XR, IPhone 12 PRO, Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxy A51/71 PORTRAIT */
   @media (min-height: 669px) {
     /* ... */
+    .about-intro {
+      font-size: 1.8rem;
+    }
+    .about-otwd-group {
+      width: 88%;
+      padding: 6%;
+    }
+    .about-weare-group {
+      font-size: 0.95rem;
+    }
+    .about-weare-headline {
+      color: red;
+      font-size: 0.1rem;
+    }
+    .about-weare-box p:not(.about-weare-headline) {
+      padding: 0 0 5% 0;
+      margin: 5% 0 5% 0;
+    }
+    .about-title-group {
+      margin: 0 0 10% 0;
+    }
+    .about-title-otwd {
+      font-size: 3.95rem;
+      margin: 0 0 5% 0;
+      padding: 0;
+    }
+    .about-quote-box {
+      font-size: 1.5rem;
+    }
+    .about-service-box {
+      margin-top: 2%;
+    }
+    .about-service-box span {
+      font-size: 0.85rem;
+      padding: 1%;
+      margin: 1% 3% 1% 0;
+      flex-grow: 1;
+    }
+    .about-service-box span:last-child {
+      margin: 1% 0 1% 0;
+    }
+    .left-arrow,
+    .right-arrow {
+      font-size: 1.5rem;
+    }
+    .contact-reachus {
+      font-size: 1.8rem;
+      line-height: 100%;
+    }
+    .contact-quote {
+      font-size: 0.85rem;
+    }
+    .contact-type-button {
+      font-size: 0.85rem;
+      padding: 3% 10% 3% 10%;
+    }
+    .contact-email {
+      font-size: 1rem;
+    }
+    .contact-social-link {
+      font-size: 2.25rem;
+    }
+    .contact-map {
+      height: 55%;
+    }
+    .input-group {
+      font-size: 0.9rem;
+    }
+    .input-group input {
+      margin: 2% 0 2% 0;
+      padding: 2%;
+      font-size: 1rem;
+    }
+    .input-group textarea {
+      font-size: 0.9rem;
+    }
+    .submit-group {
+      width: 100%;
+      margin: 4% 0 1% 0;
+    }
+    .submit-group button {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2% 0 2% 0;
+    }
   }
 }
 
