@@ -54,6 +54,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  justify-self: start;
+  align-self: start;
   font-size: 5rem;
   border-bottom: 1px solid #343a40;
 }
@@ -519,7 +521,7 @@
 }
 /*-----------------END about SECTION--------------------*/
 /*-----------------START MEDIA RESPONSIVE--------------------*/
-/* Portrait */
+/*-------------------------------------------------------------------------------------------- Portrait */
 @media screen and (min-width: 260px) and (max-width: 479px) {
   .about-otwd-group {
     width: 88%;
@@ -810,6 +812,45 @@
     .contact-map {
       height: 55%;
     }
+    /*---------------------------FONT-------------------------*/
+    .about-service-box span {
+      font-size: 0.7rem;
+    }
+    .about-weare-group,
+    .contact-quote,
+    .contact-type-button {
+      font-size: 0.9rem;
+    }
+    .about-weare-headline,
+    .contact-email {
+      font-size: 1rem;
+    }
+    .input-group,
+    .input-group textarea {
+      font-size: 1rem;
+    }
+    .input-group input,
+    .submit-group button {
+      font-size: 1.2rem;
+    }
+    .about-quote-box {
+      font-size: 1.35rem;
+    }
+    .left-arrow,
+    .right-arrow,
+    .about-intro {
+      font-size: 1.575rem;
+    }
+    .contact-reachus {
+      font-size: 1.85rem;
+    }
+    .contact-social-link {
+      font-size: 2.25rem;
+    }
+    .about-title-otwd {
+      font-size: 3.35rem;
+    }
+    /*---------------------------FONT-------------------------*/
   }
   /* IPhone XR, IPhone 12 PRO, Pixel 5, Galaxy S8+, Galaxy S20 ultra, Galaxy A51/71 PORTRAIT */
   @media (min-height: 669px) {
@@ -857,11 +898,291 @@
     /*---------------------------FONT-------------------------*/
   }
 }
-/* Landscape */
+/*-------------------------------------------------------------------------------------------- Landscape */
 @media screen and (min-width: 480px) and (max-width: 639px) {
+  .about-otwd-group {
+    width: 92%;
+    flex-direction: row;
+    padding: 4%;
+  }
+  .about-weare-group {
+    margin-right: 5%;
+  }
+  .about-weare-headline {
+    padding-left: 0;
+  }
+  .about-weare-box p:not(.about-weare-headline) {
+    text-align: left;
+    text-justify: inter-character;
+    border-right: none;
+    border-bottom: 1px dotted #b7bbbf;
+    padding: 0 0 2.5% 0;
+    margin: 2.5% 0 2.5% 0;
+  }
+  .about-title-group {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: end;
+    margin: 0 0 5% 0;
+  }
+  .about-title-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-title-otwd {
+    text-align: right;
+    margin: 0 0 5% 0;
+    padding: 0;
+  }
+  .about-quote-box {
+    padding-left: 2.8%;
+    text-align: left;
+  }
+  .about-service-box {
+    align-items: center;
+    justify-content: start;
+    margin-top: 0;
+  }
+  .about-service-box span {
+    padding: 1%;
+    margin: 1% 3% 1% 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .about-service-box span:last-child {
+    margin: 1% 0 1% 0;
+  }
+  /*---------RIGHT HALF -------------*/
+  .contact-panel {
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .contact-intro {
+    display: none;
+  }
+  .contact-channel-container {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    overflow: hidden;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  /*----------------ccwcwcwcwcw----------------------*/
+  .contact-us-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .contact-reachus-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+    color: #e9ecef;
+    padding: 5% 5% 0 5%;
+    margin: 0%;
+  }
+  .reachus-br {
+    display: none;
+  }
+  .left-arrow {
+    order: 1;
+    padding: 1% 2% 1% 2%;
+    margin: 0 5% 0 0;
+  }
+  .right-arrow {
+    order: 1;
+    padding: 1% 2% 1% 2%;
+    margin: 5% 5% 0 0;
+  }
+  .contact-reachus {
+    order: 2;
+    text-align: right;
+    line-height: 100%;
+  }
+  .contact-type-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: #e9ecef;
+    padding: 0 5% 0 5%;
+  }
+  .contact-quote {
+    padding: 5%;
+    border: none;
+  }
+  .contact-type-button-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+  }
+  .contact-type-button {
+    padding: 3% 10% 3% 10%;
+    margin: 2% 0% 0 0;
+    background-color: #343a40;
+    color: #adb5bd;
+    border-radius: 0px;
+    border: none;
+    width: 50%;
+    text-align: center;
+  }
+  #otwdHubButton {
+    margin-right: 0;
+  }
+  #writeUsButton {
+    margin-left: 0;
+  }
+  .contactTypeButtonActive {
+    background-color: #0a0a0a;
+    color: #adb5bd;
+    border-radius: 0px;
+    border: none;
+  }
+  /*----------------ccwcwcwcwcw----------------------*/
+  .contact-address-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .fourtyPercentSpace {
+    width: 100%;
+    height: 40dvh;
+    display: block;
+    top: 0;
+  }
+  /*-------------------------------HUB-------------*/
+  .hub-group {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    height: 50dvh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .we-are-here {
+    display: none;
+    margin-bottom: 0;
+  }
+  .contact-map {
+    width: 100%;
+    height: 50%;
+    border: 2px solid #171717;
+  }
+  .contact-email {
+    letter-spacing: 2px;
+    font-weight: normal;
+    width: 100%;
+    margin: 10% 0 10% 0;
+    justify-content: center;
+  }
+  .gap {
+    display: none;
+  }
+  .envelope-mail {
+    margin-right: 4%;
+  }
+  .contact-link {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 5% 0;
+    width: 100%;
+    border-top: 1px dotted #343a40;
+    border-bottom: 1px dotted #343a40;
+  }
+  .contact-link div {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .contact-link-text {
+    display: none;
+  }
+  .contact-social-link {
+    padding: 0;
+    color: #dee2e6;
+  }
+  .social-link {
+    margin: 0;
+    display: none;
+  }
+  /*-------------------------------HUB-------------*/
+  /*------------------------------START-FORM-------------*/
+  .form-group {
+    width: 85%;
+    height: 50dvh;
+  }
+  .input-group input {
+    margin: 2% 0 2% 0;
+    padding: 2%;
+  }
+  .submit-group {
+    width: 100%;
+    margin: 4% 0 1% 0;
+  }
+  .submit-group button {
+    width: 100%;
+    padding: 4% 0 4% 0;
+  }
+
   /* IPhone SE OLD LANDSCAPE */
   @media (max-height: 321px) {
-    /* ... */
+    /*---------------------------FONT-------------------------*/
+    .about-service-box span {
+      font-size: 0.6rem;
+    }
+    .about-weare-group,
+    .contact-quote,
+    .contact-type-button {
+      font-size: 0.7rem;
+    }
+    .about-weare-headline,
+    .contact-email {
+      font-size: 0.85rem;
+    }
+    .input-group,
+    .input-group textarea {
+      font-size: 1.05rem;
+    }
+    .input-group input,
+    .submit-group button {
+      font-size: 1.25rem;
+    }
+    .about-quote-box {
+      font-size: 1rem;
+    }
+    .left-arrow,
+    .right-arrow,
+    .about-intro {
+      font-size: 1.5rem;
+    }
+    .contact-reachus {
+      font-size: 1.9rem;
+    }
+    .contact-social-link {
+      font-size: 2.5rem;
+    }
+    .about-title-otwd {
+      font-size: 3rem;
+    }
+    /*---------------------------FONT-------------------------*/
   }
 
   /* Surface DUO Portrait */
