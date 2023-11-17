@@ -20,7 +20,7 @@ function onTouchStart(e) {
 
 function onTouchMove(e) {
   if (scrolling) return;
-  const deltaY = (e.touches[0].clientY - startY) * 0.3;
+  const deltaY = (e.touches[0].clientY - startY) * 0.1;
   const scrollDirection = deltaY > 0 ? 1 : -1;
   scroll(scrollDirection);
 }
