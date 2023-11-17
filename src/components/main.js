@@ -6,17 +6,17 @@
 //   { passive: false }
 // );
 
-// window.addEventListener("touchstart", function (e) {
-//   this.touchStartY = e.touches[0].clientY;
-// });
+window.addEventListener("touchstart", function (e) {
+  this.touchStartY = e.touches[0].clientY;
+});
 
-// window.addEventListener("touchmove", function (e) {
-//   const deltaY = e.touches[0].clientY - this.touchStartY;
+window.addEventListener("touchmove", function (e) {
+  const deltaY = e.touches[0].clientY - this.touchStartY;
 
-//   if (Math.abs(deltaY) > 10) {
-//     e.preventDefault();
-//   }
-// });
+  if (Math.abs(deltaY) > 10) {
+    e.preventDefault();
+  }
+});
 
 const sections = document.querySelectorAll(".content-section");
 
