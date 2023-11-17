@@ -1,29 +1,29 @@
 @media screen and (min-width: 767px) and (max-width: 1022px) {
-  /*-------------------------------------SPACE ADJUSTMENT------*/
-  .contact-intro {
-    display: none;
-  }
-  .contact-channel-container {
-    width: 30%;
-  }
-  .contact-us-group {
-    width: 90%;
-    height: 90%;
-    padding: 5%;
-  }
-  .contact-address-container {
-    width: 70%;
-  }
-  .hub-group,
-  .form-group {
-    width: 80%;
-  }
-  /*-------------------------------------SPACE ADJUSTMENT------*/
   .contact-link {
     padding: 5% 0 5% 0;
   }
   /*IPAD,IPAD MINI ------------------------- PORTRAIT*/
   @media (min-height: 767px) and (max-height: 1024px) {
+    /*-------------------------------------SPACE ADJUSTMENT------*/
+    .contact-intro {
+      display: none;
+    }
+    .contact-channel-container {
+      width: 30%;
+    }
+    .contact-us-group {
+      width: 90%;
+      height: 90%;
+      padding: 5%;
+    }
+    .contact-address-container {
+      width: 70%;
+    }
+    .hub-group,
+    .form-group {
+      width: 80%;
+    }
+    /*-------------------------------------SPACE ADJUSTMENT------*/
     .about-service-box span {
       padding: 1.25%;
       font-size: 0.85rem;
@@ -75,6 +75,26 @@
   }
   /*IPAD AIR------------------------- PORTRAIT*/
   @media (min-height: 1025px) and (max-height: 1180px) {
+    /*-------------------------------------SPACE ADJUSTMENT------*/
+    .contact-intro {
+      display: none;
+    }
+    .contact-channel-container {
+      width: 30%;
+    }
+    .contact-us-group {
+      width: 90%;
+      height: 90%;
+      padding: 5%;
+    }
+    .contact-address-container {
+      width: 70%;
+    }
+    .hub-group,
+    .form-group {
+      width: 80%;
+    }
+    /*-------------------------------------SPACE ADJUSTMENT------*/
     .about-service-box span {
       padding: 1.25%;
       font-size: 0.85rem;
@@ -126,6 +146,26 @@
   }
   /*SURFACE PRO------------------------- PORTRAIT*/
   @media (min-height: 1181px) {
+    /*-------------------------------------SPACE ADJUSTMENT------*/
+    .contact-intro {
+      display: none;
+    }
+    .contact-channel-container {
+      width: 30%;
+    }
+    .contact-us-group {
+      width: 90%;
+      height: 90%;
+      padding: 5%;
+    }
+    .contact-address-container {
+      width: 70%;
+    }
+    .hub-group,
+    .form-group {
+      width: 80%;
+    }
+    /*-------------------------------------SPACE ADJUSTMENT------*/
     .about-service-box span {
       padding: 1.25%;
       font-size: 0.85rem;
