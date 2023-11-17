@@ -23,6 +23,10 @@
     .input-group textarea {
       font-size: 0.75rem;
     }
+    .input-group textarea {
+      height: 4.2em;
+    }
+
     .input-group input,
     .submit-group button {
       font-size: 0.85rem;
