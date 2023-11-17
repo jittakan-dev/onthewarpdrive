@@ -7,13 +7,15 @@
   @media (max-height: 323px) {
     /*---------------------------FONT-------------------------*/
     .about-service-box span {
-      padding: 1.25%;
+      padding: 1.15%;
       font-size: 0.6rem;
     }
     .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
+    .contact-quote {
       font-size: 0.65rem;
+    }
+    .contact-type-button {
+      font-size: 0.55rem;
     }
     .about-weare-headline,
     .contact-email {
