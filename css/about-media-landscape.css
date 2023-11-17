@@ -19,14 +19,14 @@
     }
     .about-weare-headline,
     .contact-email {
-      font-size: 0.75rem;
+      font-size: 0.725rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 0.75rem;
+      font-size: 0.725rem;
     }
     .input-group textarea {
-      height: 4.2em;
+      height: 4em;
     }
 
     .input-group input,
