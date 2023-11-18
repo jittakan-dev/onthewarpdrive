@@ -9,8 +9,14 @@
     .contact-map {
       height: 35%;
     }
-    .contact-intro {
+    .contact-intro,
+    .reachus-br {
       display: none;
+    }
+    .contact-reachus-group {
+      justify-content: end;
+      align-items: center;
+      padding-right: 5%;
     }
     .contact-channel-container {
       width: 40%;
