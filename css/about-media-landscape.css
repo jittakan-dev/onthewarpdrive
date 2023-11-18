@@ -1,10 +1,33 @@
 /*-------------------------------------------------------------------------------------------- Landscape */
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .contact-map {
-    height: 35%;
+    height: 40%;
   }
   /* IPhone SE OLD LANDSCAPE */
   @media (max-height: 323px) {
+    /*-------------------------------------SPACE ADJUSTMENT------*/
+    .contact-map {
+      height: 35%;
+    }
+    .contact-intro {
+      display: none;
+    }
+    .contact-channel-container {
+      width: 40%;
+    }
+    .contact-us-group {
+      width: 90%;
+      height: 90%;
+      padding: 5%;
+    }
+    .contact-address-container {
+      width: 60%;
+    }
+    .hub-group,
+    .form-group {
+      width: 70%;
+    }
+    /*-------------------------------------SPACE ADJUSTMENT------*/
     /*---------------------------FONT-------------------------*/
     .about-service-box span {
       padding: 1.15%;
