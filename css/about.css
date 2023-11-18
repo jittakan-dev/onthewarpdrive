@@ -68,9 +68,9 @@
   flex-direction: column;
   color: #adb5bd;
 }
-.about-weare-box p:not(.about-weare-headline) {
+.about-weare-box {
   padding-right: 5%;
-  border-right: 2px solid #dee2e6;
+  border-right: 1px solid #adb5bd;
 }
 .about-weare-headline {
   font-size: 1.4rem;
@@ -86,7 +86,7 @@
   padding: 0.2% 1.5% 0.2% 1.5%;
   cursor: pointer;
   background-color: #495057;
-  border: 2px solid #dee2e6;
+  border: 1px solid #dee2e6;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-right-radius: 32px;
@@ -95,7 +95,7 @@
 .about-service-box span:hover {
   color: black;
   background-color: #495057;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .about-title-group {
   display: flex;
@@ -234,8 +234,8 @@
   padding: 5%;
 }
 .contact-quote {
-  border-top: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #adb5bd;
+  border-bottom: 1px solid #adb5bd;
   padding: 5% 0 5% 0;
   font-size: 1.1rem;
   color: #adb5bd;
@@ -254,7 +254,7 @@
   cursor: pointer;
   background-color: #dee2e6;
   color: #171717;
-  border: 2px solid #dee2e6;
+  border: 1px solid #dee2e6;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-right-radius: 32px;
@@ -268,12 +268,12 @@
 .contact-type-button:hover {
   background-color: #171717;
   color: #dee2e6;
-  border: 2px solid #171717;
+  border: 1px solid #171717;
 }
 .contactTypeButtonActive {
   background-color: #171717;
   color: #dee2e6;
-  border: 2px solid #e9ecef;
+  border: 1px solid #e9ecef;
   cursor: default;
   pointer-events: none;
 }
@@ -366,8 +366,8 @@
   justify-content: center;
   align-items: end;
   width: 100%;
-  border-top: 1px solid #e9ecef;
-  border-bottom: 1px solid #e9ecef;
+  border-top: 1px solid #343a40;
+  border-bottom: 1px solid #343a40;
   padding: 2% 0 2% 0;
 }
 .contact-link-line {
@@ -463,7 +463,7 @@
   background-color: black;
   border: none;
   cursor: pointer;
-  border: 2px solid #343a40;
+  border: 1px solid #343a40;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;

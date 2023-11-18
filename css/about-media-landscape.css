@@ -14,6 +14,7 @@
       display: none;
     }
     .contact-reachus-group {
+      margin-top: 5%;
       justify-content: end;
       align-items: center;
       padding-right: 5%;
@@ -33,10 +34,24 @@
     .form-group {
       width: 70%;
     }
+    .about-service-box span {
+      padding: 1.15%;
+    }
+    .contact-type-button {
+      padding: 2.5%;
+    }
+    .left-arrow {
+      margin: 0% 5% 0 0;
+    }
+    .contact-link {
+      padding: 4% 0 4% 0;
+    }
+    .contact-email {
+      margin-top: 0%;
+    }
     /*-------------------------------------SPACE ADJUSTMENT------*/
     /*---------------------------FONT-------------------------*/
     .about-service-box span {
-      padding: 1.15%;
       font-size: 0.6rem;
     }
     .about-weare-group,
@@ -44,7 +59,6 @@
       font-size: 0.65rem;
     }
     .contact-type-button {
-      padding: 2.5%;
       font-size: 0.55rem;
     }
     .about-weare-headline,
@@ -53,14 +67,14 @@
     }
     .input-group,
     .input-group textarea {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
     }
     .input-group textarea {
       height: 4em;
     }
     .input-group input,
     .submit-group button {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
     .about-quote-box {
       font-size: 0.85rem;
@@ -71,11 +85,7 @@
     .contact-intro {
       font-size: 1.2rem;
     }
-    .left-arrow {
-      margin: 0% 5% 0 0;
-    }
     .we-are-here {
-      font-size: 0.8rem;
       display: none;
     }
     .contact-reachus {
