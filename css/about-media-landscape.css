@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------- Landscape */
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .contact-map {
-    height: 32%;
+    height: 35%;
   }
   /* IPhone SE OLD LANDSCAPE */
   @media (max-height: 323px) {
@@ -23,15 +23,14 @@
     }
     .input-group,
     .input-group textarea {
-      font-size: 0.725rem;
+      font-size: 0.7rem;
     }
     .input-group textarea {
       height: 4em;
     }
-
     .input-group input,
     .submit-group button {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
     .about-quote-box {
       font-size: 0.85rem;
