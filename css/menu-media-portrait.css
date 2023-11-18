@@ -164,10 +164,26 @@
     margin-top: 3%;
     font-size: 1.7rem;
   }
+  .nav-dot-group,
+  .nav-dot-group-dop {
+    top: 55%;
+  }
+  .nav-dot-group a:nth-child(1),
+  .nav-dot-group-dop div:nth-child(1) {
+    margin: 2.5dvh 0 1.5dvh 0;
+  }
+  .nav-dot-group a:nth-child(2),
+  .nav-dot-group-dop div:nth-child(2) {
+    margin: 1.5dvh 0 1.5dvh 0;
+  }
+  .nav-dot-group a:nth-child(3),
+  .nav-dot-group-dop div:nth-child(3) {
+    margin: 1.5dvh 0 2.5dvh 0;
+  }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 8dvh;
-    height: 8dvh;
+    width: 7.2dvh;
+    height: 7.2dvh;
   }
   .bubble-button .hamburger-icon::before {
     top: -1.5dvh;
