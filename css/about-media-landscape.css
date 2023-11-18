@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------- Landscape */
 @media screen and (min-width: 480px) and (max-width: 639px) {
   .contact-map {
-    height: 40%;
+    height: 35%;
   }
   /* IPhone SE OLD LANDSCAPE */
   @media (max-height: 323px) {

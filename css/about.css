@@ -67,10 +67,8 @@
   display: flex;
   flex-direction: column;
   color: #c1cbd4;
-}
-.about-weare-box {
   padding-right: 5%;
-  border-right: 1px solid #c1cbd4;
+  border-right: 1px solid #96a2ae;
 }
 .about-weare-headline {
   font-size: 1.4rem;

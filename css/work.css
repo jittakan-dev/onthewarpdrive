@@ -364,14 +364,14 @@
 @media screen and (min-width: 480px) and (max-width: 639px) and (max-height: 321px) {
   /*IPhone SE OLD LANDSCAPE*/
   .work-menu-title {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 90%;
   }
   .selectedBr {
     display: none;
   }
   .work-menu-header {
-    margin: 2% 0 2% 0;
+    margin: 1.5% 0 1.5% 0;
   }
   .work-menu-title {
     width: auto;
@@ -379,7 +379,7 @@
   .work-menu-types {
     width: auto;
     align-items: end;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
   .work-menu-types div {
     margin-right: 2.5%;
