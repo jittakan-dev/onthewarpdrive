@@ -11,6 +11,7 @@
   display: flex;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  color: #dee2e6;
 }
 .about-content {
   width: 100%;
@@ -65,11 +66,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: #dee2e6;
 }
 .about-weare-box p:not(.about-weare-headline) {
   padding-right: 5%;
-  border-right: 2px solid black;
+  border-right: 2px solid #dee2e6;
 }
 .about-weare-headline {
   font-size: 1.4rem;
@@ -84,7 +84,6 @@
   margin-right: 2%;
   padding: 0.2% 1.5% 0.2% 1.5%;
   cursor: pointer;
-  color: #dee2e6;
   background-color: #495057;
   border: 2px solid #dee2e6;
   border-bottom-left-radius: 32px;
@@ -145,7 +144,6 @@
   text-align: right;
   width: 100%;
   font-size: 2.8rem;
-  color: #e9ecef;
   line-height: 100%;
   font-family: "Ubuntu";
 }
@@ -214,7 +212,7 @@
 }
 .left-arrow:hover {
   background-color: #171717;
-  color: #e9ecef;
+  color: #dee2e6;
 }
 .contact-reachus {
   font-weight: 900;
@@ -234,8 +232,8 @@
   padding: 5%;
 }
 .contact-quote {
-  border-top: 2px solid #171717;
-  border-bottom: 2px solid #171717;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   padding: 5% 0 5% 0;
   font-size: 1.1rem;
 }
@@ -251,9 +249,9 @@
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
-  background-color: #adb5bd;
+  background-color: #dee2e6;
   color: #171717;
-  border: 2px solid #171717;
+  border: 2px solid #dee2e6;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-right-radius: 32px;
@@ -266,12 +264,12 @@
 }
 .contact-type-button:hover {
   background-color: #171717;
-  color: #adb5bd;
+  color: #dee2e6;
   border: 2px solid #171717;
 }
 .contactTypeButtonActive {
   background-color: #171717;
-  color: #adb5bd;
+  color: #dee2e6;
   border: 2px solid #e9ecef;
   cursor: default;
   pointer-events: none;
@@ -311,7 +309,6 @@
   align-items: center;
   width: 70%;
   height: 95dvh;
-  color: #e9ecef;
 }
 .we-are-here {
   font-size: 1.2rem;
@@ -344,7 +341,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #adb5bd;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -392,12 +388,12 @@
   width: auto;
   font-size: 1.6rem;
   cursor: pointer;
-  color: #e9ecef;
+  color: #dee2e6;
 }
 .social-link {
   margin-left: 10%;
   font-size: 1.2rem;
-  color: #e9ecef;
+  color: #dee2e6;
 }
 /*-----------------------END-sociallink------------*/
 /*---------------------------END CONTACT HUB----------------*/
@@ -409,7 +405,6 @@
   align-items: center;
   width: 70%;
   height: 95dvh;
-  color: #dee2e6;
 }
 .input-group {
   width: 100%;
@@ -421,7 +416,6 @@
 }
 .input-group label {
   width: 100%;
-  color: #adb5bd;
 }
 .input-group input {
   width: 96%;
@@ -429,8 +423,8 @@
   padding: 2%;
   border: none;
   background-color: #495057;
-  color: #e9ecef;
   font-size: 1.6rem;
+  color: #dee2e6;
 }
 .input-group input:focus {
   background-color: #e9ecef;
@@ -443,8 +437,8 @@
   padding: 2%;
   border: none;
   background-color: #495057;
-  color: #e9ecef;
   font-size: 1.4rem;
+  color: #dee2e6;
 }
 .input-group textarea:focus {
   background-color: #e9ecef;
@@ -465,7 +459,6 @@
   padding: 2% 0 2% 0;
   background-color: black;
   border: none;
-  color: #adb5bd;
   cursor: pointer;
   border: 2px solid #343a40;
   user-select: none;
@@ -473,12 +466,12 @@
   -webkit-text-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  color: #dee2e6;
 }
 .submit-group button:hover {
   background-color: #adb5bd;
   color: #171717;
   border: 2px solid #adb5bd;
-  font-weight: bold;
 }
 .reveal-item {
   width: 80%;
