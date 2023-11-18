@@ -290,7 +290,8 @@
       font-size: 1.1rem;
     }
     .we-are-here {
-      font-size: 0.75rem;
+      display: none;
+      /* font-size: 0.75rem; */
     }
     .contact-reachus {
       font-size: 1.2rem;
@@ -339,7 +340,8 @@
       font-size: 1.2rem;
     }
     .we-are-here {
-      font-size: 0.75rem;
+      display: none;
+      /* font-size: 0.75rem; */
     }
     .contact-reachus {
       font-size: 1.2rem;
