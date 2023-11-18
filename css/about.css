@@ -66,6 +66,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  color: #adb5bd;
 }
 .about-weare-box p:not(.about-weare-headline) {
   padding-right: 5%;
@@ -146,6 +147,7 @@
   font-size: 2.8rem;
   line-height: 100%;
   font-family: "Ubuntu";
+  color: #adb5bd;
 }
 .contact-panel {
   width: 100%;
@@ -236,6 +238,7 @@
   border-bottom: 1px solid #dee2e6;
   padding: 5% 0 5% 0;
   font-size: 1.1rem;
+  color: #adb5bd;
 }
 .contact-type-button-group {
   width: 100%;
