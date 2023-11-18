@@ -44,6 +44,7 @@
       font-size: 0.65rem;
     }
     .contact-type-button {
+      padding: 2.5%;
       font-size: 0.55rem;
     }
     .about-weare-headline,
@@ -69,6 +70,9 @@
     .about-intro,
     .contact-intro {
       font-size: 1.2rem;
+    }
+    .left-arrow {
+      margin: 0% 5% 0 0;
     }
     .we-are-here {
       font-size: 0.8rem;
