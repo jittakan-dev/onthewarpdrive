@@ -154,7 +154,7 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background-color: #495057;
+  background-color: #252a2e;
   margin: 0;
   padding: 0;
 }
@@ -183,7 +183,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-  background-color: #343a40;
+  background-color: #252a2e;
 }
 .contact-reachus-group {
   margin-top: 20%;
