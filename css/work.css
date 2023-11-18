@@ -368,7 +368,7 @@
     line-height: 90%;
   }
   .selectedBr {
-    display: contents;
+    display: none;
   }
   .work-menu-header {
     margin: 2% 0 2% 0;
