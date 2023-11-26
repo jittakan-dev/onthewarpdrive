@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>(UI Test Phase) OnTheWarpDrive Co.</title>
+    <title>FindOutMore Atelier Part.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,17 +47,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/menu-media-portrait.css" />
     <link rel="stylesheet" href="css/menu-media-landscape.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css/work-media-portrait.css" />
+    <link rel="stylesheet" href="css/work-media-landscape.css" />
+    <link rel="stylesheet" href="css/work-media-desktop-landscape.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/about-media-portrait.css" />
     <link rel="stylesheet" href="css/about-media-landscape.css" />
     <link rel="stylesheet" href="css/about-media-desktop-tablet.css" />
-    <link rel="stylesheet" href="css/media.css" />
     <link rel="shortcut icon" href="#" />
   </head>
   <body>
@@ -118,7 +120,7 @@
             <nav class="right-hidden-menu">
               <a href="#home" class="bubbleLinkActive">HOME</a>
               <a href="#work" class="">WORK</a>
-              <a href="#about" class="">OTWD</a>
+              <a href="#about" class="">FOM/A</a>
             </nav>
           </div>
           <div class="term-group">
@@ -127,7 +129,8 @@
                 <div>Terms &nbsp; <span>|</span> &nbsp; Privacy Policy</div>
               </div>
               <div class="term-group-container-right">
-                ©2023, All rights reserved. OnTheWarpDrive(OTWD) Part., Ltd.
+                ©2023, All rights reserved. FindOutMore Atelier(FOM/A) Part.,
+                Ltd.
               </div>
             </div>
           </div>
@@ -135,7 +138,7 @@
         <nav class="nav-dot-group" id="nav-section">
           <a href="#home" class="navLinkActive">H</a>
           <a href="#work" class="">W</a>
-          <a href="#about" class="">O</a>
+          <a href="#about" class="">F</a>
         </nav>
         <nav class="nav-dot-group-dop">
           <div href="#home" class="navLinkActive"></div>
@@ -149,7 +152,68 @@
     <!----------   start home section   -------------->
     <main id="main-body">
       <section class="content-section" id="home">
-        <div class="home-container"></div>
+        <div class="home-container">
+          <div class="world-base">
+            <div class="world-title-otwd">FOM/A</div>
+            <div class="world-quote-box">Foundation for startups</div>
+          </div>
+          <div class="world-core">
+            <div class="world-object-img">
+              <img src="./images/globe/ballon.png" />
+            </div>
+            <div class="world-core-img">
+              <img src="./images/globe/world.png" />
+            </div>
+          </div>
+          <div class="world-background" id="world"></div>
+          <div class="world-control-group">
+            <div class="world-text">
+              <div class="we-layer-1">
+                <div class="we-do">We do beautiful</div>
+                <div class="we-are">We are</div>
+                <div class="we-point">We point</div>
+              </div>
+              <div class="we-layer-2">
+                <div class="we-do">things to the app.</div>
+                <div class="we-are">FOM/A [fo-ma].</div>
+                <div class="we-point">to the target.</div>
+              </div>
+            </div>
+            <div class="world-sub-text">
+              <div class="we-do">
+                --We-do. I love this playlist and how you did the layout,
+                writing down the song and the album and also mentioning the
+                previous and next song! We-do--
+              </div>
+              <div class="we-are">
+                --We-are. I love this playlist and how you did the layout,
+                writing down the song and the album and also mentioning the
+                previous and next song! I love this playlist and how you did the
+                layout, writing down the song.We-are.--
+              </div>
+              <div class="we-point">
+                --We-point. I love this playlist and how you did the layout,
+                writing down the song and the album and also mentioning the
+                previous and next song! I love this playlist and how you did the
+                layout. We-point--
+              </div>
+            </div>
+            <div class="world-button-group">
+              <div class="world-button" onclick="rotateWorld(0,1)">
+                We do <i class="fa-solid fa-arrow-right active"></i>
+              </div>
+              <span>/</span>
+              <div class="world-button" onclick="rotateWorld(470,2)">
+                We are <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <span>/</span>
+              <div class="world-button" onclick="rotateWorld(255,3)">
+                We point <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <span>/</span>
+            </div>
+          </div>
+        </div>
       </section>
       <!----------   end home section   -------------->
       <!----------   start work section   -------------->
@@ -291,11 +355,11 @@
               <div class="about-otwd-group">
                 <div class="about-weare-group">
                   <div class="about-weare-box">
-                    <span class="about-weare-headline">
-                      What we do defines who we are.
-                    </span>
                     <p>
-                      As a group of tech experts, OTWD works together to build
+                      <span class="about-weare-headline">
+                        What we do defines who we are. </span
+                      ><br /><br />
+                      As a group of tech experts, FOM/A works together to build
                       digital services for upcoming startups and small to
                       medium-sized businesses, both in Bangkok and online.<br /><br />
                       We're great at creating clear, creative, and unique
@@ -317,7 +381,7 @@
                   ></i>
                   <div>
                     <div class="about-title-box">
-                      <div class="about-title-otwd">OTWD</div>
+                      <div class="about-title-otwd">FOM/A</div>
                     </div>
                     <div class="about-quote-box">
                       Foundation for <br />startups
@@ -346,15 +410,17 @@
                   </div>
                   <div class="contact-type-box">
                     <div class="contact-quote">
-                      For business inquiries, alliances and coffee meet up,
-                      Please contact us
+                      <p>
+                        For business inquiries, alliances and coffee meet up,
+                        Please contact us
+                      </p>
                     </div>
                     <div class="contact-type-button-group">
                       <div
                         class="contactTypeButtonActive contact-type-button"
                         id="otwdHubButton"
                       >
-                        OTWD Hub
+                        FOM/A Hub
                       </div>
                       <div class="contact-type-button" id="writeUsButton">
                         Write to us

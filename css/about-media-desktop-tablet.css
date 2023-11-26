@@ -1,439 +1,511 @@
-@media screen and (min-width: 767px) and (max-width: 1022px) {
-  .contact-link {
-    padding: 5% 0 5% 0;
-  }
-  /*IPAD,IPAD MINI ------------------------- PORTRAIT*/
-  @media (min-height: 767px) and (max-height: 1024px) {
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .contact-intro {
-      display: none;
+/*---------------------------PORTRAIT TABLETs---------------------*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  @media (min-height: 768px) and (max-height: 1367px) {
+    /*--------------GENERAL STYLES--------------*/
+    /*----------------ABOUT----------------*/
+    .about-otwd-group {
+      flex-direction: column-reverse;
+    }
+    .about-weare-box {
+      border-top: 1px dotted #b7bbbf;
+      border-bottom: 1px dotted #b7bbbf;
+      margin-top: 5%;
+      border-right: none;
+    }
+    .about-service-box {
+      margin-top: 5%;
+    }
+    .about-service-box span {
+      margin-right: 2%;
+      padding: 1% 1.5% 1% 1.5%;
+    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .contact-panel {
+      flex-direction: column;
     }
     .contact-channel-container {
-      width: 30%;
+      width: 100%;
+      height: 40%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-intro {
+      width: 100%;
+      height: 50%;
+      display: flex;
     }
     .contact-us-group {
       width: 90%;
-      height: 90%;
-      padding: 5%;
+      height: 50%;
+      justify-content: center;
+      padding: 0 5% 0 5%;
     }
-    .contact-address-container {
-      width: 70%;
+    .contact-reachus-group {
+      margin: 5% 0 0 0;
+      padding: 0;
+      justify-content: end;
+      align-items: center;
     }
-    .hub-group,
-    .form-group {
-      width: 80%;
+    .left-arrow {
+      margin: 0 2.5% 0 0;
     }
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 0.85rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 0.85rem;
-    }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 0.95rem;
-    }
-    .about-quote-box {
-      font-size: 1.65rem;
-    }
-    .about-title-otwd {
-      font-size: 4.25rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
-    }
-    .we-are-here {
-      font-size: 1.2rem;
-    }
-    .contact-reachus {
-      font-size: 1.9rem;
-    }
-    .contact-link {
-      font-size: 0.9rem;
-    }
-    .social-link {
-      font-size: 0.9rem;
-    }
-    .contact-social-link {
-      font-size: 1.7rem;
-    }
-    .input-group,
-    .input-group textarea {
-      font-size: 1.2rem;
-    }
-    .input-group input,
-    .submit-group button {
-      font-size: 1.4rem;
-    }
-  }
-  /*IPAD AIR------------------------- PORTRAIT*/
-  @media (min-height: 1025px) and (max-height: 1180px) {
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .contact-intro {
+    .reachus-br {
       display: none;
     }
-    .contact-channel-container {
-      width: 30%;
+    .contact-type-box {
+      width: 100%;
+      align-items: end;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
     }
-    .contact-us-group {
-      width: 90%;
-      height: 90%;
-      padding: 5%;
+    .contact-quote {
+      color: #adb5bd;
+      border: none;
+      padding: 0 0 0 0;
+      margin: 0;
+    }
+    .contact-type-button-group {
+      padding: 0;
+      margin: 0 0 2.5% 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+    }
+    .contact-type-button {
+      padding: 1.5% 0 1.5% 0;
+      margin: 0;
+      border-radius: 0px;
+      border: none;
+      width: 50%;
+      text-align: center;
+    }
+    #otwdHubButton {
+      margin-right: 0;
+    }
+    #writeUsButton {
+      margin-left: 0;
+    }
+    .contactTypeButtonActive {
+      border-radius: 0px;
+      border: none;
     }
     .contact-address-container {
-      width: 70%;
+      width: 100%;
+      height: 60%;
     }
-    .hub-group,
-    .form-group {
-      width: 80%;
+    .hub-group {
+      margin: 0;
+      padding: 0;
+      width: 85%;
+      height: 60dvh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
     }
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 0.85rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 0.85rem;
-    }
-    .about-weare-headline,
     .contact-email {
-      font-size: 0.95rem;
-    }
-    .about-quote-box {
-      font-size: 1.65rem;
-    }
-    .about-title-otwd {
-      font-size: 4.25rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
-    }
-    .we-are-here {
-      font-size: 1.2rem;
-    }
-    .contact-reachus {
-      font-size: 1.9rem;
+      margin-top: 4%;
     }
     .contact-link {
-      font-size: 0.9rem;
+      margin-bottom: 2.5%;
     }
-    .social-link {
-      font-size: 0.9rem;
-    }
-    .contact-social-link {
-      font-size: 1.7rem;
-    }
-    .input-group,
-    .input-group textarea {
-      font-size: 1.2rem;
-    }
-    .input-group input,
-    .submit-group button {
-      font-size: 1.4rem;
-    }
-  }
-  /*SURFACE PRO------------------------- PORTRAIT*/
-  @media (min-height: 1181px) {
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .contact-intro {
-      display: none;
-    }
-    .contact-channel-container {
-      width: 30%;
-    }
-    .contact-us-group {
-      width: 90%;
-      height: 90%;
-      padding: 5%;
-    }
-    .contact-address-container {
-      width: 70%;
-    }
-    .hub-group,
-    .form-group {
-      width: 80%;
-    }
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 0.85rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 0.85rem;
-    }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 0.95rem;
-    }
-    .about-quote-box {
-      font-size: 1.65rem;
-    }
-    .about-title-otwd {
-      font-size: 4.25rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
-    }
-    .we-are-here {
-      font-size: 1.2rem;
-    }
-    .contact-reachus {
-      font-size: 1.9rem;
-    }
-    .contact-link {
-      font-size: 0.9rem;
-    }
-    .social-link {
-      font-size: 0.9rem;
-    }
-    .contact-social-link {
-      font-size: 1.7rem;
-    }
-    .input-group,
-    .input-group textarea {
-      font-size: 1.2rem;
-    }
-    .input-group input,
-    .submit-group button {
-      font-size: 1.4rem;
-    }
-  }
-}
-@media screen and (min-width: 1023px) and (max-width: 1279px) {
-  .contact-link {
-    padding: 5% 0 5% 0;
-  }
-  /* Window GAP, Nest Hub*/
-  @media (max-height: 766px) {
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 0.75rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 0.9rem;
-    }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 0.95rem;
-    }
-    .input-group,
-    .input-group textarea {
-      font-size: 1rem;
-    }
-    .input-group input,
-    .submit-group button {
-      font-size: 1.15rem;
-    }
-    .about-quote-box {
-      font-size: 1.5rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.75rem;
-    }
-    .we-are-here {
-      font-size: 0.85rem;
-    }
-    .contact-reachus {
-      font-size: 2rem;
-    }
-    .contact-link {
-      font-size: 0.85rem;
-    }
-    .social-link {
-      font-size: 0.95rem;
-    }
-    .contact-social-link {
-      font-size: 1.8rem;
-    }
-    .about-title-otwd {
-      font-size: 4.2rem;
-    }
-  }
 
-  @media (min-height: 767px) and (max-height: 1364px) {
-    /* IPAD, IPAD Mini, IPAD Air ------------------------- LANDSCAPE */
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 0.85rem;
+    .fourtyPercentSpace #formGroup {
+      width: 100%;
+      height: 40dvh;
+      display: block;
+      top: 0;
     }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      height: 60dvh;
+    }
+  }
+  /*----------------CONTACT----------------*/
+  /*--------------GENERAL STYLES--------------*/
+  @media (min-height: 768px) and (max-height: 1024px) {
+    /*--------------SPECIFIC FONT SIZE --------------*/
+    /*----------------ABOUT----------------*/
+    .about-weare-group {
       font-size: 0.95rem;
     }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 1.05rem;
-    }
-    .about-quote-box {
-      font-size: 1.85rem;
+    .about-weare-headline {
+      font-size: 1.2rem;
     }
     .about-title-otwd {
       font-size: 4.8rem;
     }
-    .left-arrow,
+    .about-quote-box {
+      font-size: 1.8rem;
+    }
     .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
+    .left-arrow {
+      font-size: 1.65rem;
     }
-    .we-are-here {
-      font-size: 1.3rem;
-    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
     .contact-reachus {
       font-size: 2.2rem;
+    }
+    .contact-quote {
+      font-size: 1.1rem;
+    }
+    .contact-email {
+      font-size: 1.2rem;
+    }
+    .contact-link {
+      font-size: 0.95rem;
+    }
+    .social-link {
+      font-size: 1.1rem;
+    }
+    .contact-social-link {
+      font-size: 1.6rem;
+    }
+    .input-group,
+    .input-group textarea {
+      font-size: 1.1rem;
+    }
+    .input-group input,
+    .submit-group button {
+      font-size: 1.2rem;
+    }
+    /*----------------CONTACT----------------*/
+    /*--------------SPECIFIC FONT SIZE--------------*/
+  }
+  @media (min-height: 1025px) and (max-height: 1180px) {
+    /*--------------SPECIFIC FONT SIZE --------------*/
+    /*----------------ABOUT----------------*/
+    .about-weare-group {
+      font-size: 0.95rem;
+    }
+    .about-weare-headline {
+      font-size: 1.2rem;
+    }
+    .about-title-otwd {
+      font-size: 4.8rem;
+    }
+    .about-quote-box {
+      font-size: 1.8rem;
+    }
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.65rem;
+    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .contact-reachus {
+      font-size: 2.2rem;
+    }
+    .contact-quote {
+      font-size: 1.1rem;
+    }
+    .contact-email {
+      font-size: 1.2rem;
+    }
+    .contact-link {
+      font-size: 0.95rem;
+    }
+    .social-link {
+      font-size: 1.1rem;
+    }
+    .contact-social-link {
+      font-size: 1.6rem;
+    }
+    .input-group,
+    .input-group textarea {
+      font-size: 1.1rem;
+    }
+    .input-group input,
+    .submit-group button {
+      font-size: 1.2rem;
+    }
+    /*----------------CONTACT----------------*/
+    /*--------------SPECIFIC FONT SIZE--------------*/
+  }
+  @media (min-height: 1081px) and (max-height: 1195px) {
+    /*--------------SPECIFIC FONT SIZE --------------*/
+    /*----------------ABOUT----------------*/
+    .about-weare-group {
+      font-size: 1rem;
+    }
+    .about-weare-headline {
+      font-size: 1.2rem;
+    }
+    .about-title-otwd {
+      font-size: 4.8rem;
+    }
+    .about-quote-box {
+      font-size: 1.8rem;
+    }
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.65rem;
+    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .contact-reachus {
+      font-size: 2.2rem;
+    }
+    .contact-quote {
+      font-size: 1.1rem;
+    }
+    .contact-email {
+      font-size: 1.2rem;
     }
     .contact-link {
       font-size: 1rem;
     }
     .social-link {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .contact-social-link {
-      font-size: 1.55rem;
+      font-size: 1.6rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
+    /*----------------CONTACT----------------*/
+    /*--------------SPECIFIC FONT SIZE--------------*/
   }
-
-  @media (min-height: 1365px) {
-    /*IPAD Pro ------------------------- PORTRAIT*/
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .contact-intro {
-      display: none;
+  @media (min-height: 1196px) and (max-height: 1367px) {
+    /*--------------SPECIFIC FONT SIZE --------------*/
+    /*----------------ABOUT----------------*/
+    .about-weare-group {
+      font-size: 1.05rem;
     }
-    .contact-channel-container {
-      width: 30%;
-    }
-    .contact-us-group {
-      width: 90%;
-      height: 90%;
-      padding: 5%;
-    }
-    .contact-address-container {
-      width: 70%;
-    }
-    .hub-group,
-    .form-group {
-      width: 80%;
-    }
-    /*-------------------------------------SPACE ADJUSTMENT------*/
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 1rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 1.1rem;
-    }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 1.25rem;
-    }
-    .about-quote-box {
-      font-size: 2.2rem;
+    .about-weare-headline {
+      font-size: 1.2rem;
     }
     .about-title-otwd {
       font-size: 5.2rem;
     }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
-    }
-    .we-are-here {
-      font-size: 1.4rem;
-    }
-    .contact-reachus {
+    .about-quote-box {
       font-size: 2.2rem;
+    }
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.7rem;
+    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .contact-reachus {
+      font-size: 2.3rem;
+    }
+    .contact-quote {
+      font-size: 1.2rem;
+    }
+    .contact-email {
+      font-size: 1.3rem;
     }
     .contact-link {
       font-size: 1.2rem;
     }
     .social-link {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
     .contact-social-link {
       font-size: 1.75rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
     }
+    /*----------------CONTACT----------------*/
+    /*--------------SPECIFIC FONT SIZE--------------*/
   }
 }
-
-@media screen and (min-width: 1280px) and (max-width: 1535px) {
-  .contact-link {
-    padding: 5% 0 5% 0;
-  }
-  /*Nest Hub Max*/
-  @media (max-height: 1022px) {
+/*---------------------------PORTRAIT TABLETs---------------------*/
+/*---------------------------LANDSCAPE TABLETs---------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  @media (min-height: 767px) and (max-height: 1024px) {
+    /*--------------GENERAL STYLES--------------*/
+    /*----------------ABOUT----------------*/
+    .about-otwd-group {
+      padding: 2% 5% 5% 5%;
+      flex-direction: column-reverse;
+    }
+    .about-weare-box {
+      border-top: 1px dotted #b7bbbf;
+      border-bottom: 1px dotted #b7bbbf;
+      border-right: none;
+      margin-top: 2.5%;
+    }
+    .about-service-box {
+      margin-top: 5%;
+    }
     .about-service-box span {
-      padding: 1.25%;
-      font-size: 1rem;
+      margin-right: 2%;
+      padding: 1% 1.5% 1% 1.5%;
     }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 1rem;
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .left-arrow {
+      padding: 3.5%;
+      margin: 0 5% 0 0;
     }
-    .about-weare-headline,
-    .contact-email {
-      font-size: 1.2rem;
+    .contact-panel {
+      height: 100%;
+      width: 100%;
+      flex-direction: row;
     }
-    .about-quote-box {
-      font-size: 2.2rem;
+    .contact-channel-container {
+      width: 30%;
+      height: 100%;
     }
-    .about-title-otwd {
-      font-size: 5.2rem;
-    }
-    .left-arrow,
-    .right-arrow,
-    .about-intro,
     .contact-intro {
-      font-size: 1.85rem;
+      display: none;
     }
-    .we-are-here {
-      font-size: 1.2rem;
+    .contact-us-group {
+      width: 90%;
+      height: 100%;
+      justify-content: space-between;
+      padding: 0 5% 0 5%;
+    }
+    .contact-reachus-group {
+      margin-top: 20%;
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 90%;
+      height: auto;
+      padding: 5%;
     }
     .contact-reachus {
-      font-size: 2.4rem;
+      font-weight: 900;
+      text-align: right;
+      line-height: 100%;
+      margin: 0;
+      padding: 0;
     }
+    .reachus-br {
+      display: none;
+    }
+    .contact-type-box {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      padding: 5%;
+      margin-bottom: 5%;
+    }
+    .contact-quote {
+      border-top: 1px solid #adb5bd;
+      border-bottom: 1px solid #adb5bd;
+      font-size: 1rem;
+      color: #adb5bd;
+    }
+    .contact-type-button {
+      padding: 4%;
+      margin: 2% 0% 2% 0;
+      cursor: pointer;
+      background-color: #c1cbd4;
+      color: #171717;
+      border: 1px solid #c1cbd4;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-text-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .contact-type-button:hover {
+      background-color: #0a0a0a;
+      color: #adb5bd;
+      border: 1px solid #171717;
+    }
+    .contactTypeButtonActive {
+      background-color: #0a0a0a;
+      color: #adb5bd;
+      border: 1px solid #adb5bd;
+      cursor: default;
+      pointer-events: none;
+    }
+    .contact-address-container {
+      height: 100%;
+      width: 70%;
+    }
+    .fourtyPercentSpace #formGroup {
+      width: 100%;
+      height: 100dvh;
+      display: block;
+    }
+    .hub-group {
+      margin: 0;
+      padding: 0;
+      width: 85%;
+      height: 100dvh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      height: 100dvh;
+    }
+    /*----------------CONTACT----------------*/
+    /*--------------GENERAL STYLES--------------*/
+  }
+  @media (min-height: 767px) and (max-height: 834px) {
+    /*----------------ABOUT----------------*/
+    .about-intro {
+      font-size: 3rem;
+    }
+    .about-weare-group {
+      font-size: 1.05rem;
+    }
+    .about-weare-headline {
+      font-size: 1.25rem;
+    }
+    .about-title-otwd {
+      font-size: 4.8rem;
+    }
+    .about-quote-box {
+      font-size: 1.8rem;
+    }
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.65rem;
+    }
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.65rem;
+    }
+    .contact-reachus {
+      font-size: 1.8rem;
+    }
+    .contact-quote {
+      font-size: 1.05rem;
+    }
+    .contact-type-button {
+      font-size: 1.2rem;
+    }
+
     .contact-link {
       font-size: 1rem;
     }
@@ -445,65 +517,70 @@
     }
     .input-group,
     .input-group textarea {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1.4rem;
-    }
-  }
-  @media (min-height: 1023px) and (max-height: 1079px) {
-    .contact-link {
-      padding: 5% 0 5% 0;
-    }
-    /*IPAD Pro ------------------------- LANDSCAPE*/
-    .about-service-box span {
-      padding: 1.25%;
-      font-size: 1rem;
-    }
-    .about-weare-group,
-    .contact-quote,
-    .contact-type-button {
-      font-size: 1.1rem;
-    }
-    .about-weare-headline,
-    .contact-email {
       font-size: 1.25rem;
     }
-    .about-quote-box {
-      font-size: 2.2rem;
+    /*----------------CONTACT----------------*/
+  }
+  @media (min-height: 835px) and (max-height: 1024px) {
+    /*----------------ABOUT----------------*/
+    .about-intro {
+      font-size: 3rem;
+    }
+    .about-weare-group {
+      font-size: 1rem;
+    }
+    .about-weare-headline {
+      font-size: 1.2rem;
     }
     .about-title-otwd {
-      font-size: 5.2rem;
+      font-size: 4.8rem;
     }
-    .left-arrow,
+    .about-quote-box {
+      font-size: 1.8rem;
+    }
     .right-arrow,
-    .about-intro,
-    .contact-intro {
-      font-size: 1.85rem;
+    .left-arrow {
+      font-size: 1.65rem;
     }
-    .we-are-here {
-      font-size: 1.4rem;
+    /*----------------ABOUT----------------*/
+    /*----------------CONTACT----------------*/
+    .right-arrow,
+    .left-arrow {
+      font-size: 1.65rem;
     }
     .contact-reachus {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
-    .contact-link {
+    .contact-quote {
+      font-size: 1rem;
+    }
+    .contact-type-button {
       font-size: 1.2rem;
+    }
+
+    .contact-link {
+      font-size: 1rem;
     }
     .social-link {
       font-size: 1.2rem;
     }
     .contact-social-link {
-      font-size: 1.75rem;
+      font-size: 1.7rem;
     }
     .input-group,
     .input-group textarea {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
     }
     .input-group input,
     .submit-group button {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
     }
+    /*----------------CONTACT----------------*/
   }
+}
+@media screen and (min-width: 1367px) and (max-width: 1919px) {
 }

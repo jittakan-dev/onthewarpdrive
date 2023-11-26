@@ -1,149 +1,159 @@
 .home-container {
   position: relative;
-  width: 100dvw;
-  height: 100dvh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  background-color: #171717;
-  /* background: url("../images/globe/globe-wall.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-}
-.home-content-base {
-  position: absolute;
-  top: 0;
   width: 90dvw;
-  height: 95dvh;
-  margin-bottom: 5dvh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  /* background-color: wheat; */
-  z-index: 8;
-}
-.home-content-group {
-  position: relative;
-  width: 100%;
-  height: 75%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #212529;
-  border-top-right-radius: 32px;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
-.home-content-text-group {
-  width: 100%;
-  height: 24%;
-  text-align: left;
-  color: wheat;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: start;
-  margin-bottom: 1%;
-}
-.home-content-title {
-  font-family: "ubuntu";
-  font-weight: bold;
-  font-size: 2.9rem;
-  color: #6c757d;
-}
-.home-content-title-sub {
-  font-family: "ubuntu";
-  font-size: 1.2rem;
-  color: #495057;
-}
-.home-content-back {
-  position: absolute;
-  top: 0;
-  width: 100dvw;
-  height: 75dvh;
-  overflow: hidden;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #171717;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  z-index: 7;
 }
-.home-container-translayer {
-  justify-self: end;
+.world-core {
+  width: 160dvh;
+  height: 160dvh;
+  position: absolute;
+  bottom: -80%;
+  transform-origin: center;
+  z-index: 97;
+  transition: all 2.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.world-core-img {
+  width: 100%;
+  z-index: 97;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.world-object-img {
+  display: inline;
+  position: absolute;
+  width: 18%;
+  top: 0;
+  left: 42.5%;
+  z-index: 99;
+  transform-origin: center bottom;
+  transition: all 0.5s ease-in-out;
+}
+.world-object-img img,
+.world-cloud-img img,
+.world-core-img img {
+  width: 100%;
+  position: relative;
+}
+.world-control-group {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 5%;
+  height: auto;
+  width: 27.5dvw;
+  /*mobile-- width: 47.5dvw; */
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  color: #adb5bd;
+  margin: 0;
+  padding: 0;
+}
+.world-text {
+  position: relative;
+  text-align: left;
+  font-size: 2.6rem;
+  overflow: hidden;
+}
+.we-layer-1,
+.we-layer-2 {
+  overflow: hidden;
+  margin-top: 2%;
+}
+.we-layer-1 div,
+.we-layer-2 div {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  background-color: black;
+}
+.world-sub-text {
+  margin-top: 5%;
+  width: 80%;
+  padding: 2% 0 2% 0;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.world-sub-text div {
+  padding: 2% 0 2% 0;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.world-button-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  padding: 2% 0 2% 0;
+}
+.world-button {
+  margin-right: 4%;
+  padding: 1%;
+  cursor: pointer;
+  color: #adb5bd;
+}
+.world-button:hover,
+.active {
+  color: #02757b; /* You can customize the styles for the active class */
+}
+.world-button-group span {
+  margin-right: 4%;
+}
+.world-base {
   position: absolute;
   bottom: 0;
-  width: 100dvw;
-  height: 35dvh;
-  overflow: hidden;
+  left: -10%;
+  width: 120%;
+  z-index: 99;
+  padding-left: 10%;
+  background-color: #070707;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #ebebeb;
-  z-index: 6;
+  align-items: start;
+  color: #adb5bd;
+  border-top: 1px solid #171717;
+  border-bottom: 1px solid #171717;
 }
-.home-container-translayer div:nth-child(1) {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 52.5%;
-  background-color: #343a40;
-  /* border-bottom: 1px solid #a9a8a8; */
-  z-index: 5;
+.world-title-otwd {
+  text-align: left;
+  font-size: 4.85rem;
+  letter-spacing: -4px;
+  line-height: 60%;
+  font-weight: bolder;
+  font-family: "Ubuntu";
+  padding: 2% 0 2% 0;
 }
-.home-container-translayer div:nth-child(2) {
-  position: absolute;
-  top: 0;
+.world-quote-box {
+  text-align: left;
   width: 100%;
-  height: 72.5%;
-  background-color: #495057;
-  z-index: 4;
+  font-size: 1.6rem;
+  line-height: 90%;
+  font-family: "Ubuntu";
+  padding: 0 2% 1.75% 0;
 }
-.home-container-translayer div:nth-child(3) {
+.world-background {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 85%;
-  background-color: #6c757d;
-  z-index: 3;
-}
-.home-container-translayer div:nth-child(4) {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 95%;
-  background-color: #adb5bd;
-  z-index: 2;
-}
-.home-container-translayer div:nth-child(5) {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   height: 100%;
-  background-color: #ced4da;
-  z-index: 1;
+  z-index: 96;
 }
-
-@media (max-width: 768px) {
-  .home-content-title {
-    font-family: "ubuntu";
-    font-weight: bold;
-    font-size: 2.2rem;
-    margin-bottom: 2%;
-  }
-  .home-content-title-sub {
-    font-family: "ubuntu";
-    font-size: 1rem;
-  }
+.circle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 96;
 }

@@ -1,0 +1,32 @@
+/*---------------------------------------------------------------------DESKTOP TABLET------------------------------*/
+/*---------------------------PORTRAIT TABLETs---------------------*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  @media (min-height: 768px) and (max-height: 1367px) {
+    /*--------------GENERAL STYLES--------------*/
+    /*--------------GENERAL STYLES--------------*/
+    @media (min-height: 768px) and (max-height: 1024px) {
+    }
+    @media (min-height: 1025px) and (max-height: 1180px) {
+    }
+    @media (min-height: 1081px) and (max-height: 1195px) {
+    }
+    @media (min-height: 1196px) and (max-height: 1367px) {
+    }
+  }
+  /*---------------------------PORTRAIT TABLETs---------------------*/
+  /*---------------------------LANDSCAPE TABLETs---------------------*/
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    @media (min-height: 767px) and (max-height: 1024px) {
+      /*--------------GENERAL STYLES--------------*/
+      /*--------------GENERAL STYLES--------------*/
+    }
+    @media (min-height: 767px) and (max-height: 834px) {
+    }
+    @media (min-height: 835px) and (max-height: 1024px) {
+    }
+  }
+}
+@media screen and (min-width: 1367px) and (max-width: 1919px) {
+}
+
+/*---------------------------------------------------------------------DESKTOP TABLET------------------------------*/

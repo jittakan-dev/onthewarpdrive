@@ -63,7 +63,7 @@
   font-size: 1.1rem;
 }
 .about-weare-box {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   color: #c1cbd4;
@@ -110,9 +110,9 @@
   cursor: pointer;
   background-color: #dee2e6;
   color: #171717;
-  padding: 1% 2% 1% 2%;
+  padding: 1%;
   border-radius: 20%;
-  margin: 1% 0 2% 0;
+  margin: 0 0 1% 0;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -131,18 +131,17 @@
 .about-title-otwd {
   text-align: right;
   width: 100%;
-  font-size: 7rem;
+  font-size: 5.8rem;
   letter-spacing: -4px;
   line-height: 90%;
   font-weight: bolder;
   font-family: "Ubuntu";
 }
-
 .about-quote-box {
   margin-top: 2%;
   text-align: right;
   width: 100%;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   line-height: 100%;
   font-family: "Ubuntu";
   color: #c1cbd4;
@@ -201,10 +200,10 @@
   cursor: pointer;
   background-color: #e9ecef;
   color: #171717;
-  padding: 1% 2% 1% 2%;
+  padding: 1.5%;
   border-radius: 20%;
   /* margin: 1% 0 2% 0; */
-  margin: 4% 5% 0 0;
+  margin: 2.5% 5% 0 0;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -229,13 +228,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: end;
   padding: 5%;
 }
 .contact-quote {
   border-top: 1px solid #adb5bd;
   border-bottom: 1px solid #adb5bd;
-  padding: 5% 0 5% 0;
   font-size: 1.1rem;
   color: #adb5bd;
 }
@@ -251,9 +249,9 @@
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
-  background-color: #dee2e6;
+  background-color: #c1cbd4;
   color: #171717;
-  border: 1px solid #dee2e6;
+  border: 1px solid #c1cbd4;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-right-radius: 32px;
@@ -265,14 +263,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 .contact-type-button:hover {
-  background-color: #171717;
-  color: #dee2e6;
+  background-color: #0a0a0a;
+  color: #adb5bd;
   border: 1px solid #171717;
 }
 .contactTypeButtonActive {
-  background-color: #171717;
-  color: #dee2e6;
-  border: 1px solid #e9ecef;
+  background-color: #0a0a0a;
+  color: #adb5bd;
+  border: 1px solid #adb5bd;
   cursor: default;
   pointer-events: none;
 }

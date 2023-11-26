@@ -473,11 +473,8 @@
     /*---------------------------FONT-------------------------*/
   }
 }
-@media screen and (min-width: 480px) and (max-width: 721px) {
-  .about-weare-box {
-    /* border-right: none; */
-    /* border-bottom: 1px dotted #b7bbbf; */
-  }
+/* @media screen and (min-width: 480px) and (max-width: 721px) { */
+@media screen and (min-width: 480px) and (max-width: 767px) {
   /*SURFACE DUO ------------------------- PORTRAIT OPEN*/
   /*-------------------------------------SPACE ADJUSTMENT------*/
   @media (min-height: 845px) {
