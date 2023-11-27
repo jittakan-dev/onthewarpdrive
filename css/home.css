@@ -15,7 +15,7 @@
   bottom: -80%;
   transform-origin: center;
   z-index: 97;
-  transition: all 2.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .world-core-img {
   width: 100%;

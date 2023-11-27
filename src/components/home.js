@@ -126,5 +126,5 @@ function rotateWorld(degrees, index) {
   }
   setTimeout(() => {
     worldCore.style.transform = "rotate(" + degrees + "deg)";
-  }, 400);
+  }, 100);
 }
