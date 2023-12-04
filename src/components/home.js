@@ -18,9 +18,8 @@ const weLayer1 = document.querySelector(".we-layer-1");
 const weLayer2 = document.querySelector(".we-layer-2");
 const worldSubText = document.querySelector(".world-sub-text");
 const moreDetailA = document.querySelectorAll(".world-base-more-detail a");
-
+let globalIndex;
 document.addEventListener("DOMContentLoaded", function () {
-  setLayersHeight();
   const baseColor = "#070707";
   const targetColor = "#343a40";
   const world = document.getElementById("world");
@@ -35,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     world.appendChild(circle);
   }
 });
-
-window.addEventListener("resize", setLayersHeight);
 
 function changeInAnimation() {
   circle_0.style.animation = "pulse-bold 1.2s ease-out infinite";
@@ -53,12 +50,6 @@ function changeOutAnimation() {
   circle_3.style.animation = "pulse 4s ease-out infinite";
   worldBallonImg.style.filter =
     "drop-shadow(0rem 0rem 0.2rem rgba(42, 42, 41, 0.5)) brightness(90%)";
-}
-
-function setLayersHeight() {
-  weLayer1.style.height = weDo[0].clientHeight + "px";
-  weLayer2.style.height = weDo[1].clientHeight + "px";
-  worldSubText.style.height = weDo[2].clientHeight + "px";
 }
 
 function adjustColor(startColor, endColor, percentage) {

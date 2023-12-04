@@ -439,6 +439,7 @@
 }
 .we-layer-1,
 .we-layer-2 {
+  height: 3rem; /***-------------------***/
   overflow: hidden;
   margin-top: 2%;
 }
@@ -449,8 +450,10 @@
   background-color: black;
 }
 .world-sub-text {
+  position: relative;
   margin-top: 5%;
   width: 80%;
+  height: 15dvh; /***-------------------***/
   padding: 2% 0 2% 0;
   font-size: 1rem;
   overflow: hidden;
