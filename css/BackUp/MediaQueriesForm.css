@@ -109,3 +109,92 @@
 }
 
 /*---------------------------------------------------------------------DESKTOP TABLET------------------------------*/
+
+/*--------------------------------*/
+.ribbon {
+  background-color: #35979c;
+  color: #f4f4f4;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 900;
+  font-family: "Ubuntu";
+  letter-spacing: 0.2em;
+  padding: 0.5em 0.7em;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotate(-20deg) skew(-20deg, 10deg) translateZ(-1em);
+  filter: drop-shadow(0rem 0rem 0.2rem rgba(42, 42, 41, 0.5));
+}
+
+.ribbon:before,
+.ribbon:after {
+  background-color: #359195;
+  border-style: solid;
+  border-width: 0.5em;
+  content: "";
+  display: block;
+  height: 2em;
+  position: absolute;
+  transform: translateZ(-1em);
+  width: 0;
+  z-index: -1;
+}
+
+.ribbon:before {
+  border-color: #177479 #038e96 #038e96 #02757b;
+  left: -0.5em;
+  top: 0.5em;
+}
+
+.ribbon:after {
+  border-color: #177479 #177479 #177479 #038e96;
+  right: -0.5em;
+  top: -0.5em;
+}
+/*------------------------------------------*/
+.world-bear {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(-110deg);
+  width: 40dvh;
+  z-index: 12;
+}
+.speech-bubble {
+  position: relative;
+  margin: 0.5em auto;
+  padding: 1em;
+  width: 8em;
+  height: 2.2em;
+  border-radius: 0.25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #02757b;
+  font: 2rem Ubuntu;
+  text-align: center;
+  color: #f4f4f4;
+}
+.speech-bubble:before,
+.speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+.speech-bubble:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
+  background: #4b9ae5;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #4b9ae5;
+  border-bottom: solid 0.25em #02757b;
+  bottom: 0.25em;
+  left: 1.25em;
+  width: 0;
+  height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}

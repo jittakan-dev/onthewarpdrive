@@ -52,6 +52,9 @@
     <link rel="stylesheet" href="css/menu-media-portrait.css" />
     <link rel="stylesheet" href="css/menu-media-landscape.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home-media-portrait.css" />
+    <link rel="stylesheet" href="css/home-media-landscape.css" />
+    <link rel="stylesheet" href="css/home-media-desktop-landscape.css" />
     <link rel="stylesheet" href="css/work.css" />
     <link rel="stylesheet" href="css/work-media-portrait.css" />
     <link rel="stylesheet" href="css/work-media-landscape.css" />
@@ -141,9 +144,9 @@
           <a href="#about" class="">F</a>
         </nav>
         <nav class="nav-dot-group-dop">
-          <div href="#home" class="navLinkActive"></div>
-          <div href="#home" class=""></div>
-          <div href="#home" class=""></div>
+          <div class="navLinkActive"></div>
+          <div class=""></div>
+          <div class=""></div>
         </nav>
       </nav>
     </header>
@@ -154,65 +157,110 @@
       <section class="content-section" id="home">
         <div class="home-container">
           <div class="world-base">
-            <div class="world-title-otwd">FOM/A</div>
-            <div class="world-quote-box">Foundation for startups</div>
+            <div class="world-base-text">
+              <div class="world-title-foma">FOM/A</div>
+              <div class="world-quote-box">Foundation for startups</div>
+            </div>
+            <div class="world-base-more">
+              <div class="world-base-more-title">
+                ... more on <span class="more-shift-title">what we do</span>
+              </div>
+            </div>
           </div>
           <div class="world-core">
-            <div class="world-object-img" onclick="rotateWorld(470,2)">
-              <img src="./images/globe/ballon.png" />
+            <div class="world-bear">
+              <div class="bear-grid" id="bearGrid"></div>
+              <div class="speech-bubble"></div>
             </div>
-            <div class="world-core-img">
+            <div class="world-lighthouse">
+              <div class="laser-beam lb0"></div>
+              <div class="laser-beam lb1"></div>
+              <div class="laser-beam lb2"></div>
+              <div class="laser-beam lb3"></div>
+              <div class="light-halo lh0"></div>
+              <div class="light-halo lh1"></div>
+              <div class="light-halo lh2"></div>
+            </div>
+            <div
+              class="world-balloon"
+              onclick="rotateWorld(461,2)"
+              onmouseover="changeInAnimation()"
+              onmouseleave="changeOutAnimation()"
+            >
+              <div class="world-core-ribbon">
+                <div class="ribbon">Welcome to FOM/A</div>
+              </div>
+              <img src="./images/globe/balloon.png" />
+            </div>
+            <div class="world-globe">
               <img src="./images/globe/world.png" />
             </div>
+            <div class="balloon-effect">
+              <div class="balloon-effect-circle-0"></div>
+              <div class="balloon-effect-circle-1"></div>
+              <div class="balloon-effect-circle-2"></div>
+              <div class="balloon-effect-circle-3"></div>
+            </div>
           </div>
-          <div class="world-background" id="world"></div>
           <div class="world-control-group">
             <div class="world-text">
               <div class="we-layer-1">
                 <div class="we-do">We do beautiful</div>
                 <div class="we-are">We are</div>
-                <div class="we-point">We point</div>
+                <div class="we-guide">We guide you</div>
               </div>
               <div class="we-layer-2">
                 <div class="we-do">things to the app.</div>
-                <div class="we-are">FOM/A [fo-ma].</div>
-                <div class="we-point">to the target.</div>
+                <div class="we-are">team FOM/A.</div>
+                <div class="we-guide">to the target.</div>
               </div>
             </div>
             <div class="world-sub-text">
               <div class="we-do">
-                --We-do. I love this playlist and how you did the layout,
-                writing down the song and the album and also mentioning the
-                previous and next song! We-do--
+                We whip up a <span class="world-hilight-text-1">custom</span>,
+                <span class="world-hilight-text-1">user-centric</span>,
+                <span class="world-hilight-text-1">super-functional</span>
+                <span class="world-hilight-text-1">app</span>
+                that seamlessly combines with aesthetic perception to fit your
+                unique business needs, serving up delightful user experiences in
+                App, Mobile, and Analytics.
               </div>
               <div class="we-are">
-                --We-are. I love this playlist and how you did the layout,
-                writing down the song and the album and also mentioning the
-                previous and next song! I love this playlist and how you did the
-                layout, writing down the song.We-are.--
+                We are
+                <span class="world-hilight-text-1">dynamism artists</span>,
+                <span class="world-hilight-text-1">appreciators of art</span>,
+                and <span class="world-hilight-text-1">forward-thinkers</span>.
+                We team up to create a fresh ideas. We have a love for
+                customizing things. We are unique and worth being
+                <span class="world-hilight-text-1">friends</span>
+                with for your business.
               </div>
-              <div class="we-point">
-                --We-point. I love this playlist and how you did the layout,
-                writing down the song and the album and also mentioning the
-                previous and next song! I love this playlist and how you did the
-                layout. We-point--
+              <div class="we-guide">
+                We employ an
+                <span class="world-hilight-text-1">agile</span> approach,
+                ensuring the seamless alignment of your app with your
+                objectives. We design concise
+                <span class="world-hilight-text-1">interactions</span> and
+                engage users in the aesthetics of perception,
+                <span class="world-hilight-text-1">priming</span> their
+                experience.
               </div>
             </div>
             <div class="world-button-group">
-              <div class="world-button" onclick="rotateWorld(0,1)">
-                We do <i class="fa-solid fa-arrow-right active"></i>
+              <div class="world-button worldActive" onclick="rotateWorld(0,1)">
+                We do <i class="fa-solid fa-arrow-right"></i>
               </div>
               <span>/</span>
-              <div class="world-button" onclick="rotateWorld(470,2)">
+              <div class="world-button" onclick="rotateWorld(461,2)">
                 We are <i class="fa-solid fa-arrow-right"></i>
               </div>
               <span>/</span>
-              <div class="world-button" onclick="rotateWorld(255,3)">
-                We point <i class="fa-solid fa-arrow-right"></i>
+              <div class="world-button" onclick="rotateWorld(250,3)">
+                We guide <i class="fa-solid fa-arrow-right"></i>
               </div>
-              <span>/</span>
             </div>
           </div>
+          <div class="world-background" id="world"></div>
         </div>
       </section>
       <!----------   end home section   -------------->
