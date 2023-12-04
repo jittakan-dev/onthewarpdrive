@@ -64,11 +64,9 @@ function setLayersHeight() {
 function adjustColor(startColor, endColor, percentage) {
   const start = hexToRgb(startColor);
   const end = hexToRgb(endColor);
-
   const r = Math.round(start.r + percentage * (end.r - start.r));
   const g = Math.round(start.g + percentage * (end.g - start.g));
   const b = Math.round(start.b + percentage * (end.b - start.b));
-
   return `rgb(${r}, ${g}, ${b})`;
 }
 

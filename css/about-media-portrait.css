@@ -12,6 +12,7 @@
     padding-left: 0;
   }
   .about-weare-box {
+    width: 100%;
     text-align: left;
     text-justify: inter-character;
     border-right: none;
@@ -244,6 +245,7 @@
 }
 @media screen and (max-width: 319px) {
   .about-weare-box {
+    width: 100%;
     border-right: none;
     border-bottom: 1px dotted #b7bbbf;
   }
@@ -289,6 +291,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .about-weare-box {
+    width: 100%;
     border-right: none;
     border-bottom: 1px dotted #b7bbbf;
   }
