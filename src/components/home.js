@@ -20,19 +20,29 @@ const worldSubText = document.querySelector(".world-sub-text");
 const moreDetailA = document.querySelectorAll(".world-base-more-detail a");
 let globalIndex;
 document.addEventListener("DOMContentLoaded", function () {
-  const baseColor = "#070707";
+  const baseColor = "#000000";
   const targetColor = "#343a40";
   const world = document.getElementById("world");
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= 12; i++) {
     const circle = document.createElement("div");
     circle.className = "circle circle-" + i;
-    circle.style.top = 60 - i * 20 + "%";
-    circle.style.width = 20 + i * 50 + "dvh";
-    circle.style.height = 20 + i * 50 + "dvh";
+    circle.style.top = 70 - i * 20 + "%";
+    circle.style.width = 20 + i * 40 + "dvh";
+    circle.style.height = 20 + i * 40 + "dvh";
     circle.style.backgroundColor = adjustColor(baseColor, targetColor, i / 10);
     circle.style.zIndex = 8 - i;
     world.appendChild(circle);
   }
+  // for (let i = 1; i <= 7; i++) {
+  //   const circle = document.createElement("div");
+  //   circle.className = "circle circle-" + i;
+  //   circle.style.top = 60 - i * 20 + "%";
+  //   circle.style.width = 20 + i * 50 + "dvh";
+  //   circle.style.height = 20 + i * 50 + "dvh";
+  //   circle.style.backgroundColor = adjustColor(baseColor, targetColor, i / 10);
+  //   circle.style.zIndex = 8 - i;
+  //   world.appendChild(circle);
+  // }
 });
 
 function changeInAnimation() {
@@ -228,7 +238,7 @@ function updateBearGrid() {
     bearGridItem.style.animationDelay = index * 0.5 + "s";
     bearGrid.appendChild(bearGridItem);
   });
-  setTimeout(updateBearGrid, 1000);
+  setTimeout(updateBearGrid, 1500);
 }
 const spans = [
   "<span><i class='fa-solid fa-glasses'></i></span>",

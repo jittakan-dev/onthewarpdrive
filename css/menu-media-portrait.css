@@ -1,5 +1,9 @@
 /*-----------------START MEDIA RESPONSIVE--------------------*/
 @media screen and (max-width: 820px) {
+  .nav-dot-group,
+  .nav-dot-group-dop {
+    top: 40%;
+  }
   .term-group {
     font-size: 0.7rem;
   }
@@ -164,10 +168,10 @@
     margin-top: 3%;
     font-size: 1.7rem;
   }
-  .nav-dot-group,
+  /* .nav-dot-group,
   .nav-dot-group-dop {
     top: 55%;
-  }
+  } */
   .nav-dot-group a:nth-child(1),
   .nav-dot-group-dop div:nth-child(1) {
     margin: 2.5dvh 0 1.5dvh 0;

@@ -18,7 +18,7 @@
     width: 120%;
   }
   .world-control-group {
-    top: 2.5%;
+    top: 5%;
     width: 90dvw;
   }
   .world-base-text {
@@ -27,9 +27,18 @@
   .world-title-foma {
     padding: 1% 0 1% 0;
   }
+  .sub-text-mobile {
+    display: block;
+  }
+  .sub-text-desktop {
+    display: none;
+  }
+  .world-button-group {
+    display: none;
+  }
   /*------------------------FONT----------------------*/
   .bear-grid {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   .world-core-ribbon {
     font-size: 0.9rem;
@@ -38,8 +47,6 @@
   .we-layer-1,
   .we-layer-2 {
     height: 2.2rem; /***-------------------***/
-    overflow: hidden;
-    margin-top: 2%;
   }
   .world-text {
     font-size: 1.4rem;
@@ -47,9 +54,7 @@
   .world-sub-text {
     font-size: 0.8rem;
   }
-  .world-button-group {
-    font-size: 0.8rem;
-  }
+
   .world-title-foma {
     font-size: 2.5rem;
     letter-spacing: -4px;
@@ -68,31 +73,32 @@
     width: 125dvh;
     height: 125dvh;
     bottom: -60%;
-    scale: 0.75;
+    scale: 0.8;
   }
   .world-control-group {
-    width: 88dvw;
+    width: 95dvw;
   }
   .world-bear {
     top: 50%;
     left: -8%;
   }
+  .we-layer-1,
+  .we-layer-2 {
+    height: 2rem; /***-------------------***/
+  }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
   .bear-grid {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .world-core-ribbon {
     font-size: 0.9rem;
     letter-spacing: 0.2rem;
   }
   .world-text {
-    font-size: 1.6rem;
+    font-size: 1.62rem;
   }
   .world-sub-text {
-    height: 17dvh;
-    font-size: 0.75rem;
-  }
-  .world-button-group {
+    height: 12dvh;
     font-size: 0.75rem;
   }
   .world-title-foma {
@@ -114,7 +120,10 @@
     left: -2%;
   }
   .world-core {
-    scale: 0.72;
+    scale: 0.8;
+  }
+  .world-control-group {
+    width: 80dvw;
   }
   /*--------------GENERAL STYLES--------------*/
   /* IPhone SE OLD */
@@ -127,27 +136,31 @@
       font-size: 1.55rem;
     }
     .world-sub-text {
-      height: 20dvh;
+      height: 17dvh;
       font-size: 0.82rem;
+    }
+    .bear-grid {
+      font-size: 1.5rem;
     }
   }
   /* IPHONE SE NEW,IPHONE 6,7,8  */
   @media (min-height: 569px) and (max-height: 668px) {
+    .we-layer-1,
+    .we-layer-2 {
+      height: 2.4rem; /***-------------------***/
+    }
     .bear-grid {
-      font-size: 1.6rem;
+      font-size: 1.65rem;
     }
     .world-core-ribbon {
       font-size: 0.95rem;
       letter-spacing: 0.25rem;
     }
     .world-text {
-      font-size: 1.85rem;
+      font-size: 2rem;
     }
     .world-sub-text {
-      height: 15.8dvh;
-      font-size: 0.85rem;
-    }
-    .world-button-group {
+      height: 14dvh;
       font-size: 0.85rem;
     }
     .world-title-foma {
@@ -163,31 +176,31 @@
   }
   /*Galaxy S8+, IPhone 12 PRO,IPHONE 6+,7+,8+,IPHONE X */
   @media (min-height: 669px) and (max-height: 844px) {
+    .world-core {
+      scale: 0.7;
+    }
+    .world-control-group {
+      width: 85dvw;
+    }
+    .we-layer-1,
+    .we-layer-2 {
+      height: 2.4rem; /***-------------------***/
+    }
     .bear-grid {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     .world-core-ribbon {
       font-size: 1.25rem;
       letter-spacing: 0.25rem;
     }
-    .ribbon:before {
-      left: -0.5em;
-      top: -0.5em;
-    }
-    .ribbon:after {
-      right: -0.5em;
-      top: -0.5em;
-    }
     .world-text {
       font-size: 1.9rem;
     }
     .world-sub-text {
-      height: 15.5dvh;
+      height: 12.5dvh;
       font-size: 0.92rem;
     }
-    .world-button-group {
-      font-size: 0.92rem;
-    }
+
     .world-title-foma {
       font-size: 2.5rem;
       letter-spacing: -4px;
@@ -201,31 +214,31 @@
   }
   /* Pixel 7, Galaxy S20 ultra, Galaxy A51/71,IPhone XR,IPHONE 14 PRO MAX */
   @media (min-height: 845px) {
+    .world-core {
+      scale: 0.7;
+    }
+    .world-control-group {
+      width: 88dvw;
+    }
+    .we-layer-1,
+    .we-layer-2 {
+      height: 2.4rem; /***-------------------***/
+    }
     .bear-grid {
-      font-size: 1.95rem;
+      font-size: 2.25rem;
     }
     .world-core-ribbon {
       font-size: 1.3rem;
       letter-spacing: 0.25rem;
     }
-    .ribbon:before {
-      left: -0.5em;
-      top: -0.5em;
-    }
-    .ribbon:after {
-      right: -0.5em;
-      top: -0.5em;
-    }
     .world-text {
-      font-size: 1.95rem;
+      font-size: 2rem;
     }
     .world-sub-text {
-      height: 13.6dvh;
+      height: 12dvh;
       font-size: 1rem;
     }
-    .world-button-group {
-      font-size: 1rem;
-    }
+
     .world-title-foma {
       font-size: 2.5rem;
       letter-spacing: -4px;
