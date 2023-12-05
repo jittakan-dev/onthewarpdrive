@@ -9,26 +9,79 @@
   background-color: #171717;
 }
 /*---------------------circle and bg--------------------*/
-.circle {
+.world-background-circle {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 50%;
-  /* z-index-99-93 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
 }
-.circle > div {
-  width: 10dvh;
-  height: 10dvh;
-}
-.world-background {
+.world-circle {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100%;
+  border-radius: 50%;
+}
+.c0 {
+  width: 300dvh;
+  height: 300dvh;
+  background-color: #1e2125;
   z-index: 0;
+}
+.c1 {
+  width: 270dvh;
+  height: 270dvh;
+  background-color: #1a1e21;
+  z-index: 1;
+}
+.c2 {
+  width: 240dvh;
+  height: 240dvh;
+  background-color: #171a1d;
+  z-index: 2;
+}
+.c3 {
+  width: 210dvh;
+  height: 210dvh;
+  background-color: #141619;
+  z-index: 3;
+}
+.c4 {
+  width: 180dvh;
+  height: 180dvh;
+  background-color: #111315;
+  z-index: 4;
+}
+.c5 {
+  width: 150dvh;
+  height: 150dvh;
+  background-color: #0d0f10;
+  z-index: 5;
+}
+.c6 {
+  width: 120dvh;
+  height: 120dvh;
+  background-color: #0a0b0c;
+  z-index: 6;
+}
+.c7 {
+  width: 90dvh;
+  height: 90dvh;
+  background-color: #070708;
+  z-index: 7;
+}
+.c8 {
+  width: 60dvh;
+  height: 60dvh;
+  background-color: #030404;
+  z-index: 8;
+}
+.c9 {
+  width: 30dvh;
+  height: 30dvh;
+  background-color: #000000;
+  z-index: 9;
 }
 /*---------------------circle and bg--------------------*/
 /*---------------------core--------------------*/
@@ -233,6 +286,18 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+/* .world-bear-sparkle {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  transform: rotate(-100deg);
+  width: 50dvh;
+  height: 100dvh;
+  z-index: 7;
+  transition: all 0.5s ease-in-out;
+  background-color: red;
+  color: green;
+} */
 .speech-bubble {
   position: relative;
   width: 100%;
@@ -335,24 +400,13 @@
   height: 12dvh;
   font-size: 1.5rem;
   font-weight: 100;
-  /* color: red; */
   background-color: rgba(186, 227, 200, 0.2);
-  /* background-color: rgba(186, 227, 200, 0.1); */
   border-radius: 40% 60% 35% 65% / 47% 40% 60% 53%;
-  /* border: 1px solid rgba(255, 25, 0, 1); */
   transition: all 0.5s ease-in-out;
   animation: animateHalo 4s infinite linear;
   z-index: 10;
   cursor: pointer;
 }
-/* .light-halo.lh0 > i {
-  transform: rotate(45deg);
-}
-.light-halo.lh0:hover {
-  color: red;
-  background-color: rgba(255, 0, 0, 0.1);
-  border: 1px solid rgba(255, 25, 0, 1);
-} */
 .light-halo.lh1 {
   left: -4%;
   bottom: -5%;
@@ -360,7 +414,6 @@
   height: 17dvh;
   background-color: rgba(185, 235, 201, 0.1);
   border-radius: 52% 48% 69% 31% / 59% 51% 49% 41%;
-  /* border: 1px solid rgba(185, 235, 201, 0.1); */
   animation: animateHalo 6s infinite linear;
   z-index: 8;
 }
@@ -371,7 +424,6 @@
   height: 20dvh;
   background-color: rgba(156, 226, 180, 0.08);
   border-radius: 52% 48% 76% 24% / 44% 52% 48% 56%;
-  /* border: 1px solid rgba(185, 235, 201, 0.1); */
   animation: animateHalo 8s infinite linear;
   z-index: 8;
 }
@@ -402,27 +454,30 @@
   filter: drop-shadow(0px 0px 10px rgba(156, 226, 180, 0.4));
   transform: rotateZ(30deg) translateX(-50%);
   overflow: hidden;
-  z-index: 7;
 }
 .laser-beam.lb0 {
   width: 1dvh;
   animation: laser 6s infinite;
   border-top: 150dvh solid rgba(156, 226, 180, 0.08);
+  z-index: 7;
 }
 .laser-beam.lb1 {
   width: 0.8dvh;
   animation: laser 6.5s infinite;
   border-top: 150dvh solid rgba(156, 226, 180, 0.1);
+  z-index: 8;
 }
 .laser-beam.lb2 {
   width: 1.2dvh;
   animation: laser 7s infinite;
   border-top: 150dvh solid rgba(156, 226, 180, 0.2);
+  z-index: 9;
 }
 .laser-beam.lb3 {
   width: 0.7dvh;
   animation: laser 7.5s infinite;
   border-top: 150dvh solid rgba(156, 226, 180, 0.07);
+  z-index: 10;
 }
 @keyframes laser {
   0% {
@@ -434,6 +489,16 @@
   100% {
     transform: rotateZ(35deg) translateX(-50%);
   }
+}
+.ufo {
+  position: absolute;
+  transform: rotate(-250deg);
+  font-size: 5rem;
+  bottom: 15%;
+  left: 15%;
+  color: blue;
+  background-color: red;
+  z-index: 8;
 }
 /*---------------------core--------------------*/
 /*---------------------control-group--------------------*/

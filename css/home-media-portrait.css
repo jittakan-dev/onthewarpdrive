@@ -1,6 +1,69 @@
 /*----------------------------------------------------------------------PORTRAIT------------------------------*/
 @media screen and (max-width: 479px) {
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
+  .world-background-circle {
+    top: 75%;
+  }
+  .c0 {
+    width: 160dvh;
+    height: 160dvh;
+    background-color: #1e2125;
+    z-index: 0;
+  }
+  .c1 {
+    width: 140dvh;
+    height: 140dvh;
+    background-color: #1a1e21;
+    z-index: 1;
+  }
+  .c2 {
+    width: 115dvh;
+    height: 115dvh;
+    background-color: #171a1d;
+    z-index: 2;
+  }
+  .c3 {
+    width: 100dvh;
+    height: 100dvh;
+    background-color: #141619;
+    z-index: 3;
+  }
+  .c4 {
+    width: 85dvh;
+    height: 85dvh;
+    background-color: #111315;
+    z-index: 4;
+  }
+  .c5 {
+    width: 70dvh;
+    height: 70dvh;
+    background-color: #0d0f10;
+    z-index: 5;
+  }
+  .c6 {
+    width: 55dvh;
+    height: 55dvh;
+    background-color: #0a0b0c;
+    z-index: 6;
+  }
+  .c7 {
+    width: 40dvh;
+    height: 40dvh;
+    background-color: #070708;
+    z-index: 7;
+  }
+  .c8 {
+    width: 25dvh;
+    height: 25dvh;
+    background-color: #030404;
+    z-index: 8;
+  }
+  .c9 {
+    width: 10dvh;
+    height: 10dvh;
+    background-color: #000000;
+    z-index: 9;
+  }
   .world-core {
     width: 145dvh;
     height: 145dvh;
