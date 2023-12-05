@@ -27,61 +27,61 @@
   width: 300dvh;
   height: 300dvh;
   background-color: #1e2125;
-  z-index: 0;
+  z-index: -9;
 }
 .c1 {
   width: 270dvh;
   height: 270dvh;
   background-color: #1a1e21;
-  z-index: 1;
+  z-index: -8;
 }
 .c2 {
   width: 240dvh;
   height: 240dvh;
   background-color: #171a1d;
-  z-index: 2;
+  z-index: -7;
 }
 .c3 {
   width: 210dvh;
   height: 210dvh;
   background-color: #141619;
-  z-index: 3;
+  z-index: -6;
 }
 .c4 {
   width: 180dvh;
   height: 180dvh;
   background-color: #111315;
-  z-index: 4;
+  z-index: -5;
 }
 .c5 {
   width: 150dvh;
   height: 150dvh;
   background-color: #0d0f10;
-  z-index: 5;
+  z-index: -4;
 }
 .c6 {
   width: 120dvh;
   height: 120dvh;
   background-color: #0a0b0c;
-  z-index: 6;
+  z-index: -3;
 }
 .c7 {
   width: 90dvh;
   height: 90dvh;
   background-color: #070708;
-  z-index: 7;
+  z-index: -2;
 }
 .c8 {
   width: 60dvh;
   height: 60dvh;
   background-color: #030404;
-  z-index: 8;
+  z-index: -1;
 }
 .c9 {
   width: 30dvh;
   height: 30dvh;
   background-color: #000000;
-  z-index: 9;
+  z-index: 0;
 }
 /*---------------------circle and bg--------------------*/
 /*---------------------core--------------------*/
@@ -286,18 +286,59 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-/* .world-bear-sparkle {
+.world-bear-sparkle {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 0%;
-  transform: rotate(-100deg);
-  width: 50dvh;
-  height: 100dvh;
+  transform: rotate(82deg);
+  width: 30dvh;
+  height: 50dvh;
   z-index: 7;
   transition: all 0.5s ease-in-out;
-  background-color: red;
-  color: green;
-} */
+  visibility: hidden;
+  opacity: 0;
+}
+.droplet {
+  position: absolute;
+  height: 0.5rem;
+  background: linear-gradient(#3d3f40, transparent);
+  border-bottom-left-radius: 0.05rem;
+  border-bottom-right-radius: 0.05rem;
+  animation: raining 5s linear Infinite;
+}
+@-moz-keyframes raining {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(calc(100vh + 0.5rem));
+  }
+}
+@-webkit-keyframes raining {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(calc(100vh + 0.5rem));
+  }
+}
+@-o-keyframes raining {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(calc(100vh + 0.5rem));
+  }
+}
+@keyframes raining {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(calc(100vh + 0.5rem));
+  }
+}
+
 .speech-bubble {
   position: relative;
   width: 100%;
@@ -490,7 +531,7 @@
     transform: rotateZ(35deg) translateX(-50%);
   }
 }
-.ufo {
+/* .ufo {
   position: absolute;
   transform: rotate(-250deg);
   font-size: 5rem;
@@ -499,7 +540,7 @@
   color: blue;
   background-color: red;
   z-index: 8;
-}
+} */
 /*---------------------core--------------------*/
 /*---------------------control-group--------------------*/
 .world-control-group {

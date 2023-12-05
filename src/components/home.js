@@ -2,6 +2,7 @@ const worldCore = document.querySelector(".world-core");
 const worldBallon = document.querySelector(".world-balloon");
 const worldBallonImg = document.querySelector(".world-balloon img");
 const worldBear = document.querySelector(".world-bear");
+const worldBearSparkle = document.querySelector(".world-bear-sparkle");
 const worldLighthouse = document.querySelector(".world-lighthouse");
 const circle_0 = document.querySelector(".balloon-effect-circle-0");
 const circle_1 = document.querySelector(" .balloon-effect-circle-1");
@@ -66,6 +67,8 @@ function rotateWorld(degrees, index) {
     setTimeout(() => {
       worldBear.style.visibility = "hidden";
       worldBear.style.opacity = 0;
+      worldBearSparkle.style.visibility = "hidden";
+      worldBearSparkle.style.opacity = 0;
       worldLighthouse.style.visibility = "hidden";
       worldLighthouse.style.opacity = 0;
       setTimeout(() => {
@@ -127,6 +130,12 @@ function rotateWorld(degrees, index) {
         setTimeout(() => {
           worldBear.style.visibility = "visible";
           worldBear.style.opacity = 1;
+          updateBearGrid();
+          setTimeout(() => {
+            worldBearSparkle.style.visibility = "visible";
+            worldBearSparkle.style.opacity = 1;
+            meteor();
+          }, 500);
         }, 900);
       }, 400);
     }, 400);
@@ -151,6 +160,8 @@ function rotateWorld(degrees, index) {
     setTimeout(() => {
       worldBear.style.visibility = "hidden";
       worldBear.style.opacity = 0;
+      worldBearSparkle.style.visibility = "hidden";
+      worldBearSparkle.style.opacity = 0;
     }, 400);
     worldBallon.style.transform = "rotate(45deg)";
     setTimeout(() => {
@@ -166,7 +177,7 @@ function rotateWorld(degrees, index) {
           }, 50);
           worldLighthouse.style.visibility = "visible";
           worldLighthouse.style.opacity = 1;
-        }, 1000);
+        }, 1200);
       }, 400);
     }, 400);
   }
@@ -207,4 +218,22 @@ const spans = [
   "<span><i class='fa-regular fa-hand-point-right bear-next' onclick='rotateWorld(250,3)'></i></span>",
 ];
 
-updateBearGrid();
+function meteor() {
+  let amount = 40;
+  let container = document.querySelector(".world-bear-sparkle");
+  let count = 0;
+  while (count < amount) {
+    let drop = document.createElement("div");
+    drop.className = "droplet";
+    let size = Math.random() * 5;
+    let posX = Math.floor(Math.random() * container.offsetWidth);
+    let delay = Math.random() * -20;
+    let duration = Math.random() * 5;
+    drop.style.width = 0.1 + size + "px";
+    drop.style.left = posX + "px";
+    drop.style.animationDelay = delay + "s";
+    drop.style.animationDuration = 2 + duration + "s";
+    container.appendChild(drop);
+    count++;
+  }
+}
