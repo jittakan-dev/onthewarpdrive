@@ -166,7 +166,7 @@
     font-size: 1.62rem;
   }
   .world-sub-text {
-    height: 12dvh;
+    height: 13.5dvh;
     font-size: 0.75rem;
   }
   .world-title-foma {
@@ -178,6 +178,12 @@
   }
   .world-base-more {
     font-size: 0.8rem;
+  }
+
+  @media (min-height: 588px) {
+    .world-sub-text {
+      height: 12dvh;
+    }
   }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
 }
