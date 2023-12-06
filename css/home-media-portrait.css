@@ -7,37 +7,37 @@
   .c0 {
     width: 160dvh;
     height: 160dvh;
-    background-color: #45484a;
+    background-color: #2e3134;
     z-index: 0;
   }
   .c1 {
     width: 140dvh;
     height: 140dvh;
-    background-color: #3a3c3f;
+    background-color: #232528;
     z-index: 1;
   }
   .c2 {
     width: 115dvh;
     height: 115dvh;
-    background-color: #2e3134;
+    background-color: #16191c;
     z-index: 2;
   }
   .c3 {
     width: 100dvh;
     height: 100dvh;
-    background-color: #232528;
+    background-color: #141619;
     z-index: 3;
   }
   .c4 {
     width: 85dvh;
     height: 85dvh;
-    background-color: #16191c;
+    background-color: #111416;
     z-index: 4;
   }
   .c5 {
     width: 70dvh;
     height: 70dvh;
-    background-color: #111416;
+    background-color: #0f1113;
     z-index: 5;
   }
   .c6 {
