@@ -130,7 +130,6 @@ function rotateWorld(degrees, index) {
         setTimeout(() => {
           worldBear.style.visibility = "visible";
           worldBear.style.opacity = 1;
-          updateBearGrid();
           setTimeout(() => {
             worldBearSparkle.style.visibility = "visible";
             worldBearSparkle.style.opacity = 1;
@@ -219,7 +218,7 @@ const spans = [
 ];
 
 function meteor() {
-  let amount = 40;
+  let amount = 80;
   let container = document.querySelector(".world-bear-sparkle");
   let count = 0;
   while (count < amount) {
@@ -232,8 +231,10 @@ function meteor() {
     drop.style.width = 0.1 + size + "px";
     drop.style.left = posX + "px";
     drop.style.animationDelay = delay + "s";
-    drop.style.animationDuration = 2 + duration + "s";
+    drop.style.animationDuration = 3 + duration + "s";
     container.appendChild(drop);
     count++;
   }
 }
+
+updateBearGrid();

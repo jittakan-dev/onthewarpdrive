@@ -7,61 +7,61 @@
   .c0 {
     width: 160dvh;
     height: 160dvh;
-    background-color: #1e2125;
+    background-color: #45484a;
     z-index: 0;
   }
   .c1 {
     width: 140dvh;
     height: 140dvh;
-    background-color: #1a1e21;
+    background-color: #3a3c3f;
     z-index: 1;
   }
   .c2 {
     width: 115dvh;
     height: 115dvh;
-    background-color: #171a1d;
+    background-color: #2e3134;
     z-index: 2;
   }
   .c3 {
     width: 100dvh;
     height: 100dvh;
-    background-color: #141619;
+    background-color: #232528;
     z-index: 3;
   }
   .c4 {
     width: 85dvh;
     height: 85dvh;
-    background-color: #111315;
+    background-color: #16191c;
     z-index: 4;
   }
   .c5 {
     width: 70dvh;
     height: 70dvh;
-    background-color: #0d0f10;
+    background-color: #111416;
     z-index: 5;
   }
   .c6 {
     width: 55dvh;
     height: 55dvh;
-    background-color: #0a0b0c;
+    background-color: #0d0e10;
     z-index: 6;
   }
   .c7 {
     width: 40dvh;
     height: 40dvh;
-    background-color: #070708;
+    background-color: #0c0d0f;
     z-index: 7;
   }
   .c8 {
     width: 25dvh;
     height: 25dvh;
-    background-color: #030404;
+    background-color: #070809;
     z-index: 8;
   }
   .c9 {
     width: 10dvh;
     height: 10dvh;
-    background-color: #000000;
+    background-color: #020303;
     z-index: 9;
   }
   .world-core {
@@ -80,6 +80,7 @@
   .world-core-ribbon {
     width: 120%;
   }
+
   .world-control-group {
     top: 5%;
     width: 90dvw;
@@ -138,12 +139,16 @@
     bottom: -60%;
     scale: 0.8;
   }
-  .world-control-group {
-    width: 95dvw;
-  }
   .world-bear {
     top: 50%;
     left: -8%;
+  }
+  .world-bear-sparkle {
+    top: -23%;
+    width: 15dvh;
+  }
+  .world-control-group {
+    width: 95dvw;
   }
   .we-layer-1,
   .we-layer-2 {
@@ -205,6 +210,10 @@
     .bear-grid {
       font-size: 1.5rem;
     }
+    .world-bear-sparkle {
+      top: -12%;
+      width: 15dvh;
+    }
   }
   /* IPHONE SE NEW,IPHONE 6,7,8  */
   @media (min-height: 569px) and (max-height: 668px) {
@@ -214,6 +223,10 @@
     }
     .bear-grid {
       font-size: 1.65rem;
+    }
+    .world-bear-sparkle {
+      top: -12%;
+      width: 15dvh;
     }
     .world-core-ribbon {
       font-size: 0.95rem;
@@ -248,6 +261,10 @@
     .we-layer-1,
     .we-layer-2 {
       height: 2.4rem; /***-------------------***/
+    }
+    .world-bear-sparkle {
+      top: -12%;
+      width: 15dvh;
     }
     .bear-grid {
       font-size: 2rem;
@@ -286,6 +303,10 @@
     .we-layer-1,
     .we-layer-2 {
       height: 2.4rem; /***-------------------***/
+    }
+    .world-bear-sparkle {
+      top: -12%;
+      width: 15dvh;
     }
     .bear-grid {
       font-size: 2.25rem;

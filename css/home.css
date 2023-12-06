@@ -288,20 +288,21 @@
 }
 .world-bear-sparkle {
   position: absolute;
-  top: 40%;
+  top: -6%;
   left: 0%;
-  transform: rotate(82deg);
-  width: 30dvh;
-  height: 50dvh;
+  transform: rotate(78deg);
+  width: 20dvh;
+  height: 200dvh;
   z-index: 7;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
+  /* background-color: red; */
 }
 .droplet {
   position: absolute;
   height: 0.5rem;
-  background: linear-gradient(#3d3f40, transparent);
+  background: linear-gradient(#878b8e, transparent);
   border-bottom-left-radius: 0.05rem;
   border-bottom-right-radius: 0.05rem;
   animation: raining 5s linear Infinite;
@@ -311,7 +312,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(100vh + 0.5rem));
+    transform: translateY(calc(200vh + 0.5rem));
   }
 }
 @-webkit-keyframes raining {
@@ -319,7 +320,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(100vh + 0.5rem));
+    transform: translateY(calc(200vh + 0.5rem));
   }
 }
 @-o-keyframes raining {
@@ -327,7 +328,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(100vh + 0.5rem));
+    transform: translateY(calc(200vh + 0.5rem));
   }
 }
 @keyframes raining {
@@ -335,7 +336,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(100vh + 0.5rem));
+    transform: translateY(calc(200vh + 0.5rem));
   }
 }
 
@@ -447,6 +448,11 @@
   animation: animateHalo 4s infinite linear;
   z-index: 10;
   cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .light-halo.lh1 {
   left: -4%;
@@ -531,16 +537,16 @@
     transform: rotateZ(35deg) translateX(-50%);
   }
 }
-/* .ufo {
+.ufo {
   position: absolute;
   transform: rotate(-250deg);
   font-size: 5rem;
-  bottom: 15%;
-  left: 15%;
+  bottom: 10%;
+  left: 10%;
   color: blue;
-  background-color: red;
+  background-color: #214f77;
   z-index: 8;
-} */
+}
 /*---------------------core--------------------*/
 /*---------------------control-group--------------------*/
 .world-control-group {
