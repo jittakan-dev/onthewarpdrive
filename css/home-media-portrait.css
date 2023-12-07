@@ -137,7 +137,7 @@
     width: 125dvh;
     height: 125dvh;
     bottom: -60%;
-    scale: 0.8;
+    scale: 0.72;
   }
   .world-bear {
     top: 50%;
@@ -159,8 +159,8 @@
     font-size: 1.6rem;
   }
   .world-core-ribbon {
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
   }
   .world-text {
     font-size: 1.62rem;

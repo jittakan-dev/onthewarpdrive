@@ -534,11 +534,11 @@
 .arrow-sign {
   position: absolute;
   transform: rotate(-250deg);
-  bottom: 23%;
-  left: 60.5%;
+  bottom: 21%;
+  left: 60%;
   z-index: 13;
-  width: 7.5%;
-  height: 4.5%;
+  width: 9%;
+  height: 6.5%;
   z-index: 13;
   rotate: 20deg;
   cursor: pointer;
