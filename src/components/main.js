@@ -77,6 +77,30 @@
 /*--------------------*/
 const sections = document.querySelectorAll(".content-section");
 
+// Function to set the width and height of elements to 100% of the viewport
+function setViewportSize(element) {
+  const viewportWidth =
+    window.innerWidth || document.documentElement.clientWidth;
+  const viewportHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+
+  element.style.width = viewportWidth + "px";
+  element.style.height = viewportHeight + "px";
+}
+
+// Select all elements with the class "content-section"
+// const sections = document.querySelectorAll(".content-section");
+
+// Loop through each section and set its width and height to 100% of the viewport
+sections.forEach((section) => {
+  setViewportSize(section);
+
+  // Listen for window resize events to update the size when the viewport changes
+  window.addEventListener("resize", () => {
+    setViewportSize(section);
+  });
+});
+
 let scrolling = false;
 
 window.addEventListener(
