@@ -26,7 +26,7 @@ function changeInAnimation() {
   circle_2.style.animation = "pulse-bold 2.2s ease-out infinite";
   circle_3.style.animation = "pulse-bold 2.5s ease-out infinite";
   worldBallonImg.style.filter =
-    "drop-shadow(-1rem 0 6rem #6c757d) brightness(130%)";
+    "drop-shadow(-1rem 0 6rem #288A8F) brightness(130%)";
 }
 function changeOutAnimation() {
   circle_0.style.animation = "pulse 2s ease-out infinite";
@@ -34,7 +34,7 @@ function changeOutAnimation() {
   circle_2.style.animation = "pulse 3.5s ease-out infinite";
   circle_3.style.animation = "pulse 4s ease-out infinite";
   worldBallonImg.style.filter =
-    "drop-shadow(0rem 0rem 0.2rem rgba(42, 42, 41, 0.5)) brightness(90%)";
+    "drop-shadow(0rem 0rem 0.2rem rgba(40, 138, 143, 0.2)) brightness(90%)";
 }
 
 let isRotationAllowed = false;

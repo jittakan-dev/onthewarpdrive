@@ -26,61 +26,71 @@
 .c0 {
   width: 300dvh;
   height: 300dvh;
-  background-color: #1e2125;
+  /* background-color: #1e2125; */
+  background-color: #014c50;
   z-index: -9;
 }
 .c1 {
   width: 270dvh;
   height: 270dvh;
-  background-color: #1a1e21;
+  /* background-color: #1a1e21; */
+  background-color: #01464a;
   z-index: -8;
 }
 .c2 {
   width: 240dvh;
   height: 240dvh;
-  background-color: #171a1d;
+  /* background-color: #171a1d; */
+  background-color: #014044;
   z-index: -7;
 }
 .c3 {
   width: 210dvh;
   height: 210dvh;
-  background-color: #141619;
+  /* background-color: #141619; */
+  background-color: #013b3e;
   z-index: -6;
 }
 .c4 {
   width: 180dvh;
   height: 180dvh;
-  background-color: #111315;
+  /* background-color: #111315; */
+  background-color: #013537;
   z-index: -5;
 }
 .c5 {
   width: 150dvh;
   height: 150dvh;
-  background-color: #0d0f10;
+  /* background-color: #0d0f10; */
+  background-color: #012f31;
   z-index: -4;
 }
 .c6 {
   width: 120dvh;
   height: 120dvh;
-  background-color: #0a0b0c;
+  /* background-color: #0a0b0c; */
+  background-color: #01292b;
   z-index: -3;
 }
 .c7 {
   width: 90dvh;
   height: 90dvh;
-  background-color: #070708;
+  /* background-color: #070708; */
+  background-color: #012325;
   z-index: -2;
 }
 .c8 {
   width: 60dvh;
   height: 60dvh;
-  background-color: #030404;
+  /* background-color: #030404; */
+  background-color: #001719;
   z-index: -1;
 }
 .c9 {
   width: 30dvh;
   height: 30dvh;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #000c0c;
   z-index: 0;
 }
 /*---------------------circle and bg--------------------*/
@@ -173,7 +183,7 @@
 .world-globe img {
   width: 100%;
   position: relative;
-  filter: drop-shadow(0rem 0rem 0.2rem rgba(42, 42, 41, 0.5));
+  filter: drop-shadow(0rem 0rem 0.2rem rgb(40, 138, 143));
 }
 .world-globe img {
   filter: brightness(90%);
@@ -181,7 +191,7 @@
 .world-balloon img {
   transform-origin: center bottom;
   transition: all 0.5s ease-in-out;
-  filter: drop-shadow(0rem 0rem 0.2rem rgba(42, 42, 41, 0.5)) brightness(90%);
+  filter: drop-shadow(0rem 0rem 0.2rem rgba(40, 138, 143, 0.2)) brightness(90%);
 }
 .balloon-effect {
   position: absolute;
@@ -227,19 +237,19 @@
     width: 50dvh;
     height: 50dvh;
     opacity: 0.7;
-    border: 3px solid #171717;
+    border: 3px solid #01292b;
   }
   70% {
     width: 100vh;
     height: 100dvh;
     opacity: 0.3;
-    border: 10px solid #171717;
+    border: 10px solid #01292b;
   }
   100% {
     width: 150dvh;
     height: 150dvh;
     opacity: 0;
-    border: 1px solid #ced4da;
+    border: 1px solid #359195;
   }
 }
 @keyframes pulse-bold {
@@ -247,31 +257,31 @@
     width: 0;
     height: 0;
     opacity: 0.5;
-    background-color: #000;
+    background-color: #000c0c;
   }
   35% {
     width: 50dvh;
     height: 50dvh;
     opacity: 1;
-    background-color: #070707;
+    background-color: #001719;
   }
   55% {
     width: 70dvh;
     height: 70dvh;
     opacity: 1;
-    background-color: #181818;
+    background-color: #012325;
   }
   70% {
     width: 100vh;
     height: 100dvh;
     opacity: 0.3;
-    background-color: #212529;
+    background-color: #012f31;
   }
   100% {
     width: 150dvh;
     height: 150dvh;
     opacity: 0;
-    background-color: #32383e;
+    background-color: #013b3e;
   }
 }
 .world-bear {
