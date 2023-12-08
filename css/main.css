@@ -7,7 +7,7 @@ html {
   width: 100%;
   overflow-x: hidden;
   /*scrollable on mobile*/
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #171717;
 }
 .content-section {
