@@ -6,8 +6,8 @@
   transform: translateY(-50%);
   background-color: #ebebeb;
   border-radius: 50%;
-  width: 8.4dvh;
-  height: 8.4dvh;
+  width: 8.4vh;
+  height: 8.4vh;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -31,8 +31,8 @@
   z-index: 1001;
 }
 .bubble-handle {
-  width: 4.6dvh;
-  height: 4.6dvh;
+  width: 4.6vh;
+  height: 4.6vh;
   background-color: #ebebeb;
   right: 0;
   bottom: 0;
@@ -44,8 +44,8 @@
   cursor: grabbing;
 }
 .bubble-handle-button {
-  width: 2.4dvh;
-  height: 2.4dvh;
+  width: 2.4vh;
+  height: 2.4vh;
   background-color: #171717;
   transform: translate(50%, 50%);
 }
@@ -71,10 +71,10 @@
   width: 100%;
 }
 .bubble-button .hamburger-icon::before {
-  top: -1.3dvh;
+  top: -1.3vh;
 }
 .bubble-button .hamburger-icon::after {
-  bottom: -1.3dvh;
+  bottom: -1.3vh;
 }
 .menu-active .hamburger-icon {
   background-color: transparent;
@@ -100,8 +100,8 @@
   position: fixed;
   left: 0;
   top: -110%;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,8 +111,8 @@
   transition: top 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .menu-group {
-  width: 100dvw;
-  height: 90dvh;
+  width: 100vw;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -161,7 +161,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  height: 98dvh;
+  height: 98vh;
   width: 40%;
   padding: 1% 5% 1% 5%;
 }
@@ -171,13 +171,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: 100vh;
   width: 50%;
 }
 .right-hidden-menu a {
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  color: #e6f1f2;
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   margin-top: 2%;
@@ -190,14 +190,14 @@
 }
 .right-hidden-menu a:hover, /*----------------------------------*/
 .left-hidden-menu a:hover {
-  color: #171717;
-  background-color: white;
+  color: #000c0c;
+  background-color: #02757b;
   padding: 3%;
 }
 .bubbleLinkActive {
   /* background-color: #dee2e6; */
-  background-color: #6c757d;
-  color: #171717;
+  background-color: #015256;
+  color: #000c0c;
 }
 /*-----------------------3 DOTS SET------------------------------------*/
 
@@ -226,8 +226,8 @@
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   border-radius: 50%;
-  width: 4.4dvh;
-  height: 4.4dvh;
+  width: 4.4vh;
+  height: 4.4vh;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -245,7 +245,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav-dot-group a {
-  color: #171717;
+  color: #b3d6d7;
   text-decoration: none;
 }
 .nav-dot-group a:hover {
@@ -253,17 +253,17 @@
   background-color: #457b9d;
 }
 .navLinkActive {
-  background-color: #6c757d;
+  background-color: #359195;
 }
 .nav-dot-group a:nth-child(1),
 .nav-dot-group-dop div:nth-child(1) {
-  margin: 2dvh 0 1dvh 0;
+  margin: 2vh 0 1vh 0;
 }
 .nav-dot-group a:nth-child(2),
 .nav-dot-group-dop div:nth-child(2) {
-  margin: 1dvh 0 1dvh 0;
+  margin: 1vh 0 1vh 0;
 }
 .nav-dot-group a:nth-child(3),
 .nav-dot-group-dop div:nth-child(3) {
-  margin: 1dvh 0 2dvh 0;
+  margin: 1vh 0 2vh 0;
 }

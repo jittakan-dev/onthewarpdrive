@@ -2,30 +2,30 @@
   /*IPhoneXR,IPhone 12 PRO,Pixel 5,Galaxy S+, Galaxy S20 ultra, Galaxxy A51/71  LANDSCAPE*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 12dvh;
-    height: 12dvh;
+    width: 12vh;
+    height: 12vh;
   }
   .bubble-handle {
-    width: 7dvh;
-    height: 7dvh;
+    width: 7vh;
+    height: 7vh;
   }
   .bubble-handle-button {
-    width: 3.8dvh;
-    height: 3.8dvh;
+    width: 3.8vh;
+    height: 3.8vh;
   }
   .right-hidden-menu a {
     font-size: 1.8rem;
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 6dvh;
-    height: 6dvh;
+    width: 6vh;
+    height: 6vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -1.4dvh;
+    top: -1.4vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -1.4dvh;
+    bottom: -1.4vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -40,30 +40,30 @@
   /*WINDOW GAP*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 8dvh;
-    height: 8dvh;
+    width: 8vh;
+    height: 8vh;
   }
   .bubble-handle {
-    width: 4dvh;
-    height: 4dvh;
+    width: 4vh;
+    height: 4vh;
   }
   .bubble-handle-button {
-    width: 2.2dvh;
-    height: 2.2dvh;
+    width: 2.2vh;
+    height: 2.2vh;
   }
   .right-hidden-menu a {
     font-size: 1.8rem;
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 5dvh;
-    height: 5dvh;
+    width: 5vh;
+    height: 5vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -1.4dvh;
+    top: -1.4vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -1.4dvh;
+    bottom: -1.4vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -78,22 +78,22 @@
   /*IPAD Air,Surface PRO 7, IPad  Portrait*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 5dvh;
-    height: 5dvh;
+    width: 5vh;
+    height: 5vh;
   }
   .bubble-handle {
-    width: 2.6dvh;
-    height: 2.6dvh;
+    width: 2.6vh;
+    height: 2.6vh;
   }
   .bubble-handle-button {
-    width: 1.4dvh;
-    height: 1.4dvh;
+    width: 1.4vh;
+    height: 1.4vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -0.8dvh;
+    top: -0.8vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -0.8dvh;
+    bottom: -0.8vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -109,8 +109,8 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 3.4dvh;
-    height: 3.4dvh;
+    width: 3.4vh;
+    height: 3.4vh;
   }
 }
 /*----------------------------------------------------------------------------------------------MORE BLOCK------*/
@@ -118,22 +118,22 @@
   /* Window GAP */
   .bubble-button-hamburger,
   .bubble-button {
-    width: 8dvh;
-    height: 8dvh;
+    width: 8vh;
+    height: 8vh;
   }
   .bubble-handle {
-    width: 4dvh;
-    height: 4dvh;
+    width: 4vh;
+    height: 4vh;
   }
   .bubble-handle-button {
-    width: 2dvh;
-    height: 2dvh;
+    width: 2vh;
+    height: 2vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -1dvh;
+    top: -1vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -1dvh;
+    bottom: -1vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -149,8 +149,8 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 4.2dvh;
-    height: 4.2dvh;
+    width: 4.2vh;
+    height: 4.2vh;
   }
 }
 
@@ -158,22 +158,22 @@
   /*IPAD Air, IPAD PRO,IPAD PRO Landscrape*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 6dvh;
-    height: 6dvh;
+    width: 6vh;
+    height: 6vh;
   }
   .bubble-handle {
-    width: 3.4dvh;
-    height: 3.4dvh;
+    width: 3.4vh;
+    height: 3.4vh;
   }
   .bubble-handle-button {
-    width: 1.8dvh;
-    height: 1.8dvh;
+    width: 1.8vh;
+    height: 1.8vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -0.8dvh;
+    top: -0.8vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -0.8dvh;
+    bottom: -0.8vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -189,30 +189,30 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 3.8dvh;
-    height: 3.8dvh;
+    width: 3.8vh;
+    height: 3.8vh;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 1279px) and (min-height: 1365px) {
   /*IPAD Pro Portrait*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 4.8dvh;
-    height: 4.8dvh;
+    width: 4.8vh;
+    height: 4.8vh;
   }
   .bubble-handle {
-    width: 2.8dvh;
-    height: 2.8dvh;
+    width: 2.8vh;
+    height: 2.8vh;
   }
   .bubble-handle-button {
-    width: 1.4dvh;
-    height: 1.4dvh;
+    width: 1.4vh;
+    height: 1.4vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -0.8dvh;
+    top: -0.8vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -0.8dvh;
+    bottom: -0.8vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -228,30 +228,30 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 3dvh;
-    height: 3dvh;
+    width: 3vh;
+    height: 3vh;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) and (max-height: 1022px) {
   /*Surface PRO 7  Landscape*/
   .bubble-button-hamburger,
   .bubble-button {
-    width: 8dvh;
-    height: 8dvh;
+    width: 8vh;
+    height: 8vh;
   }
   .bubble-handle {
-    width: 4.6dvh;
-    height: 4.6dvh;
+    width: 4.6vh;
+    height: 4.6vh;
   }
   .bubble-handle-button {
-    width: 2.4dvh;
-    height: 2.4dvh;
+    width: 2.4vh;
+    height: 2.4vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -1dvh;
+    top: -1vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -1dvh;
+    bottom: -1vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;
@@ -267,29 +267,29 @@
   }
   .nav-dot-group a,
   .nav-dot-group-dop div {
-    width: 4dvh;
-    height: 4dvh;
+    width: 4vh;
+    height: 4vh;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) and (min-height: 1023px) {
   .bubble-button-hamburger,
   .bubble-button {
-    width: 6.6dvh;
-    height: 6.6dvh;
+    width: 6.6vh;
+    height: 6.6vh;
   }
   .bubble-handle {
-    width: 3.6dvh;
-    height: 3.6dvh;
+    width: 3.6vh;
+    height: 3.6vh;
   }
   .bubble-handle-button {
-    width: 2dvh;
-    height: 2dvh;
+    width: 2vh;
+    height: 2vh;
   }
   .bubble-button .hamburger-icon::before {
-    top: -1dvh;
+    top: -1vh;
   }
   .bubble-button .hamburger-icon::after {
-    bottom: -1dvh;
+    bottom: -1vh;
   }
   .menu-active .hamburger-icon::before {
     top: 0;

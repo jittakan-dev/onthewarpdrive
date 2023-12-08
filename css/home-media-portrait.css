@@ -5,68 +5,68 @@
     top: 75%;
   }
   .c0 {
-    width: 160dvh;
-    height: 160dvh;
+    width: 160vh;
+    height: 160vh;
     background-color: #014044;
     z-index: 0;
   }
   .c1 {
-    width: 140dvh;
-    height: 140dvh;
+    width: 140vh;
+    height: 140vh;
     background-color: #013b3e;
     z-index: 1;
   }
   .c2 {
-    width: 115dvh;
-    height: 115dvh;
+    width: 115vh;
+    height: 115vh;
     background-color: #013537;
     z-index: 2;
   }
   .c3 {
-    width: 100dvh;
-    height: 100dvh;
+    width: 100vh;
+    height: 100vh;
     background-color: #012f31;
     z-index: 3;
   }
   .c4 {
-    width: 85dvh;
-    height: 85dvh;
+    width: 85vh;
+    height: 85vh;
     background-color: #01292b;
     z-index: 4;
   }
   .c5 {
-    width: 70dvh;
-    height: 70dvh;
+    width: 70vh;
+    height: 70vh;
     background-color: #012325;
     z-index: 5;
   }
   .c6 {
-    width: 55dvh;
-    height: 55dvh;
+    width: 55vh;
+    height: 55vh;
     background-color: #011d1f;
     z-index: 6;
   }
   .c7 {
-    width: 40dvh;
-    height: 40dvh;
+    width: 40vh;
+    height: 40vh;
     background-color: #001719;
     z-index: 7;
   }
   .c8 {
-    width: 25dvh;
-    height: 25dvh;
+    width: 25vh;
+    height: 25vh;
     background-color: #001212;
     z-index: 8;
   }
   .c9 {
-    width: 10dvh;
-    height: 10dvh;
+    width: 10vh;
+    height: 10vh;
     background-color: #000c0c;
     z-index: 9;
   }
   .world-core {
-    width: 145dvh;
-    height: 145dvh;
+    width: 145vh;
+    height: 145vh;
     bottom: -71%;
     scale: 0.8;
   }
@@ -74,8 +74,8 @@
     top: 52.5%;
     left: 0;
     transform: rotate(-110deg);
-    width: 25.5dvh;
-    height: 15dvh;
+    width: 25.5vh;
+    height: 15vh;
   }
   .world-core-ribbon {
     width: 120%;
@@ -83,10 +83,10 @@
 
   .world-control-group {
     top: 5%;
-    width: 90dvw;
+    width: 90vw;
   }
   .world-base-text {
-    height: 8dvh;
+    height: 8vh;
   }
   .world-title-foma {
     padding: 1% 0 1% 0;
@@ -134,8 +134,8 @@
 }
 @media screen and (max-width: 319px) {
   .world-core {
-    width: 125dvh;
-    height: 125dvh;
+    width: 125vh;
+    height: 125vh;
     bottom: -60%;
     scale: 0.72;
   }
@@ -145,10 +145,10 @@
   }
   .world-bear-sparkle {
     top: -23%;
-    width: 15dvh;
+    width: 15vh;
   }
   .world-control-group {
-    width: 95dvw;
+    width: 95vw;
   }
   .we-layer-1,
   .we-layer-2 {
@@ -166,7 +166,7 @@
     font-size: 1.62rem;
   }
   .world-sub-text {
-    height: 13.5dvh;
+    height: 13.5vh;
     font-size: 0.75rem;
   }
   .world-title-foma {
@@ -182,7 +182,7 @@
 
   @media (min-height: 588px) {
     .world-sub-text {
-      height: 12dvh;
+      height: 12vh;
     }
   }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
@@ -197,7 +197,7 @@
     scale: 0.8;
   }
   .world-control-group {
-    width: 80dvw;
+    width: 80vw;
   }
   /*--------------GENERAL STYLES--------------*/
   /* IPhone SE OLD */
@@ -210,7 +210,7 @@
       font-size: 1.55rem;
     }
     .world-sub-text {
-      height: 17dvh;
+      height: 17vh;
       font-size: 0.82rem;
     }
     .bear-grid {
@@ -218,7 +218,7 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
+      width: 15vh;
     }
   }
   /* IPHONE SE NEW,IPHONE 6,7,8  */
@@ -232,7 +232,7 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
+      width: 15vh;
     }
     .world-core-ribbon {
       font-size: 0.95rem;
@@ -242,7 +242,7 @@
       font-size: 2rem;
     }
     .world-sub-text {
-      height: 14dvh;
+      height: 14vh;
       font-size: 0.85rem;
     }
     .world-title-foma {
@@ -262,7 +262,7 @@
       scale: 0.7;
     }
     .world-control-group {
-      width: 85dvw;
+      width: 85vw;
     }
     .we-layer-1,
     .we-layer-2 {
@@ -270,7 +270,7 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
+      width: 15vh;
     }
     .bear-grid {
       font-size: 2rem;
@@ -283,7 +283,7 @@
       font-size: 1.9rem;
     }
     .world-sub-text {
-      height: 12.5dvh;
+      height: 12.5vh;
       font-size: 0.92rem;
     }
 
@@ -304,7 +304,7 @@
       scale: 0.7;
     }
     .world-control-group {
-      width: 88dvw;
+      width: 88vw;
     }
     .we-layer-1,
     .we-layer-2 {
@@ -312,7 +312,7 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
+      width: 15vh;
     }
     .bear-grid {
       font-size: 2.25rem;
@@ -325,7 +325,7 @@
       font-size: 2rem;
     }
     .world-sub-text {
-      height: 12dvh;
+      height: 12vh;
       font-size: 1rem;
     }
 

@@ -1,7 +1,7 @@
 .home-container {
   position: relative;
-  width: 90dvw;
-  height: 100dvh;
+  width: 90vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,71 +24,71 @@
   border-radius: 50%;
 }
 .c0 {
-  width: 300dvh;
-  height: 300dvh;
+  width: 300vh;
+  height: 300vh;
   /* background-color: #1e2125; */
   background-color: #014c50;
   z-index: -9;
 }
 .c1 {
-  width: 270dvh;
-  height: 270dvh;
+  width: 270vh;
+  height: 270vh;
   /* background-color: #1a1e21; */
   background-color: #01464a;
   z-index: -8;
 }
 .c2 {
-  width: 240dvh;
-  height: 240dvh;
+  width: 240vh;
+  height: 240vh;
   /* background-color: #171a1d; */
   background-color: #014044;
   z-index: -7;
 }
 .c3 {
-  width: 210dvh;
-  height: 210dvh;
+  width: 210vh;
+  height: 210vh;
   /* background-color: #141619; */
   background-color: #013b3e;
   z-index: -6;
 }
 .c4 {
-  width: 180dvh;
-  height: 180dvh;
+  width: 180vh;
+  height: 180vh;
   /* background-color: #111315; */
   background-color: #013537;
   z-index: -5;
 }
 .c5 {
-  width: 150dvh;
-  height: 150dvh;
+  width: 150vh;
+  height: 150vh;
   /* background-color: #0d0f10; */
   background-color: #012f31;
   z-index: -4;
 }
 .c6 {
-  width: 120dvh;
-  height: 120dvh;
+  width: 120vh;
+  height: 120vh;
   /* background-color: #0a0b0c; */
   background-color: #01292b;
   z-index: -3;
 }
 .c7 {
-  width: 90dvh;
-  height: 90dvh;
+  width: 90vh;
+  height: 90vh;
   /* background-color: #070708; */
   background-color: #012325;
   z-index: -2;
 }
 .c8 {
-  width: 60dvh;
-  height: 60dvh;
+  width: 60vh;
+  height: 60vh;
   /* background-color: #030404; */
   background-color: #001719;
   z-index: -1;
 }
 .c9 {
-  width: 30dvh;
-  height: 30dvh;
+  width: 30vh;
+  height: 30vh;
   /* background-color: #000000; */
   background-color: #000c0c;
   z-index: 0;
@@ -96,8 +96,8 @@
 /*---------------------circle and bg--------------------*/
 /*---------------------core--------------------*/
 .world-core {
-  width: 160dvh;
-  height: 160dvh;
+  width: 160vh;
+  height: 160vh;
   position: absolute;
   bottom: -82%;
   transform-origin: center;
@@ -233,20 +233,20 @@
     border: 1px solid #dee2e6;
   }
   35% {
-    width: 50dvh;
-    height: 50dvh;
+    width: 50vh;
+    height: 50vh;
     opacity: 0.7;
     border: 3px solid #01292b;
   }
   70% {
     width: 100vh;
-    height: 100dvh;
+    height: 100vh;
     opacity: 0.3;
     border: 10px solid #01292b;
   }
   100% {
-    width: 150dvh;
-    height: 150dvh;
+    width: 150vh;
+    height: 150vh;
     opacity: 0;
     border: 1px solid #359195;
   }
@@ -259,26 +259,26 @@
     background-color: #000c0c;
   }
   35% {
-    width: 50dvh;
-    height: 50dvh;
+    width: 50vh;
+    height: 50vh;
     opacity: 1;
     background-color: #001719;
   }
   55% {
-    width: 70dvh;
-    height: 70dvh;
+    width: 70vh;
+    height: 70vh;
     opacity: 1;
     background-color: #012325;
   }
   70% {
     width: 100vh;
-    height: 100dvh;
+    height: 100vh;
     opacity: 0.3;
     background-color: #012f31;
   }
   100% {
-    width: 150dvh;
-    height: 150dvh;
+    width: 150vh;
+    height: 150vh;
     opacity: 0;
     background-color: #013b3e;
   }
@@ -288,8 +288,8 @@
   top: 48%;
   left: -2%;
   transform: rotate(-110deg);
-  width: 28dvh;
-  height: 14dvh;
+  width: 28vh;
+  height: 14vh;
   z-index: 12;
   visibility: hidden;
   opacity: 0;
@@ -300,8 +300,8 @@
   top: -6%;
   left: 0%;
   transform: rotate(79deg);
-  width: 20dvh;
-  height: 200dvh;
+  width: 20vh;
+  height: 200vh;
   z-index: 7;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -447,8 +447,8 @@
 .light-halo.lh0 {
   left: -2%;
   bottom: -4%;
-  width: 12dvh;
-  height: 12dvh;
+  width: 12vh;
+  height: 12vh;
   font-size: 1.5rem;
   font-weight: 100;
   background-color: rgba(186, 227, 200, 0.2);
@@ -460,8 +460,8 @@
 .light-halo.lh1 {
   left: -4%;
   bottom: -5%;
-  width: 17dvh;
-  height: 17dvh;
+  width: 17vh;
+  height: 17vh;
   background-color: rgba(185, 235, 201, 0.1);
   border-radius: 52% 48% 69% 31% / 59% 51% 49% 41%;
   animation: animateHalo 6s infinite linear;
@@ -470,8 +470,8 @@
 .light-halo.lh2 {
   left: -5%;
   bottom: -6%;
-  width: 20dvh;
-  height: 20dvh;
+  width: 20vh;
+  height: 20vh;
   background-color: rgba(156, 226, 180, 0.08);
   border-radius: 52% 48% 76% 24% / 44% 52% 48% 56%;
   animation: animateHalo 8s infinite linear;
@@ -496,37 +496,37 @@
   bottom: 0;
   left: 0;
   transform-origin: left bottom;
-  width: 1dvh;
+  width: 1vh;
   height: 0;
-  border-left: 16dvh solid transparent;
-  border-right: 16dvh solid transparent;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.08);
+  border-left: 16vh solid transparent;
+  border-right: 16vh solid transparent;
+  border-top: 150vh solid rgba(156, 226, 180, 0.08);
   filter: drop-shadow(0px 0px 10px rgba(156, 226, 180, 0.4));
   transform: rotateZ(30deg) translateX(-50%);
   overflow: hidden;
 }
 .laser-beam.lb0 {
-  width: 1dvh;
+  width: 1vh;
   animation: laser 6s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.08);
+  border-top: 150vh solid rgba(156, 226, 180, 0.08);
   z-index: 7;
 }
 .laser-beam.lb1 {
-  width: 0.8dvh;
+  width: 0.8vh;
   animation: laser 6.5s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.1);
+  border-top: 150vh solid rgba(156, 226, 180, 0.1);
   z-index: 8;
 }
 .laser-beam.lb2 {
-  width: 1.2dvh;
+  width: 1.2vh;
   animation: laser 7s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.2);
+  border-top: 150vh solid rgba(156, 226, 180, 0.2);
   z-index: 9;
 }
 .laser-beam.lb3 {
-  width: 0.7dvh;
+  width: 0.7vh;
   animation: laser 7.5s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.07);
+  border-top: 150vh solid rgba(156, 226, 180, 0.07);
   z-index: 10;
 }
 @keyframes laser {
@@ -578,8 +578,8 @@
   left: 0;
   right: 5%;
   height: auto;
-  width: 27.5dvw;
-  /*mobile-- width: 47.5dvw; */
+  width: 27.5vw;
+  /*mobile-- width: 47.5vw; */
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -611,7 +611,7 @@
   position: relative;
   margin-top: 5%;
   width: 80%;
-  height: 21dvh; /***-------------------***/
+  height: 21vh; /***-------------------***/
   padding: 2% 0 2% 0;
   font-size: 1.1rem;
   overflow: hidden;
@@ -676,8 +676,8 @@
   justify-content: space-between;
   align-items: center;
   color: #adb5bd;
-  border-top: 8px solid #013b3e;
-  border-bottom: 1px solid #013b3e;
+  border-top: 8px solid #012325;
+  border-bottom: 1px solid #012325;
 }
 .world-base-text {
   display: flex;
@@ -685,7 +685,7 @@
   justify-content: center;
   align-items: start;
   width: auto;
-  height: 20dvh;
+  height: 20vh;
 }
 .world-title-foma {
   text-align: left;
@@ -702,7 +702,7 @@
 }
 .world-base-more {
   width: 30%;
-  height: 16dvh;
+  height: 16vh;
   color: #adb5bd;
   font-size: 1rem;
   display: flex;
