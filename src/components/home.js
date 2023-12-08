@@ -1,6 +1,7 @@
 const worldCore = document.querySelector(".world-core");
 const worldBallon = document.querySelector(".world-balloon");
 const worldBallonImg = document.querySelector(".world-balloon img");
+const arrowSignImg = document.querySelector(".arrow-sign img");
 const worldBear = document.querySelector(".world-bear");
 const worldBearSparkle = document.querySelector(".world-bear-sparkle");
 const worldLighthouse = document.querySelector(".world-lighthouse");
@@ -20,7 +21,7 @@ const weLayer2 = document.querySelector(".we-layer-2");
 const worldSubText = document.querySelector(".world-sub-text");
 const moreDetailA = document.querySelectorAll(".world-base-more-detail a");
 
-function changeInAnimation() {
+function changeInBalloon() {
   circle_0.style.animation = "pulse-bold 1.2s ease-out infinite";
   circle_1.style.animation = "pulse-bold 1.7s ease-out infinite";
   circle_2.style.animation = "pulse-bold 2.2s ease-out infinite";
@@ -28,7 +29,7 @@ function changeInAnimation() {
   worldBallonImg.style.filter =
     "drop-shadow(-1rem 0 6rem #288A8F) brightness(130%)";
 }
-function changeOutAnimation() {
+function changeOutBalloon() {
   circle_0.style.animation = "pulse 2s ease-out infinite";
   circle_1.style.animation = "pulse 3s ease-out infinite";
   circle_2.style.animation = "pulse 3.5s ease-out infinite";
@@ -36,7 +37,14 @@ function changeOutAnimation() {
   worldBallonImg.style.filter =
     "drop-shadow(0rem 0rem 0.2rem rgba(40, 138, 143, 0.2)) brightness(90%)";
 }
-
+// function changeInArrow() {
+//   arrowSignImg.style.filter =
+//     "drop-shadow(0.1rem 0.1rem 0.5rem rgba(159, 238, 180, 0.7)) brightness(130%)";
+// }
+// function changeOutArrow() {
+//   arrowSignImg.style.filter =
+//     "drop-shadow(-0.25rem 0.25rem 0.2rem rgba(32, 32, 32, 0.8))";
+// }
 let isRotationAllowed = false;
 
 function rotateWorld(degrees, index) {
@@ -218,7 +226,7 @@ const spans = [
 ];
 
 function meteor() {
-  let amount = 80;
+  let amount = 70;
   let container = document.querySelector(".world-bear-sparkle");
   let count = 0;
   while (count < amount) {

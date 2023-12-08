@@ -190,13 +190,15 @@
               <img
                 src="./images/globe/arrow-sign.png"
                 onclick="rotateWorld(0,1)"
+                onmouseover="changeInArrow()"
+                onmouseleave="changeOutArrow()"
               />
             </div>
             <div
               class="world-balloon"
               onclick="rotateWorld(461,2)"
-              onmouseover="changeInAnimation()"
-              onmouseleave="changeOutAnimation()"
+              onmouseover="changeInBalloon()"
+              onmouseleave="changeOutBalloon()"
             >
               <div class="world-core-ribbon">
                 <div class="ribbon">Welcome to FOM/A</div>
