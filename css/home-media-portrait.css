@@ -181,8 +181,16 @@
   }
 
   @media (min-height: 588px) {
+    .world-core {
+      scale: 0.72;
+    }
     .world-sub-text {
       height: 12vh;
+    }
+  }
+  @media (max-height: 668px) {
+    .world-core {
+      scale: 0.72;
     }
   }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
