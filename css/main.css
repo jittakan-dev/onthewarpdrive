@@ -6,13 +6,15 @@ html {
   height: auto;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /*scrollable on mobile*/
+  overflow-y: auto;
   background-color: #171717;
 }
 .content-section {
   width: 100dvw;
   max-width: 100dvw;
   max-height: 100dvh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,20 +23,9 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #171717;
+  background-color: #001719;
 }
-#home {
-  height: auto;
-  min-height: 100dvh;
-}
-#work {
-  height: 100dvh;
-  min-height: 100dvh;
-}
-#about {
-  height: 100dvh;
-  min-height: 100dvh;
-}
+
 .windowSize {
   position: fixed;
   top: 0;

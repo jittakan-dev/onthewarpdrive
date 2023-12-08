@@ -75,135 +75,135 @@
 //   }
 // }
 /*--------------------*/
-const sections = document.querySelectorAll(".content-section");
-
-let scrolling = false;
-
-window.addEventListener(
-  "wheel",
-  function (e) {
-    if (scrolling) return;
-    const scrollDirection = e.deltaY > 0 ? 1 : -1;
-    let nearestSectionIndex = -1;
-    let minDistance = Number.MAX_VALUE;
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-      const distance = Math.abs(rect.top);
-
-      if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
-        nearestSectionIndex = index;
-        minDistance = distance;
-      } else if (
-        scrollDirection === -1 &&
-        rect.top < 0 &&
-        distance < minDistance
-      ) {
-        nearestSectionIndex = index;
-        minDistance = distance;
-      }
-    });
-
-    if (nearestSectionIndex !== -1) {
-      const targetSection = sections[nearestSectionIndex];
-      const targetOffset =
-        targetSection.getBoundingClientRect().top + window.scrollY;
-
-      const duration = 300;
-      const start = window.scrollY;
-      const startTime = performance.now();
-
-      scrolling = true;
-
-      function scroll() {
-        const now = performance.now();
-        const elapsed = now - startTime;
-        const progress = Math.min(1, elapsed / duration);
-
-        window.scrollTo(0, start + progress * (targetOffset - start));
-
-        if (progress < 1) {
-          requestAnimationFrame(scroll);
-        } else {
-          scrolling = false;
-        }
-      }
-      requestAnimationFrame(scroll);
-    }
-  },
-  { passive: true }
-);
+// const sections = document.querySelectorAll(".content-section");
 
 // let scrolling = false;
-let startY;
 
-window.addEventListener("wheel", handleScroll, { passive: true });
-window.addEventListener("touchstart", onTouchStart, { passive: true });
-window.addEventListener("touchmove", onTouchMove, { passive: true });
+// window.addEventListener(
+//   "wheel",
+//   function (e) {
+//     if (scrolling) return;
+//     const scrollDirection = e.deltaY > 0 ? 1 : -1;
+//     let nearestSectionIndex = -1;
+//     let minDistance = Number.MAX_VALUE;
+//     sections.forEach((section, index) => {
+//       const rect = section.getBoundingClientRect();
+//       const distance = Math.abs(rect.top);
 
-function handleScroll(e) {
-  if (scrolling) return;
-  const scrollDirection = e.deltaY > 0 ? 1 : -1;
-  scroll(scrollDirection);
-}
+//       if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
+//         nearestSectionIndex = index;
+//         minDistance = distance;
+//       } else if (
+//         scrollDirection === -1 &&
+//         rect.top < 0 &&
+//         distance < minDistance
+//       ) {
+//         nearestSectionIndex = index;
+//         minDistance = distance;
+//       }
+//     });
 
-function onTouchStart(e) {
-  if (scrolling) return;
-  startY = e.touches[0].clientY;
-}
+//     if (nearestSectionIndex !== -1) {
+//       const targetSection = sections[nearestSectionIndex];
+//       const targetOffset =
+//         targetSection.getBoundingClientRect().top + window.scrollY;
 
-function onTouchMove(e) {
-  if (scrolling) return;
-  const deltaY = (e.touches[0].clientY - startY) * 0.1;
-  const scrollDirection = deltaY > 0 ? 1 : -1;
-  scroll(scrollDirection);
-}
+//       const duration = 300;
+//       const start = window.scrollY;
+//       const startTime = performance.now();
 
-function scroll(scrollDirection) {
-  let nearestSectionIndex = -1;
-  let minDistance = Number.MAX_VALUE;
+//       scrolling = true;
 
-  sections.forEach((section, index) => {
-    const rect = section.getBoundingClientRect();
-    const distance = Math.abs(rect.top);
+//       function scroll() {
+//         const now = performance.now();
+//         const elapsed = now - startTime;
+//         const progress = Math.min(1, elapsed / duration);
 
-    if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
-      nearestSectionIndex = index;
-      minDistance = distance;
-    } else if (
-      scrollDirection === -1 &&
-      rect.top < 0 &&
-      distance < minDistance
-    ) {
-      nearestSectionIndex = index;
-      minDistance = distance;
-    }
-  });
+//         window.scrollTo(0, start + progress * (targetOffset - start));
 
-  if (nearestSectionIndex !== -1) {
-    const targetSection = sections[nearestSectionIndex];
-    const targetOffset =
-      targetSection.getBoundingClientRect().top + window.scrollY;
+//         if (progress < 1) {
+//           requestAnimationFrame(scroll);
+//         } else {
+//           scrolling = false;
+//         }
+//       }
+//       requestAnimationFrame(scroll);
+//     }
+//   },
+//   { passive: true }
+// );
 
-    const duration = 300;
-    const start = window.scrollY;
-    const startTime = performance.now();
+// let scrolling = false;
+// let startY;
 
-    scrolling = true;
+// window.addEventListener("wheel", handleScroll, { passive: true });
+// window.addEventListener("touchstart", onTouchStart, { passive: true });
+// window.addEventListener("touchmove", onTouchMove, { passive: true });
 
-    function scrollAnimation() {
-      const now = performance.now();
-      const elapsed = now - startTime;
-      const progress = Math.min(1, elapsed / duration);
+// function handleScroll(e) {
+//   if (scrolling) return;
+//   const scrollDirection = e.deltaY > 0 ? 1 : -1;
+//   scroll(scrollDirection);
+// }
 
-      window.scrollTo(0, start + progress * (targetOffset - start));
+// function onTouchStart(e) {
+//   if (scrolling) return;
+//   startY = e.touches[0].clientY;
+// }
 
-      if (progress < 1) {
-        requestAnimationFrame(scrollAnimation);
-      } else {
-        scrolling = false;
-      }
-    }
+// function onTouchMove(e) {
+//   if (scrolling) return;
+//   const deltaY = (e.touches[0].clientY - startY) * 0.1;
+//   const scrollDirection = deltaY > 0 ? 1 : -1;
+//   scroll(scrollDirection);
+// }
 
-    requestAnimationFrame(scrollAnimation);
-  }
-}
+// function scroll(scrollDirection) {
+//   let nearestSectionIndex = -1;
+//   let minDistance = Number.MAX_VALUE;
+
+//   sections.forEach((section, index) => {
+//     const rect = section.getBoundingClientRect();
+//     const distance = Math.abs(rect.top);
+
+//     if (scrollDirection === 1 && rect.top > 0 && distance < minDistance) {
+//       nearestSectionIndex = index;
+//       minDistance = distance;
+//     } else if (
+//       scrollDirection === -1 &&
+//       rect.top < 0 &&
+//       distance < minDistance
+//     ) {
+//       nearestSectionIndex = index;
+//       minDistance = distance;
+//     }
+//   });
+
+//   if (nearestSectionIndex !== -1) {
+//     const targetSection = sections[nearestSectionIndex];
+//     const targetOffset =
+//       targetSection.getBoundingClientRect().top + window.scrollY;
+
+//     const duration = 300;
+//     const start = window.scrollY;
+//     const startTime = performance.now();
+
+//     scrolling = true;
+
+//     function scrollAnimation() {
+//       const now = performance.now();
+//       const elapsed = now - startTime;
+//       const progress = Math.min(1, elapsed / duration);
+
+//       window.scrollTo(0, start + progress * (targetOffset - start));
+
+//       if (progress < 1) {
+//         requestAnimationFrame(scrollAnimation);
+//       } else {
+//         scrolling = false;
+//       }
+//     }
+
+//     requestAnimationFrame(scrollAnimation);
+//   }
+// }
