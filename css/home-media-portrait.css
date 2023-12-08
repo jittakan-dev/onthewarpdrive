@@ -7,55 +7,55 @@
   .c0 {
     width: 160dvh;
     height: 160dvh;
-    background-color: #014c50;
+    background-color: #014044;
     z-index: 0;
   }
   .c1 {
     width: 140dvh;
     height: 140dvh;
-    background-color: #01464a;
+    background-color: #013b3e;
     z-index: 1;
   }
   .c2 {
     width: 115dvh;
     height: 115dvh;
-    background-color: #014044;
+    background-color: #013537;
     z-index: 2;
   }
   .c3 {
     width: 100dvh;
     height: 100dvh;
-    background-color: #013b3e;
+    background-color: #012f31;
     z-index: 3;
   }
   .c4 {
     width: 85dvh;
     height: 85dvh;
-    background-color: #013537;
+    background-color: #01292b;
     z-index: 4;
   }
   .c5 {
     width: 70dvh;
     height: 70dvh;
-    background-color: #012f31;
+    background-color: #012325;
     z-index: 5;
   }
   .c6 {
     width: 55dvh;
     height: 55dvh;
-    background-color: #01292b;
+    background-color: #011d1f;
     z-index: 6;
   }
   .c7 {
     width: 40dvh;
     height: 40dvh;
-    background-color: #012325;
+    background-color: #001719;
     z-index: 7;
   }
   .c8 {
     width: 25dvh;
     height: 25dvh;
-    background-color: #001719;
+    background-color: #001212;
     z-index: 8;
   }
   .c9 {
