@@ -6,7 +6,6 @@ html {
   height: auto;
   width: 100%;
   overflow-x: hidden;
-  /*scrollable on mobile*/
   overflow-y: hidden;
   background-color: #171717;
 }
