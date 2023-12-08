@@ -11,10 +11,11 @@ html {
   background-color: #171717;
 }
 .content-section {
-  /* width: 100vw; */
-  max-width: 100vw;
-  max-height: 100vh;
-  /* height: 100vh; */
+  width: 100svw;
+  height: 100svh;
+  /* max-width: 100vw;
+  max-height: 100vh; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
