@@ -117,7 +117,6 @@
   display: inline-block;
   font-size: 1.2em;
   font-weight: 900;
-  font-family: "Ubuntu";
   letter-spacing: 0.2em;
   padding: 0.5em 0.7em;
   position: relative;
@@ -169,7 +168,7 @@
   border-radius: 0.25em;
   transform: rotate(-4deg) rotateY(15deg);
   background: #02757b;
-  font: 2rem Ubuntu;
+  font-size: 2rem;
   text-align: center;
   color: #f4f4f4;
 }

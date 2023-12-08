@@ -203,7 +203,7 @@ function shuffleArray(array) {
 function updateBearGrid() {
   shuffleArray(spans);
 
-  const bearGrid = document.getElementById("bearGrid");
+  const bearGrid = document.querySelector(".bear-grid");
   bearGrid.innerHTML = "";
 
   spans.forEach((span, index) => {

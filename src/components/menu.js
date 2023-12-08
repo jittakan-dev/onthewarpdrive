@@ -1,7 +1,6 @@
-const menuSection = document.getElementById("menu-section");
+const menuSection = document.querySelector(".menu-section");
 const hiddenMenuLinks = menuSection.querySelectorAll(".right-hidden-menu a");
-const navSection = document.getElementById("nav-section");
-const dotGroupLinks = navSection.querySelectorAll(".nav-dot-group a");
+const dotGroupLinks = document.querySelectorAll(".nav-dot-group a");
 const menuBubble = document.querySelector(".bubble-handle");
 const menuBubbleClick = menuBubble.querySelector(".bubble-handle-button");
 const menuButton = document.querySelector(".bubble-button");

@@ -96,7 +96,7 @@
   background-color: transparent;
 }
 /* Menu */
-.hidden-menu {
+.menu-section {
   position: fixed;
   left: 0;
   top: -110%;
@@ -152,7 +152,7 @@
   align-items: start;
   color: #dee2e6;
 }
-.hidden-menu.active {
+.menu-section.active {
   top: 0;
 }
 .right-hidden-menu {
@@ -175,7 +175,6 @@
   width: 50%;
 }
 .right-hidden-menu a {
-  font-family: "Ubuntu";
   font-size: 3rem;
   font-weight: 700;
   color: white;
