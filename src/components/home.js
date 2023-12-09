@@ -18,6 +18,8 @@ const weAre = document.querySelectorAll(".we-are");
 const weGuide = document.querySelectorAll(".we-guide");
 const weLayer1 = document.querySelector(".we-layer-1");
 const weLayer2 = document.querySelector(".we-layer-2");
+const worldSubText = document.querySelector(".world-sub-text");
+const moreDetailA = document.querySelectorAll(".world-base-more-detail a");
 
 function changeInBalloon() {
   circle_0.style.animation = "pulse-bold 1.2s ease-out infinite";
