@@ -72,9 +72,10 @@
   } */
   /*-----------------------*/
   .world-core {
-    width: 120dvh;
-    height: 120dvh;
+    width: 125dvh;
+    height: 125dvh;
     bottom: -60%;
+    scale: 0.8;
   }
   /*------------------------*/
   .world-bear {
@@ -136,14 +137,16 @@
   .world-base-more {
     font-size: 0.8rem;
   }
+  /*------------------------FONT----------------------*/
+  /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
 }
-/* @media screen and (max-width: 319px) {
-  .world-core {
+@media screen and (max-width: 319px) {
+  /* .world-core {
     width: 125dvh;
     height: 125dvh;
     bottom: -60%;
     scale: 0.72;
-  }
+  } */
   .world-bear {
     top: 50%;
     left: -8%;
@@ -157,8 +160,9 @@
   }
   .we-layer-1,
   .we-layer-2 {
-    height: 2rem; 
+    height: 2rem; /***-------------------***/
   }
+  /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
   .bear-grid {
     font-size: 1.6rem;
   }
@@ -189,7 +193,8 @@
       height: 12dvh;
     }
   }
-} */
+  /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
+}
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /*--------------GENERAL STYLES--------------*/
   .world-bear {
