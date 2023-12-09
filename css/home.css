@@ -102,12 +102,8 @@
   bottom: -82%;
   transform-origin: center;
   z-index: 8;
-  -webkit-transition: -webkit-transform 2s
-    cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -moz-transition: -moz-transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -ms-transition: -ms-transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -o-transition: -o-transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* border: 2px solid red; */
 }
 .world-core-ribbon {
   z-index: 12;
@@ -260,37 +256,31 @@
     width: 0;
     height: 0;
     opacity: 0.5;
-    background-color: #001719;
+    background-color: #000c0c;
   }
   35% {
-    width: 30dvh;
-    height: 30dvh;
-    opacity: 1;
-    background-color: #012325;
-  }
-  55% {
     width: 50dvh;
     height: 50dvh;
     opacity: 1;
-    background-color: #012f31;
+    background-color: #001719;
   }
-  70% {
+  55% {
     width: 70dvh;
     height: 70dvh;
     opacity: 1;
-    background-color: #013b3e;
+    background-color: #012325;
   }
-  80% {
+  70% {
     width: 100dvh;
     height: 100dvh;
-    opacity: 0.5;
-    background-color: #01464a;
+    opacity: 0.3;
+    background-color: #012f31;
   }
   100% {
-    width: 140dvh;
-    height: 140dvh;
+    width: 150dvh;
+    height: 150dvh;
     opacity: 0;
-    background-color: #015256;
+    background-color: #013b3e;
   }
 }
 .world-bear {
