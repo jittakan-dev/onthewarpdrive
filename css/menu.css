@@ -241,7 +241,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 .nav-dot-group-dop div {
-  background-color: #092c3d;
+  background-color: #01464a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav-dot-group a {
@@ -250,7 +250,7 @@
 }
 .nav-dot-group a:hover {
   color: #171717;
-  background-color: #457b9d;
+  background-color: #db460c;
 }
 .navLinkActive {
   background-color: #359195;
