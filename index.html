@@ -633,14 +633,18 @@
     </script> -->
     <!-- <script src="src/components/global-components.js"></script> -->
     <script>
-      function updateWindowSize() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        document.querySelector(".windowSize").textContent =
-          " | width : " + window.innerWidth + " height : " + window.innerHeight;
+      function scrollWin() {
+        window.scrollTo(0, 0);
       }
-      window.addEventListener("resize", updateWindowSize);
-      window.addEventListener("load", updateWindowSize);
+      // function updateWindowSize() {
+      //   const width = window.innerWidth;
+      //   const height = window.innerHeight;
+      //   document.querySelector(".windowSize").textContent =
+      //     " | width : " + window.innerWidth + " height : " + window.innerHeight;
+      // }
+      // window.addEventListener("resize", updateWindowSize);
+      // window.addEventListener("load", updateWindowSize);
+      scrollWin();
     </script>
     <script src="src/components/main.js"></script>
     <script src="src/components/menu.js"></script>
