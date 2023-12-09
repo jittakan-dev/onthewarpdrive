@@ -11,8 +11,9 @@ html {
 }
 .content-section {
   width: 100dvw;
-  height: calc(100% - 40px);
-
+  height: 100dvh;
+  max-width: 100dvw;
+  max-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
