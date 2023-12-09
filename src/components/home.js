@@ -37,14 +37,6 @@ function changeOutBalloon() {
   worldBallonImg.style.filter =
     "drop-shadow(0rem 0rem 0.2rem rgba(40, 138, 143, 0.2)) brightness(90%)";
 }
-// function changeInArrow() {
-//   arrowSignImg.style.filter =
-//     "drop-shadow(0.1rem 0.1rem 0.5rem rgba(159, 238, 180, 0.7)) brightness(130%)";
-// }
-// function changeOutArrow() {
-//   arrowSignImg.style.filter =
-//     "drop-shadow(-0.25rem 0.25rem 0.2rem rgba(32, 32, 32, 0.8))";
-// }
 let isRotationAllowed = false;
 
 function rotateWorld(degrees, index) {

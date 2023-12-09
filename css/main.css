@@ -6,7 +6,7 @@ html {
   height: auto;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   background-color: #171717;
 }
 .content-section {
@@ -24,7 +24,6 @@ html {
   overflow: hidden;
   background-color: #001719;
 }
-
 .windowSize {
   position: fixed;
   top: 0;

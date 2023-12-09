@@ -1,5 +1,9 @@
 /*----------------------------------------------------------------------PORTRAIT------------------------------*/
 @media screen and (max-width: 479px) {
+  body,
+  html {
+    overflow-y: hidden;
+  }
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
   .world-background-circle {
     top: 75%;
@@ -71,16 +75,15 @@
     scale: 0.8;
   }
   .world-bear {
-    top: 52.5%;
-    left: 0;
+    top: 50%;
+    left: -4%;
     transform: rotate(-110deg);
     width: 25.5dvh;
     height: 15dvh;
   }
-  .world-core-ribbon {
-    width: 120%;
+  .world-bear-sparkle {
+    width: 15dvh;
   }
-
   .world-control-group {
     top: 5%;
     width: 90dvw;
@@ -90,6 +93,8 @@
   }
   .world-title-foma {
     padding: 1% 0 1% 0;
+    font-size: 2.5rem;
+    letter-spacing: -4px;
   }
   .sub-text-mobile {
     display: block;
@@ -110,18 +115,10 @@
   }
   .we-layer-1,
   .we-layer-2 {
-    height: 2.2rem; /***-------------------***/
+    height: 2.1rem;
   }
   .world-text {
     font-size: 1.4rem;
-  }
-  .world-sub-text {
-    font-size: 0.8rem;
-  }
-
-  .world-title-foma {
-    font-size: 2.5rem;
-    letter-spacing: -4px;
   }
   .world-quote-box {
     font-size: 0.8rem;
@@ -139,20 +136,11 @@
     bottom: -60%;
     scale: 0.72;
   }
-  .world-bear {
-    top: 50%;
-    left: -8%;
-  }
   .world-bear-sparkle {
     top: -23%;
-    width: 15dvh;
   }
   .world-control-group {
     width: 95dvw;
-  }
-  .we-layer-1,
-  .we-layer-2 {
-    height: 2rem; /***-------------------***/
   }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
   .bear-grid {
@@ -169,30 +157,17 @@
     height: 13.5dvh;
     font-size: 0.75rem;
   }
-  .world-title-foma {
-    font-size: 2.5rem;
-    letter-spacing: -4px;
-  }
   .world-quote-box {
     font-size: 0.8rem;
   }
   .world-base-more {
     font-size: 0.8rem;
   }
-
-  @media (min-height: 588px) {
-    .world-sub-text {
-      height: 12dvh;
-    }
-  }
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /*--------------GENERAL STYLES--------------*/
-  .world-bear {
-    top: 50%;
-    left: -2%;
-  }
+
   .world-core {
     scale: 0.8;
   }
@@ -218,7 +193,6 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
     }
   }
   /* IPHONE SE NEW,IPHONE 6,7,8  */
@@ -232,7 +206,6 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
     }
     .world-core-ribbon {
       font-size: 0.95rem;
@@ -244,10 +217,6 @@
     .world-sub-text {
       height: 14dvh;
       font-size: 0.85rem;
-    }
-    .world-title-foma {
-      font-size: 2.5rem;
-      letter-spacing: -4px;
     }
     .world-quote-box {
       font-size: 0.9rem;
@@ -270,7 +239,6 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
     }
     .bear-grid {
       font-size: 2rem;
@@ -285,11 +253,6 @@
     .world-sub-text {
       height: 12.5dvh;
       font-size: 0.92rem;
-    }
-
-    .world-title-foma {
-      font-size: 2.5rem;
-      letter-spacing: -4px;
     }
     .world-quote-box {
       font-size: 1rem;
@@ -312,7 +275,6 @@
     }
     .world-bear-sparkle {
       top: -12%;
-      width: 15dvh;
     }
     .bear-grid {
       font-size: 2.25rem;
@@ -327,11 +289,6 @@
     .world-sub-text {
       height: 12dvh;
       font-size: 1rem;
-    }
-
-    .world-title-foma {
-      font-size: 2.5rem;
-      letter-spacing: -4px;
     }
     .world-quote-box {
       font-size: 1rem;
