@@ -12,6 +12,7 @@ html {
 .content-section {
   width: 100dvw;
   height: 100dvh;
+  height: calc(var(--vh, 1vh) * 100);
   max-width: 100dvw;
   max-height: 100dvh;
   display: flex;

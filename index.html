@@ -641,6 +641,11 @@
       }
       window.addEventListener("resize", updateWindowSize);
       window.addEventListener("load", updateWindowSize);
+      window.addEventListener("resize", () => {
+        // We execute the same script as before
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
     </script>
     <script src="src/components/main.js"></script>
     <script src="src/components/menu.js"></script>
