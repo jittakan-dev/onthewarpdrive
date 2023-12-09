@@ -71,11 +71,11 @@
     scale: 0.8;
   } */
   /*-----------------------*/
-  .world-core {
+  /* .world-core {
     width: 120dvh;
     height: 120dvh;
     bottom: -60%;
-  }
+  } */
   /*------------------------*/
   .world-bear {
     top: 52.5%;
@@ -136,10 +136,60 @@
   .world-base-more {
     font-size: 0.8rem;
   }
-  /*------------------------FONT----------------------*/
-  /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
 }
+/* @media screen and (max-width: 319px) {
+  .world-core {
+    width: 125dvh;
+    height: 125dvh;
+    bottom: -60%;
+    scale: 0.72;
+  }
+  .world-bear {
+    top: 50%;
+    left: -8%;
+  }
+  .world-bear-sparkle {
+    top: -23%;
+    width: 15dvh;
+  }
+  .world-control-group {
+    width: 95dvw;
+  }
+  .we-layer-1,
+  .we-layer-2 {
+    height: 2rem; 
+  }
+  .bear-grid {
+    font-size: 1.6rem;
+  }
+  .world-core-ribbon {
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+  }
+  .world-text {
+    font-size: 1.62rem;
+  }
+  .world-sub-text {
+    height: 13.5dvh;
+    font-size: 0.75rem;
+  }
+  .world-title-foma {
+    font-size: 2.5rem;
+    letter-spacing: -4px;
+  }
+  .world-quote-box {
+    font-size: 0.8rem;
+  }
+  .world-base-more {
+    font-size: 0.8rem;
+  }
 
+  @media (min-height: 588px) {
+    .world-sub-text {
+      height: 12dvh;
+    }
+  }
+} */
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /*--------------GENERAL STYLES--------------*/
   .world-bear {
