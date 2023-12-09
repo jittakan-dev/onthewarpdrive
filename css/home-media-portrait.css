@@ -71,11 +71,11 @@
     scale: 0.8;
   } */
   /*-----------------------*/
-  /* .world-core {
+  .world-core {
     width: 120dvh;
     height: 120dvh;
     bottom: -60%;
-  } */
+  }
   /*------------------------*/
   .world-bear {
     top: 52.5%;
