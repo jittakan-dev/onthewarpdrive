@@ -256,31 +256,37 @@
     width: 0;
     height: 0;
     opacity: 0.5;
-    background-color: #000c0c;
-  }
-  35% {
-    width: 50dvh;
-    height: 50dvh;
-    opacity: 1;
     background-color: #001719;
   }
-  55% {
-    width: 70dvh;
-    height: 70dvh;
+  35% {
+    width: 30dvh;
+    height: 30dvh;
     opacity: 1;
     background-color: #012325;
   }
-  70% {
-    width: 100dvh;
-    height: 100dvh;
-    opacity: 0.3;
+  55% {
+    width: 50dvh;
+    height: 50dvh;
+    opacity: 1;
     background-color: #012f31;
   }
-  100% {
-    width: 150dvh;
-    height: 150dvh;
-    opacity: 0;
+  70% {
+    width: 70dvh;
+    height: 70dvh;
+    opacity: 1;
     background-color: #013b3e;
+  }
+  80% {
+    width: 100dvh;
+    height: 100dvh;
+    opacity: 0.5;
+    background-color: #01464a;
+  }
+  100% {
+    width: 140dvh;
+    height: 140dvh;
+    opacity: 0;
+    background-color: #015256;
   }
 }
 .world-bear {

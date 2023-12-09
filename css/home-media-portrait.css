@@ -64,12 +64,20 @@
     background-color: #000c0c;
     z-index: 9;
   }
-  .world-core {
+  /* .world-core {
     width: 145dvh;
     height: 145dvh;
     bottom: -71%;
     scale: 0.8;
+  } */
+  /*-----------------------*/
+  .world-core {
+    width: 125dvh;
+    height: 125dvh;
+    bottom: -60%;
+    scale: 0.8;
   }
+  /*------------------------*/
   .world-bear {
     top: 52.5%;
     left: 0;
@@ -133,12 +141,12 @@
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
 }
 @media screen and (max-width: 319px) {
-  .world-core {
+  /* .world-core {
     width: 125dvh;
     height: 125dvh;
     bottom: -60%;
     scale: 0.72;
-  }
+  } */
   .world-bear {
     top: 50%;
     left: -8%;
@@ -193,9 +201,9 @@
     top: 50%;
     left: -2%;
   }
-  .world-core {
+  /* .world-core {
     scale: 0.8;
-  }
+  } */
   .world-control-group {
     width: 80dvw;
   }
@@ -258,9 +266,9 @@
   }
   /*Galaxy S8+, IPhone 12 PRO,IPHONE 6+,7+,8+,IPHONE X */
   @media (min-height: 669px) and (max-height: 844px) {
-    .world-core {
+    /* .world-core {
       scale: 0.7;
-    }
+    } */
     .world-control-group {
       width: 85dvw;
     }
@@ -300,9 +308,9 @@
   }
   /* Pixel 7, Galaxy S20 ultra, Galaxy A51/71,IPhone XR,IPHONE 14 PRO MAX */
   @media (min-height: 845px) {
-    .world-core {
+    /* .world-core {
       scale: 0.7;
-    }
+    } */
     .world-control-group {
       width: 88dvw;
     }
