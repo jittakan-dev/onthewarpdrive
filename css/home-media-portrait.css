@@ -4,6 +4,9 @@
   html {
     overflow-y: hidden;
   }
+  .world-base-more {
+    display: none;
+  }
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
   .world-background-circle {
     top: 75%;
@@ -88,13 +91,24 @@
     top: 5%;
     width: 90dvw;
   }
-  .world-base-text {
-    height: 8dvh;
+  .world-base {
+    height: 16dvh;
+    justify-content: center;
+    border: none;
+  }
+  .world-base-top {
+    width: 100%;
+    border: none;
+  }
+  .world-base-bottom {
+    display: none;
   }
   .world-title-foma {
+    top: 50%;
+    transform: translate(0, -50%);
     padding: 1% 0 1% 0;
     font-size: 2.5rem;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
   .sub-text-mobile {
     display: block;
@@ -123,9 +137,7 @@
   .world-quote-box {
     font-size: 0.8rem;
   }
-  .world-base-more {
-    font-size: 0.8rem;
-  }
+
   /*------------------------FONT----------------------*/
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
 }
@@ -160,9 +172,7 @@
   .world-quote-box {
     font-size: 0.8rem;
   }
-  .world-base-more {
-    font-size: 0.8rem;
-  }
+
   /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -221,9 +231,6 @@
     .world-quote-box {
       font-size: 0.9rem;
     }
-    .world-base-more {
-      font-size: 0.9rem;
-    }
   }
   /*Galaxy S8+, IPhone 12 PRO,IPHONE 6+,7+,8+,IPHONE X */
   @media (min-height: 669px) and (max-height: 844px) {
@@ -257,9 +264,6 @@
     .world-quote-box {
       font-size: 1rem;
     }
-    .world-base-more {
-      font-size: 1rem;
-    }
   }
   /* Pixel 7, Galaxy S20 ultra, Galaxy A51/71,IPhone XR,IPHONE 14 PRO MAX */
   @media (min-height: 845px) {
@@ -291,9 +295,6 @@
       font-size: 1rem;
     }
     .world-quote-box {
-      font-size: 1rem;
-    }
-    .world-base-more {
       font-size: 1rem;
     }
   }

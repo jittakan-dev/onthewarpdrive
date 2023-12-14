@@ -8,9 +8,7 @@ menuBubble.addEventListener("touchstart", startDrag);
 
 function startDrag(e) {
   e.preventDefault();
-
   isDragging = true;
-
   menuBubbleRect = menuBubble.getBoundingClientRect();
   menuButtonRect = menuButton.getBoundingClientRect();
   viewportRect = {
@@ -19,12 +17,9 @@ function startDrag(e) {
     right: window.innerWidth,
     bottom: window.innerHeight,
   };
-
   const offsetX = menuBubbleRect.width / 2;
   const offsetY = menuBubbleRect.height / 2;
-
   menuBubble.classList.add("grabbing");
-
   if (e.type === "mousedown") {
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseup", handleMouseUp);
@@ -48,8 +43,6 @@ function startDrag(e) {
     if (isDragging) {
       let newX = clientX - offsetX - menuButtonRect.width / 2;
       let newY = clientY - offsetY - menuButtonRect.height / 2;
-
-      // Ensure the menuBubble stays within the viewport
       newX = Math.max(
         viewportRect.left,
         Math.min(viewportRect.right - menuBubbleRect.width * 1.77, newX)
@@ -58,11 +51,8 @@ function startDrag(e) {
         viewportRect.top,
         Math.min(viewportRect.bottom - menuBubbleRect.height * 1.5, newY)
       );
-
       menuButton.style.left = `${newX}px`;
       menuButton.style.top = `${newY}px`;
-
-      // Check if the menuBubble is within a section and update colors if needed
       sections.forEach((section) => {
         const sectionRect = section.getBoundingClientRect();
         if (
@@ -146,63 +136,19 @@ function getActiveSection() {
 }
 
 function updateColors(sectionId) {
-  hiddenMenuLinks.forEach((link) => {
-    link.classList.remove("bubbleLinkActive");
-  });
-  dotGroupLinks.forEach((link) => {
-    link.classList.remove("navLinkActive");
-  });
-  if (sectionId === "home") {
-    menuBubble.style.backgroundColor = "#EBEBEB";
-    menuButtonClick.style.backgroundColor = "#EBEBEB";
-    menuButton.style.backgroundColor = "#EBEBEB";
-    menuBubbleClick.style.backgroundColor = "#212529";
-    hiddenMenuLinks[0].classList.add("bubbleLinkActive");
-    dotGroupLinks[0].classList.add("navLinkActive");
-  } else if (sectionId === "work") {
-    menuBubble.style.backgroundColor = "#02757b"; //01874b
-    menuButtonClick.style.backgroundColor = "#02757b";
-    menuButton.style.backgroundColor = "#02757b";
-    menuBubbleClick.style.backgroundColor = "#bebebe";
-    hiddenMenuLinks[1].classList.add("bubbleLinkActive");
-    dotGroupLinks[1].classList.add("navLinkActive");
-  } else if (sectionId === "about") {
-    menuBubble.style.backgroundColor = "#02757b";
-    menuButtonClick.style.backgroundColor = "#02757b";
-    menuButton.style.backgroundColor = "#02757b";
-    menuBubbleClick.style.backgroundColor = "#bebebe";
-    hiddenMenuLinks[2].classList.add("bubbleLinkActive");
-    dotGroupLinks[2].classList.add("navLinkActive");
-  }
+  const colors = {
+    home: { bubble: "#EBEBEB", click: "#212529" },
+    work: { bubble: "#02757b", click: "#bebebe" },
+    about: { bubble: "#02757b", click: "#bebebe" },
+  };
+  hiddenMenuLinks.forEach((link) => link.classList.remove("bubbleLinkActive"));
+  dotGroupLinks.forEach((link) => link.classList.remove("navLinkActive"));
+  const { bubble, click } = colors[sectionId] || colors.home;
+  menuBubble.style.backgroundColor = bubble;
+  menuButtonClick.style.backgroundColor = bubble;
+  menuButton.style.backgroundColor = bubble;
+  menuBubbleClick.style.backgroundColor = click;
+  const index = Math.max(0, ["home", "work", "about"].indexOf(sectionId));
+  hiddenMenuLinks[index].classList.add("bubbleLinkActive");
+  dotGroupLinks[index].classList.add("navLinkActive");
 }
-// dotGroupLinks.forEach((link) => {
-//   link.style.backgroundColor = "#039fa8";
-// });
-// if (sectionId === "home") {
-//   menuBubble.style.backgroundColor = "#EBEBEB";
-//   menuButtonClick.style.backgroundColor = "#EBEBEB";
-//   menuButton.style.backgroundColor = "#EBEBEB";
-//   menuBubbleClick.style.backgroundColor = "#171717";
-//   hiddenMenuLinks[0].classList.add("bubbleLinkActive"); // Add active class to HOME link
-//   dotGroupLinks[0].style.backgroundColor = "#039fa8";
-//   dotGroupLinks[1].style.backgroundColor = "#2e8b57";
-//   dotGroupLinks[2].style.backgroundColor = "#2e8b57";
-// } else if (sectionId === "work") {
-//   menuBubble.style.backgroundColor = "#171717";
-//   menuButtonClick.style.backgroundColor = "#171717";
-//   menuButton.style.backgroundColor = "#171717";
-//   menuBubbleClick.style.backgroundColor = "#EBEBEB";
-//   hiddenMenuLinks[1].classList.add("bubbleLinkActive");
-//   dotGroupLinks[1].style.backgroundColor = "#039fa8";
-//   dotGroupLinks[2].style.backgroundColor = "#2e8b57";
-//   dotGroupLinks[0].style.backgroundColor = "#2e8b57";
-// } else if (sectionId === "about") {
-//   menuBubble.style.backgroundColor = "#039fa8";
-//   menuButtonClick.style.backgroundColor = "#039fa8";
-//   menuButton.style.backgroundColor = "#039fa8";
-//   menuBubbleClick.style.backgroundColor = "#bebebe";
-//   hiddenMenuLinks[2].classList.add("bubbleLinkActive");
-//   dotGroupLinks[2].style.backgroundColor = "#039fa8";
-//   dotGroupLinks[1].style.backgroundColor = "#2e8b57";
-//   dotGroupLinks[0].style.backgroundColor = "#2e8b57";
-// }

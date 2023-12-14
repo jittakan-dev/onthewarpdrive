@@ -1,5 +1,5 @@
 const menuSection = document.querySelector(".menu-section");
-const hiddenMenuLinks = menuSection.querySelectorAll(".right-hidden-menu a");
+const hiddenMenuLinks = document.querySelectorAll(".right-menu a");
 const dotGroupLinks = document.querySelectorAll(".nav-dot-group a");
 const menuBubble = document.querySelector(".bubble-handle");
 const menuBubbleClick = menuBubble.querySelector(".bubble-handle-button");
@@ -7,41 +7,22 @@ const menuButton = document.querySelector(".bubble-button");
 const menuButtonClick = document.querySelector(".bubble-button-hamburger");
 
 document.addEventListener("DOMContentLoaded", function () {
-  menuButtonClick.addEventListener("click", function () {
-    this.classList.toggle("menu-active");
+  const smoothScroll = () => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    document.body.style.scrollBehavior = "smooth";
+  };
+
+  const resetScrollBehavior = () => {
+    document.documentElement.style.scrollBehavior = "";
+    document.body.style.scrollBehavior = "";
+  };
+
+  const toggleMenu = () => {
+    menuButtonClick.classList.toggle("menu-active");
     menuSection.classList.toggle("active");
-  });
-  hiddenMenuLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      document.documentElement.style.scrollBehavior = "smooth";
-      document.body.style.scrollBehavior = "smooth";
-      menuSection.classList.remove("active");
-      menuButtonClick.classList.remove("menu-active");
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      scrollToSection(targetId);
-      setTimeout(() => {
-        document.documentElement.style.scrollBehavior = "";
-        document.body.style.scrollBehavior = "";
-      }, 1000);
-    });
-  });
-  dotGroupLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      document.documentElement.style.scrollBehavior = "smooth";
-      document.body.style.scrollBehavior = "smooth";
-      menuSection.classList.remove("active");
-      menuButtonClick.classList.remove("menu-active");
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      scrollToSection(targetId);
-      setTimeout(() => {
-        document.documentElement.style.scrollBehavior = "";
-        document.body.style.scrollBehavior = "";
-      }, 1000);
-    });
-  });
-  const scrollToSection = (targetId) => {
+  };
+
+  const scrollToTarget = (targetId) => {
     const targetSection = document.querySelector(targetId);
     if (targetSection) {
       const targetOffset = targetSection.getBoundingClientRect().top;
@@ -71,4 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
       requestAnimationFrame(scrollStep);
     }
   };
+
+  menuButtonClick.addEventListener("click", toggleMenu);
+
+  [...hiddenMenuLinks, ...dotGroupLinks].forEach((link) => {
+    link.addEventListener("click", (event) => {
+      smoothScroll();
+      menuSection.classList.remove("active");
+      menuButtonClick.classList.remove("menu-active");
+      event.preventDefault();
+      const targetId = link.getAttribute("href");
+      scrollToTarget(targetId);
+      setTimeout(resetScrollBehavior, 1000);
+    });
+  });
 });

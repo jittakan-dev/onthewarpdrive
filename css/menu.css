@@ -51,7 +51,7 @@
 }
 .bubble-handle-button:hover,
 .bubble-handle-button:active {
-  background-color: #db460c;
+  background-color: #4993da;
 }
 .bubble-button .hamburger-icon,
 .bubble-button .hamburger-icon::before,
@@ -134,7 +134,7 @@
   justify-content: center;
   align-items: center;
 }
-.term-group-container-left {
+.term-group-left {
   padding: 0 2% 0 2%;
   width: 31%;
   display: flex;
@@ -143,8 +143,7 @@
   color: #495057;
   border-right: 1px solid #495057;
 }
-
-.term-group-container-right {
+.term-group-right {
   padding: 0 2% 0 2%;
   width: 61%;
   display: flex;
@@ -155,7 +154,7 @@
 .menu-section.active {
   top: 0;
 }
-.right-hidden-menu {
+.right-menu {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -165,7 +164,7 @@
   width: 40%;
   padding: 1% 5% 1% 5%;
 }
-.left-hidden-menu {
+.left-menu {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -174,7 +173,7 @@
   height: 100dvh;
   width: 50%;
 }
-.right-hidden-menu a {
+.right-menu a {
   font-size: 3rem;
   font-weight: 700;
   color: #e6f1f2;
@@ -188,8 +187,8 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.right-hidden-menu a:hover, /*----------------------------------*/
-.left-hidden-menu a:hover {
+.right-menu a:hover, /*----------------------------------*/
+.left-menu a:hover {
   color: #000c0c;
   background-color: #1b8388;
   padding: 3%;
@@ -200,7 +199,6 @@
   color: #000c0c;
 }
 /*-----------------------3 DOTS SET------------------------------------*/
-
 .nav-dot-group,
 .nav-dot-group-dop {
   position: fixed;
@@ -233,7 +231,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-decoration: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -246,11 +243,10 @@
 }
 .nav-dot-group a {
   color: #b3d6d7;
-  text-decoration: none;
 }
 .nav-dot-group a:hover {
   color: #171717;
-  background-color: #db460c;
+  background-color: #4993da;
 }
 .navLinkActive {
   background-color: #359195;
