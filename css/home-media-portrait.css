@@ -100,6 +100,22 @@
     right: -0.2rem;
     top: -0.3rem;
   }
+  .world-bear {
+    top: 48%;
+    left: -5%;
+    width: 28dvh;
+    height: 16dvh;
+  }
+  .speech-bubble:before {
+    border: solid 0 transparent;
+    border-right: solid 2.4rem #4c9ce6;
+    border-bottom: solid 0.6rem #214f77;
+    bottom: 0rem;
+    left: 4rem;
+    width: 0;
+    height: 3rem;
+    transform: rotate(50deg) skewX(50deg);
+  }
   .world-text {
     position: relative;
     text-align: left;
