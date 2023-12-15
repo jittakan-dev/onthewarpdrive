@@ -8,6 +8,7 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #171717;
+  font-size: calc(0.5em + 1vw + 1vh); /*base  font size = 0.57*/
 }
 .content-section {
   width: 100dvw;
@@ -29,6 +30,6 @@ html {
   top: 0;
   z-index: 1010;
   color: red;
-  font-size: large;
+  font-size: small;
 }
 /*-----------------END content SECTION--------------------*/

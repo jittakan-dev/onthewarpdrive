@@ -1,0 +1,47 @@
+@media (orientation: landscape) {
+}
+@media (orientation: portrait) {
+  .bubble-button-hamburger,
+  .bubble-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .bubble-handle {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .bubble-handle-button {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .bubble-button .hamburger-icon,
+  .bubble-button .hamburger-icon::before,
+  .bubble-button .hamburger-icon::after {
+    height: 0.12rem;
+  }
+  .bubble-button .hamburger-icon::before {
+    top: -0.38rem;
+  }
+  .bubble-button .hamburger-icon::after {
+    bottom: -0.38rem;
+  }
+  .right-menu a {
+    margin-top: 4%;
+    padding: 5%;
+  }
+  .right-menu a:hover,
+  .left-menu a:hover {
+    color: #000c0c;
+    background-color: #1b8388;
+    padding: 8%;
+  }
+  .nav-dot-group,
+  .nav-dot-group-dop {
+    font-size: 0.65rem;
+  }
+  .nav-dot-group a,
+  .nav-dot-group-dop div {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}

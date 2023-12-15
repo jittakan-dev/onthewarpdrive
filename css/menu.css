@@ -6,9 +6,9 @@
   transform: translateY(-50%);
   background-color: #ebebeb;
   border-radius: 50%;
-  width: 8.4dvh;
-  height: 8.4dvh;
-  z-index: 1000;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1004;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,30 +22,33 @@
 .bubble-button {
   right: 0.5%;
   top: 12%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2),
+    0 0.15rem 1rem 0 rgba(0, 0, 0, 0.19);
 }
+
 .bubble-handle,
 .bubble-handle-button {
   position: absolute;
   border-radius: 50%;
-  z-index: 1001;
+  z-index: 1003;
 }
 .bubble-handle {
-  width: 4.6dvh;
-  height: 4.6dvh;
+  width: 1rem;
+  height: 1rem;
   background-color: #ebebeb;
   right: 0;
   bottom: 0;
   transform: translate(0, 70%);
   cursor: grab;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2),
+    0 0.15rem 1rem 0 rgba(0, 0, 0, 0.19);
 }
 .bubble-handle.grabbing {
   cursor: grabbing;
 }
 .bubble-handle-button {
-  width: 2.4dvh;
-  height: 2.4dvh;
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: #171717;
   transform: translate(50%, 50%);
 }
@@ -58,7 +61,7 @@
 .bubble-button .hamburger-icon::after {
   content: "";
   position: absolute;
-  height: 2.4px;
+  height: 0.082rem;
   background-color: #495057;
   transition: all 0.4s;
 }
@@ -71,10 +74,10 @@
   width: 100%;
 }
 .bubble-button .hamburger-icon::before {
-  top: -1.3dvh;
+  top: -0.32rem;
 }
 .bubble-button .hamburger-icon::after {
-  bottom: -1.3dvh;
+  bottom: -0.32rem;
 }
 .menu-active .hamburger-icon {
   background-color: transparent;
@@ -118,7 +121,7 @@
   align-items: start;
 }
 .term-group {
-  font-size: 1rem;
+  font-size: 0.5rem;
   width: 90%;
   height: 6%;
   display: flex;
@@ -141,7 +144,7 @@
   justify-content: end;
   align-items: start;
   color: #495057;
-  border-right: 1px solid #495057;
+  border-right: 0.05rem solid #495057;
 }
 .term-group-right {
   padding: 0 2% 0 2%;
@@ -174,7 +177,7 @@
   width: 50%;
 }
 .right-menu a {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #e6f1f2;
   text-decoration: none;
@@ -194,7 +197,6 @@
   padding: 3%;
 }
 .bubbleLinkActive {
-  /* background-color: #dee2e6; */
   background-color: #015256;
   color: #000c0c;
 }
@@ -205,16 +207,13 @@
   right: 0.5%;
   top: 50%;
   transform: translateY(-50%);
-  width: auto;
-  height: auto;
   z-index: 1001;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.55rem;
   font-weight: bold;
-  letter-spacing: 1.5px;
 }
 .nav-dot-group-dop {
   z-index: 1000;
@@ -224,8 +223,8 @@
   text-decoration: none;
   transition: background-color 0.3s ease, padding 0.3s ease;
   border-radius: 50%;
-  width: 4.4dvh;
-  height: 4.4dvh;
+  width: 1rem;
+  height: 1rem;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -239,7 +238,8 @@
 }
 .nav-dot-group-dop div {
   background-color: #01464a;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2),
+    0 0.15rem 1rem 0 rgba(0, 0, 0, 0.19);
 }
 .nav-dot-group a {
   color: #b3d6d7;

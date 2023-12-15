@@ -1,5 +1,6 @@
-/*----------------------------------------------------------------------PORTRAIT------------------------------*/
-@media screen and (max-width: 479px) {
+@media screen and (orientation: landscape) {
+}
+@media screen and (orientation: portrait) {
   body,
   html {
     overflow-y: hidden;
@@ -7,7 +8,6 @@
   .world-bar-more {
     display: none;
   }
-  /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
   .world-background-circle {
     top: 75%;
   }
@@ -71,45 +71,6 @@
     background-color: #000c0c;
     z-index: 9;
   }
-  .world-core {
-    width: 145dvh;
-    height: 145dvh;
-    bottom: -71%;
-    scale: 0.8;
-  }
-  .world-bear {
-    top: 50%;
-    left: -4%;
-    transform: rotate(-110deg);
-    width: 25.5dvh;
-    height: 15dvh;
-  }
-  .world-bear-sparkle {
-    width: 15dvh;
-  }
-  .world-control-group {
-    top: 5%;
-    width: 90dvw;
-  }
-  .world-bar {
-    height: 16dvh;
-    justify-content: center;
-    border: none;
-  }
-  .world-bar-top {
-    width: 100%;
-    border: none;
-  }
-  .world-bar-bottom {
-    display: none;
-  }
-  .world-bar-foma {
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 1% 0 1% 0;
-    font-size: 2.5rem;
-    letter-spacing: -3px;
-  }
   .sub-text-mobile {
     display: block;
   }
@@ -119,192 +80,80 @@
   .world-button-group {
     display: none;
   }
-  /*------------------------FONT----------------------*/
-  .bear-grid {
-    font-size: 1.4rem;
-  }
+  /*-------------------------------------------*/
   .world-core-ribbon {
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
+    width: 118%;
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: 0.17rem;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    border-width: 0.45rem;
+    height: 1.8rem;
+  }
+  .ribbon:before {
+    left: -0.2rem;
+    top: 1rem;
+  }
+  .ribbon:after {
+    right: -0.2rem;
+    top: -0.3rem;
+  }
+  .world-text {
+    position: relative;
+    text-align: left;
+    font-size: 1.6rem;
+    overflow: hidden;
   }
   .we-layer-1,
   .we-layer-2 {
-    height: 2.1rem;
-  }
-  .world-text {
-    font-size: 1.4rem;
-  }
-  .world-quote-box {
-    font-size: 0.8rem;
-  }
-
-  /*------------------------FONT----------------------*/
-  /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
-}
-@media screen and (max-width: 319px) {
-  .world-core {
-    width: 125dvh;
-    height: 125dvh;
-    bottom: -60%;
-    scale: 0.72;
-  }
-  .world-bear-sparkle {
-    top: -23%;
-  }
-  .world-control-group {
-    width: 95dvw;
-  }
-  /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
-  .bear-grid {
-    font-size: 1.6rem;
-  }
-  .world-core-ribbon {
-    font-size: 0.85rem;
-    letter-spacing: 0.15rem;
-  }
-  .world-text {
-    font-size: 1.62rem;
+    height: 1.95rem;
+    overflow: hidden;
+    margin-top: 2%;
   }
   .world-sub-text {
-    height: 13.5dvh;
+    position: relative;
+    margin-top: 5%;
+    height: 3.75rem;
+    padding: 0.75rem 0 0.9rem 0;
     font-size: 0.75rem;
+    line-height: 130%;
   }
-  .world-quote-box {
-    font-size: 0.8rem;
-  }
-
-  /*---------------------------NARROW FONT-SIZE FOR PORTRAIT-------------------------*/
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  /*--------------GENERAL STYLES--------------*/
-
-  .world-core {
-    scale: 0.8;
-  }
-  .world-control-group {
-    width: 80dvw;
-  }
-  /*--------------GENERAL STYLES--------------*/
-  /* IPhone SE OLD */
-  @media (max-height: 568px) {
-    .we-layer-1,
-    .we-layer-2 {
-      height: 1.8rem; /***-------------------***/
-    }
-    .world-text {
-      font-size: 1.55rem;
-    }
-    .world-sub-text {
-      height: 17dvh;
-      font-size: 0.82rem;
-    }
-    .bear-grid {
-      font-size: 1.5rem;
-    }
-    .world-bear-sparkle {
-      top: -12%;
-    }
-  }
-  /* IPHONE SE NEW,IPHONE 6,7,8  */
-  @media (min-height: 569px) and (max-height: 668px) {
-    .we-layer-1,
-    .we-layer-2 {
-      height: 2.4rem; /***-------------------***/
-    }
-    .bear-grid {
-      font-size: 1.65rem;
-    }
-    .world-bear-sparkle {
-      top: -12%;
-    }
-    .world-core-ribbon {
-      font-size: 0.95rem;
-      letter-spacing: 0.25rem;
-    }
-    .world-text {
-      font-size: 2rem;
-    }
-    .world-sub-text {
-      height: 14dvh;
-      font-size: 0.85rem;
-    }
-    .world-quote-box {
-      font-size: 0.9rem;
-    }
-  }
-  /*Galaxy S8+, IPhone 12 PRO,IPHONE 6+,7+,8+,IPHONE X */
-  @media (min-height: 669px) and (max-height: 844px) {
-    .world-core {
-      scale: 0.7;
-    }
+  /* narrower screensize */
+  @media screen and (max-aspect-ratio: 9/16.2) {
     .world-control-group {
       width: 85dvw;
     }
-    .we-layer-1,
-    .we-layer-2 {
-      height: 2.4rem; /***-------------------***/
+    .world-sub-text {
+      width: 82.5%;
     }
-    .world-bear-sparkle {
-      top: -12%;
+    .world-core {
+      scale: 0.625;
     }
     .bear-grid {
-      font-size: 2rem;
+      font-size: 1.68rem;
     }
-    .world-core-ribbon {
-      font-size: 1.25rem;
-      letter-spacing: 0.25rem;
-    }
-    .world-text {
-      font-size: 1.9rem;
-    }
-    .world-sub-text {
-      height: 12.5dvh;
-      font-size: 0.92rem;
-    }
-    .world-quote-box {
-      font-size: 1rem;
+    /*very narrow screen*/
+    @media screen and (max-width: 300px) {
+      .world-sub-text {
+        width: 90%;
+      }
     }
   }
-  /* Pixel 7, Galaxy S20 ultra, Galaxy A51/71,IPhone XR,IPHONE 14 PRO MAX */
-  @media (min-height: 845px) {
+  /* widener screensize */
+  @media screen and (min-aspect-ratio: 9/16.2) {
+    .world-control-group {
+      width: 85dvw;
+    }
+    .world-sub-text {
+      width: 80%;
+    }
     .world-core {
       scale: 0.7;
     }
-    .world-control-group {
-      width: 88dvw;
-    }
-    .we-layer-1,
-    .we-layer-2 {
-      height: 2.4rem; /***-------------------***/
-    }
-    .world-bear-sparkle {
-      top: -12%;
-    }
     .bear-grid {
-      font-size: 2.25rem;
-    }
-    .world-core-ribbon {
-      font-size: 1.3rem;
-      letter-spacing: 0.25rem;
-    }
-    .world-text {
-      font-size: 2rem;
-    }
-    .world-sub-text {
-      height: 12dvh;
-      font-size: 1rem;
-    }
-    .world-quote-box {
-      font-size: 1rem;
+      font-size: 1.55rem;
     }
   }
 }
-/* @media screen and (min-width: 480px) and (max-width: 721px) { */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  /*SURFACE DUO ------------------------- PORTRAIT OPEN*/
-  /*-------------------------------------SPACE ADJUSTMENT------*/
-  /*-------------------------------------SPACE ADJUSTMENT------*/
-  @media (min-height: 845px) {
-  }
-}
-/*----------------------------------------------------------------------PORTRAIT------------------------------*/

@@ -49,8 +49,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/menu-media-portrait.css" />
-    <link rel="stylesheet" href="css/menu-media-landscape.css" />
+    <link rel="stylesheet" href="css/menu-media.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/home-media-portrait.css" />
     <link rel="stylesheet" href="css/home-media-landscape.css" />
@@ -94,7 +93,6 @@
 
     <!-- --------   END preload   ------------ -->
     <!-- --------   START header menu   ------------ -->
-    <!-- <div class="windowSize"></div> -->
     <header>
       <nav role="navigation">
         <div class="bubble-button">
@@ -350,19 +348,22 @@
             <div class="world-button-group">
               <div class="world-button worldActive" onclick="rotateWorld(0,1)">
                 We do &nbsp;
-                <i class="fa-solid fa-hammer"></i>
+                <!-- <i class="fa-solid fa-hammer"></i> -->
+                <i class="fa-solid fa-angle-right"></i>
                 <i class="fa-solid fa-circle-dot"></i>
               </div>
               <span>/</span>
               <div class="world-button" onclick="rotateWorld(461,2)">
                 We are &nbsp;
-                <i class="fa-solid fa-glasses"></i>
+                <!-- <i class="fa-solid fa-glasses"></i> -->
+                <i class="fa-solid fa-angle-right"></i>
                 <i class="fa-solid fa-circle-dot"></i>
               </div>
               <span>/</span>
               <div class="world-button" onclick="rotateWorld(250,3)">
                 We guide &nbsp;
-                <i class="fa-solid fa-location-dot"></i>
+                <!-- <i class="fa-solid fa-location-dot"></i> -->
+                <i class="fa-solid fa-angle-right"></i>
                 <i class="fa-solid fa-circle-dot"></i>
               </div>
             </div>
@@ -538,7 +539,6 @@
                     <span>Analytic</span>
                   </div>
                 </div>
-
                 <div class="about-title-group">
                   <i
                     class="fa-solid fa-arrow-right right-arrow"
@@ -695,7 +695,12 @@
         const width = window.innerWidth;
         const height = window.innerHeight;
         document.querySelector(".windowSize").textContent =
-          " | width : " + window.innerWidth + " height : " + window.innerHeight;
+          " | width : " +
+          window.innerWidth +
+          " height : " +
+          window.innerHeight +
+          "ratio : " +
+          window.innerHeight / window.innerWidth;
       }
       window.addEventListener("resize", updateWindowSize);
       window.addEventListener("load", updateWindowSize);
