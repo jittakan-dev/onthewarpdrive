@@ -1,11 +1,13 @@
 const menuSection = document.querySelector(".menu-section");
 const hiddenMenuLinks = document.querySelectorAll(".right-menu a");
 const dotGroupLinks = document.querySelectorAll(".nav-dot-group a");
+const worldBarMoreLinks = document.querySelectorAll(".world-bar-more-link a");
 const menuBubble = document.querySelector(".bubble-handle");
 const menuBubbleClick = menuBubble.querySelector(".bubble-handle-button");
 const menuButton = document.querySelector(".bubble-button");
 const menuButtonClick = document.querySelector(".bubble-button-hamburger");
-
+const aboutContainer = document.querySelector(".about-container");
+const aboutContent = document.querySelector(".about-content");
 document.addEventListener("DOMContentLoaded", function () {
   const smoothScroll = () => {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -55,15 +57,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuButtonClick.addEventListener("click", toggleMenu);
 
-  [...hiddenMenuLinks, ...dotGroupLinks].forEach((link) => {
-    link.addEventListener("click", (event) => {
-      smoothScroll();
-      menuSection.classList.remove("active");
-      menuButtonClick.classList.remove("menu-active");
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      scrollToTarget(targetId);
-      setTimeout(resetScrollBehavior, 1000);
-    });
-  });
+  [...hiddenMenuLinks, ...dotGroupLinks, ...worldBarMoreLinks].forEach(
+    (link) => {
+      link.addEventListener("click", (event) => {
+        smoothScroll();
+        menuSection.classList.remove("active");
+        menuButtonClick.classList.remove("menu-active");
+        event.preventDefault();
+        const targetId = link.getAttribute("href");
+        if (targetId === "#contact") {
+          scrollToTarget(targetId);
+          setTimeout(() => {
+            aboutContainer.scrollTo({
+              left: aboutContent.offsetWidth + 2,
+              behavior: "smooth",
+            });
+          }, 1400);
+        } else if (targetId === "#about") {
+          scrollToTarget(targetId);
+          setTimeout(() => {
+            aboutContainer.scrollTo({
+              left: 0,
+              behavior: "smooth",
+            });
+          }, 1400);
+        }
+        scrollToTarget(targetId);
+        setTimeout(resetScrollBehavior, 1000);
+      });
+    }
+  );
 });

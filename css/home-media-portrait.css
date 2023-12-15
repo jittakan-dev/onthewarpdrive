@@ -4,7 +4,7 @@
   html {
     overflow-y: hidden;
   }
-  .world-base-more {
+  .world-bar-more {
     display: none;
   }
   /*-----------------------------PORTRAIT GENERAL SIZE ---------------------*/
@@ -91,19 +91,19 @@
     top: 5%;
     width: 90dvw;
   }
-  .world-base {
+  .world-bar {
     height: 16dvh;
     justify-content: center;
     border: none;
   }
-  .world-base-top {
+  .world-bar-top {
     width: 100%;
     border: none;
   }
-  .world-base-bottom {
+  .world-bar-bottom {
     display: none;
   }
-  .world-title-foma {
+  .world-bar-foma {
     top: 50%;
     transform: translate(0, -50%);
     padding: 1% 0 1% 0;

@@ -1,6 +1,6 @@
 // JavaScript
-const aboutContainer = document.querySelector(".about-container");
-const aboutContent = document.querySelector(".about-content");
+// const aboutContainer = document.querySelector(".about-container");
+//const aboutContent = document.querySelector(".about-content");
 const aboutToLeft = document.getElementById("AboutToLeft");
 const aboutToRight = document.getElementById("AboutToRight");
 const otwdHubButton = document.getElementById("otwdHubButton");

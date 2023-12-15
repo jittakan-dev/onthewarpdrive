@@ -701,7 +701,7 @@
 }
 /*---------------------control-group--------------------*/
 /*---------------------bar-base--------------------*/
-.world-base {
+.world-bar {
   position: absolute;
   bottom: 0;
   left: -10%;
@@ -717,7 +717,7 @@
   color: #adb5bd;
   border-top: 4px solid #000c0c;
 }
-.world-base-top {
+.world-bar-top {
   width: 100%;
   height: 80%;
   display: flex;
@@ -725,18 +725,18 @@
   padding-bottom: 1%;
   border-bottom: 2px solid #014c50;
 }
-.world-base-bottom {
+.world-bar-bottom {
   width: 100%;
   height: 20%;
 }
-.world-base-text {
+.world-bar-text {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
   width: 30%;
 }
-.world-title-foma {
+.world-bar-foma {
   top: -30%;
   position: absolute;
   text-align: left;
@@ -753,14 +753,14 @@
   font-weight: normal;
   letter-spacing: normal;
 }
-.world-base-more {
+.world-bar-more {
   width: 70%;
   color: #adb5bd;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.world-base-more-quote {
+.world-bar-more-quote {
   position: relative;
   width: 60%;
   height: 100%;
@@ -768,7 +768,7 @@
   align-items: center;
   justify-content: center;
 }
-.world-base-more-quote p {
+.world-bar-more-quote p {
   font-size: 1.1rem;
   width: 85%;
   padding: 0 4% 0 4%;
@@ -776,7 +776,7 @@
   /* border-right: 1px solid #014c50; */
   color: #02757b;
 }
-.world-base-more-link {
+.world-bar-more-link {
   position: relative;
   margin: 0;
   display: flex;
