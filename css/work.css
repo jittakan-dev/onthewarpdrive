@@ -1,7 +1,7 @@
 /*-----------------START WORK SECTION--------------------*/
 .work-menu-container {
-  width: 100dvw;
-  height: 100dvh;
+  width: 100svw;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: end;
