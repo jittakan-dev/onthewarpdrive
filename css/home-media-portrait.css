@@ -45,8 +45,37 @@
       font-size: 0.55rem;
     }
     @media screen and (max-height: 300px) {
+      .world-core {
+        bottom: -78%;
+      }
+      .world-core-ribbon {
+        font-size: 0.4rem;
+      }
+      .ribbon {
+        padding: 0.3rem 0.5rem;
+      }
+      .ribbon:before,
+      .ribbon:after {
+        border-width: 0.28rem;
+        height: 0.8rem;
+      }
+      .ribbon:before {
+        left: -0.2rem;
+        top: 0.5rem;
+      }
+      .ribbon:after {
+        right: -0.2rem;
+        top: -0.1rem;
+      }
       .world-control-group {
         width: 35dvw;
+      }
+      .world-text {
+        font-size: 1.15rem;
+      }
+      .we-layer-1,
+      .we-layer-2 {
+        height: 1.3rem;
       }
       .world-sub-text {
         width: 85%;
@@ -55,7 +84,13 @@
         font-size: 0.525rem;
       }
       .world-bar {
-        height: 4rem;
+        height: 3.8rem;
+      }
+      .world-bar-foma {
+        font-size: 2.5rem;
+      }
+      .world-quote-box {
+        font-size: 0.65rem;
       }
       .world-bear {
         top: 48%;
@@ -74,7 +109,7 @@
         transform: rotate(45deg) skewX(60deg);
       }
       .bear-grid {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
       }
     }
   }
