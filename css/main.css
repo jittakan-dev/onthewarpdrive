@@ -12,10 +12,10 @@ body {
   font-size: calc(0.5em + 1vw + 1vh); /*base  font size = 0.57*/
 }
 .content-section {
-  width: 100svw;
-  height: 100svh;
-  max-width: 100svw;
-  max-height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
+  max-width: 100dvw;
+  max-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
