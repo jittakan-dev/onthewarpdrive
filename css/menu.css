@@ -20,8 +20,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 .bubble-button {
-  right: 0.5%;
-  top: 12%;
+  right: 0.5svh;
+  top: 12svh;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2),
     0 0.15rem 1rem 0 rgba(0, 0, 0, 0.19);
 }
@@ -204,8 +204,8 @@
 .nav-dot-group,
 .nav-dot-group-dop {
   position: fixed;
-  right: 0.5%;
-  top: 50%;
+  right: 0.5svh;
+  top: 50svh;
   transform: translateY(-50%);
   z-index: 1001;
   display: flex;
