@@ -1,9 +1,88 @@
 @media screen and (orientation: landscape) {
+  .world-control-group {
+    width: 35dvw;
+  }
+  .world-text {
+    font-size: 1.45rem;
+  }
+  .we-layer-1,
+  .we-layer-2 {
+    height: 1.6rem;
+  }
+  .world-button-group {
+    display: none;
+  }
+  .world-bear {
+    top: 47%;
+    left: -4%;
+  }
+  .speech-bubble:before {
+    border: solid 0 transparent;
+    border-right: solid 2.1rem #4c9ce6;
+    border-bottom: solid 0.2rem #214f77;
+    bottom: 0.1rem;
+    left: 1.5rem;
+    width: 0;
+    height: 1.2rem;
+    transform: rotate(45deg) skewX(60deg);
+  }
+  /* smaller screensize */
+  @media screen and (max-aspect-ratio: 16.2/9) {
+    .world-sub-text {
+      width: 90%;
+      height: 4.8rem;
+      padding: 0.6rem 0 0.6rem 0;
+      font-size: 0.6rem;
+    }
+    /*very smaller screen*/
+  }
+  /* larger screensize */
+  @media screen and (min-aspect-ratio: 16.2/9) {
+    .world-sub-text {
+      width: 80%;
+      height: 3.85rem;
+      padding: 0.55rem 0 0.55rem 0;
+      font-size: 0.55rem;
+    }
+    @media screen and (max-height: 300px) {
+      .world-control-group {
+        width: 35dvw;
+      }
+      .world-sub-text {
+        width: 85%;
+        height: 3.2rem;
+        padding: 0.525rem 0 0.525rem 0;
+        font-size: 0.525rem;
+      }
+      .world-bar {
+        height: 4rem;
+      }
+      .world-bear {
+        top: 48%;
+        left: -8%;
+        width: 32dvh;
+        height: 20dvh;
+      }
+      .speech-bubble:before {
+        border: solid 0 transparent;
+        border-right: solid 2.2rem #4c9ce6;
+        border-bottom: solid 0.2rem #214f77;
+        bottom: 0.1rem;
+        left: 1.8rem;
+        width: 0;
+        height: 1.4rem;
+        transform: rotate(45deg) skewX(60deg);
+      }
+      .bear-grid {
+        font-size: 0.85rem;
+      }
+    }
+  }
 }
 @media screen and (orientation: portrait) {
   body,
   html {
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
   }
   .world-bar-more {
     display: none;
@@ -84,7 +163,6 @@
   .world-core-ribbon {
     width: 118%;
     font-size: 1.125rem;
-    font-weight: 900;
     letter-spacing: 0.17rem;
   }
   .ribbon:before,
@@ -117,19 +195,13 @@
     transform: rotate(50deg) skewX(50deg);
   }
   .world-text {
-    position: relative;
-    text-align: left;
     font-size: 1.6rem;
-    overflow: hidden;
   }
   .we-layer-1,
   .we-layer-2 {
     height: 1.95rem;
-    overflow: hidden;
-    margin-top: 2%;
   }
   .world-sub-text {
-    position: relative;
     margin-top: 5%;
     height: 3.75rem;
     padding: 0.75rem 0 0.9rem 0;
