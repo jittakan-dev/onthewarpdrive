@@ -115,10 +115,10 @@
   }
 }
 @media screen and (orientation: portrait) {
-  body,
+  /* body,
   html {
     overflow-y: hidden;
-  }
+  } */
   .world-bar-more {
     display: none;
   }
