@@ -103,8 +103,8 @@
   position: fixed;
   left: 0;
   top: -110%;
-  width: 100svw;
-  height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,8 +114,8 @@
   transition: top 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .menu-group {
-  width: 100svw;
-  height: 90svh;
+  width: 100dvw;
+  height: 90dvh;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -163,7 +163,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  height: 98svh;
+  height: 98dvh;
   width: 40%;
   padding: 1% 5% 1% 5%;
 }
@@ -173,7 +173,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100svh;
+  height: 100dvh;
   width: 50%;
 }
 .right-menu a {
@@ -253,13 +253,13 @@
 }
 .nav-dot-group a:nth-child(1),
 .nav-dot-group-dop div:nth-child(1) {
-  margin: 2svh 0 1svh 0;
+  margin: 2dvh 0 1dvh 0;
 }
 .nav-dot-group a:nth-child(2),
 .nav-dot-group-dop div:nth-child(2) {
-  margin: 1svh 0 1svh 0;
+  margin: 1dvh 0 1dvh 0;
 }
 .nav-dot-group a:nth-child(3),
 .nav-dot-group-dop div:nth-child(3) {
-  margin: 1svh 0 2svh 0;
+  margin: 1dvh 0 2dvh 0;
 }

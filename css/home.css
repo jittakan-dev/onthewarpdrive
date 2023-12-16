@@ -24,62 +24,62 @@
   border-radius: 50%;
 }
 .c0 {
-  width: 300svh;
-  height: 300svh;
+  width: 300dvh;
+  height: 300dvh;
   background-color: #014c50;
   z-index: -9;
 }
 .c1 {
-  width: 270svh;
-  height: 270svh;
+  width: 270dvh;
+  height: 270dvh;
   background-color: #01464a;
   z-index: -8;
 }
 .c2 {
-  width: 240svh;
-  height: 240svh;
+  width: 240dvh;
+  height: 240dvh;
   background-color: #014044;
   z-index: -7;
 }
 .c3 {
-  width: 210svh;
-  height: 210svh;
+  width: 210dvh;
+  height: 210dvh;
   background-color: #013b3e;
   z-index: -6;
 }
 .c4 {
-  width: 180svh;
-  height: 180svh;
+  width: 180dvh;
+  height: 180dvh;
   background-color: #013537;
   z-index: -5;
 }
 .c5 {
-  width: 150svh;
-  height: 150svh;
+  width: 150dvh;
+  height: 150dvh;
   background-color: #012f31;
   z-index: -4;
 }
 .c6 {
-  width: 120svh;
-  height: 120svh;
+  width: 120dvh;
+  height: 120dvh;
   background-color: #01292b;
   z-index: -3;
 }
 .c7 {
-  width: 90svh;
-  height: 90svh;
+  width: 90dvh;
+  height: 90dvh;
   background-color: #012325;
   z-index: -2;
 }
 .c8 {
-  width: 60svh;
-  height: 60svh;
+  width: 60dvh;
+  height: 60dvh;
   background-color: #001719;
   z-index: -1;
 }
 .c9 {
-  width: 30svh;
-  height: 30svh;
+  width: 30dvh;
+  height: 30dvh;
   background-color: #000c0c;
   z-index: 0;
 }
@@ -227,20 +227,20 @@
     border: 0.05rem solid #dee2e6;
   }
   35% {
-    width: 50svh;
-    height: 50svh;
+    width: 50dvh;
+    height: 50dvh;
     opacity: 0.7;
     border: 0.1rem solid #01292b;
   }
   70% {
-    width: 100svh;
-    height: 100svh;
+    width: 100dvh;
+    height: 100dvh;
     opacity: 0.3;
     border: 0.2rem solid #01292b;
   }
   100% {
-    width: 150svh;
-    height: 150svh;
+    width: 150dvh;
+    height: 150dvh;
     opacity: 0.1;
     border: 0.05rem solid #359195;
   }
@@ -253,32 +253,32 @@
     background-color: #001719;
   }
   35% {
-    width: 30svh;
-    height: 30svh;
+    width: 30dvh;
+    height: 30dvh;
     opacity: 0.3;
     background-color: #012325;
   }
   55% {
-    width: 50svh;
-    height: 50svh;
+    width: 50dvh;
+    height: 50dvh;
     opacity: 0.3;
     background-color: #012f31;
   }
   70% {
-    width: 70svh;
-    height: 70svh;
+    width: 70dvh;
+    height: 70dvh;
     opacity: 0.3;
     background-color: #013b3e;
   }
   80% {
-    width: 100svh;
-    height: 100svh;
+    width: 100dvh;
+    height: 100dvh;
     opacity: 0.3;
     background-color: #01464a;
   }
   100% {
-    width: 140svh;
-    height: 140svh;
+    width: 140dvh;
+    height: 140dvh;
     opacity: 0.1;
     background-color: #015256;
   }
@@ -288,8 +288,8 @@
   top: 48%;
   left: -2%;
   transform: rotatez(-110deg);
-  width: 28svh;
-  height: 14svh;
+  width: 17%;
+  height: 9%;
   z-index: 12;
   visibility: hidden;
   opacity: 0;
@@ -297,11 +297,11 @@
 }
 .world-bear-sparkle {
   position: absolute;
-  top: -6%;
+  top: 1.8%;
   left: 0%;
   transform: rotate(79deg);
-  width: 20svh;
-  height: 200svh;
+  width: 11%;
+  height: 110%;
   z-index: 7;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -439,8 +439,8 @@
 .light-halo.lh0 {
   left: -2%;
   bottom: -4%;
-  width: 12svh;
-  height: 12svh;
+  width: 9%;
+  height: 9%;
   font-size: 1.5rem;
   font-weight: 100;
   background-color: rgba(186, 227, 200, 0.2);
@@ -452,8 +452,8 @@
 .light-halo.lh1 {
   left: -4%;
   bottom: -5%;
-  width: 17svh;
-  height: 17svh;
+  width: 12%;
+  height: 12%;
   background-color: rgba(185, 235, 201, 0.1);
   border-radius: 52% 48% 69% 31% / 59% 51% 49% 41%;
   animation: animateHalo 6s infinite linear;
@@ -462,8 +462,8 @@
 .light-halo.lh2 {
   left: -5%;
   bottom: -6%;
-  width: 20svh;
-  height: 20svh;
+  width: 15%;
+  height: 15%;
   background-color: rgba(156, 226, 180, 0.08);
   border-radius: 52% 48% 76% 24% / 44% 52% 48% 56%;
   animation: animateHalo 8s infinite linear;
@@ -570,7 +570,7 @@
   left: 0;
   right: 5%;
   height: auto;
-  width: 29svw;
+  width: 26svw;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -585,15 +585,18 @@
   text-align: left;
   font-size: 1.35rem;
   overflow: hidden;
+  width: 100%;
 }
 .we-layer-1,
 .we-layer-2 {
+  width: 100%;
   height: 1.6rem; /***-------------------***/
   overflow: hidden;
   margin-top: 2%;
 }
 .we-layer-1 div,
 .we-layer-2 div {
+  width: 100%;
   position: relative;
   transition: all 0.5s ease-in-out;
   background-color: black;
@@ -601,8 +604,8 @@
 .world-sub-text {
   position: relative;
   margin-top: 5%;
-  width: 80%;
-  height: 3.99rem; /***-------------------***/
+  width: 100%;
+  height: 3.75rem; /***-------------------***/
   padding: 0.57rem 0 0.57rem 0;
   font-size: 0.57rem;
   line-height: 130%;
@@ -619,7 +622,7 @@
 }
 .world-button-group {
   display: flex;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 2% 0 2% 0;
@@ -627,9 +630,7 @@
 }
 .world-button {
   position: relative;
-  margin-right: 1%;
-  width: 30%;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   cursor: pointer;
   color: #adb5bd;
   font-size: 0.57rem;
@@ -639,6 +640,15 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   transition: all 0.5s ease-in-out;
+}
+.wb-1 {
+  width: 25%;
+}
+.wb-2 {
+  width: 25%;
+}
+.wb-3 {
+  width: 35%;
 }
 .world-button > i {
   opacity: 0.7;
@@ -654,7 +664,7 @@
 }
 .world-button-group span {
   font-size: 0.57rem;
-  margin-right: 2%;
+  margin: 0 2% 0 2%;
 }
 .world-hilight-text-1 {
   color: #02a1a9;

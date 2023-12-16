@@ -4,10 +4,10 @@
 }
 .pre-loader {
   position: fixed;
-  top: -20svh;
+  top: -20dvh;
   left: 0;
-  width: 100svw;
-  height: 160svh;
+  width: 100dvw;
+  height: 160dvh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -99,10 +99,10 @@
   background-color: black;
 }
 .pre-layer-1 {
-  top: 1svh;
+  top: 1dvh;
   position: relative;
-  width: 100svw;
-  height: 40svh;
+  width: 100dvw;
+  height: 40dvh;
   background-color: #3ab2a4;
   transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-bottom: 1px solid #ffffff;
@@ -132,7 +132,7 @@
 }
 .fade-out {
   top: -120%;
-  height: 140svh;
+  height: 140dvh;
   transition: all 1.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 @media (max-width: 768px) {
