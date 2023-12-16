@@ -24,70 +24,70 @@
   border-radius: 50%;
 }
 .c0 {
-  width: 300dvh;
-  height: 300dvh;
+  width: 300svh;
+  height: 300svh;
   background-color: #014c50;
   z-index: -9;
 }
 .c1 {
-  width: 270dvh;
-  height: 270dvh;
+  width: 270svh;
+  height: 270svh;
   background-color: #01464a;
   z-index: -8;
 }
 .c2 {
-  width: 240dvh;
-  height: 240dvh;
+  width: 240svh;
+  height: 240svh;
   background-color: #014044;
   z-index: -7;
 }
 .c3 {
-  width: 210dvh;
-  height: 210dvh;
+  width: 210svh;
+  height: 210svh;
   background-color: #013b3e;
   z-index: -6;
 }
 .c4 {
-  width: 180dvh;
-  height: 180dvh;
+  width: 180svh;
+  height: 180svh;
   background-color: #013537;
   z-index: -5;
 }
 .c5 {
-  width: 150dvh;
-  height: 150dvh;
+  width: 150svh;
+  height: 150svh;
   background-color: #012f31;
   z-index: -4;
 }
 .c6 {
-  width: 120dvh;
-  height: 120dvh;
+  width: 120svh;
+  height: 120svh;
   background-color: #01292b;
   z-index: -3;
 }
 .c7 {
-  width: 90dvh;
-  height: 90dvh;
+  width: 90svh;
+  height: 90svh;
   background-color: #012325;
   z-index: -2;
 }
 .c8 {
-  width: 60dvh;
-  height: 60dvh;
+  width: 60svh;
+  height: 60svh;
   background-color: #001719;
   z-index: -1;
 }
 .c9 {
-  width: 30dvh;
-  height: 30dvh;
+  width: 30svh;
+  height: 30svh;
   background-color: #000c0c;
   z-index: 0;
 }
 /*---------------------circle and bg--------------------*/
 /*---------------------core--------------------*/
 .world-core {
-  width: 160dvh;
-  height: 160dvh;
+  width: 160svh;
+  height: 160svh;
   position: absolute;
   bottom: -82%;
   transform-origin: center;
@@ -227,20 +227,20 @@
     border: 0.05rem solid #dee2e6;
   }
   35% {
-    width: 50dvh;
-    height: 50dvh;
+    width: 50svh;
+    height: 50svh;
     opacity: 0.7;
     border: 0.1rem solid #01292b;
   }
   70% {
-    width: 100dvh;
-    height: 100dvh;
+    width: 100svh;
+    height: 100svh;
     opacity: 0.3;
     border: 0.2rem solid #01292b;
   }
   100% {
-    width: 150dvh;
-    height: 150dvh;
+    width: 150svh;
+    height: 150svh;
     opacity: 0.1;
     border: 0.05rem solid #359195;
   }
@@ -253,32 +253,32 @@
     background-color: #001719;
   }
   35% {
-    width: 30dvh;
-    height: 30dvh;
+    width: 30svh;
+    height: 30svh;
     opacity: 0.3;
     background-color: #012325;
   }
   55% {
-    width: 50dvh;
-    height: 50dvh;
+    width: 50svh;
+    height: 50svh;
     opacity: 0.3;
     background-color: #012f31;
   }
   70% {
-    width: 70dvh;
-    height: 70dvh;
+    width: 70svh;
+    height: 70svh;
     opacity: 0.3;
     background-color: #013b3e;
   }
   80% {
-    width: 100dvh;
-    height: 100dvh;
+    width: 100svh;
+    height: 100svh;
     opacity: 0.3;
     background-color: #01464a;
   }
   100% {
-    width: 140dvh;
-    height: 140dvh;
+    width: 140svh;
+    height: 140svh;
     opacity: 0.1;
     background-color: #015256;
   }
@@ -320,7 +320,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(200dvh + 0.5rem));
+    transform: translateY(calc(200svh + 0.5rem));
   }
 }
 @-webkit-keyframes raining {
@@ -328,7 +328,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(200dvh + 0.5rem));
+    transform: translateY(calc(200svh + 0.5rem));
   }
 }
 @-o-keyframes raining {
@@ -336,7 +336,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(200dvh + 0.5rem));
+    transform: translateY(calc(200svh + 0.5rem));
   }
 }
 @keyframes raining {
@@ -344,7 +344,7 @@
     transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(calc(200dvh + 0.5rem));
+    transform: translateY(calc(200svh + 0.5rem));
   }
 }
 
@@ -488,37 +488,37 @@
   bottom: 0;
   left: 0;
   transform-origin: left bottom;
-  width: 1dvh;
+  width: 1svh;
   height: 0;
-  border-left: 16dvh solid transparent;
-  border-right: 16dvh solid transparent;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.08);
+  border-left: 16svh solid transparent;
+  border-right: 16svh solid transparent;
+  border-top: 150svh solid rgba(156, 226, 180, 0.08);
   filter: drop-shadow(0px 0px 10px rgba(156, 226, 180, 0.4));
   transform: rotateZ(30deg) translateX(-50%);
   overflow: hidden;
 }
 .laser-beam.lb0 {
-  width: 1dvh;
+  width: 1svh;
   animation: laser 6s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.08);
+  border-top: 150svh solid rgba(156, 226, 180, 0.08);
   z-index: 7;
 }
 .laser-beam.lb1 {
-  width: 0.8dvh;
+  width: 0.8svh;
   animation: laser 6.5s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.1);
+  border-top: 150svh solid rgba(156, 226, 180, 0.1);
   z-index: 8;
 }
 .laser-beam.lb2 {
-  width: 1.2dvh;
+  width: 1.2svh;
   animation: laser 7s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.2);
+  border-top: 150svh solid rgba(156, 226, 180, 0.2);
   z-index: 9;
 }
 .laser-beam.lb3 {
-  width: 0.7dvh;
+  width: 0.7svh;
   animation: laser 7.5s infinite;
-  border-top: 150dvh solid rgba(156, 226, 180, 0.07);
+  border-top: 150svh solid rgba(156, 226, 180, 0.07);
   z-index: 10;
 }
 @keyframes laser {
