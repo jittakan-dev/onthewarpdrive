@@ -35,25 +35,25 @@ function handleScroll(e) {
 
     scrolling = true;
 
-    const bodyStyle = window.getComputedStyle(document.body);
-    const overflowY = bodyStyle.getPropertyValue("overflow-y");
+    // const bodyStyle = window.getComputedStyle(document.body);
+    // const overflowY = bodyStyle.getPropertyValue("overflow-y");
 
-    if (overflowY === "hidden") {
-      function scroll() {
-        const now = performance.now();
-        const elapsed = now - startTime;
-        const progress = Math.min(1, elapsed / duration);
+    // if (overflowY === "hidden") {
+    //   function scroll() {
+    //     const now = performance.now();
+    //     const elapsed = now - startTime;
+    //     const progress = Math.min(1, elapsed / duration);
 
-        window.scrollTo(0, start + progress * (targetOffset - start));
+    //     window.scrollTo(0, start + progress * (targetOffset - start));
 
-        if (progress < 1) {
-          requestAnimationFrame(scroll);
-        } else {
-          scrolling = false;
-        }
-      }
-      requestAnimationFrame(scroll);
-    }
+    //     if (progress < 1) {
+    //       requestAnimationFrame(scroll);
+    //     } else {
+    //       scrolling = false;
+    //     }
+    //   }
+    //   requestAnimationFrame(scroll);
+    // }
   }
 }
 
