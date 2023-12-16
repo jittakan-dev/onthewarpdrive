@@ -9,10 +9,11 @@ html {
   overflow-y: auto;
   background-color: #171717;
   font-size: calc(0.5em + 1vw + 1vh); /*base  font size = 0.57*/
+  transition: all 0.5s linear;
 }
 .content-section {
   width: 100dvw;
-  height: 100dvh;
+  height: auto;
   max-width: 100dvw;
   max-height: 100dvh;
   display: flex;
