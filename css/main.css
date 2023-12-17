@@ -26,7 +26,7 @@ body {
   overflow: hidden;
   background-color: #001719;
 }
-.content-section:last-child {
+.content-section #about {
   width: 100lvw;
   height: 100lvh;
 }
