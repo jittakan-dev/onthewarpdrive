@@ -10,12 +10,14 @@ body {
   -webkit-overflow-scrolling: touch;
   background-color: #171717;
   font-size: calc(0.5em + 1vw + 1vh); /*base  font size = 0.57*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .content-section {
   width: 100svw;
   height: 100svh;
-  max-width: 100svw;
-  max-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,9 +28,10 @@ body {
   overflow: hidden;
   background-color: #001719;
 }
-#about {
-  width: 100lvw;
-  height: 100lvh;
+.section-space {
+  width: 100svw;
+  height: 10svh;
+  background-color: blue;
 }
 .windowSize {
   position: fixed;
