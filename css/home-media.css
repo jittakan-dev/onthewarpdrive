@@ -124,6 +124,12 @@
   html {
     overflow-y: hidden;
   } */
+  .world-bar {
+    height: 4.5rem;
+  }
+  .world-bar-foma {
+    top: -40%;
+  }
   .world-bar-more {
     display: none;
   }
