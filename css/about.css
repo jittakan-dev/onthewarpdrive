@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: start;
   align-self: start;
-  font-size: 5rem;
+  font-size: 2.28rem;
   border-bottom: 1px solid #343a40;
 }
 .about-otwd-group {
@@ -60,7 +60,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: end;
-  font-size: 1.1rem;
+  font-size: 0.57rem;
 }
 .about-weare-box {
   width: 95%;
@@ -71,7 +71,7 @@
   border-right: 1px solid #96a2ae;
 }
 .about-weare-headline {
-  font-size: 1.4rem;
+  font-size: 0.6rem;
 }
 .about-service-box {
   display: flex;
@@ -105,7 +105,7 @@
 .right-arrow {
   text-align: right;
   width: auto;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   background-color: #dee2e6;
   color: #171717;
@@ -130,7 +130,7 @@
 .about-title-otwd {
   text-align: right;
   width: 100%;
-  font-size: 5.8rem;
+  font-size: 3rem;
   letter-spacing: -4px;
   line-height: 90%;
   font-weight: bolder;
@@ -139,7 +139,7 @@
   margin-top: 2%;
   text-align: right;
   width: 100%;
-  font-size: 2.7rem;
+  font-size: 1.2rem;
   line-height: 100%;
   color: #c1cbd4;
 }
@@ -170,7 +170,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.28rem;
 }
 .contact-us-group {
   width: 50%;
@@ -193,7 +193,7 @@
 .left-arrow {
   text-align: right;
   width: auto;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   background-color: #e9ecef;
   color: #171717;
@@ -214,7 +214,7 @@
 .contact-reachus {
   font-weight: 900;
   text-align: right;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 100%;
   margin: 0;
   padding: 0;
@@ -231,7 +231,7 @@
 .contact-quote {
   border-top: 1px solid #adb5bd;
   border-bottom: 1px solid #adb5bd;
-  font-size: 1.1rem;
+  font-size: 0.57rem;
   color: #adb5bd;
 }
 .contact-type-button-group {
@@ -242,7 +242,7 @@
   align-items: end;
 }
 .contact-type-button {
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
@@ -285,7 +285,7 @@
 .form-hub-slide-group {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 200%;
   top: 0%;
   display: flex;
   flex-direction: column;
@@ -305,10 +305,11 @@
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
-  height: 95dvh;
+  height: 95%;
+  font-size: 0.57rem;
 }
 .we-are-here {
-  font-size: 1.2rem;
+  font-size: 0.57rem;
   margin-bottom: 2%;
 }
 /*-----------------------START-map------------*/
@@ -331,7 +332,7 @@
 /*-----------------------START-email------------*/
 .contact-email {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 0.7rem;
   text-align: center;
   cursor: pointer;
   margin-top: 4%;
@@ -383,13 +384,13 @@
 }
 .contact-social-link {
   width: auto;
-  font-size: 1.6rem;
+  font-size: 0.6rem;
   cursor: pointer;
   color: #dee2e6;
 }
 .social-link {
   margin-left: 10%;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   color: #dee2e6;
 }
 /*-----------------------END-sociallink------------*/
@@ -401,7 +402,7 @@
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 95dvh;
+  height: 95%;
 }
 .input-group {
   width: 100%;
@@ -409,7 +410,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  font-size: 1.4rem;
+  font-size: 0.6rem;
 }
 .input-group label {
   width: 100%;
@@ -420,7 +421,7 @@
   padding: 2%;
   border: none;
   background-color: #495057;
-  font-size: 1.6rem;
+  font-size: 0.7rem;
   color: #dee2e6;
 }
 .input-group input:focus {
@@ -434,7 +435,7 @@
   padding: 2%;
   border: none;
   background-color: #495057;
-  font-size: 1.4rem;
+  font-size: 0.7rem;
   color: #dee2e6;
 }
 .input-group textarea:focus {
@@ -452,7 +453,7 @@
 }
 .submit-group button {
   width: 99%;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 2% 0 2% 0;
   background-color: black;
   border: none;

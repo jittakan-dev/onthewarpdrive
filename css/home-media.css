@@ -254,7 +254,7 @@
     font-size: 0.75rem;
     line-height: 130%;
   }
-  /* narrower screensize */
+  /* narrower screensize NORMAL*/
   @media screen and (max-aspect-ratio: 9/16.2) {
     .world-control-group {
       width: 85dvw;
@@ -268,14 +268,14 @@
     .bear-grid {
       font-size: 1.68rem;
     }
-    /*very narrow screen*/
+    /*very narrow screen FOLD*/
     @media screen and (max-width: 300px) {
       .world-sub-text {
         width: 90%;
       }
     }
   }
-  /* widener screensize */
+  /* widener screensize SE/SE OLD */
   @media screen and (min-aspect-ratio: 9/16.2) {
     .world-control-group {
       width: 85dvw;
