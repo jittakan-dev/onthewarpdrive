@@ -21,6 +21,13 @@
   .submit-group button {
     font-size: 0.72rem;
   }
+  .contact-type-button-group {
+    flex-direction: row;
+  }
+  .contact-type-button {
+    font-size: 0.57rem;
+    border-radius: 0;
+  }
   /* smaller screensize */
   @media screen and (max-aspect-ratio: 16.2/9) {
     /*very smaller screen*/
