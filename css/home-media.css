@@ -120,10 +120,6 @@
   }
 }
 @media screen and (orientation: portrait) {
-  /* body,
-  html {
-    overflow-y: hidden;
-  } */
   .world-bar {
     height: 4.5rem;
   }
