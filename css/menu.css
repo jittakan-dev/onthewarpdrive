@@ -197,7 +197,7 @@
   padding: 3%;
 }
 .bubbleLinkActive {
-  background-color: #015256;
+  background-color: #c34334;
   color: #000c0c;
 }
 /*-----------------------3 DOTS SET------------------------------------*/
@@ -246,10 +246,10 @@
 }
 .nav-dot-group a:hover {
   color: #171717;
-  background-color: #4993da;
+  background-color: #c34334;
 }
 .navLinkActive {
-  background-color: #359195;
+  background-color: #c34334;
 }
 .nav-dot-group a:nth-child(1),
 .nav-dot-group-dop div:nth-child(1) {

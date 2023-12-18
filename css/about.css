@@ -235,9 +235,11 @@
   color: #adb5bd;
 }
 .contact-type-button-group {
+  position: relative;
+  z-index: 100;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: end;
 }
@@ -249,10 +251,10 @@
   background-color: #c1cbd4;
   color: #171717;
   border: 1px solid #c1cbd4;
-  border-bottom-left-radius: 8px;
+  /* border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-left-radius: 8px; */
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -261,9 +263,11 @@
   overflow: hidden;
 }
 .contact-type-button:hover {
-  background-color: #0a0a0a;
-  color: #adb5bd;
-  border: 1px solid #171717;
+  background-color: #c1cbd4;
+  color: #c34334;
+  border: 1px solid #c1cbd4;
+
+  /* border: 1px solid #171717; */
 }
 .contactTypeButtonActive {
   background-color: #0a0a0a;

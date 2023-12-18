@@ -654,7 +654,7 @@
   opacity: 0.7;
 }
 .world-button:not(.worldActive):hover {
-  color: #4993da;
+  color: #c34334;
 }
 .world-button:not(.worldActive):hover > i {
   animation: blink 1s infinite;
@@ -675,7 +675,7 @@
   padding: 0 1% 0 1%;
 }
 .worldActive {
-  color: #02a1a9;
+  color: #c34334;
   cursor: default;
 }
 .worldActive .fa-circle-dot {
