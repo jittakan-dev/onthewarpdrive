@@ -32,29 +32,29 @@ writeUsButton.addEventListener("click", function () {
   contactScroll.style.transform = `translateY(-${yOffset}px)`;
 });
 // Add touchstart event listeners
-otwdHubButton.addEventListener("touchstart", function () {
-  otwdHubButton.classList.add("contactTypeButtonActive");
-  writeUsButton.classList.remove("contactTypeButtonActive");
-  const hubGroupRect = hubGroup.getBoundingClientRect();
-  const contactScroll = document.querySelector(".form-hub-slide-group");
-  const contactScrollRect = contactScroll.getBoundingClientRect();
+// otwdHubButton.addEventListener("touchstart", function () {
+//   otwdHubButton.classList.add("contactTypeButtonActive");
+//   writeUsButton.classList.remove("contactTypeButtonActive");
+//   const hubGroupRect = hubGroup.getBoundingClientRect();
+//   const contactScroll = document.querySelector(".form-hub-slide-group");
+//   const contactScrollRect = contactScroll.getBoundingClientRect();
 
-  const yOffset = hubGroupRect.top - contactScrollRect.top;
-  contactScroll.style.scrollBehavior = "smooth";
-  contactScroll.style.transform = `translateY(-${yOffset}px)`;
-});
+//   const yOffset = hubGroupRect.top - contactScrollRect.top;
+//   contactScroll.style.scrollBehavior = "smooth";
+//   contactScroll.style.transform = `translateY(-${yOffset}px)`;
+// });
 
-writeUsButton.addEventListener("touchstart", function () {
-  writeUsButton.classList.add("contactTypeButtonActive");
-  otwdHubButton.classList.remove("contactTypeButtonActive");
-  const formGroupRect = formGroup.getBoundingClientRect();
-  const contactScroll = document.querySelector(".form-hub-slide-group");
-  const contactScrollRect = contactScroll.getBoundingClientRect();
+// writeUsButton.addEventListener("touchstart", function () {
+//   writeUsButton.classList.add("contactTypeButtonActive");
+//   otwdHubButton.classList.remove("contactTypeButtonActive");
+//   const formGroupRect = formGroup.getBoundingClientRect();
+//   const contactScroll = document.querySelector(".form-hub-slide-group");
+//   const contactScrollRect = contactScroll.getBoundingClientRect();
 
-  const yOffset = formGroupRect.top - contactScrollRect.top;
-  contactScroll.style.scrollBehavior = "smooth";
-  contactScroll.style.transform = `translateY(-${yOffset}px)`;
-});
+//   const yOffset = formGroupRect.top - contactScrollRect.top;
+//   contactScroll.style.scrollBehavior = "smooth";
+//   contactScroll.style.transform = `translateY(-${yOffset}px)`;
+// });
 
 aboutToLeft.addEventListener("click", () => {
   aboutContainer.scrollTo({
