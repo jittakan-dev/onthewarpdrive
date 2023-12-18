@@ -17,7 +17,7 @@ otwdHubButton.addEventListener("click", function () {
 
   const yOffset = hubGroupRect.top - contactScrollRect.top;
   contactScroll.style.scrollBehavior = "smooth";
-  contactScroll.style.transform = `translateY(-${yOffset}px)`;
+  contactScroll.style.transform = `translateY(-${Math.abs(yOffset)}px)`;
 });
 
 writeUsButton.addEventListener("click", function () {
@@ -29,7 +29,7 @@ writeUsButton.addEventListener("click", function () {
 
   const yOffset = formGroupRect.top - contactScrollRect.top;
   contactScroll.style.scrollBehavior = "smooth";
-  contactScroll.style.transform = `translateY(-${yOffset}px)`;
+  contactScroll.style.transform = `translateY(-${Math.abs(yOffset)}px)`;
 });
 // Add touchstart event listeners
 // otwdHubButton.addEventListener("touchstart", function () {

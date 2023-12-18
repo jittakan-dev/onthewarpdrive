@@ -1,10 +1,4 @@
 @media screen and (orientation: landscape) and (max-width: 940px) {
-  /* .fourtyPercentSpace {
-    width: 100%;
-    height: 40dvh;
-    display: block;
-    top: 0;
-  } */
   .left-arrow,
   .right-arrow,
   .about-intro {
@@ -41,6 +35,71 @@
   /* larger screensize */
   @media screen and (min-aspect-ratio: 16.2/9) {
     @media screen and (max-height: 300px) {
+      .left-arrow,
+      .right-arrow,
+      .about-intro {
+        font-size: 1.25rem;
+      }
+      .about-weare-group {
+        font-size: 0.7rem;
+      }
+      .about-weare-headline {
+        font-size: 0.75rem;
+      }
+
+      .about-title-otwd {
+        font-size: 3.2rem;
+      }
+      .about-quote-box {
+        font-size: 1.1rem;
+      }
+      .about-service-box span {
+        font-size: 0.75rem;
+      }
+      .hub-group {
+        height: 50%;
+      }
+      .form-group {
+        height: 50%;
+      }
+      .contact-reachus-group {
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-reachus {
+        font-size: 1rem;
+      }
+      .reachus-br {
+        display: none;
+      }
+      .contact-quote {
+        font-size: 0.7rem;
+      }
+      .contact-type-button {
+        font-size: 0.6rem;
+      }
+      .contact-map {
+        height: 40%;
+      }
+      .contact-social-link {
+        font-size: 1rem;
+      }
+      .social-link {
+        font-size: 0.6rem;
+      }
+      .contact-email {
+        margin-top: 10%;
+        font-size: 0.75rem;
+      }
+
+      .input-group,
+      .input-group textarea {
+        font-size: 0.6rem;
+      }
+      .input-group input,
+      .submit-group button {
+        font-size: 0.6rem;
+      }
     }
   }
 }

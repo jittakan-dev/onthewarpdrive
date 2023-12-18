@@ -235,11 +235,9 @@
   color: #adb5bd;
 }
 .contact-type-button-group {
-  position: relative;
-  z-index: 100;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: end;
 }
@@ -263,8 +261,8 @@
   overflow: hidden;
 }
 .contact-type-button:hover {
-  background-color: #c1cbd4;
-  color: #c34334;
+  background-color: #0a0a0a;
+  color: #adb5bd;
   border: 1px solid #c1cbd4;
 
   /* border: 1px solid #171717; */
@@ -305,6 +303,7 @@
   width: 0;
 }
 .hub-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -319,14 +318,17 @@
 }
 /*-----------------------START-map------------*/
 .contact-map {
+  position: relative;
   width: 100%;
   height: 40%;
 }
 .map {
+  position: relative;
   height: 100%;
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
 .contact-map iframe {
+  position: relative;
   width: 100%;
   height: 100%;
   border: 0;
@@ -336,6 +338,7 @@
 /*-----------------------END-map------------*/
 /*-----------------------START-email------------*/
 .contact-email {
+  position: relative;
   width: 100%;
   font-size: 0.7rem;
   text-align: center;
@@ -362,6 +365,7 @@
 /*-----------------------START-sociallink------------*/
 .contact-link {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: end;
