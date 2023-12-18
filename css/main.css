@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #171717;
+  background-color: #001719;
   font-size: calc(0.5em + 1vw + 1vh); /*base  font size = 0.57*/
   display: flex;
   flex-direction: column;
@@ -29,9 +29,12 @@ body {
   background-color: #001719;
 }
 .section-space {
-  width: 100svw;
+  position: relative;
+  width: 90svw;
   height: 25svh;
-  background-color: blue;
+  background-color: #001719;
+  border-top: 1px solid #02696f;
+  border-bottom: 1px solid #02696f;
 }
 .windowSize {
   position: fixed;
