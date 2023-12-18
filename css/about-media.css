@@ -26,7 +26,6 @@
   }
   .contact-type-button {
     font-size: 0.57rem;
-    border-radius: 0;
   }
   /* smaller screensize */
   @media screen and (max-aspect-ratio: 16.2/9) {
@@ -248,7 +247,6 @@
     color: #adb5bd;
     border-radius: 0px;
     border: none;
-    border: none;
     width: 50%;
     text-align: center;
   }
@@ -374,6 +372,12 @@
   .contact-quote,
   .contact-type-button {
     font-size: 0.8rem;
+    border: none;
+  }
+  .contact-type-button:hover {
+    background-color: #0a0a0a;
+    color: #adb5bd;
+    border: none;
   }
   .contact-social-link {
     font-size: 1.7rem;
@@ -389,7 +393,6 @@
   .submit-group button {
     font-size: 0.85rem;
   }
-
   /* narrower screensize NORMAL*/
   @media screen and (max-aspect-ratio: 9/16.2) {
     /*very narrow screen FOLD*/
