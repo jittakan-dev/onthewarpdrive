@@ -28,14 +28,78 @@ body {
   overflow: hidden;
   background-color: #001719;
 }
-.section-space {
+.section-space-top {
   position: relative;
-  width: 90svw;
-  height: 25svh;
-  background-color: #001719;
-  border-top: 1px solid #02696f;
-  border-bottom: 1px solid #02696f;
+  margin: 0 0 2% 0;
+  width: 90vw;
+  height: 8vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 16vh);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(2%, 1fr) /*RE 1% to X% for mobile*/
+  );
+  background: linear-gradient(170deg, #012f31, #01464a, #025e62);
+  background-size: 100% 100%;
+  animation: gradientAnimation1 5s ease infinite;
 }
+.section-space-bottom {
+  margin: 2% 0 2% 0;
+  position: relative;
+  width: 90vw;
+  height: 8vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 16vh);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(2%, 1fr) /*RE 1% to X% for mobile*/
+  );
+  background: linear-gradient(170deg, #025e62, #01464a, #012f31);
+  background-size: 100% 100%;
+  animation: gradientAnimation2 5s ease infinite;
+}
+@keyframes gradientAnimation1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes gradientAnimation2 {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.space-item {
+  /* Additional styling for grid items if needed */
+  border-left: 0.35rem solid #001719;
+  border-right: 0.35rem solid #001719;
+}
+
 .windowSize {
   position: fixed;
   top: 0;

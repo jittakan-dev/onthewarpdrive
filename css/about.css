@@ -80,6 +80,7 @@
   justify-content: start;
 }
 .about-service-box span {
+  font-size: 0.57rem;
   margin-right: 2%;
   padding: 0.2% 1.5% 0.2% 1.5%;
   cursor: pointer;
@@ -246,13 +247,14 @@
   padding: 4%;
   margin: 2% 0% 2% 0;
   cursor: pointer;
-  background-color: #c1cbd4;
+  background-color: #495057;
   color: #171717;
-  border: 1px solid #c1cbd4;
-  /* border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px; */
+  border: 1px solid #5c6671;
+  /* border-radius: 33% 67% 66% 34% / 47% 48% 52% 53%; */
+  /* border-bottom-left-radius: 32px;
+  border-top-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  border-top-right-radius: 32px; */
   user-select: none;
   -moz-user-select: none;
   -webkit-text-select: none;
@@ -261,14 +263,14 @@
   overflow: hidden;
 }
 .contact-type-button:hover {
-  background-color: #0a0a0a;
+  background-color: #495057;
   color: #adb5bd;
-  border: 1px solid #c1cbd4;
+  border: 1px solid #5c6671;
 }
 .contactTypeButtonActive {
   background-color: #0a0a0a;
   color: #adb5bd;
-  border: 1px solid #adb5bd;
+  border: 1px solid #5c6671;
   cursor: default;
   pointer-events: none;
 }

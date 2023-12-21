@@ -1,0 +1,27 @@
+@media (orientation: landscape) {
+}
+@media (orientation: portrait) {
+  .section-space-top {
+    margin: 0 0 5% 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 16vh);
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(4%, 1fr) /*RE 1% to X% for mobile*/
+    );
+  }
+  .section-space-bottom {
+    margin: 5% 0 5% 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 16vh);
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(4%, 1fr) /*RE 1% to X% for mobile*/
+    );
+  }
+  .space-item {
+    /* Additional styling for grid items if needed */
+    border-left: 0.3rem solid #001719;
+    border-right: 0.3rem solid #001719;
+  }
+}

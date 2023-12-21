@@ -48,6 +48,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main-media.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/menu-media.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -380,132 +381,131 @@
       </div>
     </section>
     <!----------   end home section   -------------->
-    <div class="section-space"></div>
+    <div class="section-space-top"></div>
     <!----------   start work section   -------------->
     <section class="content-section" id="work">
-      <div></div>
-      <!-- <div class="work-menu-container">
-          <div class="work-menu-header">
-            <div class="work-menu-title">
-              Selected <span class="selectedBr"> <br /></span>Work.
-            </div>
-            <div class="work-menu-types">
-              <div class="workTypeActive" onclick="changeTab(1)">App</div>
-              <div onclick="changeTab(2)">Mobile</div>
-              <div onclick="changeTab(3)">Analytic</div>
-            </div>
+      <div class="work-menu-container">
+        <div class="work-menu-header">
+          <div class="work-menu-title">
+            Selected <span class="selectedBr"> <br /></span>Work.
           </div>
-          <div class="work-list-container">
-            <div class="app-list">
-              <div class="no-of-app">
-                <span class="current-app">1</span>
-                <span>/</span>
-                <span class="total-app"></span>
+          <div class="work-menu-types">
+            <div class="workTypeActive" onclick="changeTab(1)">App</div>
+            <div onclick="changeTab(2)">Mobile</div>
+            <div onclick="changeTab(3)">Analytic</div>
+          </div>
+        </div>
+        <div class="work-list-container">
+          <div class="app-list">
+            <div class="no-of-app">
+              <span class="current-app">1</span>
+              <span>/</span>
+              <span class="total-app"></span>
+            </div>
+            <div class="work-arrow-group">
+              <div class="work-left-arrow">
+                <i
+                  class="fa-solid fa-left-long noMoreWork"
+                  id="AppLeftArrow"
+                ></i>
               </div>
-              <div class="work-arrow-group">
-                <div class="work-left-arrow">
-                  <i
-                    class="fa-solid fa-left-long noMoreWork"
-                    id="AppLeftArrow"
-                  ></i>
-                </div>
-                <div class="work-right-arrow">
-                  <i
-                    class="fa-solid fa-right-long moreWork"
-                    id="AppRightArrow"
-                  ></i>
-                </div>
+              <div class="work-right-arrow">
+                <i
+                  class="fa-solid fa-right-long moreWork"
+                  id="AppRightArrow"
+                ></i>
               </div>
-              <div class="app-list-item">
-                <div class="work-block">
-                  <div class="work-block-no">APP.01</div>
-                  <div class="work-block-title"><p>Financial News API</p></div>
-                  <div class="work-block-subtitle">
-                    <p>
-                      Fresh news alert for selected stocks in your current
-                      portfolio.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="app-list-item">
-                <div class="work-block">
-                  <div class="work-block-no">APP.02</div>
-                  <div class="work-block-title">
-                    <p>The Currency, Oil, and Commodities trend API</p>
-                  </div>
-                  <div class="work-block-subtitle">
-                    <br />
-                    <p>
-                      Real-time report trend of commodities defining the world
-                      stock price.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="app-list-item">
-                <div class="work-block">
-                  <div class="work-block-no">APP.03</div>
-                  <div class="work-block-title"><p>CryptoTracker</p></div>
-                  <div class="work-block-subtitle">
-                    <br />
-                    <p>Tracking Crypto price on selected currency.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="app-list-item">
-                <div class="work-block">
-                  <div class="work-block-no">APP.04</div>
-                  <div class="work-block-title"><p>ColorPaletteMapper</p></div>
-                  <div class="work-block-subtitle">
-                    <br />
-                    <p>Map Color from generated palette to skeleton UI.</p>
-                  </div>
+            </div>
+            <div class="app-list-item">
+              <div class="work-block">
+                <div class="work-block-no">APP.01</div>
+                <div class="work-block-title"><p>Financial News API</p></div>
+                <div class="work-block-subtitle">
+                  <p>
+                    Fresh news alert for selected stocks in your current
+                    portfolio.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="mobile-list">
-              <div class="no-of-mobile">
-                <span class="current-mobile">0</span>
-                <span>/</span>
-                <span class="total-mobile">0</span>
-              </div>
-              <div class="work-arrow-group">
-                <div class="work-left-arrow">
-                  <i class="fa-solid fa-left-long" id="MobileLeftArrow"></i>
+            <div class="app-list-item">
+              <div class="work-block">
+                <div class="work-block-no">APP.02</div>
+                <div class="work-block-title">
+                  <p>The Currency, Oil, and Commodities trend API</p>
                 </div>
-                <div class="work-right-arrow">
-                  <i class="fa-solid fa-right-long" id="MobileRightArrow"></i>
-                </div>
-              </div>
-              <div class="mobile-list-item">
-                <div class="work-block">
-                  <div class="work-block-no">MOBILE.01</div>
-                  <div class="work-block-title"><p>ZERO-Exchange</p></div>
-                  <div class="work-block-subtitle"><p>XXXXX</p></div>
+                <div class="work-block-subtitle">
+                  <br />
+                  <p>
+                    Real-time report trend of commodities defining the world
+                    stock price.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="analytic-list">
-              <div class="no-of-analytic">
-                <span class="current-analytic">0</span>
-                <span>/</span>
-                <span class="total-analytic">0</span>
-              </div>
-              <div class="work-arrow-group">
-                <div class="work-left-arrow">
-                  <i class="fa-solid fa-left-long" id="AnalyticLeftArrow"></i>
+            <div class="app-list-item">
+              <div class="work-block">
+                <div class="work-block-no">APP.03</div>
+                <div class="work-block-title"><p>CryptoTracker</p></div>
+                <div class="work-block-subtitle">
+                  <br />
+                  <p>Tracking Crypto price on selected currency.</p>
                 </div>
-                <div class="work-right-arrow">
-                  <i class="fa-solid fa-right-long" id="AnalyticRightArrow"></i>
+              </div>
+            </div>
+            <div class="app-list-item">
+              <div class="work-block">
+                <div class="work-block-no">APP.04</div>
+                <div class="work-block-title"><p>ColorPaletteMapper</p></div>
+                <div class="work-block-subtitle">
+                  <br />
+                  <p>Map Color from generated palette to skeleton UI.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+          <div class="mobile-list">
+            <div class="no-of-mobile">
+              <span class="current-mobile">0</span>
+              <span>/</span>
+              <span class="total-mobile">0</span>
+            </div>
+            <div class="work-arrow-group">
+              <div class="work-left-arrow">
+                <i class="fa-solid fa-left-long" id="MobileLeftArrow"></i>
+              </div>
+              <div class="work-right-arrow">
+                <i class="fa-solid fa-right-long" id="MobileRightArrow"></i>
+              </div>
+            </div>
+            <div class="mobile-list-item">
+              <div class="work-block">
+                <div class="work-block-no">MOBILE.01</div>
+                <div class="work-block-title"><p>ZERO-Exchange</p></div>
+                <div class="work-block-subtitle"><p>XXXXX</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="analytic-list">
+            <div class="no-of-analytic">
+              <span class="current-analytic">0</span>
+              <span>/</span>
+              <span class="total-analytic">0</span>
+            </div>
+            <div class="work-arrow-group">
+              <div class="work-left-arrow">
+                <i class="fa-solid fa-left-long" id="AnalyticLeftArrow"></i>
+              </div>
+              <div class="work-right-arrow">
+                <i class="fa-solid fa-right-long" id="AnalyticRightArrow"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!----------   end work section   -------------->
-    <div class="section-space"></div>
+    <div class="section-space-bottom"></div>
     <!----------   start otwd section   -------------->
     <section class="content-section" id="about">
       <div class="about-container">

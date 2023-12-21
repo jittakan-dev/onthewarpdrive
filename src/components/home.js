@@ -18,8 +18,6 @@ const weAre = document.querySelectorAll(".we-are");
 const weGuide = document.querySelectorAll(".we-guide");
 const weLayer1 = document.querySelector(".we-layer-1");
 const weLayer2 = document.querySelector(".we-layer-2");
-const worldSubText = document.querySelector(".world-sub-text");
-const moreDetailA = document.querySelectorAll(".world-base-more-detail a");
 
 function changeInBalloon() {
   circle_0.style.animation = "pulse-bold 1.2s ease-out infinite";
@@ -49,6 +47,8 @@ function rotateWorld(degrees, index) {
   activeButton.classList.add("worldActive");
 
   if (index == 1) {
+    meteor(true);
+    updateBearGrid(true);
     weDo.forEach((weDo, index) => {
       setTimeout(() => {
         weDo.style.transform = "translatey(0)";
@@ -95,6 +95,7 @@ function rotateWorld(degrees, index) {
       }, 700);
     }
   } else if (index == 2) {
+    updateBearGrid(false);
     isRotationAllowed = true;
     weDo.forEach((weDo, index) => {
       setTimeout(() => {
@@ -133,12 +134,14 @@ function rotateWorld(degrees, index) {
           setTimeout(() => {
             worldBearSparkle.style.visibility = "visible";
             worldBearSparkle.style.opacity = 1;
-            meteor();
+            meteor(false);
           }, 500);
         }, 900);
       }, 400);
     }, 400);
   } else if (index == 3) {
+    meteor(true);
+    updateBearGrid(true);
     isRotationAllowed = true;
     weDo.forEach((weDo, index) => {
       setTimeout(() => {
@@ -185,29 +188,6 @@ function rotateWorld(degrees, index) {
   }, 100);
 }
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-function updateBearGrid() {
-  shuffleArray(spans);
-
-  const bearGrid = document.querySelector(".bear-grid");
-  bearGrid.innerHTML = "";
-
-  spans.forEach((span, index) => {
-    const bearGridItem = document.createElement("div");
-    bearGridItem.classList.add("bear-grid-item");
-    bearGridItem.innerHTML = span;
-    bearGridItem.style.opacity = 1;
-    bearGridItem.style.animationDelay = index * 0.5 + "s";
-    bearGrid.appendChild(bearGridItem);
-  });
-  setTimeout(updateBearGrid, 1500);
-}
 const spans = [
   "<span><i class='fa-solid fa-glasses'></i></span>",
   "<span><i class='fa-solid fa-mobile-screen-button'></i></span>",
@@ -218,11 +198,38 @@ const spans = [
   "<span><i class='fa-regular fa-hand-point-right bear-next' onclick='rotateWorld(250,3)'></i></span>",
 ];
 
-function meteor() {
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function updateBearGrid(stopflag) {
+  if (stopflag) {
+    return;
+  } else {
+    shuffleArray(spans);
+    const bearGrid = document.querySelector(".bear-grid");
+    bearGrid.innerHTML = spans
+      .map((span, index) => {
+        const bearGridItem = document.createElement("div");
+        bearGridItem.className = "bear-grid-item";
+        bearGridItem.innerHTML = span;
+        bearGridItem.style = `opacity: 1; animation-delay: ${index * 0.5}s`;
+        return bearGridItem.outerHTML;
+      })
+      .join("");
+    setTimeout(() => updateBearGrid(), 1500);
+  }
+}
+
+function meteor(stopflag) {
   let amount = 70;
   let container = document.querySelector(".world-bear-sparkle");
   let count = 0;
-  while (count < amount) {
+  stopflag = stopflag || false;
+  while (count < amount && !stopflag) {
     let drop = document.createElement("div");
     drop.className = "droplet";
     let size = Math.random() * 5;
@@ -236,9 +243,12 @@ function meteor() {
     container.appendChild(drop);
     count++;
   }
+  if (stopflag === true) {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+  }
 }
-
-updateBearGrid();
 
 const card = document.querySelector(".world-bear");
 const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
